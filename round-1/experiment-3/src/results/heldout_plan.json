@@ -1,0 +1,336 @@
+{
+  "picks": {
+    "temperature": "baseline",
+    "H-probe": null,
+    "H-dim": "Hdim_a0.05",
+    "A3-proj": "A3proj_r1_a0.25",
+    "A3-leace": "A3leace_a0.5"
+  },
+  "settings": [
+    {
+      "name": "temp0.7__ho",
+      "family": "temperature",
+      "task": "T1",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {},
+      "code_stop": true,
+      "params": {
+        "T": 0.7
+      }
+    },
+    {
+      "name": "prompt_new__ho",
+      "family": "prompt",
+      "task": "T1",
+      "cond": "new",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {},
+      "code_stop": true,
+      "params": {
+        "cond": "new"
+      }
+    },
+    {
+      "name": "prompt_novel2000__ho",
+      "family": "prompt",
+      "task": "T1",
+      "cond": "novel2000",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {},
+      "code_stop": true,
+      "params": {
+        "cond": "novel2000"
+      }
+    },
+    {
+      "name": "prompt_ban3__ho",
+      "family": "prompt",
+      "task": "T1",
+      "cond": "ban3",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {},
+      "code_stop": true,
+      "params": {
+        "cond": "ban3"
+      }
+    },
+    {
+      "name": "Hdim_a0.05__ho",
+      "family": "H-dim",
+      "task": "T1",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {
+        "kind": "add",
+        "vec": "Hdim",
+        "alpha": 0.05
+      },
+      "code_stop": true,
+      "params": {
+        "alpha": 0.05
+      }
+    },
+    {
+      "name": "Radd_a0.05_d0__ho",
+      "family": "R-add",
+      "task": "T1",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {
+        "kind": "add",
+        "vec": "rand0",
+        "alpha": 0.05
+      },
+      "code_stop": true,
+      "params": {
+        "alpha": 0.05,
+        "draw": 0
+      }
+    },
+    {
+      "name": "A3proj_r1_a0.25__ho",
+      "family": "A3-proj",
+      "task": "T1",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {
+        "kind": "project",
+        "basis": "A3",
+        "r": 1,
+        "a": 0.25
+      },
+      "code_stop": true,
+      "params": {
+        "r": 1,
+        "a": 0.25
+      }
+    },
+    {
+      "name": "Rproj_r1_a0.25_d0__ho",
+      "family": "R-proj",
+      "task": "T1",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {
+        "kind": "project",
+        "basis": "rand0",
+        "r": 1,
+        "a": 0.25
+      },
+      "code_stop": true,
+      "params": {
+        "r": 1,
+        "a": 0.25,
+        "draw": 0
+      }
+    },
+    {
+      "name": "A3leace_a0.5__ho",
+      "family": "A3-leace",
+      "task": "T1",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {
+        "kind": "leace",
+        "a": 0.5
+      },
+      "code_stop": true,
+      "params": {
+        "a": 0.5
+      }
+    },
+    {
+      "name": "Rproj_r1_a0.5_d0__ho",
+      "family": "R-proj",
+      "task": "T1",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {
+        "kind": "project",
+        "basis": "rand0",
+        "r": 1,
+        "a": 0.5
+      },
+      "code_stop": true,
+      "params": {
+        "r": 1,
+        "a": 0.5,
+        "draw": 0
+      }
+    },
+    {
+      "name": "temp0.7__ho",
+      "family": "temperature",
+      "task": "T3",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {},
+      "code_stop": true,
+      "params": {
+        "T": 0.7
+      }
+    },
+    {
+      "name": "prompt_new__ho",
+      "family": "prompt",
+      "task": "T3",
+      "cond": "new",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {},
+      "code_stop": true,
+      "params": {
+        "cond": "new"
+      }
+    },
+    {
+      "name": "prompt_novel2000__ho",
+      "family": "prompt",
+      "task": "T3",
+      "cond": "novel2000",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {},
+      "code_stop": true,
+      "params": {
+        "cond": "novel2000"
+      }
+    },
+    {
+      "name": "prompt_ban3__ho",
+      "family": "prompt",
+      "task": "T3",
+      "cond": "ban3",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {},
+      "code_stop": true,
+      "params": {
+        "cond": "ban3"
+      }
+    },
+    {
+      "name": "Hdim_a0.05__ho",
+      "family": "H-dim",
+      "task": "T3",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {
+        "kind": "add",
+        "vec": "Hdim",
+        "alpha": 0.05
+      },
+      "code_stop": true,
+      "params": {
+        "alpha": 0.05
+      }
+    },
+    {
+      "name": "Radd_a0.05_d0__ho",
+      "family": "R-add",
+      "task": "T3",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {
+        "kind": "add",
+        "vec": "rand0",
+        "alpha": 0.05
+      },
+      "code_stop": true,
+      "params": {
+        "alpha": 0.05,
+        "draw": 0
+      }
+    },
+    {
+      "name": "A3proj_r1_a0.25__ho",
+      "family": "A3-proj",
+      "task": "T3",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {
+        "kind": "project",
+        "basis": "A3",
+        "r": 1,
+        "a": 0.25
+      },
+      "code_stop": true,
+      "params": {
+        "r": 1,
+        "a": 0.25
+      }
+    },
+    {
+      "name": "Rproj_r1_a0.25_d0__ho",
+      "family": "R-proj",
+      "task": "T3",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {
+        "kind": "project",
+        "basis": "rand0",
+        "r": 1,
+        "a": 0.25
+      },
+      "code_stop": true,
+      "params": {
+        "r": 1,
+        "a": 0.25,
+        "draw": 0
+      }
+    },
+    {
+      "name": "A3leace_a0.5__ho",
+      "family": "A3-leace",
+      "task": "T3",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {
+        "kind": "leace",
+        "a": 0.5
+      },
+      "code_stop": true,
+      "params": {
+        "a": 0.5
+      }
+    },
+    {
+      "name": "Rproj_r1_a0.5_d0__ho",
+      "family": "R-proj",
+      "task": "T3",
+      "cond": "plain",
+      "T": 0.7,
+      "topk": 0,
+      "iv": {
+        "kind": "project",
+        "basis": "rand0",
+        "r": 1,
+        "a": 0.5
+      },
+      "code_stop": true,
+      "params": {
+        "r": 1,
+        "a": 0.5,
+        "draw": 0
+      }
+    }
+  ],
+  "note": "best-of-method on indices 0..99 among eligible settings (pass >= 0.8 x baseline, pooled); held-out fresh seeds 1000..1099"
+}

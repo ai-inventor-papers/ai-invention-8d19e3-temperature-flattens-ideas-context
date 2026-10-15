@@ -1,0 +1,14 @@
+14:42:07|INFO   |stage baseline args {'stage': 'baseline', 'batch': 192, 'n_base': 300, 'n_calib': 20, 'n_main': 100, 'n_ctrl': 50, 'n_heldout': 100, 'workers': 18, 'only': '', 'skip_gts': False}
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.16s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.24s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.53s/it]
+14:43:58|INFO   |[baseline] 600 jobs over 2 settings (batch 192)
+14:44:17|INFO   |[baseline] 192/600 gens, batch 19.0s, elapsed 0.3 min, ETA 0.7 min
+[W1015 14:45:28.913649428 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 545259520 bytes (free: 278659072, total: 33685504000).
+14:45:33|INFO   |[baseline] 384/600 gens, batch 75.3s, elapsed 1.6 min, ETA 0.9 min
+14:45:59|INFO   |[baseline] 576/600 gens, batch 25.9s, elapsed 2.0 min, ETA 0.1 min
+14:46:25|INFO   |[baseline] 600/600 gens, batch 24.8s, elapsed 2.4 min, ETA 0.0 min
+14:46:31|INFO   |T1: n=300 counts={'bfs': 205, 'dfs': 80, 'other': 12, 'dijkstra': 2, 'astar': 1} pass=0.683 menu=['bfs', 'dfs', 'other'] ban3=['bfs', 'dfs', 'dijkstra']
+14:46:31|INFO   |T3: n=300 counts={'dijkstra': 225, 'bfs': 71, 'spfa': 2, 'other': 1, 'bidirectional': 1} pass=0.343 menu=['dijkstra', 'bfs'] ban3=['dijkstra', 'bfs', 'spfa']
+EXIT 0

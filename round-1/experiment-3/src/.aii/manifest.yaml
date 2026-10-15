@@ -1,0 +1,8 @@
+entries:
+  - path: .venv/
+    delete: regenerable
+    source: "uv venv .venv --python=3.12 && uv pip install --python .venv/bin/python -r requirements.lock.txt"
+  - path: acts/
+    keep: cached baseline residual activations split into <100 MB parts (600 samples x 10 positions x 37 layers x 2048, fp16) that the probes, vectors and PCA figure are computed from
+  - path: vectors/
+    keep: all intervention vectors (H-probe, H-dim, A3 bases, A4 direction, random controls, probe weights in vectors.pt; LEACE erasers per task) used in the sweep

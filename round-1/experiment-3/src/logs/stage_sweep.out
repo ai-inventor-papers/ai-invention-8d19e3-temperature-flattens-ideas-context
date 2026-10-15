@@ -1,0 +1,31 @@
+15:39:59|INFO   |stage sweep args {'stage': 'sweep', 'batch': 200, 'n_base': 300, 'n_calib': 20, 'n_main': 150, 'n_ctrl': 75, 'n_heldout': 100, 'workers': 18, 'only': '', 'skip_gts': False}
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+15:41:53|INFO   |[sweep] 13950 jobs over 126 settings (batch 200)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.39s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.29s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.60s/it]
+15:42:42|INFO   |[sweep] 200/13950 gens, batch 32.6s, elapsed 0.6 min, ETA 38.4 min
+15:43:22|INFO   |[sweep] 400/13950 gens, batch 38.2s, elapsed 1.2 min, ETA 41.3 min
+<unknown>:10: SyntaxWarning: invalid escape sequence '\_'
+15:43:55|INFO   |[sweep] 600/13950 gens, batch 30.9s, elapsed 1.8 min, ETA 39.3 min
+[W1015 15:44:51.693453302 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 509607936 bytes (free: 79429632, total: 33685504000).
+[W1015 15:44:58.296514841 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 547356672 bytes (free: 484179968, total: 33685504000).
+[W1015 15:45:06.983858573 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 583008256 bytes (free: 500957184, total: 33685504000).
+[W1015 15:45:13.388894391 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 616562688 bytes (free: 217841664, total: 33685504000).
+[W1015 15:45:21.598615737 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 648019968 bytes (free: 618397696, total: 33685504000).
+15:45:23|INFO   |[sweep] 800/13950 gens, batch 88.0s, elapsed 3.2 min, ETA 53.3 min
+[W1015 15:47:02.236401215 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 677380096 bytes (free: 299630592, total: 33685504000).
+[W1015 15:47:08.490857179 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 702545920 bytes (free: 417071104, total: 33685504000).
+[W1015 15:47:15.702917026 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 727711744 bytes (free: 515637248, total: 33685504000).
+15:47:18|INFO   |[sweep] 1000/13950 gens, batch 113.7s, elapsed 5.2 min, ETA 66.7 min
+15:47:57|INFO   |[sweep] 1200/13950 gens, batch 37.7s, elapsed 5.8 min, ETA 61.7 min
+15:48:38|INFO   |[sweep] 1400/13950 gens, batch 39.1s, elapsed 6.5 min, ETA 58.2 min
+15:49:17|INFO   |[sweep] 1600/13950 gens, batch 37.8s, elapsed 7.1 min, ETA 55.1 min
+15:49:51|INFO   |[sweep] 1800/13950 gens, batch 32.9s, elapsed 7.7 min, ETA 52.0 min
+15:51:38|INFO   |[sweep] 2000/13950 gens, batch 106.4s, elapsed 9.5 min, ETA 56.7 min
+[W1015 15:53:35.632277403 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 750780416 bytes (free: 658243584, total: 33685504000).
+15:53:36|INFO   |[sweep] 2200/13950 gens, batch 117.2s, elapsed 11.5 min, ETA 61.2 min
+15:55:33|INFO   |[sweep] 2400/13950 gens, batch 115.7s, elapsed 13.4 min, ETA 64.5 min
+15:56:47|INFO   |[sweep] 2600/13950 gens, batch 72.3s, elapsed 14.6 min, ETA 63.9 min
+15:57:56|INFO   |[sweep] 2800/13950 gens, batch 65.2s, elapsed 15.8 min, ETA 62.9 min
+EXIT 143

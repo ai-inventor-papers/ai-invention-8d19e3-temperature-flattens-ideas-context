@@ -1,0 +1,168 @@
+{
+  "median_norm": {
+    "29": 122.04225158691406,
+    "30": 135.34657287597656,
+    "31": 170.6122589111328
+  },
+  "H_target_classes": {
+    "T1": [
+      "bfs",
+      "dfs"
+    ],
+    "T3": [
+      "dijkstra",
+      "bfs"
+    ]
+  },
+  "leace_offline": {
+    "T1_L29": {
+      "bal_acc_before": 0.6072831978319783,
+      "bal_acc_after": 0.19766260162601623,
+      "chance_bal_acc": 0.3333333333333333,
+      "majority_share": 0.6833333333333333,
+      "bal_acc_after_proj_rk-1": 0.3335365853658536
+    },
+    "T3_L29": {
+      "bal_acc_before": 0.8880751173708921,
+      "bal_acc_after": 0.3340845070422535,
+      "chance_bal_acc": 0.3333333333333333,
+      "majority_share": 0.75,
+      "bal_acc_after_proj_rk-1": 0.3251956181533646
+    },
+    "T1_L30": {
+      "bal_acc_before": 0.5816056910569106,
+      "bal_acc_after": 0.19928861788617883,
+      "chance_bal_acc": 0.3333333333333333,
+      "majority_share": 0.6833333333333333,
+      "bal_acc_after_proj_rk-1": 0.33749999999999997
+    },
+    "T3_L30": {
+      "bal_acc_before": 0.8836306729264476,
+      "bal_acc_after": 0.3522378716744914,
+      "chance_bal_acc": 0.3333333333333333,
+      "majority_share": 0.75,
+      "bal_acc_after_proj_rk-1": 0.3229733959311424
+    },
+    "T1_L31": {
+      "bal_acc_before": 0.5774390243902439,
+      "bal_acc_after": 0.19766260162601623,
+      "chance_bal_acc": 0.3333333333333333,
+      "majority_share": 0.6833333333333333,
+      "bal_acc_after_proj_rk-1": 0.33932926829268295
+    },
+    "T3_L31": {
+      "bal_acc_before": 0.8928951486697966,
+      "bal_acc_after": 0.3318622848200313,
+      "chance_bal_acc": 0.3333333333333333,
+      "majority_share": 0.75,
+      "bal_acc_after_proj_rk-1": 0.3229733959311424
+    }
+  },
+  "cos": {
+    "Hprobe_vs_Hdim_T1_L29": 0.20714939721192988,
+    "Hprobe_vs_Hdim_T3_L29": 0.1585742913892356,
+    "Hprobe_vs_Hdim_T1_L30": 0.22529298112322096,
+    "Hprobe_vs_Hdim_T3_L30": 0.16277276295137974,
+    "Hprobe_vs_Hdim_T1_L31": 0.2129848041300389,
+    "Hprobe_vs_Hdim_T3_L31": 0.16994730047164408
+  },
+  "A3_rank": {
+    "T1_L29": {
+      "singular_values": [
+        3.6315417289733887,
+        0.5764667987823486
+      ],
+      "k": 2,
+      "note": "centred centroids have rank <= k-1"
+    },
+    "T3_L29": {
+      "singular_values": [
+        7.929786682128906,
+        0.1342812478542328
+      ],
+      "k": 2,
+      "note": "centred centroids have rank <= k-1"
+    },
+    "T1_L30": {
+      "singular_values": [
+        4.023280143737793,
+        0.62599778175354
+      ],
+      "k": 2,
+      "note": "centred centroids have rank <= k-1"
+    },
+    "T3_L30": {
+      "singular_values": [
+        8.833667755126953,
+        0.14519229531288147
+      ],
+      "k": 2,
+      "note": "centred centroids have rank <= k-1"
+    },
+    "T1_L31": {
+      "singular_values": [
+        4.848304748535156,
+        0.8107315301895142
+      ],
+      "k": 2,
+      "note": "centred centroids have rank <= k-1"
+    },
+    "T3_L31": {
+      "singular_values": [
+        10.148432731628418,
+        0.18034471571445465
+      ],
+      "k": 2,
+      "note": "centred centroids have rank <= k-1"
+    }
+  },
+  "A4": {
+    "loto_cos": {
+      "L29_sorting": 0.941356897354126,
+      "L29_substring": 0.9776456356048584,
+      "L29_primality": 0.9556247591972351,
+      "L29_compression": 0.9335335493087769,
+      "L29_matmul": 0.9659532904624939,
+      "L30_sorting": 0.9430488348007202,
+      "L30_substring": 0.9773561954498291,
+      "L30_primality": 0.9558488130569458,
+      "L30_compression": 0.9250952005386353,
+      "L30_matmul": 0.9663738012313843,
+      "L31_sorting": 0.9459594488143921,
+      "L31_substring": 0.9782658219337463,
+      "L31_primality": 0.9518404603004456,
+      "L31_compression": 0.919083297252655,
+      "L31_matmul": 0.9642650485038757
+    },
+    "heldout_auroc": {
+      "L29_T1_path": 1.0,
+      "L29_T3_wsp": 1.0,
+      "L30_T1_path": 1.0,
+      "L30_T3_wsp": 1.0,
+      "L31_T1_path": 1.0,
+      "L31_T3_wsp": 1.0
+    },
+    "cos_with_H": {
+      "L29_T1_Hprobe": 0.037494225554276985,
+      "L29_T1_Hdim": 0.008246674202382565,
+      "L29_T3_Hprobe": -0.026528774634400475,
+      "L29_T3_Hdim": 0.09317067265510559,
+      "L30_T1_Hprobe": 0.026953823009949324,
+      "L30_T1_Hdim": -0.02087768353521824,
+      "L30_T3_Hprobe": -0.012887223504399963,
+      "L30_T3_Hdim": 0.0822833701968193,
+      "L31_T1_Hprobe": 0.021023192598454837,
+      "L31_T1_Hdim": 0.011149385012686253,
+      "L31_T3_Hprobe": -0.02773716618868091,
+      "L31_T3_Hdim": 0.03751680999994278
+    },
+    "cos_with_A3_subspace": {
+      "L29_T1": 0.00878965761512518,
+      "L29_T3": 0.09520188719034195,
+      "L30_T1": 0.024019746109843254,
+      "L30_T3": 0.08759789168834686,
+      "L31_T1": 0.039047256112098694,
+      "L31_T3": 0.03874221444129944
+    }
+  }
+}

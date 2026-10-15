@@ -1,0 +1,33 @@
+16:59:57|INFO   |stage analyze args {'stage': 'analyze', 'batch': 192, 'n_base': 300, 'n_calib': 20, 'n_main': 100, 'n_ctrl': 50, 'n_heldout': 100, 'workers': 18, 'only': '', 'skip_gts': False}
+./src/analysis.py:86: RuntimeWarning: Mean of empty slice
+  out = {k: float(np.nanmean([f(r) for r in recs])) if recs else float("nan") for k, f in fns.items()}
+17:00:00|INFO   |table: 105 settings
+17:00:46|ERROR  |An error has been caught in function '<module>', process 'MainProcess' (24597), thread 'MainThread' (134755142282112):
+Traceback (most recent call last):
+
+> File "./method.py", line 492, in <module>
+    logger.catch(main, reraise=True)()
+    │      │     └ <function main at 0x7a8e7d0023e0>
+    │      └ <function Logger.catch at 0x7a8e7d1ffd80>
+    └ <loguru.logger handlers=[(id=1, level=20, sink=<stdout>), (id=2, level=10, sink='<server-path>
+
+  File "./method.py", line 486, in main
+    getattr(analysis, f"stage_{args.stage}")(args)
+            │                  │    │        └ Namespace(stage='analyze', batch=192, n_base=300, n_calib=20, n_main=100, n_ctrl=50, n_heldout=100, workers=18, only='', skip...
+            │                  │    └ 'analyze'
+            │                  └ Namespace(stage='analyze', batch=192, n_base=300, n_calib=20, n_main=100, n_ctrl=50, n_heldout=100, workers=18, only='', skip...
+            └ <module 'src.analysis' from '....
+
+  File "./src/analysis.py", line 927, in stage_analyze
+    surv = survival(T, C)
+           │        │  └ {'menus': {'T1': {'classes': ['bfs', 'dfs'], 'rule': '>=3%'}, 'T3': {'classes': ['dijkstra', 'bfs'], 'rule': '>=3%'}}, 'k': {...
+           │        └ {'table': {'A3leace_a0.5': {'family': 'A3-leace', 'params': {'a': 0.5}, 'iv': {'kind': 'leace', 'a': 0.5}, 'tasks': {'T1': {'...
+           └ <function survival at 0x7a8e7d039bc0>
+
+  File "./src/analysis.py", line 642, in survival
+    comp_vals = {c: table[c]["pooled"][key] for c in comps}
+                    │                  │             └ ['temp0.7__ho', 'prompt_new__ho', 'prompt_novel2000__ho', 'prompt_ban3__ho']
+                    │                  └ 'outside_menu_correct_share'
+                    └ {'A3leace_a0.5': {'family': 'A3-leace', 'params': {'a': 0.5}, 'iv': {'kind': 'leace', 'a': 0.5}, 'tasks': {'T1': {'pass': 0.7...
+
+KeyError: 'pooled'

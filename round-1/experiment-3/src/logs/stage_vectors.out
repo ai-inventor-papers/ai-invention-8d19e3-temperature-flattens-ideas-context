@@ -1,0 +1,12 @@
+15:26:27|INFO   |stage vectors args {'stage': 'vectors', 'batch': 192, 'n_base': 300, 'n_calib': 20, 'n_main': 100, 'n_ctrl': 50, 'n_heldout': 100, 'workers': 18, 'only': '', 'skip_gts': False}
+./.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+15:27:33|INFO   |layer 29: median norm 122.0; leace checks {'T1_L29': {'bal_acc_before': 0.6072831978319783, 'bal_acc_after': 0.19766260162601623, 'chance_bal_acc': 0.3333333333333333, 'majority_share': 0.6833333333333333, 'bal_acc_after_proj_rk-1': 0.3335365853658536}, 'T3_L29': {'bal_acc_before': 0.8880751173708921, 'bal_acc_after': 0.3340845070422535, 'chance_bal_acc': 0.3333333333333333, 'majority_share': 0.75, 'bal_acc_after_proj_rk-1': 0.3251956181533646}}
+15:27:38|INFO   |layer 30: median norm 135.3; leace checks {'T1_L30': {'bal_acc_before': 0.5816056910569106, 'bal_acc_after': 0.19928861788617883, 'chance_bal_acc': 0.3333333333333333, 'majority_share': 0.6833333333333333, 'bal_acc_after_proj_rk-1': 0.33749999999999997}, 'T3_L30': {'bal_acc_before': 0.8836306729264476, 'bal_acc_after': 0.3522378716744914, 'chance_bal_acc': 0.3333333333333333, 'majority_share': 0.75, 'bal_acc_after_proj_rk-1': 0.3229733959311424}}
+15:27:43|INFO   |layer 31: median norm 170.6; leace checks {'T1_L31': {'bal_acc_before': 0.5774390243902439, 'bal_acc_after': 0.19766260162601623, 'chance_bal_acc': 0.3333333333333333, 'majority_share': 0.6833333333333333, 'bal_acc_after_proj_rk-1': 0.33932926829268295}, 'T3_L31': {'bal_acc_before': 0.8928951486697966, 'bal_acc_after': 0.3318622848200313, 'chance_bal_acc': 0.3333333333333333, 'majority_share': 0.75, 'bal_acc_after_proj_rk-1': 0.3229733959311424}}
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.26s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.54s/it]
+15:29:18|INFO   |A4 checks: heldout AUROC {'L29_T1_path': 1.0, 'L29_T3_wsp': 1.0, 'L30_T1_path': 1.0, 'L30_T3_wsp': 1.0, 'L31_T1_path': 1.0, 'L31_T3_wsp': 1.0}
+15:29:18|INFO   |vectors saved

@@ -1,0 +1,71 @@
+16:01:59|INFO   |stage sweep args {'stage': 'sweep', 'batch': 200, 'n_base': 300, 'n_calib': 20, 'n_main': 150, 'n_ctrl': 75, 'n_heldout': 100, 'workers': 18, 'only': '', 'skip_gts': False}
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+16:03:40|INFO   |scoring backlog T3/crn_rerun: 100
+16:03:49|INFO   |scoring backlog T1/Hprobe_a0.75: 100
+16:04:01|INFO   |[sweep] 11150 jobs over 126 settings (batch 200)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.32s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.41s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.69s/it]
+16:04:39|INFO   |[sweep] 200/11150 gens, batch 20.4s, elapsed 0.4 min, ETA 20.4 min
+16:05:18|INFO   |[sweep] 400/11150 gens, batch 37.8s, elapsed 1.0 min, ETA 27.7 min
+16:05:53|INFO   |[sweep] 600/11150 gens, batch 33.9s, elapsed 1.6 min, ETA 28.2 min
+16:06:24|INFO   |[sweep] 800/11150 gens, batch 30.6s, elapsed 2.1 min, ETA 27.6 min
+16:07:00|INFO   |[sweep] 1000/11150 gens, batch 34.7s, elapsed 2.7 min, ETA 27.7 min
+16:07:31|INFO   |[sweep] 1200/11150 gens, batch 28.9s, elapsed 3.2 min, ETA 26.9 min
+16:08:12|INFO   |[sweep] 1400/11150 gens, batch 38.9s, elapsed 3.9 min, ETA 27.3 min
+16:08:40|INFO   |[sweep] 1600/11150 gens, batch 26.3s, elapsed 4.4 min, ETA 26.2 min
+16:09:20|INFO   |[sweep] 1800/11150 gens, batch 38.8s, elapsed 5.1 min, ETA 26.3 min
+16:10:01|INFO   |[sweep] 2000/11150 gens, batch 39.1s, elapsed 5.7 min, ETA 26.3 min
+16:10:39|INFO   |[sweep] 2200/11150 gens, batch 37.5s, elapsed 6.4 min, ETA 25.9 min
+16:11:16|INFO   |[sweep] 2400/11150 gens, batch 35.8s, elapsed 7.0 min, ETA 25.5 min
+16:11:50|INFO   |[sweep] 2600/11150 gens, batch 31.4s, elapsed 7.6 min, ETA 24.8 min
+16:12:32|INFO   |[sweep] 2800/11150 gens, batch 40.2s, elapsed 8.3 min, ETA 24.6 min
+16:14:24|INFO   |[sweep] 3000/11150 gens, batch 110.3s, elapsed 10.1 min, ETA 27.5 min
+16:14:57|INFO   |[sweep] 3200/11150 gens, batch 30.2s, elapsed 10.7 min, ETA 26.5 min
+16:15:37|INFO   |[sweep] 3400/11150 gens, batch 38.3s, elapsed 11.3 min, ETA 25.9 min
+16:16:18|INFO   |[sweep] 3600/11150 gens, batch 38.3s, elapsed 12.0 min, ETA 25.2 min
+16:16:46|INFO   |[sweep] 3800/11150 gens, batch 26.3s, elapsed 12.5 min, ETA 24.1 min
+16:17:16|INFO   |[sweep] 4000/11150 gens, batch 29.1s, elapsed 13.0 min, ETA 23.2 min
+16:17:43|INFO   |[sweep] 4200/11150 gens, batch 26.6s, elapsed 13.4 min, ETA 22.3 min
+16:18:24|INFO   |[sweep] 4400/11150 gens, batch 39.9s, elapsed 14.1 min, ETA 21.7 min
+16:19:00|INFO   |[sweep] 4600/11150 gens, batch 34.6s, elapsed 14.7 min, ETA 21.0 min
+16:19:40|INFO   |[sweep] 4800/11150 gens, batch 37.1s, elapsed 15.4 min, ETA 20.4 min
+16:21:32|INFO   |[sweep] 5000/11150 gens, batch 110.3s, elapsed 17.3 min, ETA 21.2 min
+16:22:08|INFO   |[sweep] 5200/11150 gens, batch 33.5s, elapsed 17.9 min, ETA 20.4 min
+16:22:50|INFO   |[sweep] 5400/11150 gens, batch 39.1s, elapsed 18.6 min, ETA 19.8 min
+16:23:32|INFO   |[sweep] 5600/11150 gens, batch 40.6s, elapsed 19.3 min, ETA 19.1 min
+16:24:06|INFO   |[sweep] 5800/11150 gens, batch 31.0s, elapsed 19.8 min, ETA 18.3 min
+16:24:39|INFO   |[sweep] 6000/11150 gens, batch 30.0s, elapsed 20.4 min, ETA 17.5 min
+16:25:15|INFO   |[sweep] 6200/11150 gens, batch 34.6s, elapsed 21.0 min, ETA 16.8 min
+16:25:54|INFO   |[sweep] 6400/11150 gens, batch 35.7s, elapsed 21.6 min, ETA 16.0 min
+16:26:34|INFO   |[sweep] 6600/11150 gens, batch 37.4s, elapsed 22.3 min, ETA 15.4 min
+16:27:16|INFO   |[sweep] 6800/11150 gens, batch 40.0s, elapsed 23.0 min, ETA 14.7 min
+16:29:08|INFO   |[sweep] 7000/11150 gens, batch 109.7s, elapsed 24.9 min, ETA 14.7 min
+16:29:30|INFO   |[sweep] 7200/11150 gens, batch 20.2s, elapsed 25.2 min, ETA 13.8 min
+16:29:57|INFO   |[sweep] 7400/11150 gens, batch 25.7s, elapsed 25.7 min, ETA 13.0 min
+16:30:21|INFO   |[sweep] 7600/11150 gens, batch 23.3s, elapsed 26.1 min, ETA 12.2 min
+16:30:52|INFO   |[sweep] 7800/11150 gens, batch 29.7s, elapsed 26.6 min, ETA 11.4 min
+16:32:12|INFO   |[sweep] 8000/11150 gens, batch 77.5s, elapsed 27.9 min, ETA 11.0 min
+16:32:46|INFO   |[sweep] 8200/11150 gens, batch 33.2s, elapsed 28.5 min, ETA 10.3 min
+16:33:18|INFO   |[sweep] 8400/11150 gens, batch 30.1s, elapsed 29.0 min, ETA 9.5 min
+16:33:52|INFO   |[sweep] 8600/11150 gens, batch 31.9s, elapsed 29.6 min, ETA 8.8 min
+16:35:39|INFO   |[sweep] 8800/11150 gens, batch 104.6s, elapsed 31.4 min, ETA 8.4 min
+16:36:07|INFO   |[sweep] 9000/11150 gens, batch 25.1s, elapsed 31.8 min, ETA 7.6 min
+16:36:30|INFO   |[sweep] 9200/11150 gens, batch 23.1s, elapsed 32.2 min, ETA 6.8 min
+16:37:00|INFO   |[sweep] 9400/11150 gens, batch 28.3s, elapsed 32.7 min, ETA 6.1 min
+16:37:30|INFO   |[sweep] 9600/11150 gens, batch 27.1s, elapsed 33.2 min, ETA 5.4 min
+16:38:52|INFO   |[sweep] 9800/11150 gens, batch 80.2s, elapsed 34.6 min, ETA 4.8 min
+16:39:29|INFO   |[sweep] 10000/11150 gens, batch 35.8s, elapsed 35.2 min, ETA 4.0 min
+16:40:09|INFO   |[sweep] 10200/11150 gens, batch 38.3s, elapsed 35.9 min, ETA 3.3 min
+16:40:51|INFO   |[sweep] 10400/11150 gens, batch 39.3s, elapsed 36.6 min, ETA 2.6 min
+16:41:21|INFO   |[sweep] 10600/11150 gens, batch 29.0s, elapsed 37.1 min, ETA 1.9 min
+16:41:57|INFO   |[sweep] 10800/11150 gens, batch 35.0s, elapsed 37.7 min, ETA 1.2 min
+16:42:39|INFO   |[sweep] 11000/11150 gens, batch 39.1s, elapsed 38.4 min, ETA 0.5 min
+16:43:15|INFO   |[sweep] 11150/11150 gens, batch 35.6s, elapsed 39.0 min, ETA 0.0 min
+16:43:28|INFO   |[gts1] 300 jobs over 2 settings (batch 200)
+16:43:39|INFO   |[gts1] 200/300 gens, batch 10.7s, elapsed 0.2 min, ETA 0.1 min
+16:43:52|INFO   |[gts1] 300/300 gens, batch 12.4s, elapsed 0.4 min, ETA 0.0 min
+16:43:52|INFO   |[gts2] 300 jobs over 2 settings (batch 200)
+16:45:41|INFO   |[gts2] 200/300 gens, batch 107.9s, elapsed 1.8 min, ETA 0.9 min
+16:46:54|INFO   |[gts2] 300/300 gens, batch 72.0s, elapsed 3.0 min, ETA 0.0 min
+EXIT 0

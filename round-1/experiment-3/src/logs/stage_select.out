@@ -1,0 +1,4 @@
+16:48:12|INFO   |stage select args {'stage': 'select', 'batch': 192, 'n_base': 300, 'n_calib': 20, 'n_main': 100, 'n_ctrl': 50, 'n_heldout': 100, 'workers': 18, 'only': '', 'skip_gts': False}
+./src/analysis.py:86: RuntimeWarning: Mean of empty slice
+  out = {k: float(np.nanmean([f(r) for r in recs])) if recs else float("nan") for k, f in fns.items()}
+16:48:14|INFO   |picks: {'temperature': 'baseline', 'H-probe': None, 'H-dim': 'Hdim_a0.05', 'A3-proj': 'A3proj_r1_a0.25', 'A3-leace': 'A3leace_a0.5'}; 20 held-out settings

@@ -1,0 +1,4 @@
+17:13:40|INFO   |stage judge args {'stage': 'judge', 'batch': 192, 'n_base': 300, 'n_calib': 20, 'n_main': 100, 'n_ctrl': 50, 'n_heldout': 100, 'workers': 18, 'only': '', 'skip_gts': False}
+17:13:43|INFO   |OpenRouter key status: {"data": {"label": "AI Inventor run run_wfWEMjpWKygr: Test Idea", "limit": 7.0, "limit_remaining": 6.92024, "limit_reset": null, "usage": 0.07976, "usage_daily": 0.07976, "usage_weekly": 0.07976, "usage_monthly": 0.07976, "is_free_tier": false, "is_provisioning_key": false, "aii_phase": "test", "fig
+17:13:47|INFO   |judge: 5 new calls (estimated $0.003); cap $1.5
+17:14:04|INFO   |judge done: 5 calls, total cost $0.0808

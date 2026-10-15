@@ -1,0 +1,361 @@
+{
+  "baseline_pass_T1": 0.7,
+  "grid": [
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.35,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "n": 20,
+  "knobs": {
+    "Hprobe": {
+      "rows": [
+        {
+          "alpha": 0.02,
+          "pass": 0.75,
+          "labels": {
+            "dfs": 4,
+            "bfs": 15,
+            "dijkstra": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "pass": 0.55,
+          "labels": {
+            "dfs": 8,
+            "bfs": 11,
+            "astar": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.1,
+          "pass": 0.6,
+          "labels": {
+            "dfs": 12,
+            "astar": 1,
+            "bfs": 6,
+            "other": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.2,
+          "pass": 0.9,
+          "labels": {
+            "dfs": 14,
+            "bfs": 5,
+            "other": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.35,
+          "pass": 0.85,
+          "labels": {
+            "dfs": 19,
+            "other": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.5,
+          "pass": 0.65,
+          "labels": {
+            "dfs": 20
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.75,
+          "pass": 0.7,
+          "labels": {
+            "dfs": 19,
+            "bfs": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 1.0,
+          "pass": 0.45,
+          "labels": {
+            "dfs": 14,
+            "syntax_error": 5,
+            "bfs": 1
+          },
+          "degenerate": 0.25
+        },
+        {
+          "alpha": 1.5,
+          "pass": 0.05,
+          "labels": {
+            "other": 3,
+            "syntax_error": 14,
+            "dfs": 3
+          },
+          "degenerate": 0.7
+        },
+        {
+          "alpha": 2.0,
+          "pass": 0.2,
+          "labels": {
+            "no_code": 14,
+            "dfs": 4,
+            "syntax_error": 1,
+            "bfs": 1
+          },
+          "degenerate": 0.85
+        }
+      ],
+      "alpha_lo": 0.75,
+      "alpha_hi": 1.5,
+      "chosen": [
+        0.75,
+        0.892,
+        1.06,
+        1.26,
+        1.5
+      ]
+    },
+    "Hdim": {
+      "rows": [
+        {
+          "alpha": 0.02,
+          "pass": 0.65,
+          "labels": {
+            "dfs": 9,
+            "bfs": 10,
+            "astar": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "pass": 0.75,
+          "labels": {
+            "dfs": 13,
+            "bfs": 6,
+            "other": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.1,
+          "pass": 0.65,
+          "labels": {
+            "dfs": 15,
+            "bfs": 5
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.2,
+          "pass": 0.6,
+          "labels": {
+            "dfs": 19,
+            "bfs": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.35,
+          "pass": 0.4,
+          "labels": {
+            "dfs": 17,
+            "bfs": 2,
+            "other": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.5,
+          "pass": 0.65,
+          "labels": {
+            "dfs": 19,
+            "bfs": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.75,
+          "pass": 0.3,
+          "labels": {
+            "syntax_error": 1,
+            "other": 1,
+            "dfs": 16,
+            "bfs": 2
+          },
+          "degenerate": 0.15
+        },
+        {
+          "alpha": 1.0,
+          "pass": 0.0,
+          "labels": {
+            "no_code": 10,
+            "syntax_error": 9,
+            "dfs": 1
+          },
+          "degenerate": 0.95
+        },
+        {
+          "alpha": 1.5,
+          "pass": 0.1,
+          "labels": {
+            "dfs": 1,
+            "no_code": 16,
+            "bfs": 2,
+            "other": 1
+          },
+          "degenerate": 0.8
+        },
+        {
+          "alpha": 2.0,
+          "pass": 0.0,
+          "labels": {
+            "no_code": 19,
+            "other": 1
+          },
+          "degenerate": 0.95
+        }
+      ],
+      "alpha_lo": 0.05,
+      "alpha_hi": 1.0,
+      "chosen": [
+        0.05,
+        0.106,
+        0.224,
+        0.473,
+        1.0
+      ]
+    },
+    "A4": {
+      "rows": [
+        {
+          "alpha": 0.02,
+          "pass": 0.55,
+          "labels": {
+            "dfs": 3,
+            "bfs": 16,
+            "astar": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "pass": 0.65,
+          "labels": {
+            "dfs": 5,
+            "bfs": 14,
+            "astar": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.1,
+          "pass": 0.8,
+          "labels": {
+            "dfs": 7,
+            "bfs": 12,
+            "astar": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.2,
+          "pass": 0.85,
+          "labels": {
+            "dfs": 10,
+            "bfs": 10
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.35,
+          "pass": 0.6,
+          "labels": {
+            "astar": 2,
+            "bfs": 9,
+            "dfs": 7,
+            "other": 1,
+            "dijkstra": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.5,
+          "pass": 0.45,
+          "labels": {
+            "dijkstra": 2,
+            "dfs": 11,
+            "bfs": 4,
+            "astar": 3
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 0.75,
+          "pass": 0.6,
+          "labels": {
+            "bfs": 11,
+            "dijkstra": 1,
+            "dfs": 7,
+            "greedy_best_first": 1
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 1.0,
+          "pass": 0.4,
+          "labels": {
+            "dfs": 9,
+            "bfs": 8,
+            "astar": 1,
+            "dijkstra": 2
+          },
+          "degenerate": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "pass": 0.6,
+          "labels": {
+            "bfs": 12,
+            "dfs": 4,
+            "dijkstra": 2,
+            "no_code": 1,
+            "astar": 1
+          },
+          "degenerate": 0.05
+        },
+        {
+          "alpha": 2.0,
+          "pass": 0.65,
+          "labels": {
+            "dfs": 6,
+            "bfs": 12,
+            "no_code": 1,
+            "dijkstra": 1
+          },
+          "degenerate": 0.05
+        }
+      ],
+      "alpha_lo": 0.2,
+      "alpha_hi": 2.0,
+      "chosen": [
+        0.2,
+        0.356,
+        0.632,
+        1.12,
+        2.0
+      ]
+    }
+  },
+  "rule": "alpha_lo = largest grid alpha with pass >= 0.95*baseline; alpha_hi = smallest larger alpha with pass <= 0.40*baseline (else grid max); 5 strengths geometric in [alpha_lo, alpha_hi]; frozen before the full run and reused for T3 and the matched random controls"
+}

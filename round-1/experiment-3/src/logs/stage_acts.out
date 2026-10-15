@@ -1,0 +1,8 @@
+15:09:43|INFO   |stage acts args {'stage': 'acts', 'batch': 192, 'n_base': 300, 'n_calib': 20, 'n_main': 100, 'n_ctrl': 50, 'n_heldout': 100, 'workers': 18, 'only': '', 'skip_gts': False}
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.96s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.08s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.36s/it]
+15:11:40|INFO   |acts T1: saved ./acts/baseline_T1.npy ; gen lens min=32
+15:11:46|INFO   |acts T3: saved ./acts/baseline_T3.npy ; gen lens min=32
+15:11:46|INFO   |prompt-final identical across samples (T1, layer 20): True

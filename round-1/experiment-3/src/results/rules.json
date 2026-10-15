@@ -1,0 +1,9 @@
+{
+  "eligibility": "pass_rate >= 0.8 * baseline pass_rate (per task; pooled T1+T3 for decisions)",
+  "selection": "best-of-method = eligible setting with highest target metric on indices 0..99; survival decided on fresh seeds 1000..1099 (held-out draw) to remove winner's-curse bias",
+  "H": "entropy(best H) >= 2 x entropy(best eligible temperature) on held-out AND bootstrap 95% CI of entropy(H) - entropy(R-add at same alpha) excludes 0; checked on T1 and pooled, T3 reported",
+  "A3": "outside_menu_correct_share(best A3) >= 3 x max over (temperature, new, novel2000, ban3) AND >= 0.05 absolute AND CI vs R-proj excludes 0",
+  "A4": "Spearman(alpha in {0,a1..a5}, atypicality) >= 0.8 on BOTH T1 and T3, atypicality = mean -log p0(label) with add-0.5 smoothing, AND beats R-add at top strength (CI excludes 0)",
+  "fallback": "if nothing survives: headline = prompting ceiling, naming the prompt method atop each front",
+  "written_at": "2026-10-15 15:39:37"
+}

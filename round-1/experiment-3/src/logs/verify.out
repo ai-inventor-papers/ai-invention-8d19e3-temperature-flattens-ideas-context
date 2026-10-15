@@ -1,0 +1,38 @@
+baseline {'T1': (0.673, 1.175), 'T3': (0.38, 0.916)}
+crn_rerun {'T1': (0.673, 1.133), 'T3': (0.413, 0.891)}
+prompt_ban3 {'T1': (0.707, 1.404), 'T3': (0.153, 1.779)}
+prompt_new {'T1': (0.56, 1.533), 'T3': (0.547, 0.573)}
+temp1.0 {'T1': (0.613, 1.278), 'T3': (0.233, 1.165)}
+coarse agreement 0.9726694365099974 oracle agreement {'n': 147, 'agreement': 1.0}
+{
+ "T1_baseline_vs_crn_rerun": {
+  "ci": [
+   -0.1816751334824349,
+   0.2807203780570082
+  ],
+  "excludes_0": false
+ },
+ "T1_ban3_vs_baseline_real": {
+  "ci": [
+   -0.03504550884884839,
+   0.44533341169375174
+  ],
+  "excludes_0": false
+ },
+ "T1_permuted_split_excludes0_rate": 0.1,
+ "T3_baseline_vs_crn_rerun": {
+  "ci": [
+   -0.18935917269851144,
+   0.22758345720562426
+  ],
+  "excludes_0": false
+ },
+ "T3_ban3_vs_baseline_real": {
+  "ci": [
+   0.5602450422554198,
+   1.1032844269001465
+  ],
+  "excludes_0": true
+ },
+ "T3_permuted_split_excludes0_rate": 0.15
+}

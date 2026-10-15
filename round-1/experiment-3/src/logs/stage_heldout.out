@@ -1,0 +1,212 @@
+16:48:16|INFO   |stage heldout args {'stage': 'heldout', 'batch': 200, 'n_base': 300, 'n_calib': 20, 'n_main': 100, 'n_ctrl': 50, 'n_heldout': 100, 'workers': 18, 'only': '', 'skip_gts': False}
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+16:49:58|INFO   |[heldout] 2000 jobs over 20 settings (batch 200)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.60s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.04s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.28s/it]
+16:52:00|INFO   |[heldout] 200/2000 gens, batch 103.9s, elapsed 1.7 min, ETA 15.7 min
+16:52:40|INFO   |[heldout] 400/2000 gens, batch 38.9s, elapsed 2.4 min, ETA 9.7 min
+16:52:51|ERROR  |scoring failed for T1/prompt_novel2000__ho
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.12/threading.py", line 1032, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x76fedb406200>
+    └ <Thread(ThreadPoolExecutor-0_0, started 130818782328512)>
+  File "/usr/local/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x76fedb405ee0>
+    └ <Thread(ThreadPoolExecutor-0_0, started 130818782328512)>
+  File "/usr/local/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(ThreadPoolExecutor-0_0, started 130818782328512)>
+    │    │        │    └ (<weakref at 0x76fcc2b82160; to 'ThreadPoolExecutor' at 0x76fd7be79850>, <_queue.SimpleQueue object at 0x76fd7bae2d40>, None,...
+    │    │        └ <Thread(ThreadPoolExecutor-0_0, started 130818782328512)>
+    │    └ <function _worker at 0x76fedb41c180>
+    └ <Thread(ThreadPoolExecutor-0_0, started 130818782328512)>
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 93, in _worker
+    work_item.run()
+    │         └ <function _WorkItem.run at 0x76fedb41dda0>
+    └ <concurrent.futures.thread._WorkItem object at 0x76fcc2d56600>
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             │    │   │    │       │    └ {}
+             │    │   │    │       └ <concurrent.futures.thread._WorkItem object at 0x76fcc2d56600>
+             │    │   │    └ ('T1', 'prompt_novel2000__ho', [{'setting': 'prompt_novel2000__ho', 'family': 'prompt', 'task': 'T1', 'idx': 1000, 'seed': 10...
+             │    │   └ <concurrent.futures.thread._WorkItem object at 0x76fcc2d56600>
+             │    └ <bound method Runner._score of <__main__.Runner object at 0x76fe382cf350>>
+             └ <concurrent.futures.thread._WorkItem object at 0x76fcc2d56600>
+
+> File "./method.py", line 225, in _score
+    out = self.scorer.score_records(recs)
+          │    │      │             └ [{'setting': 'prompt_novel2000__ho', 'family': 'prompt', 'task': 'T1', 'idx': 1000, 'seed': 1000, 'T': 0.7, 'topk': 0, 'iv': ...
+          │    │      └ <function Scorer.score_records at 0x76fe382c2480>
+          │    └ <src.common.Scorer object at 0x76fd7baed010>
+          └ <__main__.Runner object at 0x76fe382cf350>
+
+  File "./src/common.py", line 120, in score_records
+    res = self.oracle.check(task, o["recs"])
+          │    │      │     │     └ {'uid': 'T1:a0ff13cc8d898aa89aae66c8fdac74718f295983', 'recs': [{'i': 0, 'ok': True, 'ret': [28], 'is_tuple': True, 'none': F...
+          │    │      │     └ 'T1'
+          │    │      └ <function Oracle.check at 0x76fe382c1e40>
+          │    └ <protocol.oracle.Oracle object at 0x76fd7baed040>
+          └ <src.common.Scorer object at 0x76fd7baed010>
+
+  File "./protocol/oracle.py", line 177, in check
+    elif isinstance(ret, list) and ret and ret[0] == g["s"] and ret[-1] == g["t"] and all(
+                    │              │       │         │          │          └ {'adj': {0: [(14, 12)], 1: [(2, 15), (3, 6), (9, 18), (14, 16), (16, 13), (17, 3), (18, 15), (21, 11)], 2: [(5, 11), (6, 20),...
+                    │              │       │         │          └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+                    │              │       │         └ {'adj': {0: [(14, 12)], 1: [(2, 15), (3, 6), (9, 18), (14, 16), (16, 13), (17, 3), (18, 15), (21, 11)], 2: [(5, 11), (6, 20),...
+                    │              │       └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+                    │              └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+                    └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+
+  File "./protocol/oracle.py", line 178, in <genexpr>
+    (ret[k], ret[k + 1]) in edges for k in range(len(ret) - 1)):
+     │   │   │   │          │         │              └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+     │   │   │   │          │         └ 0
+     │   │   │   │          └ {(0, 14): 12, (1, 2): 15, (1, 3): 6, (1, 9): 18, (1, 14): 16, (1, 16): 13, (1, 17): 3, (1, 18): 15, (1, 21): 11, (2, 5): 11, ...
+     │   │   │   └ 0
+     │   │   └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+     │   └ 0
+     └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+
+TypeError: unhashable type: 'list'
+16:53:10|INFO   |[heldout] 600/2000 gens, batch 26.4s, elapsed 2.9 min, ETA 6.8 min
+16:53:37|INFO   |[heldout] 800/2000 gens, batch 24.8s, elapsed 3.4 min, ETA 5.1 min
+16:54:04|INFO   |[heldout] 1000/2000 gens, batch 24.7s, elapsed 3.8 min, ETA 3.8 min
+16:55:43|INFO   |[heldout] 1200/2000 gens, batch 97.9s, elapsed 5.5 min, ETA 3.6 min
+16:57:42|INFO   |[heldout] 1400/2000 gens, batch 117.6s, elapsed 7.5 min, ETA 3.2 min
+16:58:11|INFO   |[heldout] 1600/2000 gens, batch 27.8s, elapsed 7.9 min, ETA 2.0 min
+16:58:42|INFO   |[heldout] 1800/2000 gens, batch 29.8s, elapsed 8.5 min, ETA 0.9 min
+16:59:12|INFO   |[heldout] 2000/2000 gens, batch 28.3s, elapsed 9.0 min, ETA 0.0 min
+16:59:12|ERROR  |An error has been caught in function '<module>', process 'MainProcess' (22297), thread 'MainThread' (130836977388416):
+Traceback (most recent call last):
+
+> File "./method.py", line 492, in <module>
+    logger.catch(main, reraise=True)()
+    │      │     └ <function main at 0x76fe382d23e0>
+    │      └ <function Logger.catch at 0x76fe3850bd80>
+    └ <loguru.logger handlers=[(id=1, level=20, sink=<stdout>), (id=2, level=10, sink='<server-path>
+
+  File "./method.py", line 488, in main
+    globals()[f"stage_{args.stage}"](args)
+                       │    │        └ Namespace(stage='heldout', batch=200, n_base=300, n_calib=20, n_main=100, n_ctrl=50, n_heldout=100, workers=18, only='', skip...
+                       │    └ 'heldout'
+                       └ Namespace(stage='heldout', batch=200, n_base=300, n_calib=20, n_main=100, n_ctrl=50, n_heldout=100, workers=18, only='', skip...
+
+  File "./method.py", line 464, in stage_heldout
+    run.run(S, "heldout")
+    │   │   └ [Setting(name='temp0.7__ho', family='temperature', task='T1', cond='plain', T=0.7, topk=0, iv={}, indices=[1000, 1001, 1002, ...
+    │   └ <function Runner.run at 0x76fe382d1da0>
+    └ <__main__.Runner object at 0x76fe382cf350>
+
+  File "./method.py", line 220, in run
+    f.result()
+    │ └ <function Future.result at 0x76fedb40f740>
+    └ <Future at 0x76fcc2ee12b0 state=finished raised TypeError>
+
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           └ None
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+          └ None
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             │        │            └ None
+             │        └ None
+             └ None
+
+  File "./method.py", line 225, in _score
+    out = self.scorer.score_records(recs)
+          │    │      │             └ [{'setting': 'prompt_novel2000__ho', 'family': 'prompt', 'task': 'T1', 'idx': 1000, 'seed': 1000, 'T': 0.7, 'topk': 0, 'iv': ...
+          │    │      └ <function Scorer.score_records at 0x76fe382c2480>
+          │    └ <src.common.Scorer object at 0x76fd7baed010>
+          └ <__main__.Runner object at 0x76fe382cf350>
+
+  File "./src/common.py", line 120, in score_records
+    res = self.oracle.check(task, o["recs"])
+          │    │      │     │     └ {'uid': 'T1:a0ff13cc8d898aa89aae66c8fdac74718f295983', 'recs': [{'i': 0, 'ok': True, 'ret': [28], 'is_tuple': True, 'none': F...
+          │    │      │     └ 'T1'
+          │    │      └ <function Oracle.check at 0x76fe382c1e40>
+          │    └ <protocol.oracle.Oracle object at 0x76fd7baed040>
+          └ <src.common.Scorer object at 0x76fd7baed010>
+
+  File "./protocol/oracle.py", line 177, in check
+    elif isinstance(ret, list) and ret and ret[0] == g["s"] and ret[-1] == g["t"] and all(
+                    │              │       │         │          │          └ {'adj': {0: [(14, 12)], 1: [(2, 15), (3, 6), (9, 18), (14, 16), (16, 13), (17, 3), (18, 15), (21, 11)], 2: [(5, 11), (6, 20),...
+                    │              │       │         │          └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+                    │              │       │         └ {'adj': {0: [(14, 12)], 1: [(2, 15), (3, 6), (9, 18), (14, 16), (16, 13), (17, 3), (18, 15), (21, 11)], 2: [(5, 11), (6, 20),...
+                    │              │       └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+                    │              └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+                    └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+
+  File "./protocol/oracle.py", line 178, in <genexpr>
+    (ret[k], ret[k + 1]) in edges for k in range(len(ret) - 1)):
+     │   │   │   │          │         │              └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+     │   │   │   │          │         └ 0
+     │   │   │   │          └ {(0, 14): 12, (1, 2): 15, (1, 3): 6, (1, 9): 18, (1, 14): 16, (1, 16): 13, (1, 17): 3, (1, 18): 15, (1, 21): 11, (2, 5): 11, ...
+     │   │   │   └ 0
+     │   │   └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+     │   └ 0
+     └ [19, [12, 17], [3, 4], [17, 16], [11, 9], [5, 1], [19, 0], [8, 10], [6, 7], [2, 5], [9, 8], [10, 6], [7, 12], [4, 11], [14, 2...
+
+TypeError: unhashable type: 'list'
+16:59:23|ERROR  |scoring failed for T3/Rproj_r1_a0.5_d0__ho
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.12/threading.py", line 1032, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x76fedb406200>
+    └ <Thread(ThreadPoolExecutor-0_0, started 130818782328512)>
+  File "/usr/local/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x76fedb405ee0>
+    └ <Thread(ThreadPoolExecutor-0_0, started 130818782328512)>
+  File "/usr/local/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(ThreadPoolExecutor-0_0, started 130818782328512)>
+    │    │        │    └ (<weakref at 0x76fcc2b82160; to 'ThreadPoolExecutor' at 0x76fd7be79850>, <_queue.SimpleQueue object at 0x76fd7bae2d40>, None,...
+    │    │        └ <Thread(ThreadPoolExecutor-0_0, started 130818782328512)>
+    │    └ <function _worker at 0x76fedb41c180>
+    └ <Thread(ThreadPoolExecutor-0_0, started 130818782328512)>
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 93, in _worker
+    work_item.run()
+    │         └ <function _WorkItem.run at 0x76fedb41dda0>
+    └ <concurrent.futures.thread._WorkItem object at 0x76fcc2b789b0>
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             │    │   │    │       │    └ {}
+             │    │   │    │       └ <concurrent.futures.thread._WorkItem object at 0x76fcc2b789b0>
+             │    │   │    └ ('T3', 'Rproj_r1_a0.5_d0__ho', [{'setting': 'Rproj_r1_a0.5_d0__ho', 'family': 'R-proj', 'task': 'T3', 'idx': 1000, 'seed': 10...
+             │    │   └ <concurrent.futures.thread._WorkItem object at 0x76fcc2b789b0>
+             │    └ <bound method Runner._score of <__main__.Runner object at 0x76fe382cf350>>
+             └ <concurrent.futures.thread._WorkItem object at 0x76fcc2b789b0>
+
+> File "./method.py", line 225, in _score
+    out = self.scorer.score_records(recs)
+          │    │      │             └ [{'setting': 'Rproj_r1_a0.5_d0__ho', 'family': 'R-proj', 'task': 'T3', 'idx': 1000, 'seed': 1000, 'T': 0.7, 'topk': 0, 'iv': ...
+          │    │      └ <function Scorer.score_records at 0x76fe382c2480>
+          │    └ <src.common.Scorer object at 0x76fd7baed010>
+          └ <__main__.Runner object at 0x76fe382cf350>
+
+  File "./src/common.py", line 116, in score_records
+    outs = list(ex.map(run_one, args))
+                │  │   │        └ [('./oracle_tmp', '/ai-invento...
+                │  │   └ <function run_one at 0x76fe382c1f80>
+                │  └ <function Executor.map at 0x76fedb40fba0>
+                └ <concurrent.futures.thread.ThreadPoolExecutor object at 0x76fedb70c200>
+
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 608, in map
+    fs = [self.submit(fn, *args) for args in zip(*iterables)]
+          │    │      │                           └ ([('./oracle_tmp', '/ai-invent...
+          │    │      └ <function run_one at 0x76fe382c1f80>
+          │    └ <function ThreadPoolExecutor.submit at 0x76fedb41e0c0>
+          └ <concurrent.futures.thread.ThreadPoolExecutor object at 0x76fedb70c200>
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 173, in submit
+    raise RuntimeError('cannot schedule new futures after '
+
+RuntimeError: cannot schedule new futures after interpreter shutdown

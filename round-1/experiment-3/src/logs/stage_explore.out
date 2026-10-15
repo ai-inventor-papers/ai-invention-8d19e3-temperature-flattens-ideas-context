@@ -1,0 +1,14 @@
+17:05:44|INFO   |stage explore args {'stage': 'explore', 'batch': 200, 'n_base': 300, 'n_calib': 20, 'n_main': 150, 'n_ctrl': 50, 'n_heldout': 100, 'workers': 18, 'only': '', 'skip_gts': False}
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+17:08:44|INFO   |[explore] 1500 jobs over 10 settings (batch 200)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.28s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.32s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.61s/it]
+17:09:22|INFO   |[explore] 200/1500 gens, batch 20.1s, elapsed 0.4 min, ETA 2.3 min
+17:09:46|INFO   |[explore] 400/1500 gens, batch 23.0s, elapsed 0.8 min, ETA 2.1 min
+17:10:10|INFO   |[explore] 600/1500 gens, batch 22.1s, elapsed 1.2 min, ETA 1.7 min
+17:11:17|INFO   |[explore] 800/1500 gens, batch 66.3s, elapsed 2.3 min, ETA 2.0 min
+17:11:46|INFO   |[explore] 1000/1500 gens, batch 27.3s, elapsed 2.8 min, ETA 1.4 min
+17:12:18|INFO   |[explore] 1200/1500 gens, batch 30.1s, elapsed 3.3 min, ETA 0.8 min
+17:12:53|INFO   |[explore] 1400/1500 gens, batch 32.9s, elapsed 3.9 min, ETA 0.3 min
+17:13:22|INFO   |[explore] 1500/1500 gens, batch 28.7s, elapsed 4.4 min, ETA 0.0 min
