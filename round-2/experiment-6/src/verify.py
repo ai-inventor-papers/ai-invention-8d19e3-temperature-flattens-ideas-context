@@ -195,7 +195,7 @@ def main():
         A = json.loads(ra.read_text())
         rec = A["claim3"]["per_setting"][0]
         import os
-        IA = Path(os.environ.get("AII_INFLUENCE_ARM_DIR", ROOT.parents[2] / "round-1" / "." / "gen_art_experiment_3"))
+        IA = Path(os.environ.get("AII_INFLUENCE_ARM_DIR", ROOT.parents[2] / "round-1" / "." / "experiment-3/src"))
         if IA.exists():
             t = pd.read_json(IA / "scored" / rec["task"] / f"{rec['setting']}.jsonl", lines=True).drop_duplicates("idx")
             t = t[(t.idx < 75) & ~t.label.isin(["no_code", "syntax_error"])]

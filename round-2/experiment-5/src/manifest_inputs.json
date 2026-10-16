@@ -1,7 +1,7 @@
 {
  "copied_from": {
   "ban_arm": "iter_1/gen_art/gen_art_experiment_2",
-  "influence_arm": "iter_1/gen_art/gen_art_experiment_3"
+  "influence_arm": "round-1/experiment-3/src"
  },
  "sha256": {
   "data/ban_plan.json": "1f4770952634eef6bf4527282c1b55cf15b3eebd7e40ab86e348d2d851558b2f",

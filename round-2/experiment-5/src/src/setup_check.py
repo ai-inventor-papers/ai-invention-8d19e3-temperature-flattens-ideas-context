@@ -21,7 +21,7 @@ logger.remove()
 logger.add(sys.stdout, level="INFO", format="{time:HH:mm:ss}|{level:<7}|{message}")
 logger.add(ROOT / "logs" / "setup_check.log", rotation="30 MB", level="DEBUG")
 SRC_E2 = "iter_1/gen_art/gen_art_experiment_2"
-SRC_E3 = "iter_1/gen_art/gen_art_experiment_3"
+SRC_E3 = "round-1/experiment-3/src"
 
 
 def load_jsonl(p: Path) -> list[dict]:

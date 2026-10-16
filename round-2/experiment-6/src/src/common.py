@@ -30,7 +30,7 @@ for _d in (GENS, SCORED, ACTS, RESULTS, FIGS, LOGS):
 # Iteration-1 inputs (READ-ONLY), resolved relative to this folder; override with the environment variables.
 #   influence arm = art_aSN7z8WuA7Ir (iteration-1 gen_art_experiment_3); ban arm = iteration-1 gen_art_experiment_2
 _ITER1 = ROOT.parents[2] / "round-1" / "."
-IA = Path(os.environ.get("AII_INFLUENCE_ARM_DIR", _ITER1 / "gen_art_experiment_3"))
+IA = Path(os.environ.get("AII_INFLUENCE_ARM_DIR", _ITER1 / "experiment-3/src"))
 BA = Path(os.environ.get("AII_BAN_ARM_DIR", _ITER1 / "gen_art_experiment_2"))
 
 QWEN = "Qwen/Qwen2.5-3B-Instruct"

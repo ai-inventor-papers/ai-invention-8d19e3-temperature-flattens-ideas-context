@@ -1,0 +1,205 @@
+{
+  "Yang2024": {
+    "source": "semantic_scholar",
+    "title": "Qwen2.5 Technical Report",
+    "first_author": "Yang",
+    "year": 2024,
+    "s2_paper_id": "88aa6b1f37d1fd8e0a40499ce9bb87873f03aaa8",
+    "doi": "10.48550/arXiv.2412.15115",
+    "arxiv": "2412.15115"
+  },
+  "Peeperkorn2024": {
+    "source": "semantic_scholar",
+    "title": "Is Temperature the Creativity Parameter of Large Language Models?",
+    "first_author": "Peeperkorn",
+    "year": 2024,
+    "s2_paper_id": "8e25c812a564e98058a90e30519b7644f7f46d57",
+    "doi": "10.48550/arXiv.2405.00492",
+    "arxiv": "2405.00492"
+  },
+  "Narula2026": {
+    "source": "semantic_scholar",
+    "title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation",
+    "first_author": "Narula",
+    "year": 2026,
+    "s2_paper_id": "c74730a0ab0d5a83d303ff0bab1cb2bcec69ee8e",
+    "doi": "10.48550/arXiv.2606.04057",
+    "arxiv": "2606.04057"
+  },
+  "Bigelow2024": {
+    "source": "semantic_scholar",
+    "title": "Forking Paths in Neural Text Generation",
+    "first_author": "Bigelow",
+    "year": 2024,
+    "s2_paper_id": "925c140cb677a0f8178a8e625dadf6fb37864f20",
+    "doi": "10.48550/arXiv.2412.07961",
+    "arxiv": "2412.07961"
+  },
+  "Rana2026": {
+    "source": "semantic_scholar",
+    "title": "Semantic Gravity Wells: Why Negative Constraints Backfire",
+    "first_author": "Rana",
+    "year": 2026,
+    "s2_paper_id": "8987360664d7f57e12ceb77498a306eaa429df43",
+    "doi": "10.48550/arXiv.2601.08070",
+    "arxiv": "2601.08070"
+  },
+  "Rimsky2023": {
+    "source": "semantic_scholar",
+    "title": "Steering Llama 2 via Contrastive Activation Addition",
+    "first_author": "Rimsky",
+    "year": 2023,
+    "s2_paper_id": "edd1dc1e8d7989f36c0e54f69f4aeb5e597edc8b",
+    "doi": "10.48550/arXiv.2312.06681",
+    "arxiv": "2312.06681"
+  },
+  "Turner2023": {
+    "source": "semantic_scholar",
+    "title": "Steering Language Models With Activation Engineering",
+    "first_author": "Turner",
+    "year": 2023,
+    "s2_paper_id": "fe303bbaae47b1b08d0641b41d3288fcd74a3a80",
+    "arxiv": "2308.10248"
+  },
+  "Belrose2023": {
+    "source": "semantic_scholar",
+    "title": "LEACE: Perfect linear concept erasure in closed form",
+    "first_author": "Belrose",
+    "year": 2023,
+    "s2_paper_id": "22ae20f20d0b4e6451ae41cc76e58a9221e90df9",
+    "doi": "10.48550/arXiv.2306.03819",
+    "arxiv": "2306.03819"
+  },
+  "Hewitt2019": {
+    "source": "semantic_scholar",
+    "title": "Designing and Interpreting Probes with Control Tasks",
+    "first_author": "Hewitt",
+    "year": 2019,
+    "s2_paper_id": "199ff73d2f728e997f860b62a2322823d3e3d9e8",
+    "doi": "10.18653/v1/D19-1275",
+    "arxiv": "1909.03368"
+  },
+  "Cohen1960": {
+    "source": "semantic_scholar",
+    "title": "A Coefficient of Agreement for Nominal Scales",
+    "first_author": "Cohen",
+    "year": 1960,
+    "s2_paper_id": "9e463eefadbcd336c69270a299666e4104d50159",
+    "doi": "10.1177/001316446002000104"
+  },
+  "Hill1973": {
+    "source": "semantic_scholar",
+    "title": "Diversity and Evenness: A Unifying Notation and Its Consequences",
+    "first_author": "Hill",
+    "year": 1973,
+    "s2_paper_id": "edca9dd1d7c9ec81348f996132102b55b304087b",
+    "doi": "10.2307/1934352"
+  },
+  "Arditi2024": {
+    "source": "semantic_scholar",
+    "title": "Refusal in Language Models Is Mediated by a Single Direction",
+    "first_author": "Arditi",
+    "year": 2024,
+    "s2_paper_id": "88f9af8b0a28e14c42d4f70ce2d911b51a06cd16",
+    "doi": "10.48550/arXiv.2406.11717",
+    "arxiv": "2406.11717"
+  },
+  "Tan2024": {
+    "source": "semantic_scholar",
+    "title": "Analyzing the Generalization and Reliability of Steering Vectors",
+    "first_author": "Tan",
+    "year": 2024,
+    "s2_paper_id": "e4fdb3241176edaa0dcdba82e4c0639ea65cc225",
+    "doi": "10.48550/arXiv.2407.12404",
+    "arxiv": "2407.12404"
+  },
+  "Olson2024": {
+    "source": "semantic_scholar",
+    "title": "Steering Large Language Models to Evaluate and Amplify Creativity",
+    "first_author": "Olson",
+    "year": 2024,
+    "s2_paper_id": "bb102112301682367f895847f10607c5b78d2a48",
+    "doi": "10.48550/arXiv.2412.06060",
+    "arxiv": "2412.06060"
+  },
+  "Zhu2026": {
+    "source": "semantic_scholar",
+    "title": "Exploring Diverse Generation Paths via Inference-time Stiefel Activation Steering",
+    "first_author": "Zhu",
+    "year": 2026,
+    "s2_paper_id": "e13d7eee52893d65c3798d35a0759f6aa5932317",
+    "doi": "10.48550/arXiv.2601.22010",
+    "arxiv": "2601.22010"
+  },
+  "Khanh2025": {
+    "source": "semantic_scholar",
+    "title": "Test-time Diverse Reasoning by Riemannian Activation Steering",
+    "first_author": "Khanh",
+    "year": 2025,
+    "s2_paper_id": "438bfb58d1d31f60500b0f88d0d350cbd9c0b737",
+    "doi": "10.48550/arXiv.2511.08305",
+    "arxiv": "2511.08305"
+  },
+  "Stolfo2024": {
+    "source": "semantic_scholar",
+    "title": "Improving Instruction-Following in Language Models through Activation Steering",
+    "first_author": "Stolfo",
+    "year": 2024,
+    "s2_paper_id": "a05c63c52f4cde0d334178e81372e8c6f3fb566f",
+    "doi": "10.48550/arXiv.2410.12877",
+    "arxiv": "2410.12877"
+  },
+  "Wu2025": {
+    "source": "semantic_scholar",
+    "title": "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+    "first_author": "Wu",
+    "year": 2025,
+    "s2_paper_id": "bb94ea8f2e600a2729d11c359c3787bcff2d4f6a",
+    "doi": "10.48550/arXiv.2501.17148",
+    "arxiv": "2501.17148"
+  },
+  "Lieberum2024": {
+    "source": "semantic_scholar",
+    "title": "Gemma Scope: Open Sparse Autoencoders Everywhere All At Once on Gemma 2",
+    "first_author": "Lieberum",
+    "year": 2024,
+    "s2_paper_id": "890efc891e9b59e8cb5e8c244428f6b81ec0a4da",
+    "doi": "10.48550/arXiv.2408.05147",
+    "arxiv": "2408.05147"
+  },
+  "Riviere2024": {
+    "source": "semantic_scholar",
+    "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+    "first_author": "Riviere",
+    "year": 2024,
+    "s2_paper_id": "ec2ce4e38af8bc82f1b8928ba51a84911bad0cc6",
+    "doi": "10.48550/arXiv.2408.00118",
+    "arxiv": "2408.00118"
+  },
+  "Xiao2024": {
+    "source": "semantic_scholar",
+    "title": "C-Pack: Packed Resources For General Chinese Embeddings",
+    "first_author": "Xiao",
+    "year": 2024,
+    "s2_paper_id": "95dda1571f1a33245726fb53e9d5060ac7a0af25",
+    "doi": "10.1145/3626772.3657878",
+    "arxiv": "2309.07597"
+  },
+  "Kwon2023": {
+    "source": "semantic_scholar",
+    "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "first_author": "Kwon",
+    "year": 2023,
+    "s2_paper_id": "83b90f4a0ae4cc214eb3cc140ccfef9cd99fac05",
+    "doi": "10.1145/3600006.3613165",
+    "arxiv": "2309.06180"
+  },
+  "Buchanan2026": {
+    "source": "semantic_scholar",
+    "title": "The Innate Economic Preferences of Language Models",
+    "first_author": "Buchanan",
+    "year": 2026,
+    "s2_paper_id": "4a169054bb0141a5050516c1c715f62017f06ebb",
+    "arxiv": "2607.26288"
+  }
+}

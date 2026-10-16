@@ -14,7 +14,7 @@ cd <repository>/gen_art_experiment_5     # this folder
 The iteration-1 inputs this artifact builds on are already **copied** into this folder: `data/gen`, `data/labels`,
 `data/ban_plan*.json`, and `src/{protocol,classify,label,oracle,oracle_harness,activations,geometry,generate,engine,acts_io}.py`.
 They came from the ban arm (`iter_1/gen_art/gen_art_experiment_2`) and the influence arm (`art_aSN7z8WuA7Ir`,
-`iter_1/gen_art/gen_art_experiment_3`), and their sha256 hashes are in `manifest_inputs.json`. Nothing outside this
+`round-1/experiment-3/src`), and their sha256 hashes are in `manifest_inputs.json`. Nothing outside this
 folder is read. No user-uploaded data is used.
 
 ## 2. System and Python environment
