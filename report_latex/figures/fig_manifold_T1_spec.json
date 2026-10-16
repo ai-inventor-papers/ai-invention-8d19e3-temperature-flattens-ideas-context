@@ -1,0 +1,259 @@
+{
+  "type": "manifold_bubble",
+  "renderer": "render_manifold.py",
+  "source": "gen_art_experiment_5/results/manifold_coords.json, key T1 (centroids, explained_var, conditions.{baseline,placebo,ban_top3,ban_top5})",
+  "title": "Path-search ideas in activation space",
+  "xlabel": "PC1 score (31.7% of variance)",
+  "ylabel": "PC2 score (14.8% of variance)",
+  "xlim": [
+    -45,
+    80
+  ],
+  "ylim": [
+    -45,
+    50
+  ],
+  "width_in": 6.5,
+  "aspect": "1:1",
+  "explained_var": [
+    0.3174,
+    0.1484
+  ],
+  "n_baseline": 300,
+  "n_ban_top5": 100,
+  "max_area": 700,
+  "zero_marker_area": 70,
+  "cmap": "viridis_r",
+  "cbar_label": "count under top-5 ban (n = 100)",
+  "size_legend_title": "disc area = count at baseline (n = 300)",
+  "size_legend_values": [
+    10,
+    50,
+    179
+  ],
+  "ideas": [
+    {
+      "name": "BFS",
+      "pc1": -27.9,
+      "pc2": -10.2,
+      "baseline_count": 179,
+      "ban_top5_count": 3,
+      "label": {
+        "offset": [
+          11,
+          -11
+        ],
+        "ha": "left",
+        "va": "top"
+      }
+    },
+    {
+      "name": "DFS",
+      "pc1": -24.7,
+      "pc2": -2.5,
+      "baseline_count": 44,
+      "ban_top5_count": 12,
+      "label": {
+        "offset": [
+          -5,
+          7
+        ],
+        "ha": "right",
+        "va": "bottom"
+      }
+    },
+    {
+      "name": "A*",
+      "pc1": 8.6,
+      "pc2": 38.6,
+      "baseline_count": 39,
+      "ban_top5_count": 16,
+      "label": {
+        "offset": [
+          9,
+          0
+        ],
+        "ha": "left",
+        "va": "center"
+      }
+    },
+    {
+      "name": "Dijkstra",
+      "pc1": 33.8,
+      "pc2": -2.1,
+      "baseline_count": 22,
+      "ban_top5_count": 7,
+      "label": {
+        "offset": [
+          6,
+          5
+        ],
+        "ha": "left",
+        "va": "bottom"
+      }
+    },
+    {
+      "name": "other",
+      "pc1": -16.7,
+      "pc2": 7.2,
+      "baseline_count": 14,
+      "ban_top5_count": 8,
+      "label": {
+        "offset": [
+          -6,
+          -2
+        ],
+        "ha": "right",
+        "va": "center"
+      }
+    },
+    {
+      "name": "SPFA",
+      "pc1": 23.1,
+      "pc2": -11.3,
+      "baseline_count": 2,
+      "ban_top5_count": 0,
+      "label": {
+        "offset": [
+          4,
+          4
+        ],
+        "ha": "left",
+        "va": "bottom"
+      }
+    },
+    {
+      "name": "IDDFS",
+      "pc1": -26.1,
+      "pc2": 10.2,
+      "baseline_count": 0,
+      "ban_top5_count": 42,
+      "label": {
+        "offset": [
+          0,
+          8
+        ],
+        "ha": "center",
+        "va": "bottom"
+      }
+    },
+    {
+      "name": "greedy best-first",
+      "pc1": 0.6,
+      "pc2": 37.9,
+      "baseline_count": 0,
+      "ban_top5_count": 8,
+      "label": {
+        "offset": [
+          -4,
+          6
+        ],
+        "ha": "right",
+        "va": "bottom"
+      }
+    },
+    {
+      "name": "bidirectional",
+      "pc1": 14.1,
+      "pc2": 33.3,
+      "baseline_count": 0,
+      "ban_top5_count": 3,
+      "label": {
+        "offset": [
+          6,
+          -4
+        ],
+        "ha": "left",
+        "va": "top"
+      }
+    },
+    {
+      "name": "Bellman-Ford",
+      "pc1": 63.6,
+      "pc2": -35.1,
+      "baseline_count": 0,
+      "ban_top5_count": 1,
+      "label": {
+        "offset": [
+          -5,
+          -5
+        ],
+        "ha": "right",
+        "va": "top"
+      }
+    },
+    {
+      "name": "Floyd-Warshall",
+      "pc1": 68.4,
+      "pc2": -34.3,
+      "baseline_count": 0,
+      "ban_top5_count": 0,
+      "label": {
+        "offset": [
+          6,
+          8
+        ],
+        "ha": "right",
+        "va": "bottom"
+      }
+    }
+  ],
+  "condition_means": [
+    {
+      "name": "baseline",
+      "pc1": -26.2,
+      "pc2": -7.7,
+      "label": {
+        "offset": [
+          -6,
+          6
+        ],
+        "ha": "right",
+        "va": "bottom"
+      }
+    },
+    {
+      "name": "placebo",
+      "pc1": -18.2,
+      "pc2": -8.0,
+      "label": {
+        "offset": [
+          6,
+          0
+        ],
+        "ha": "left",
+        "va": "center"
+      }
+    },
+    {
+      "name": "ban top-3",
+      "pc1": -13.0,
+      "pc2": 8.4,
+      "label": {
+        "offset": [
+          6,
+          2
+        ],
+        "ha": "left",
+        "va": "bottom"
+      }
+    },
+    {
+      "name": "ban top-5",
+      "pc1": -12.4,
+      "pc2": 6.4,
+      "label": {
+        "offset": [
+          6,
+          -2
+        ],
+        "ha": "left",
+        "va": "top"
+      }
+    }
+  ],
+  "arrow": {
+    "from": "baseline",
+    "to": "ban top-5"
+  }
+}

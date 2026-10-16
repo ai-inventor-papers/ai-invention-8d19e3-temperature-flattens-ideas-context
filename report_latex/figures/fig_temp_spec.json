@@ -1,0 +1,376 @@
+{
+  "figure_id": "fig_temp",
+  "source": "gen_art_experiment_3/results/results.json (settings: baseline, temp1.0..temp2.0, temp1.6_top10; base_pass)",
+  "model": "Qwen2.5-3B-Instruct",
+  "ci_note": "pass and entropy: 95% bootstrap CIs stored in results.json; degenerate share: Wilson 95% from k/n",
+  "xlabel": "Sampling temperature T",
+  "ylabel_left": "Share of 150 outputs",
+  "ylabel_right": "Idea entropy (bits)",
+  "xticks": [
+    0.7,
+    1.0,
+    1.3,
+    1.6,
+    2.0
+  ],
+  "ylim_left": [
+    0.0,
+    1.0
+  ],
+  "ylim_right": [
+    0.0,
+    2.0
+  ],
+  "panels": [
+    {
+      "task": "T1",
+      "title": "Open path-search task",
+      "baseline_pass_n300": 0.7,
+      "eligibility_threshold": 0.5599999999999999,
+      "points": [
+        {
+          "T": 0.7,
+          "setting": "baseline",
+          "n": 150,
+          "pass": 0.6733333333333333,
+          "pass_ci": [
+            0.5998333333333333,
+            0.7533333333333333
+          ],
+          "degenerate": 0.0,
+          "degenerate_k": 0,
+          "degenerate_ci": [
+            1.734723475976807e-18,
+            0.024970244752164417
+          ],
+          "entropy": 1.174765087844316,
+          "entropy_ci": [
+            0.9847131462885886,
+            1.311769674025857
+          ],
+          "label_counts": {
+            "bfs": 98,
+            "dfs": 44,
+            "other": 7,
+            "dijkstra": 1
+          }
+        },
+        {
+          "T": 1.0,
+          "setting": "temp1.0",
+          "n": 150,
+          "pass": 0.6133333333333333,
+          "pass_ci": [
+            0.5333333333333333,
+            0.6933333333333334
+          ],
+          "degenerate": 0.0,
+          "degenerate_k": 0,
+          "degenerate_ci": [
+            1.734723475976807e-18,
+            0.024970244752164417
+          ],
+          "entropy": 1.2781252440002417,
+          "entropy_ci": [
+            1.08333627519911,
+            1.4354338285874073
+          ],
+          "label_counts": {
+            "bfs": 82,
+            "dfs": 61,
+            "other": 3,
+            "dijkstra": 3,
+            "astar": 1
+          }
+        },
+        {
+          "T": 1.3,
+          "setting": "temp1.3",
+          "n": 150,
+          "pass": 0.32,
+          "pass_ci": [
+            0.24666666666666667,
+            0.4
+          ],
+          "degenerate": 0.28,
+          "degenerate_k": 42,
+          "degenerate_ci": [
+            0.21433040601032,
+            0.3566565016806323
+          ],
+          "entropy": 1.2881274600216979,
+          "entropy_ci": [
+            1.1046163961526754,
+            1.4466840287924367
+          ],
+          "label_counts": {
+            "bfs": 52,
+            "dfs": 51,
+            "syntax_error": 41,
+            "other": 5,
+            "dijkstra": 1
+          }
+        },
+        {
+          "T": 1.6,
+          "setting": "temp1.6",
+          "n": 150,
+          "pass": 0.006666666666666667,
+          "pass_ci": [
+            0.0,
+            0.02
+          ],
+          "degenerate": 0.98,
+          "degenerate_k": 147,
+          "degenerate_ci": [
+            0.9428533163078294,
+            0.9931752487300927
+          ],
+          "entropy": 0.8112781244591328,
+          "entropy_ci": [
+            0.0,
+            1.0
+          ],
+          "label_counts": {
+            "syntax_error": 139,
+            "no_code": 7,
+            "bfs": 3,
+            "other": 1
+          }
+        },
+        {
+          "T": 2.0,
+          "setting": "temp2.0",
+          "n": 150,
+          "pass": 0.0,
+          "pass_ci": [
+            0.0,
+            0.0
+          ],
+          "degenerate": 1.0,
+          "degenerate_k": 150,
+          "degenerate_ci": [
+            0.9750297552478355,
+            1.0
+          ],
+          "entropy": 0.0,
+          "entropy_ci": [
+            0.0,
+            0.0
+          ],
+          "label_counts": {
+            "syntax_error": 78,
+            "no_code": 72
+          }
+        }
+      ],
+      "topk10": {
+        "T": 1.6,
+        "topk": 10,
+        "setting": "temp1.6_top10",
+        "n": 150,
+        "pass": 0.22666666666666666,
+        "pass_ci": [
+          0.16,
+          0.29333333333333333
+        ],
+        "degenerate": 0.10666666666666667,
+        "degenerate_k": 16,
+        "degenerate_ci": [
+          0.06673036940555403,
+          0.16624622313281529
+        ],
+        "entropy": 1.3655233521255983,
+        "entropy_ci": [
+          1.1867635578890452,
+          1.500738410594765
+        ],
+        "label_counts": {
+          "bfs": 71,
+          "dfs": 56,
+          "syntax_error": 13,
+          "other": 6,
+          "dijkstra": 4
+        }
+      }
+    },
+    {
+      "task": "T3",
+      "title": "Weighted shortest-path task",
+      "baseline_pass_n300": 0.37333333333333335,
+      "eligibility_threshold": 0.2986666666666667,
+      "points": [
+        {
+          "T": 0.7,
+          "setting": "baseline",
+          "n": 150,
+          "pass": 0.38,
+          "pass_ci": [
+            0.29333333333333333,
+            0.4533333333333333
+          ],
+          "degenerate": 0.0,
+          "degenerate_k": 0,
+          "degenerate_ci": [
+            1.734723475976807e-18,
+            0.024970244752164417
+          ],
+          "entropy": 0.9159524525416616,
+          "entropy_ci": [
+            0.7359392388886423,
+            1.056385276084155
+          ],
+          "label_counts": {
+            "dijkstra": 111,
+            "bfs": 37,
+            "other": 1,
+            "spfa": 1
+          }
+        },
+        {
+          "T": 1.0,
+          "setting": "temp1.0",
+          "n": 150,
+          "pass": 0.23333333333333334,
+          "pass_ci": [
+            0.17333333333333334,
+            0.3
+          ],
+          "degenerate": 0.006666666666666667,
+          "degenerate_k": 1,
+          "degenerate_ci": [
+            0.0011778013220055707,
+            0.03679284016679665
+          ],
+          "entropy": 1.1652728160840162,
+          "entropy_ci": [
+            0.9294270801689356,
+            1.3355572968285327
+          ],
+          "label_counts": {
+            "dijkstra": 105,
+            "bfs": 35,
+            "other": 6,
+            "dfs": 2,
+            "greedy_best_first": 1,
+            "syntax_error": 1
+          }
+        },
+        {
+          "T": 1.3,
+          "setting": "temp1.3",
+          "n": 150,
+          "pass": 0.06666666666666667,
+          "pass_ci": [
+            0.03316666666666668,
+            0.10666666666666667
+          ],
+          "degenerate": 0.36,
+          "degenerate_k": 54,
+          "degenerate_ci": [
+            0.2875658319729999,
+            0.43942583655760603
+          ],
+          "entropy": 1.3772093009247086,
+          "entropy_ci": [
+            1.050676846506301,
+            1.6354589043440888
+          ],
+          "label_counts": {
+            "dijkstra": 73,
+            "syntax_error": 48,
+            "bfs": 15,
+            "other": 7,
+            "dfs": 4,
+            "greedy_best_first": 2,
+            "astar": 1
+          }
+        },
+        {
+          "T": 1.6,
+          "setting": "temp1.6",
+          "n": 150,
+          "pass": 0.0,
+          "pass_ci": [
+            0.0,
+            0.0
+          ],
+          "degenerate": 1.0,
+          "degenerate_k": 150,
+          "degenerate_ci": [
+            0.9750297552478355,
+            1.0
+          ],
+          "entropy": 1.0,
+          "entropy_ci": [
+            0.0,
+            1.0
+          ],
+          "label_counts": {
+            "syntax_error": 134,
+            "no_code": 14,
+            "dijkstra": 1,
+            "other": 1
+          }
+        },
+        {
+          "T": 2.0,
+          "setting": "temp2.0",
+          "n": 150,
+          "pass": 0.0,
+          "pass_ci": [
+            0.0,
+            0.0
+          ],
+          "degenerate": 1.0,
+          "degenerate_k": 150,
+          "degenerate_ci": [
+            0.9750297552478355,
+            1.0
+          ],
+          "entropy": 0.0,
+          "entropy_ci": [
+            0.0,
+            0.0
+          ],
+          "label_counts": {
+            "no_code": 78,
+            "syntax_error": 71,
+            "other": 1
+          }
+        }
+      ],
+      "topk10": {
+        "T": 1.6,
+        "topk": 10,
+        "setting": "temp1.6_top10",
+        "n": 150,
+        "pass": 0.04,
+        "pass_ci": [
+          0.013333333333333334,
+          0.07333333333333333
+        ],
+        "degenerate": 0.21333333333333335,
+        "degenerate_k": 32,
+        "degenerate_ci": [
+          0.15536236079786364,
+          0.28562057952671066
+        ],
+        "entropy": 1.3010850372392182,
+        "entropy_ci": [
+          1.0511557372880826,
+          1.5091165589571478
+        ],
+        "label_counts": {
+          "dijkstra": 84,
+          "syntax_error": 27,
+          "bfs": 26,
+          "other": 7,
+          "dfs": 4,
+          "greedy_best_first": 1,
+          "no_code": 1
+        }
+      }
+    }
+  ]
+}

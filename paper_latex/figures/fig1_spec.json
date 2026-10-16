@@ -1,0 +1,165 @@
+{
+  "type": "stacked_pct_semantic",
+  "renderer": "src/render_fig1.py",
+  "source": "3_invention_loop/iter_2/gen_art/gen_art_experiment_6/full_method_out.json (per-program v1 labels and oracle status; cross-checked against results/selector_tables.json); recomputed by src/extract_fig1.py -> fig1_extracted.json",
+  "aspect": "16:9",
+  "width_in": 6.5,
+  "ylabel": "Share of programs (%)",
+  "categories": [
+    "Baseline\nn=300",
+    "Random\nmean of 5\nn=750",
+    "Main\ndraw\nn=150",
+    "Seed\nre-draw\nn=150"
+  ],
+  "annotate_min_pct": 5.0,
+  "panels": [
+    {
+      "title": "Path search",
+      "series": [
+        {
+          "label": "BFS",
+          "role": "default",
+          "values": [
+            61.33,
+            66.53,
+            12.67,
+            14.0
+          ]
+        },
+        {
+          "label": "A*",
+          "role": "gainer",
+          "values": [
+            8.0,
+            6.13,
+            56.67,
+            63.33
+          ]
+        },
+        {
+          "label": "DFS",
+          "role": "other1",
+          "values": [
+            14.0,
+            11.6,
+            14.67,
+            12.67
+          ]
+        },
+        {
+          "label": "Dijkstra",
+          "role": "other2",
+          "values": [
+            12.0,
+            11.33,
+            11.33,
+            7.33
+          ]
+        },
+        {
+          "label": "Other",
+          "role": "rest",
+          "values": [
+            4.67,
+            4.4,
+            4.67,
+            2.67
+          ]
+        }
+      ],
+      "pass_rate": [
+        0.31,
+        0.34,
+        0.17,
+        0.17
+      ]
+    },
+    {
+      "title": "Sorting",
+      "series": [
+        {
+          "label": "Bubble sort",
+          "role": "default",
+          "values": [
+            62.0,
+            41.2,
+            0.67,
+            0.0
+          ]
+        },
+        {
+          "label": "Quicksort",
+          "role": "gainer",
+          "values": [
+            23.33,
+            24.0,
+            65.33,
+            68.0
+          ]
+        },
+        {
+          "label": "Merge sort",
+          "role": "other1",
+          "values": [
+            9.0,
+            17.6,
+            33.33,
+            30.0
+          ]
+        },
+        {
+          "label": "Selection sort",
+          "role": "other2",
+          "values": [
+            3.67,
+            14.53,
+            0.67,
+            2.0
+          ]
+        },
+        {
+          "label": "Insertion sort",
+          "role": "other3",
+          "values": [
+            1.67,
+            2.4,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "Other",
+          "role": "rest",
+          "values": [
+            0.33,
+            0.27,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "pass_rate": [
+        0.98,
+        0.98,
+        0.92,
+        0.91
+      ]
+    }
+  ],
+  "colors": {
+    "default": "#949494",
+    "gainer": "#DE8F05",
+    "other1": "#80C7EE",
+    "other2": "#D99ACD",
+    "other3": "#D7AD89",
+    "rest": "#FFFFFF"
+  },
+  "group": {
+    "label": "Away-from-mode",
+    "span": [
+      2,
+      3
+    ]
+  },
+  "legend_ncols": 2
+}

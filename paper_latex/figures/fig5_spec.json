@@ -1,0 +1,184 @@
+{
+ "figure_id": "fig5",
+ "source": "gen_art_experiment_5/full_method_out.json (iteration 2); placebo = pooled placebo_b1..b3 confirmation cells (n=300), each ban cell n=100; recomputed by scripts/extract_fig5_data.py into fig5_data_extracted.json",
+ "aspect": "16:9",
+ "width_in": 6.5,
+ "ylabel": "Share of programs (%)",
+ "label_min_pct": 5.0,
+ "panels": [
+  {
+   "task": "T1",
+   "title": "Path search",
+   "categories": [
+    "Placebo\nn = 300",
+    "Greedy\nbest-first",
+    "IDDFS",
+    "Bellman-\nFord"
+   ],
+   "conditions": [
+    "placebo",
+    "ban_Greedy_best_first",
+    "ban_IDDFS",
+    "ban_Bellman_Ford"
+   ],
+   "note_bars": [
+    1,
+    2,
+    3
+   ],
+   "note": "banned family (0% in placebo)",
+   "families": [
+    {
+     "key": "BFS",
+     "label": "BFS",
+     "role": "default",
+     "values": [
+      63.3,
+      23.0,
+      41.0,
+      40.0
+     ]
+    },
+    {
+     "key": "DFS",
+     "label": "DFS",
+     "role": "muted",
+     "color": "#DE8F05",
+     "values": [
+      19.3,
+      7.0,
+      2.0,
+      2.0
+     ]
+    },
+    {
+     "key": "Dijkstra",
+     "label": "Dijkstra",
+     "role": "muted",
+     "color": "#029E73",
+     "values": [
+      4.7,
+      8.0,
+      4.0,
+      56.0
+     ]
+    },
+    {
+     "key": "A_star",
+     "label": "A*",
+     "role": "accent",
+     "values": [
+      2.7,
+      58.0,
+      49.0,
+      2.0
+     ]
+    },
+    {
+     "key": "Other",
+     "label": "Other",
+     "role": "other",
+     "values": [
+      10.0,
+      4.0,
+      4.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "task": "T2",
+   "title": "Sorting",
+   "categories": [
+    "Placebo\nn = 300",
+    "Counting\nsort",
+    "Radix\nsort",
+    "Shell\nsort"
+   ],
+   "conditions": [
+    "placebo",
+    "ban_Counting",
+    "ban_Radix",
+    "ban_Shell"
+   ],
+   "note_bars": [
+    1,
+    2,
+    3
+   ],
+   "note": "banned family (0% in placebo)",
+   "families": [
+    {
+     "key": "Bubble",
+     "label": "Bubble sort",
+     "role": "default",
+     "values": [
+      54.0,
+      26.0,
+      15.0,
+      28.0
+     ]
+    },
+    {
+     "key": "Quick",
+     "label": "Quicksort",
+     "role": "muted",
+     "color": "#DE8F05",
+     "values": [
+      18.0,
+      35.0,
+      36.0,
+      15.0
+     ]
+    },
+    {
+     "key": "Merge",
+     "label": "Merge sort",
+     "role": "accent",
+     "values": [
+      15.0,
+      32.0,
+      39.0,
+      49.0
+     ]
+    },
+    {
+     "key": "Selection",
+     "label": "Selection sort",
+     "role": "muted",
+     "color": "#029E73",
+     "values": [
+      9.3,
+      2.0,
+      8.0,
+      6.0
+     ]
+    },
+    {
+     "key": "Insertion",
+     "label": "Insertion sort",
+     "role": "muted",
+     "color": "#CC78BC",
+     "values": [
+      3.0,
+      5.0,
+      2.0,
+      2.0
+     ]
+    },
+    {
+     "key": "Other",
+     "label": "Other",
+     "role": "other",
+     "values": [
+      0.7,
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  }
+ ]
+}

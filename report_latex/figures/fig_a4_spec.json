@@ -1,0 +1,178 @@
+{
+ "figure_id": "fig_a4",
+ "renderer": "scripts/render_fig_a4.py (hand-written matplotlib with the aii-data-fig-gen house style; the line type has no categorical x-axis and alpha=0 rules out a log axis)",
+ "source": "gen_art_experiment_3 (iteration 1): results/results.json -> survival/A4 (means, Spearman); 95% CIs = percentile bootstrap (4000 resamples, seed 0) over the per-sample files scored/T{1,3}/{baseline,A4_a*}.jsonl, via scripts/extract_a4.py",
+ "aspect": "16:9",
+ "width_in": 6.5,
+ "xlabel": "Steering strength $\\alpha$",
+ "alphas": [
+  0.0,
+  0.2,
+  0.356,
+  0.632,
+  1.12,
+  2.0
+ ],
+ "alpha_tick_labels": [
+  "0\n(base)",
+  "0.2",
+  "0.356",
+  "0.632",
+  "1.12",
+  "2.0"
+ ],
+ "n_per_point": 150,
+ "required_spearman": 0.8,
+ "panels": [
+  {
+   "key": "atypicality",
+   "title": "Atypicality of realised idea",
+   "ylabel": "Atypicality (nats)\nmean $-\\log$ baseline idea frequency",
+   "ylim": [
+    0,
+    2.0
+   ]
+  },
+  {
+   "key": "pass",
+   "title": "Oracle correctness",
+   "ylabel": "Oracle pass rate\n(fraction of programs)",
+   "ylim": [
+    0,
+    0.8
+   ]
+  }
+ ],
+ "series": [
+  {
+   "task": "T1",
+   "label": "Open path-search task",
+   "spearman": 0.49,
+   "spearman_ci95": [
+    -0.0286,
+    0.5429
+   ],
+   "atypicality": [
+    0.8347,
+    1.0368,
+    1.5599,
+    1.6747,
+    1.2562,
+    1.0637
+   ],
+   "atypicality_lo": [
+    0.7225,
+    0.888,
+    1.3264,
+    1.4278,
+    1.0451,
+    0.8641
+   ],
+   "atypicality_hi": [
+    0.9635,
+    1.2025,
+    1.8121,
+    1.9481,
+    1.4842,
+    1.2935
+   ],
+   "pass": [
+    0.6733,
+    0.6467,
+    0.56,
+    0.4933,
+    0.4933,
+    0.5667
+   ],
+   "pass_lo": [
+    0.6,
+    0.5667,
+    0.48,
+    0.4133,
+    0.4133,
+    0.4867
+   ],
+   "pass_hi": [
+    0.7467,
+    0.7267,
+    0.64,
+    0.5733,
+    0.5733,
+    0.6467
+   ],
+   "n": [
+    150,
+    150,
+    150,
+    150,
+    150,
+    150
+   ]
+  },
+  {
+   "task": "T3",
+   "label": "Weighted shortest-path task",
+   "spearman": -0.26,
+   "spearman_ci95": [
+    -0.4857,
+    0.1429
+   ],
+   "atypicality": [
+    0.6537,
+    0.8296,
+    0.7838,
+    1.1213,
+    0.7604,
+    0.5005
+   ],
+   "atypicality_lo": [
+    0.5443,
+    0.6384,
+    0.6074,
+    0.8584,
+    0.5774,
+    0.3889
+   ],
+   "atypicality_hi": [
+    0.7749,
+    1.0469,
+    0.9871,
+    1.4179,
+    0.977,
+    0.647
+   ],
+   "pass": [
+    0.38,
+    0.44,
+    0.3733,
+    0.34,
+    0.36,
+    0.3267
+   ],
+   "pass_lo": [
+    0.3,
+    0.36,
+    0.2933,
+    0.2667,
+    0.2867,
+    0.2533
+   ],
+   "pass_hi": [
+    0.46,
+    0.52,
+    0.4467,
+    0.42,
+    0.44,
+    0.4
+   ],
+   "n": [
+    150,
+    150,
+    150,
+    150,
+    150,
+    150
+   ]
+  }
+ ]
+}

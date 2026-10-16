@@ -1,0 +1,194 @@
+{
+ "figure_id": "fig_select",
+ "type": "stacked_bar_panels (hand-written; render with make_fig_select.py)",
+ "source": "3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/results.json -> settings[<setting>].tasks[<T1|T3>].{label_counts,pass,n}",
+ "aspect": "16:9",
+ "width_in": 6.5,
+ "ylabel": "Programs (count of 150)",
+ "xlabel": "Steering direction and strength α",
+ "settings": [
+  "baseline",
+  "Hdim_a0.05",
+  "Hdim_a0.106",
+  "Hdim_a0.224",
+  "Hdim_a0.473",
+  "Hprobe_a0.75"
+ ],
+ "categories": [
+  "Base-\nline",
+  "0.05",
+  "0.106",
+  "0.224",
+  "0.473",
+  "0.75"
+ ],
+ "class_map": {
+  "BFS": [
+   "bfs"
+  ],
+  "DFS": [
+   "dfs"
+  ],
+  "Dijkstra": [
+   "dijkstra"
+  ],
+  "Other idea classes": [
+   "other",
+   "spfa",
+   "astar",
+   "bellman_ford",
+   "bidirectional",
+   "floyd_warshall"
+  ],
+  "Syntax error / no code": [
+   "syntax_error",
+   "no_code"
+  ]
+ },
+ "segments": [
+  {
+   "label": "BFS",
+   "palette_index": 0
+  },
+  {
+   "label": "DFS",
+   "palette_index": 1
+  },
+  {
+   "label": "Dijkstra",
+   "palette_index": 2
+  },
+  {
+   "label": "Other idea classes",
+   "palette_index": 3
+  },
+  {
+   "label": "Syntax error / no code",
+   "palette_index": 5
+  }
+ ],
+ "n_per_bar": 150,
+ "panels": [
+  {
+   "task": "T1",
+   "title": "Open path-search task",
+   "counts": {
+    "BFS": [
+     98,
+     58,
+     22,
+     4,
+     7,
+     2
+    ],
+    "DFS": [
+     44,
+     87,
+     126,
+     145,
+     138,
+     148
+    ],
+    "Dijkstra": [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "Other idea classes": [
+     7,
+     5,
+     2,
+     1,
+     4,
+     0
+    ],
+    "Syntax error / no code": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
+   },
+   "pass": [
+    0.6733,
+    0.7267,
+    0.7267,
+    0.68,
+    0.58,
+    0.58
+   ]
+  },
+  {
+   "task": "T3",
+   "title": "Weighted shortest-path task",
+   "counts": {
+    "BFS": [
+     37,
+     40,
+     49,
+     60,
+     52,
+     88
+    ],
+    "DFS": [
+     0,
+     0,
+     0,
+     1,
+     3,
+     11
+    ],
+    "Dijkstra": [
+     111,
+     106,
+     94,
+     77,
+     80,
+     42
+    ],
+    "Other idea classes": [
+     2,
+     3,
+     6,
+     11,
+     9,
+     8
+    ],
+    "Syntax error / no code": [
+     0,
+     1,
+     1,
+     1,
+     6,
+     1
+    ]
+   },
+   "pass": [
+    0.38,
+    0.42,
+    0.36,
+    0.2867,
+    0.3133,
+    0.1733
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "label": "Difference-in-means direction",
+   "first": 1,
+   "last": 4
+  },
+  {
+   "label": "Probe\nweight",
+   "first": 5,
+   "last": 5
+  }
+ ],
+ "pass_note": "Number above bar = oracle pass rate"
+}

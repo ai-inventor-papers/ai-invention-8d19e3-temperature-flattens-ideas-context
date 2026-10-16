@@ -1,0 +1,283 @@
+{
+  "figure_id": "fig_selector",
+  "title": "Steering away from the default selects one idea",
+  "source": "gen_art_experiment_6/results/selector_tables.json (tasks.T1/T2.cells)",
+  "model": "Qwen2.5-3B-Instruct, HF engine, bare prompt",
+  "aspect": "16:9",
+  "width_in": 6.5,
+  "ylabel": "Share of generated programs (fraction)",
+  "ylim": [
+    0,
+    1
+  ],
+  "series": {
+    "modal": {
+      "label": "modal idea",
+      "color": "#949494"
+    },
+    "gainer": {
+      "label": "predicted gainer",
+      "color": "#0173B2"
+    },
+    "draws": {
+      "label": "individual random draws"
+    }
+  },
+  "error_bars": "Wilson 95% CI on the share (not drawn for the random-draw mean)",
+  "panels": [
+    {
+      "task": "T1",
+      "title": "Path search (s2, α = 0.224)",
+      "subtitle": "BFS (modal) vs A* (gainer)",
+      "alpha_s2": 0.224,
+      "modal_idea": "BFS",
+      "predicted_gainer": "A*",
+      "groups": [
+        {
+          "label": "baseline",
+          "cell": "baseline",
+          "n": 300,
+          "modal": {
+            "k": 184,
+            "n": 300,
+            "share": 0.6133,
+            "ci": [
+              0.5571,
+              0.6667
+            ]
+          },
+          "gainer": {
+            "k": 24,
+            "n": 300,
+            "share": 0.08,
+            "ci": [
+              0.0543,
+              0.1163
+            ]
+          },
+          "pass_rate": 0.3067
+        },
+        {
+          "label": "away-from-mode, main",
+          "cell": "away_s2",
+          "n": 150,
+          "modal": {
+            "k": 19,
+            "n": 150,
+            "share": 0.1267,
+            "ci": [
+              0.0826,
+              0.1894
+            ]
+          },
+          "gainer": {
+            "k": 85,
+            "n": 150,
+            "share": 0.5667,
+            "ci": [
+              0.4867,
+              0.6433
+            ]
+          },
+          "pass_rate": 0.1733
+        },
+        {
+          "label": "away-from-mode, re-draw",
+          "cell": "away_s2_redraw",
+          "n": 150,
+          "modal": {
+            "k": 21,
+            "n": 150,
+            "share": 0.14,
+            "ci": [
+              0.0934,
+              0.2046
+            ]
+          },
+          "gainer": {
+            "k": 95,
+            "n": 150,
+            "share": 0.6333,
+            "ci": [
+              0.5538,
+              0.7062
+            ]
+          },
+          "pass_rate": 0.1667
+        },
+        {
+          "label": "random draws (mean of 5)",
+          "cells": [
+            "rand0_s2",
+            "rand1_s2",
+            "rand2_s2",
+            "rand3_s2",
+            "rand4_s2"
+          ],
+          "n_per_draw": [
+            150,
+            150,
+            150,
+            150,
+            150
+          ],
+          "modal": {
+            "share": 0.6653
+          },
+          "gainer": {
+            "share": 0.0613
+          },
+          "pass_rate": 0.3373,
+          "draws_modal": [
+            0.6133,
+            0.6867,
+            0.6533,
+            0.6533,
+            0.72
+          ],
+          "draws_gainer": [
+            0.1,
+            0.08,
+            0.02,
+            0.04,
+            0.0667
+          ],
+          "draws_pass": [
+            0.28,
+            0.3067,
+            0.4133,
+            0.3467,
+            0.34
+          ]
+        }
+      ]
+    },
+    {
+      "task": "T2",
+      "title": "Sorting (s2, α = 0.473)",
+      "subtitle": "bubble sort (modal) vs quicksort (gainer)",
+      "alpha_s2": 0.473,
+      "modal_idea": "bubble sort",
+      "predicted_gainer": "quicksort",
+      "groups": [
+        {
+          "label": "baseline",
+          "cell": "baseline",
+          "n": 300,
+          "modal": {
+            "k": 186,
+            "n": 300,
+            "share": 0.62,
+            "ci": [
+              0.5639,
+              0.6731
+            ]
+          },
+          "gainer": {
+            "k": 70,
+            "n": 300,
+            "share": 0.2333,
+            "ci": [
+              0.189,
+              0.2844
+            ]
+          },
+          "pass_rate": 0.98
+        },
+        {
+          "label": "away-from-mode, main",
+          "cell": "away_s2",
+          "n": 150,
+          "modal": {
+            "k": 1,
+            "n": 150,
+            "share": 0.0067,
+            "ci": [
+              0.0012,
+              0.0368
+            ]
+          },
+          "gainer": {
+            "k": 98,
+            "n": 150,
+            "share": 0.6533,
+            "ci": [
+              0.5742,
+              0.7248
+            ]
+          },
+          "pass_rate": 0.92
+        },
+        {
+          "label": "away-from-mode, re-draw",
+          "cell": "away_s2_redraw",
+          "n": 150,
+          "modal": {
+            "k": 0,
+            "n": 150,
+            "share": 0.0,
+            "ci": [
+              0.0,
+              0.025
+            ]
+          },
+          "gainer": {
+            "k": 102,
+            "n": 150,
+            "share": 0.68,
+            "ci": [
+              0.6017,
+              0.7494
+            ]
+          },
+          "pass_rate": 0.9133
+        },
+        {
+          "label": "random draws (mean of 5)",
+          "cells": [
+            "rand0_s2",
+            "rand1_s2",
+            "rand2_s2",
+            "rand3_s2",
+            "rand4_s2"
+          ],
+          "n_per_draw": [
+            150,
+            150,
+            150,
+            150,
+            150
+          ],
+          "modal": {
+            "share": 0.412
+          },
+          "gainer": {
+            "share": 0.24
+          },
+          "pass_rate": 0.984,
+          "draws_modal": [
+            0.22,
+            0.5667,
+            0.6867,
+            0.1867,
+            0.4
+          ],
+          "draws_gainer": [
+            0.5,
+            0.3133,
+            0.12,
+            0.1,
+            0.1667
+          ],
+          "draws_pass": [
+            0.9733,
+            0.9933,
+            0.98,
+            0.98,
+            0.9933
+          ]
+        }
+      ]
+    }
+  ]
+}

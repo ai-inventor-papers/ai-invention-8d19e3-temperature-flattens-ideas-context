@@ -1,0 +1,205 @@
+{
+  "type": "grouped_forest_2panel",
+  "renderer": "fig3_render.py",
+  "title": "Targeted minus random: entropy and non-mode share",
+  "aspect": "16:9",
+  "width_in": 6.5,
+  "source": {
+    "artifact": "3_invention_loop/iter_2/gen_art/gen_art_experiment_6",
+    "file": "results/selector_tables.json",
+    "paths": "tasks.{T1,T2}.vs_random.{main@s1,redraw@s1,main@s2,redraw@s2,off_target@s2}.{H_mm,nonmode_share}.{diff,ci}",
+    "task_map": {
+      "T1": "Path search",
+      "T2": "Sorting"
+    },
+    "notes": "Entropy is Miller-Madow idea entropy (H_mm, bits). Random baseline = mean of 5 matched-norm random directions at the same strength (n=100 each); targeted n=150 (sorting off-target n=149). 95% hierarchical bootstrap CI (B=10000 entropy, B=5000 non-mode share)."
+  },
+  "groups": [
+    "Path search",
+    "Sorting"
+  ],
+  "group_colors": {
+    "Path search": "#0173B2",
+    "Sorting": "#DE8F05"
+  },
+  "offtarget_color": "#7A7A7A",
+  "rows": [
+    {
+      "group": "Path search",
+      "label": "Path search, s1, main draw",
+      "kind": "away",
+      "entropy": [
+        0.438,
+        0.175,
+        0.691
+      ],
+      "nonmode": [
+        0.134,
+        0.035,
+        0.228
+      ]
+    },
+    {
+      "group": "Path search",
+      "label": "Path search, s1, re-draw",
+      "kind": "away",
+      "entropy": [
+        0.348,
+        0.064,
+        0.613
+      ],
+      "nonmode": [
+        0.087,
+        -0.008,
+        0.182
+      ]
+    },
+    {
+      "group": "Path search",
+      "label": "Path search, s2, main draw",
+      "kind": "away",
+      "entropy": [
+        0.317,
+        0.039,
+        0.561
+      ],
+      "nonmode": [
+        0.539,
+        0.468,
+        0.605
+      ]
+    },
+    {
+      "group": "Path search",
+      "label": "Path search, s2, re-draw",
+      "kind": "away",
+      "entropy": [
+        0.1,
+        -0.188,
+        0.358
+      ],
+      "nonmode": [
+        0.525,
+        0.452,
+        0.596
+      ]
+    },
+    {
+      "group": "Path search",
+      "label": "Path search, off-target, s2",
+      "kind": "off",
+      "entropy": [
+        0.581,
+        0.354,
+        0.783
+      ],
+      "nonmode": [
+        0.292,
+        0.201,
+        0.381
+      ]
+    },
+    {
+      "group": "Sorting",
+      "label": "Sorting, s1, main draw",
+      "kind": "away",
+      "entropy": [
+        0.045,
+        -0.169,
+        0.269
+      ],
+      "nonmode": [
+        0.293,
+        0.202,
+        0.382
+      ]
+    },
+    {
+      "group": "Sorting",
+      "label": "Sorting, s1, re-draw",
+      "kind": "away",
+      "entropy": [
+        0.167,
+        -0.031,
+        0.389
+      ],
+      "nonmode": [
+        0.267,
+        0.173,
+        0.358
+      ]
+    },
+    {
+      "group": "Sorting",
+      "label": "Sorting, s2, main draw",
+      "kind": "away",
+      "entropy": [
+        -0.709,
+        -0.944,
+        -0.444
+      ],
+      "nonmode": [
+        0.405,
+        0.235,
+        0.577
+      ],
+      "highlight_entropy": true
+    },
+    {
+      "group": "Sorting",
+      "label": "Sorting, s2, re-draw",
+      "kind": "away",
+      "entropy": [
+        -0.727,
+        -0.954,
+        -0.451
+      ],
+      "nonmode": [
+        0.412,
+        0.243,
+        0.583
+      ],
+      "highlight_entropy": true
+    },
+    {
+      "group": "Sorting",
+      "label": "Sorting, off-target, s2",
+      "kind": "off",
+      "entropy": [
+        0.146,
+        -0.083,
+        0.396
+      ],
+      "nonmode": [
+        0.177,
+        -0.002,
+        0.36
+      ]
+    }
+  ],
+  "panels": [
+    {
+      "metric": "entropy",
+      "xlabel": "Idea entropy (bits):\ntargeted − random mean",
+      "xlim": [
+        -1.1,
+        0.9
+      ],
+      "null_line": 0.0,
+      "highlight_text": "Sorting s2: CI\nentirely below 0"
+    },
+    {
+      "metric": "nonmode",
+      "xlabel": "Non-mode share (fraction):\ntargeted − random mean",
+      "xlim": [
+        -0.1,
+        0.7
+      ],
+      "null_line": 0.0
+    }
+  ],
+  "legend": {
+    "away": "Away-from-mode direction (filled circle; colour = task)",
+    "off": "Off-target real direction"
+  }
+}
