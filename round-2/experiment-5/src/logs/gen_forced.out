@@ -1,0 +1,105 @@
+(MainProcess pid=1468) INFO 10-16 01:53:49 [api_utils.py:286] non-default args: {'dtype': 'bfloat16', 'max_model_len': 2048, 'enable_prefix_caching': True, 'gpu_memory_utilization': 0.85, 'disable_log_stats': True, 'enforce_eager': True, 'model': 'Qwen/Qwen2.5-3B-Instruct'}
+(MainProcess pid=1468) INFO 10-16 01:57:09 [model.py:699] Resolved architecture: Qwen2ForCausalLM
+(MainProcess pid=1468) INFO 10-16 01:57:09 [model.py:2109] Using max model len 2048
+(MainProcess pid=1468) INFO 10-16 01:57:09 [scheduler.py:308] Chunked prefill is enabled with max_num_batched_tokens=8192.
+Parse safetensors files:   0%|          | 0/2 [00:00<?, ?it/s]Parse safetensors files:  50%|█████     | 1/2 [00:00<00:00,  1.38it/s]Parse safetensors files: 100%|██████████| 2/2 [00:00<00:00,  2.51it/s]
+(MainProcess pid=1468) WARNING 10-16 01:57:10 [vllm.py:1706] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(MainProcess pid=1468) WARNING 10-16 01:57:10 [vllm.py:1750] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(MainProcess pid=1468) INFO 10-16 01:57:10 [kernel.py:408] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=1468) INFO 10-16 01:57:10 [vllm.py:1968] Cudagraph is disabled under eager mode
+(MainProcess pid=1468) INFO 10-16 01:57:10 [compilation.py:331] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=2004) INFO 10-16 01:57:14 [core.py:129] Initializing a V1 LLM engine (v0.31.0) with config: model='Qwen/Qwen2.5-3B-Instruct', speculative_config=None, tokenizer='Qwen/Qwen2.5-3B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=main, tokenizer_revision=main, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=2048, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=Qwen/Qwen2.5-3B-Instruct, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=False, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=2004) INFO 10-16 01:57:31 [parallel_state.py:1825] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_b13488de41a0417a80e675c96980c8ea backend=nccl
+(EngineCore pid=2004) INFO 10-16 01:57:31 [parallel_state.py:2269] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=2004) INFO 10-16 01:57:31 [gpu_worker.py:479] Using V2 Model Runner
+(EngineCore pid=2004) INFO 10-16 01:57:32 [model_runner.py:375] Loading model from scratch...
+(EngineCore pid=2004) INFO 10-16 01:58:01 [cuda.py:526] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=2004) INFO 10-16 01:58:01 [flash_attn.py:1167] Using FlashAttention version 2
+(EngineCore pid=2004) INFO 10-16 01:58:07 [weight_utils.py:1063] Filesystem type for checkpoints: FUSE. Checkpoint size: 5.75 GiB. Available RAM: 40.91 GiB.
+(EngineCore pid=2004) INFO 10-16 01:58:07 [weight_utils.py:1086] Auto-prefetch is disabled because the filesystem (FUSE) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:08<00:08,  8.13s/it]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:12<00:00,  5.84s/it]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:12<00:00,  6.19s/it]
+
+(EngineCore pid=2004) INFO 10-16 01:58:19 [default_loader.py:484] Loading weights took 12.46 seconds
+(EngineCore pid=2004) INFO 10-16 01:58:20 [model_runner.py:407] Model loading took 5.76 GiB memory and 48.012765 seconds
+(EngineCore pid=2004) INFO 10-16 01:58:20 [topk_topp_sampler.py:124] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=2004) INFO 10-16 01:58:20 [torch_utils.py:286] Reducing Torch threads from 24 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=2004) INFO 10-16 01:58:20 [utils.py:343] Using LBNHC KV cache layout.
+[rank0]:[W1016 01:58:21.793035501 CUDACachingAllocator.cpp:508] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20054016, total: 23661248512).
+In file included from /tmp/tmpkbddm7lb/cuda_utils.c:9:
+In file included from /usr/local/include/python3.12/Python.h:12:
+/usr/local/include/python3.12/pyconfig.h:1874:9: warning: '_POSIX_C_SOURCE' macro redefined [-Wmacro-redefined]
+ 1874 | #define _POSIX_C_SOURCE 200809L
+      |         ^
+.venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/features.h:324:10: note: previous definition is here
+  324 | # define _POSIX_C_SOURCE        202405L
+      |          ^
+1 warning generated.
+(EngineCore pid=2004) INFO 10-16 01:58:32 [gpu_worker.py:692] Available KV cache memory: 12.09 GiB
+(EngineCore pid=2004) INFO 10-16 01:58:32 [kv_cache_utils.py:2464] GPU KV cache size: 352,256 tokens, Maximum concurrency for 2,048 tokens per request: 172.00x
+(EngineCore pid=2004) INFO 10-16 01:58:35 [gpu_worker.py:955] Free memory on device (21.85/22.04 GiB) on startup. Desired GPU memory utilization is (0.85, 18.73 GiB). Actual usage is 6.01 GiB for consumed memory (weights + non-torch), 0.63 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=12828647732` (11.95 GiB) to fit into requested memory, or `--kv-cache-memory=16174411264` (15.06 GiB) to fully utilize gpu memory. Current kv cache memory in use is 12.09 GiB.
+(EngineCore pid=2004) INFO 10-16 01:58:35 [core.py:380] init engine (profile, create kv cache, warmup model) took 14.80 s
+(EngineCore pid=2004) INFO 10-16 01:58:35 [kernel.py:408] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=1468) INFO 10-16 01:58:37 [hf.py:646] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+01:58:37|INFO   |[T1/forced_BFS] n=30 prompt: 'Implement a path search algorithm in Python using breadth-first search (BFS).'
+01:58:37|INFO   |[T1/forced_DFS] n=30 prompt: 'Implement a path search algorithm in Python using depth-first search (DFS).'
+01:58:37|INFO   |[T1/forced_IDDFS] n=30 prompt: 'Implement a path search algorithm in Python using iterative deepening DFS.'
+01:58:37|INFO   |[T1/forced_Dijkstra] n=30 prompt: "Implement a path search algorithm in Python using Dijkstra's algorithm."
+01:58:37|INFO   |[T1/forced_A_star] n=30 prompt: 'Implement a path search algorithm in Python using A* search.'
+01:58:37|INFO   |[T1/forced_Greedy_best_first] n=30 prompt: 'Implement a path search algorithm in Python using greedy best-first search.'
+01:58:37|INFO   |[T1/forced_Bidirectional] n=30 prompt: 'Implement a path search algorithm in Python using bidirectional search.'
+01:58:37|INFO   |[T1/forced_Bellman_Ford] n=30 prompt: 'Implement a path search algorithm in Python using the Bellman-Ford algorithm.'
+01:58:37|INFO   |[T1/forced_SPFA] n=30 prompt: 'Implement a path search algorithm in Python using SPFA.'
+01:58:37|INFO   |[T1/forced_Floyd_Warshall] n=30 prompt: 'Implement a path search algorithm in Python using the Floyd-Warshall algorithm.'
+01:58:37|INFO   |[T2/forced_Quick] n=30 prompt: 'Implement a sorting algorithm using quicksort.'
+01:58:37|INFO   |[T2/forced_Merge] n=30 prompt: 'Implement a sorting algorithm using merge sort.'
+01:58:37|INFO   |[T2/forced_Heap] n=30 prompt: 'Implement a sorting algorithm using heap sort.'
+01:58:37|INFO   |[T2/forced_Insertion] n=30 prompt: 'Implement a sorting algorithm using insertion sort.'
+01:58:37|INFO   |[T2/forced_Selection] n=30 prompt: 'Implement a sorting algorithm using selection sort.'
+01:58:37|INFO   |[T2/forced_Bubble] n=30 prompt: 'Implement a sorting algorithm using bubble sort.'
+01:58:37|INFO   |[T2/forced_Shell] n=30 prompt: 'Implement a sorting algorithm using shell sort.'
+01:58:37|INFO   |[T2/forced_Counting] n=30 prompt: 'Implement a sorting algorithm using counting sort.'
+01:58:37|INFO   |[T2/forced_Radix] n=30 prompt: 'Implement a sorting algorithm using radix sort.'
+01:58:37|INFO   |[T2/forced_Bucket] n=30 prompt: 'Implement a sorting algorithm using bucket sort.'
+01:58:37|INFO   |[T2/forced_Tim_hybrid] n=30 prompt: 'Implement a sorting algorithm using Timsort.'
+01:58:37|INFO   |[T3/forced_Dijkstra] n=30 prompt: "Implement a function that finds a shortest path in a weighted graph using Dijkstra's algorithm."
+01:58:37|INFO   |[T3/forced_A_star] n=30 prompt: 'Implement a function that finds a shortest path in a weighted graph using A* search.'
+01:58:37|INFO   |[T3/forced_Bellman_Ford] n=30 prompt: 'Implement a function that finds a shortest path in a weighted graph using the Bellman-Ford algorithm.'
+01:58:37|INFO   |[T3/forced_Floyd_Warshall] n=30 prompt: 'Implement a function that finds a shortest path in a weighted graph using the Floyd-Warshall algorithm.'
+01:58:37|INFO   |[T3/forced_Bidirectional] n=30 prompt: 'Implement a function that finds a shortest path in a weighted graph using bidirectional search.'
+01:58:37|INFO   |[T3/forced_BFS] n=30 prompt: 'Implement a function that finds a shortest path in a weighted graph using breadth-first search (BFS).'
+02:01:23|INFO   |generated 810 seqs, 558347 tokens in 165.4s -> 3376 tok/s
+02:01:23|INFO   |wrote data/conf/gen/T1/forced_BFS.jsonl (30, truncated=2)
+02:01:23|INFO   |wrote data/conf/gen/T1/forced_DFS.jsonl (30, truncated=3)
+02:01:23|INFO   |wrote data/conf/gen/T1/forced_IDDFS.jsonl (30, truncated=16)
+02:01:23|INFO   |wrote data/conf/gen/T1/forced_Dijkstra.jsonl (30, truncated=22)
+02:01:23|INFO   |wrote data/conf/gen/T1/forced_A_star.jsonl (30, truncated=30)
+02:01:23|INFO   |wrote data/conf/gen/T1/forced_Greedy_best_first.jsonl (30, truncated=29)
+02:01:23|INFO   |wrote data/conf/gen/T1/forced_Bidirectional.jsonl (30, truncated=29)
+02:01:23|INFO   |wrote data/conf/gen/T1/forced_Bellman_Ford.jsonl (30, truncated=14)
+02:01:23|INFO   |wrote data/conf/gen/T1/forced_SPFA.jsonl (30, truncated=10)
+02:01:23|INFO   |wrote data/conf/gen/T1/forced_Floyd_Warshall.jsonl (30, truncated=23)
+02:01:23|INFO   |wrote data/conf/gen/T2/forced_Quick.jsonl (30, truncated=2)
+02:01:23|INFO   |wrote data/conf/gen/T2/forced_Merge.jsonl (30, truncated=0)
+02:01:23|INFO   |wrote data/conf/gen/T2/forced_Heap.jsonl (30, truncated=1)
+02:01:23|INFO   |wrote data/conf/gen/T2/forced_Insertion.jsonl (30, truncated=0)
+02:01:23|INFO   |wrote data/conf/gen/T2/forced_Selection.jsonl (30, truncated=2)
+02:01:23|INFO   |wrote data/conf/gen/T2/forced_Bubble.jsonl (30, truncated=1)
+02:01:24|INFO   |wrote data/conf/gen/T2/forced_Shell.jsonl (30, truncated=8)
+02:01:24|INFO   |wrote data/conf/gen/T2/forced_Counting.jsonl (30, truncated=3)
+02:01:24|INFO   |wrote data/conf/gen/T2/forced_Radix.jsonl (30, truncated=13)
+02:01:24|INFO   |wrote data/conf/gen/T2/forced_Bucket.jsonl (30, truncated=9)
+02:01:24|INFO   |wrote data/conf/gen/T2/forced_Tim_hybrid.jsonl (30, truncated=18)
+02:01:24|INFO   |wrote data/conf/gen/T3/forced_Dijkstra.jsonl (30, truncated=26)
+02:01:24|INFO   |wrote data/conf/gen/T3/forced_A_star.jsonl (30, truncated=30)
+02:01:24|INFO   |wrote data/conf/gen/T3/forced_Bellman_Ford.jsonl (30, truncated=22)
+02:01:24|INFO   |wrote data/conf/gen/T3/forced_Floyd_Warshall.jsonl (30, truncated=27)
+02:01:24|INFO   |wrote data/conf/gen/T3/forced_Bidirectional.jsonl (30, truncated=30)
+02:01:24|INFO   |wrote data/conf/gen/T3/forced_BFS.jsonl (30, truncated=12)
+(MainProcess pid=1468) INFO 10-16 02:01:24 [utils.py:638] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=2004) INFO 10-16 02:01:24 [core.py:1409] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=2004) INFO 10-16 02:01:24 [core.py:1558] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=2004) INFO 10-16 02:01:24 [core.py:1589] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=2004) INFO 10-16 02:01:24 [core.py:1422] [shutdown] EngineCore: exiting busy loop

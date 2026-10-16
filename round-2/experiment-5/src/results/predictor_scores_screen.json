@@ -1,0 +1,2477 @@
+{
+ "eps": 5.0,
+ "lobo": {
+  "B:G_suffix": {
+   "n_bans": 27,
+   "mean_jsd": 0.18297696600558308,
+   "mean_jsd_unbanned": 0.16947137214844663,
+   "mean_loglik": -1.6315704121200147,
+   "top_hit_rate": 0.36363636363636365,
+   "n_top": 22,
+   "sign_acc": 0.9523809523809523,
+   "sign_acc_gain": 1.0,
+   "sign_acc_loss": 0.6666666666666666,
+   "balanced_sign_acc": 0.8333333333333333,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "B:G_umean": {
+   "n_bans": 27,
+   "mean_jsd": 0.1934607964962679,
+   "mean_jsd_unbanned": 0.18415517738544637,
+   "mean_loglik": -1.6173445683315937,
+   "top_hit_rate": 0.2727272727272727,
+   "n_top": 22,
+   "sign_acc": 0.8571428571428571,
+   "sign_acc_gain": 0.9444444444444444,
+   "sign_acc_loss": 0.3333333333333333,
+   "balanced_sign_acc": 0.6388888888888888,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "B:P_suffix": {
+   "n_bans": 27,
+   "mean_jsd": 0.1952893836017456,
+   "mean_jsd_unbanned": 0.18437363734187429,
+   "mean_loglik": -1.6250970609759814,
+   "top_hit_rate": 0.36363636363636365,
+   "n_top": 22,
+   "sign_acc": 0.9047619047619048,
+   "sign_acc_gain": 1.0,
+   "sign_acc_loss": 0.3333333333333333,
+   "balanced_sign_acc": 0.6666666666666666,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "B:P_umean": {
+   "n_bans": 27,
+   "mean_jsd": 0.186937285981484,
+   "mean_jsd_unbanned": 0.17636788745906187,
+   "mean_loglik": -1.6016868500260324,
+   "top_hit_rate": 0.2727272727272727,
+   "n_top": 22,
+   "sign_acc": 0.8571428571428571,
+   "sign_acc_gain": 0.9444444444444444,
+   "sign_acc_loss": 0.3333333333333333,
+   "balanced_sign_acc": 0.6388888888888888,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "A": {
+   "n_bans": 27,
+   "mean_jsd": 0.19149818504368785,
+   "mean_jsd_unbanned": 0.1818990562262534,
+   "mean_loglik": -1.6139541046420813,
+   "top_hit_rate": 0.22727272727272727,
+   "n_top": 22,
+   "sign_acc": 0.8571428571428571,
+   "sign_acc_gain": 1.0,
+   "sign_acc_loss": 0.0,
+   "balanced_sign_acc": 0.5,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "B": {
+   "n_bans": 27,
+   "mean_jsd": 0.18297696600558308,
+   "mean_jsd_unbanned": 0.16947137214844663,
+   "mean_loglik": -1.6315704121200147,
+   "top_hit_rate": 0.36363636363636365,
+   "n_top": 22,
+   "sign_acc": 0.9523809523809523,
+   "sign_acc_gain": 1.0,
+   "sign_acc_loss": 0.6666666666666666,
+   "balanced_sign_acc": 0.8333333333333333,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "C": {
+   "n_bans": 27,
+   "mean_jsd": 0.19153255215219703,
+   "mean_jsd_unbanned": 0.18229115314900038,
+   "mean_loglik": -1.6128235140164502,
+   "top_hit_rate": 0.22727272727272727,
+   "n_top": 22,
+   "sign_acc": 0.9047619047619048,
+   "sign_acc_gain": 0.9722222222222222,
+   "sign_acc_loss": 0.5,
+   "balanced_sign_acc": 0.7361111111111112,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "D": {
+   "n_bans": 27,
+   "mean_jsd": 0.18428567264847634,
+   "mean_jsd_unbanned": 0.1744786035738658,
+   "mean_loglik": -1.6023300479102804,
+   "top_hit_rate": 0.4090909090909091,
+   "n_top": 22,
+   "sign_acc": 0.8809523809523809,
+   "sign_acc_gain": 0.9166666666666666,
+   "sign_acc_loss": 0.6666666666666666,
+   "balanced_sign_acc": 0.7916666666666666,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "D2": {
+   "n_bans": 27,
+   "mean_jsd": 0.1926287670086688,
+   "mean_jsd_unbanned": 0.1806097732675976,
+   "mean_loglik": -1.6129618047102545,
+   "top_hit_rate": 0.22727272727272727,
+   "n_top": 22,
+   "sign_acc": 0.7857142857142857,
+   "sign_acc_gain": 0.8888888888888888,
+   "sign_acc_loss": 0.16666666666666666,
+   "balanced_sign_acc": 0.5277777777777778,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "D3": {
+   "n_bans": 27,
+   "mean_jsd": 0.1869235602151837,
+   "mean_jsd_unbanned": 0.17828936476291032,
+   "mean_loglik": -1.6085518369727063,
+   "top_hit_rate": 0.2727272727272727,
+   "n_top": 22,
+   "sign_acc": 0.9047619047619048,
+   "sign_acc_gain": 1.0,
+   "sign_acc_loss": 0.3333333333333333,
+   "balanced_sign_acc": 0.6666666666666666,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "E": {
+   "n_bans": 27,
+   "mean_jsd": 0.19346336276056023,
+   "mean_jsd_unbanned": 0.18493429915138893,
+   "mean_loglik": -1.6327558671274685,
+   "top_hit_rate": 0.22727272727272727,
+   "n_top": 22,
+   "sign_acc": 0.8809523809523809,
+   "sign_acc_gain": 0.9722222222222222,
+   "sign_acc_loss": 0.3333333333333333,
+   "balanced_sign_acc": 0.6527777777777778,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  }
+ },
+ "loto": {
+  "A": {
+   "n_bans": 27,
+   "mean_jsd": 0.19600469916302266,
+   "mean_jsd_unbanned": 0.18189905622625335,
+   "mean_loglik": -1.635935435676879,
+   "top_hit_rate": 0.22727272727272727,
+   "n_top": 22,
+   "sign_acc": 0.8571428571428571,
+   "sign_acc_gain": 1.0,
+   "sign_acc_loss": 0.0,
+   "balanced_sign_acc": 0.5,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "B": {
+   "n_bans": 27,
+   "mean_jsd": 0.1927432243700841,
+   "mean_jsd_unbanned": 0.17243074749409518,
+   "mean_loglik": -1.6559533830595528,
+   "top_hit_rate": 0.3181818181818182,
+   "n_top": 22,
+   "sign_acc": 0.9285714285714286,
+   "sign_acc_gain": 1.0,
+   "sign_acc_loss": 0.5,
+   "balanced_sign_acc": 0.75,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "C": {
+   "n_bans": 27,
+   "mean_jsd": 0.22434627423811654,
+   "mean_jsd_unbanned": 0.21101155427334586,
+   "mean_loglik": -1.7227112153110553,
+   "top_hit_rate": 0.045454545454545456,
+   "n_top": 22,
+   "sign_acc": 0.7380952380952381,
+   "sign_acc_gain": 0.8333333333333334,
+   "sign_acc_loss": 0.16666666666666666,
+   "balanced_sign_acc": 0.5,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "D": {
+   "n_bans": 27,
+   "mean_jsd": 0.1976198212872499,
+   "mean_jsd_unbanned": 0.1837088589902755,
+   "mean_loglik": -1.6514126156563935,
+   "top_hit_rate": 0.4090909090909091,
+   "n_top": 22,
+   "sign_acc": 0.8571428571428571,
+   "sign_acc_gain": 0.8888888888888888,
+   "sign_acc_loss": 0.6666666666666666,
+   "balanced_sign_acc": 0.7777777777777777,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "D2": {
+   "n_bans": 27,
+   "mean_jsd": 0.21747039819307895,
+   "mean_jsd_unbanned": 0.2036503322080193,
+   "mean_loglik": -1.7069775241875282,
+   "top_hit_rate": 0.09090909090909091,
+   "n_top": 22,
+   "sign_acc": 0.8571428571428571,
+   "sign_acc_gain": 0.9444444444444444,
+   "sign_acc_loss": 0.3333333333333333,
+   "balanced_sign_acc": 0.6388888888888888,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "D3": {
+   "n_bans": 27,
+   "mean_jsd": 0.19779790623753307,
+   "mean_jsd_unbanned": 0.1842170306037055,
+   "mean_loglik": -1.6440380411680464,
+   "top_hit_rate": 0.3181818181818182,
+   "n_top": 22,
+   "sign_acc": 0.8333333333333334,
+   "sign_acc_gain": 0.9166666666666666,
+   "sign_acc_loss": 0.3333333333333333,
+   "balanced_sign_acc": 0.625,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  },
+  "E": {
+   "n_bans": 27,
+   "mean_jsd": 0.19750821325985393,
+   "mean_jsd_unbanned": 0.18437921555051667,
+   "mean_loglik": -1.6546112957835115,
+   "top_hit_rate": 0.22727272727272727,
+   "n_top": 22,
+   "sign_acc": 0.8571428571428571,
+   "sign_acc_gain": 1.0,
+   "sign_acc_loss": 0.0,
+   "balanced_sign_acc": 0.5,
+   "n_sign_cells": 42,
+   "n_gain_cells": 36,
+   "n_loss_cells": 6
+  }
+ },
+ "per_ban": {
+  "B:G_suffix": [
+   {
+    "task": "T1",
+    "cond": "ban_r1",
+    "jsd": 0.10217974596131715,
+    "param": 20.0
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r2",
+    "jsd": 0.11324698447648046,
+    "param": 19.75
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r3",
+    "jsd": 0.04862427150206748,
+    "param": 20.0
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r4",
+    "jsd": 0.1611211685853547,
+    "param": 19.25
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top3",
+    "jsd": 0.35613764903505196,
+    "param": 19.5
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top5",
+    "jsd": 0.3989895478723643,
+    "param": 20.0
+   },
+   {
+    "task": "T1",
+    "cond": "ban_rare",
+    "jsd": 0.13649334098710109,
+    "param": 17.0
+   },
+   {
+    "task": "T1",
+    "cond": "para1_r1",
+    "jsd": 0.21491872900204154,
+    "param": 20.0
+   },
+   {
+    "task": "T1",
+    "cond": "para2_r1",
+    "jsd": 0.19454546625821562,
+    "param": 20.0
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r1",
+    "jsd": 0.11278993626534115,
+    "param": 17.5
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r2",
+    "jsd": 0.14951507086184024,
+    "param": 19.0
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r3",
+    "jsd": 0.03809920787589872,
+    "param": 19.75
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r4",
+    "jsd": 0.05522854564979479,
+    "param": 20.0
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top3",
+    "jsd": 0.2753669743176618,
+    "param": 20.0
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top5",
+    "jsd": 0.373075306434987,
+    "param": 20.0
+   },
+   {
+    "task": "T2",
+    "cond": "ban_rare",
+    "jsd": 0.1874053086423568,
+    "param": 14.75
+   },
+   {
+    "task": "T2",
+    "cond": "para1_r1",
+    "jsd": 0.056312268856127425,
+    "param": 18.75
+   },
+   {
+    "task": "T2",
+    "cond": "para2_r1",
+    "jsd": 0.02369526581437223,
+    "param": 18.75
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r1",
+    "jsd": 0.39074460461680577,
+    "param": 20.0
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r2",
+    "jsd": 0.03104180436068479,
+    "param": 19.5
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r3",
+    "jsd": 0.008342523434788909,
+    "param": 19.5
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r4",
+    "jsd": 0.011045662315150855,
+    "param": 19.5
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top3",
+    "jsd": 0.300767608100694,
+    "param": 15.5
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top5",
+    "jsd": 0.3248280883497642,
+    "param": 15.75
+   },
+   {
+    "task": "T3",
+    "cond": "ban_rare",
+    "jsd": 0.03729504062644224,
+    "param": 20.0
+   },
+   {
+    "task": "T3",
+    "cond": "para1_r1",
+    "jsd": 0.4273365151329793,
+    "param": 20.0
+   },
+   {
+    "task": "T3",
+    "cond": "para2_r1",
+    "jsd": 0.4112314468150599,
+    "param": 20.0
+   }
+  ],
+  "B:G_umean": [
+   {
+    "task": "T1",
+    "cond": "ban_r1",
+    "jsd": 0.10026743525947168,
+    "param": 0.25
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r2",
+    "jsd": 0.10000706912026917,
+    "param": 0.5
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r3",
+    "jsd": 0.033758722563438495,
+    "param": 0.75
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r4",
+    "jsd": 0.17492731090796676,
+    "param": 0.75
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top3",
+    "jsd": 0.36443694154658757,
+    "param": 0.75
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top5",
+    "jsd": 0.3889093747276853,
+    "param": 0.75
+   },
+   {
+    "task": "T1",
+    "cond": "ban_rare",
+    "jsd": 0.22817758364970675,
+    "param": 1.0
+   },
+   {
+    "task": "T1",
+    "cond": "para1_r1",
+    "jsd": 0.09320142169283478,
+    "param": 0.25
+   },
+   {
+    "task": "T1",
+    "cond": "para2_r1",
+    "jsd": 0.11369642634263183,
+    "param": 0.5
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r1",
+    "jsd": 0.20600768273757275,
+    "param": 1.0
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r2",
+    "jsd": 0.19350092636540642,
+    "param": 0.75
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r3",
+    "jsd": 0.04264997461532098,
+    "param": 0.75
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r4",
+    "jsd": 0.033802074514913856,
+    "param": 0.75
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top3",
+    "jsd": 0.2470457224171404,
+    "param": 0.75
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top5",
+    "jsd": 0.3457912703983631,
+    "param": 1.0
+   },
+   {
+    "task": "T2",
+    "cond": "ban_rare",
+    "jsd": 0.36135797640590006,
+    "param": 1.25
+   },
+   {
+    "task": "T2",
+    "cond": "para1_r1",
+    "jsd": 0.11241118336324907,
+    "param": 1.0
+   },
+   {
+    "task": "T2",
+    "cond": "para2_r1",
+    "jsd": 0.1330985454470154,
+    "param": 1.0
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r1",
+    "jsd": 0.34159538058634165,
+    "param": 0.75
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r2",
+    "jsd": 0.03612997988325824,
+    "param": 0.75
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r3",
+    "jsd": 0.0164212908778782,
+    "param": 0.75
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r4",
+    "jsd": 0.01691326162361321,
+    "param": 0.75
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top3",
+    "jsd": 0.42713923294113915,
+    "param": 0.75
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top5",
+    "jsd": 0.44247127339298703,
+    "param": 1.0
+   },
+   {
+    "task": "T3",
+    "cond": "ban_rare",
+    "jsd": 0.025510764513545246,
+    "param": 0.75
+   },
+   {
+    "task": "T3",
+    "cond": "para1_r1",
+    "jsd": 0.309482503400195,
+    "param": 0.75
+   },
+   {
+    "task": "T3",
+    "cond": "para2_r1",
+    "jsd": 0.33473017610480116,
+    "param": 0.75
+   }
+  ],
+  "B:P_suffix": [
+   {
+    "task": "T1",
+    "cond": "ban_r1",
+    "jsd": 0.10366124765463502,
+    "param": 1.0
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r2",
+    "jsd": 0.11220879345126153,
+    "param": 1.0
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r3",
+    "jsd": 0.04245478172571154,
+    "param": 1.0
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r4",
+    "jsd": 0.16986287473728623,
+    "param": 1.0
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top3",
+    "jsd": 0.3553674101769642,
+    "param": 0.75
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top5",
+    "jsd": 0.3707045200662626,
+    "param": 0.75
+   },
+   {
+    "task": "T1",
+    "cond": "ban_rare",
+    "jsd": 0.20951022345196885,
+    "param": 0.75
+   },
+   {
+    "task": "T1",
+    "cond": "para1_r1",
+    "jsd": 0.10469283753542412,
+    "param": 1.0
+   },
+   {
+    "task": "T1",
+    "cond": "para2_r1",
+    "jsd": 0.120570682870851,
+    "param": 0.75
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r1",
+    "jsd": 0.17896876254179753,
+    "param": 0.75
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r2",
+    "jsd": 0.18376483688729836,
+    "param": 0.75
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r3",
+    "jsd": 0.041169277659605624,
+    "param": 1.0
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r4",
+    "jsd": 0.035476612727976455,
+    "param": 1.0
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top3",
+    "jsd": 0.2614379842607894,
+    "param": 1.0
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top5",
+    "jsd": 0.357664669387335,
+    "param": 1.0
+   },
+   {
+    "task": "T2",
+    "cond": "ban_rare",
+    "jsd": 0.3025262642767378,
+    "param": 0.75
+   },
+   {
+    "task": "T2",
+    "cond": "para1_r1",
+    "jsd": 0.08872297283569958,
+    "param": 0.75
+   },
+   {
+    "task": "T2",
+    "cond": "para2_r1",
+    "jsd": 0.10243062358259636,
+    "param": 0.75
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r1",
+    "jsd": 0.4059359447489161,
+    "param": 1.25
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r2",
+    "jsd": 0.03701214845294054,
+    "param": 1.0
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r3",
+    "jsd": 0.020607115076140603,
+    "param": 1.0
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r4",
+    "jsd": 0.018185220569824936,
+    "param": 1.0
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top3",
+    "jsd": 0.3834157084871975,
+    "param": 0.5
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top5",
+    "jsd": 0.39747218178639543,
+    "param": 0.75
+   },
+   {
+    "task": "T3",
+    "cond": "ban_rare",
+    "jsd": 0.02612899067557473,
+    "param": 1.0
+   },
+   {
+    "task": "T3",
+    "cond": "para1_r1",
+    "jsd": 0.4396649253415922,
+    "param": 1.5
+   },
+   {
+    "task": "T3",
+    "cond": "para2_r1",
+    "jsd": 0.40319574627834887,
+    "param": 1.25
+   }
+  ],
+  "B:P_umean": [
+   {
+    "task": "T1",
+    "cond": "ban_r1",
+    "jsd": 0.06228112884674288,
+    "param": 1.5
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r2",
+    "jsd": 0.06978616568649837,
+    "param": 1.25
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r3",
+    "jsd": 0.03387248352171368,
+    "param": 1.5
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r4",
+    "jsd": 0.17294086002927578,
+    "param": 1.5
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top3",
+    "jsd": 0.3453665928340154,
+    "param": 1.5
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top5",
+    "jsd": 0.37705203606015647,
+    "param": 1.5
+   },
+   {
+    "task": "T1",
+    "cond": "ban_rare",
+    "jsd": 0.23545855319442113,
+    "param": 1.75
+   },
+   {
+    "task": "T1",
+    "cond": "para1_r1",
+    "jsd": 0.054796847337452576,
+    "param": 1.5
+   },
+   {
+    "task": "T1",
+    "cond": "para2_r1",
+    "jsd": 0.09462440640751124,
+    "param": 1.75
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r1",
+    "jsd": 0.21404831420552883,
+    "param": 1.75
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r2",
+    "jsd": 0.18773798513467863,
+    "param": 1.5
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r3",
+    "jsd": 0.04190094521464985,
+    "param": 1.5
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r4",
+    "jsd": 0.026965955261510213,
+    "param": 1.5
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top3",
+    "jsd": 0.24161500354750692,
+    "param": 1.5
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top5",
+    "jsd": 0.33284701735680094,
+    "param": 1.5
+   },
+   {
+    "task": "T2",
+    "cond": "ban_rare",
+    "jsd": 0.35328489476834557,
+    "param": 1.75
+   },
+   {
+    "task": "T2",
+    "cond": "para1_r1",
+    "jsd": 0.11352619787827004,
+    "param": 1.75
+   },
+   {
+    "task": "T2",
+    "cond": "para2_r1",
+    "jsd": 0.13879198119530778,
+    "param": 1.75
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r1",
+    "jsd": 0.3536720671572002,
+    "param": 1.75
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r2",
+    "jsd": 0.03500307892929598,
+    "param": 1.5
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r3",
+    "jsd": 0.016461842952601533,
+    "param": 1.5
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r4",
+    "jsd": 0.01668561693079738,
+    "param": 1.5
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top3",
+    "jsd": 0.41822660729992583,
+    "param": 1.5
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top5",
+    "jsd": 0.42918018531836205,
+    "param": 1.5
+   },
+   {
+    "task": "T3",
+    "cond": "ban_rare",
+    "jsd": 0.024612048853914943,
+    "param": 1.5
+   },
+   {
+    "task": "T3",
+    "cond": "para1_r1",
+    "jsd": 0.32323114660397,
+    "param": 1.75
+   },
+   {
+    "task": "T3",
+    "cond": "para2_r1",
+    "jsd": 0.3333367589736145,
+    "param": 1.5
+   }
+  ],
+  "A": [
+   {
+    "task": "T1",
+    "cond": "ban_r1",
+    "jsd": 0.10867042915047934,
+    "param": 0.0,
+    "loglik": -1.2980810574402049,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r2",
+    "jsd": 0.11548693886897182,
+    "param": 0.0,
+    "loglik": -0.3372661275946509,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r3",
+    "jsd": 0.03361539623411499,
+    "param": 0.0,
+    "loglik": -1.1718500693590932,
+    "top_hit": null
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r4",
+    "jsd": 0.1740202012155106,
+    "param": 0.0,
+    "loglik": -2.092433163692325,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top3",
+    "jsd": 0.37146777753189414,
+    "param": 0.0,
+    "loglik": -3.267195175148513,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top5",
+    "jsd": 0.39535200666375414,
+    "param": 0.0,
+    "loglik": -3.200388110525761,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_rare",
+    "jsd": 0.2196290399096406,
+    "param": 0.0,
+    "loglik": -1.6456315906018244,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "para1_r1",
+    "jsd": 0.10294384600901382,
+    "param": 0.0,
+    "loglik": -1.190107359971047,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "para2_r1",
+    "jsd": 0.1269385421065283,
+    "param": 0.0,
+    "loglik": -1.533867233127852,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r1",
+    "jsd": 0.1952501657498184,
+    "param": 0.0,
+    "loglik": -1.1726956780763362,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r2",
+    "jsd": 0.19122949668904035,
+    "param": 0.0,
+    "loglik": -1.9479907754127586,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r3",
+    "jsd": 0.04194114785895334,
+    "param": 0.0,
+    "loglik": -1.4945181091425028,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r4",
+    "jsd": 0.03367109837470987,
+    "param": 0.0,
+    "loglik": -1.3094134346652746,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top3",
+    "jsd": 0.24724147648835604,
+    "param": 0.0,
+    "loglik": -1.3588015758182086,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top5",
+    "jsd": 0.34165247511443225,
+    "param": 0.0,
+    "loglik": -2.525448996295653,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_rare",
+    "jsd": 0.32813147631153317,
+    "param": 0.0,
+    "loglik": -1.7377832459240983,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "para1_r1",
+    "jsd": 0.09745645641819117,
+    "param": 0.0,
+    "loglik": -1.1365124168294765,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "para2_r1",
+    "jsd": 0.11501226301438078,
+    "param": 0.0,
+    "loglik": -1.0978513952769546,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r1",
+    "jsd": 0.3409037585948861,
+    "param": 0.0,
+    "loglik": -2.303683784330006,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r2",
+    "jsd": 0.036361333877096474,
+    "param": 0.0,
+    "loglik": -0.37510872087343655,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r3",
+    "jsd": 0.01701871079417572,
+    "param": 0.0,
+    "loglik": -0.03420093419677041,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r4",
+    "jsd": 0.01701871079417572,
+    "param": 0.0,
+    "loglik": -0.03420093419677041,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top3",
+    "jsd": 0.4249993396752648,
+    "param": 0.0,
+    "loglik": -3.559642152683283,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top5",
+    "jsd": 0.42884230569925214,
+    "param": 0.0,
+    "loglik": -2.9863358336775847,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_rare",
+    "jsd": 0.024243486339112996,
+    "param": 0.0,
+    "loglik": -0.1790786353394198,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "para1_r1",
+    "jsd": 0.3083624863097765,
+    "param": 0.0,
+    "loglik": -2.195936576357002,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "para2_r1",
+    "jsd": 0.332990630386508,
+    "param": 0.0,
+    "loglik": -2.3907377387793853,
+    "top_hit": false
+   }
+  ],
+  "B": [
+   {
+    "task": "T1",
+    "cond": "ban_r1",
+    "jsd": 0.10217974596131715,
+    "param": 20.0,
+    "loglik": -1.2748552531611737,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r2",
+    "jsd": 0.11324698447648046,
+    "param": 19.75,
+    "loglik": -0.3324860882409935,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r3",
+    "jsd": 0.04862427150206748,
+    "param": 20.0,
+    "loglik": -1.187617964404152,
+    "top_hit": null
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r4",
+    "jsd": 0.1611211685853547,
+    "param": 19.25,
+    "loglik": -1.918475556835495,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top3",
+    "jsd": 0.35613764903505196,
+    "param": 19.5,
+    "loglik": -3.133845271233318,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top5",
+    "jsd": 0.3989895478723643,
+    "param": 20.0,
+    "loglik": -3.3809362718506475,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_rare",
+    "jsd": 0.13649334098710109,
+    "param": 17.0,
+    "loglik": -1.3422722179137323,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "para1_r1",
+    "jsd": 0.21491872900204154,
+    "param": 20.0,
+    "loglik": -1.4994149112995685,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "para2_r1",
+    "jsd": 0.19454546625821562,
+    "param": 20.0,
+    "loglik": -1.68572131381747,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r1",
+    "jsd": 0.11278993626534115,
+    "param": 17.5,
+    "loglik": -0.9648054470130191,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r2",
+    "jsd": 0.14951507086184024,
+    "param": 19.0,
+    "loglik": -1.8456991887725116,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r3",
+    "jsd": 0.03809920787589872,
+    "param": 19.75,
+    "loglik": -1.483544986614903,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r4",
+    "jsd": 0.05522854564979479,
+    "param": 20.0,
+    "loglik": -1.369625188023243,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top3",
+    "jsd": 0.2753669743176618,
+    "param": 20.0,
+    "loglik": -1.46209822585538,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top5",
+    "jsd": 0.373075306434987,
+    "param": 20.0,
+    "loglik": -2.728948478268095,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_rare",
+    "jsd": 0.1874053086423568,
+    "param": 14.75,
+    "loglik": -1.3525005799870076,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "para1_r1",
+    "jsd": 0.056312268856127425,
+    "param": 18.75,
+    "loglik": -1.0371718041687632,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "para2_r1",
+    "jsd": 0.02369526581437223,
+    "param": 18.75,
+    "loglik": -0.8913656622266833,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r1",
+    "jsd": 0.39074460461680577,
+    "param": 20.0,
+    "loglik": -2.872264022178029,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r2",
+    "jsd": 0.03104180436068479,
+    "param": 19.5,
+    "loglik": -0.37577089467409225,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r3",
+    "jsd": 0.008342523434788909,
+    "param": 19.5,
+    "loglik": -0.016724079374552267,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r4",
+    "jsd": 0.011045662315150855,
+    "param": 19.5,
+    "loglik": -0.022159890204622102,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top3",
+    "jsd": 0.300767608100694,
+    "param": 15.5,
+    "loglik": -3.093604332101328,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top5",
+    "jsd": 0.3248280883497642,
+    "param": 15.75,
+    "loglik": -2.7109697294470188,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_rare",
+    "jsd": 0.03729504062644224,
+    "param": 20.0,
+    "loglik": -0.2058790759779767,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "para1_r1",
+    "jsd": 0.4273365151329793,
+    "param": 20.0,
+    "loglik": -3.0884274025791467,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "para2_r1",
+    "jsd": 0.4112314468150599,
+    "param": 20.0,
+    "loglik": -2.7752172910174746,
+    "top_hit": false
+   }
+  ],
+  "C": [
+   {
+    "task": "T1",
+    "cond": "ban_r1",
+    "jsd": 0.08579557102009337,
+    "param": 0.25,
+    "loglik": -1.246469554142419,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r2",
+    "jsd": 0.10114170045911751,
+    "param": 0.25,
+    "loglik": -0.30649514578295695,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r3",
+    "jsd": 0.03833755837339973,
+    "param": 0.25,
+    "loglik": -1.1803069202265466,
+    "top_hit": null
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r4",
+    "jsd": 0.16848403627079897,
+    "param": 0.25,
+    "loglik": -2.031788352802216,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top3",
+    "jsd": 0.3683442788456879,
+    "param": 0.25,
+    "loglik": -3.2230681281479496,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top5",
+    "jsd": 0.4012769230672869,
+    "param": 0.25,
+    "loglik": -3.22020179488861,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_rare",
+    "jsd": 0.21632334432537464,
+    "param": 0.25,
+    "loglik": -1.6319239553992244,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "para1_r1",
+    "jsd": 0.07943689514697547,
+    "param": 0.25,
+    "loglik": -1.131743281473393,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "para2_r1",
+    "jsd": 0.10689378233524217,
+    "param": 0.25,
+    "loglik": -1.4954946778023293,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r1",
+    "jsd": 0.20277612880351403,
+    "param": 0.25,
+    "loglik": -1.1890088684841595,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r2",
+    "jsd": 0.18758046310269233,
+    "param": 0.25,
+    "loglik": -1.9543547233945038,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r3",
+    "jsd": 0.041615249602272315,
+    "param": 0.25,
+    "loglik": -1.493563049783615,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r4",
+    "jsd": 0.03349866989279218,
+    "param": 0.25,
+    "loglik": -1.3102961752888018,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top3",
+    "jsd": 0.24467826473166027,
+    "param": 0.25,
+    "loglik": -1.3525857841939495,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top5",
+    "jsd": 0.34076417133976766,
+    "param": 0.25,
+    "loglik": -2.5203187193963705,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_rare",
+    "jsd": 0.3562280956594143,
+    "param": 0.5,
+    "loglik": -1.8250482400352872,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "para1_r1",
+    "jsd": 0.10519133674806275,
+    "param": 0.25,
+    "loglik": -1.154375028969822,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "para2_r1",
+    "jsd": 0.13461169305788498,
+    "param": 0.5,
+    "loglik": -1.1419352983530358,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r1",
+    "jsd": 0.344266935779883,
+    "param": 0.25,
+    "loglik": -2.313118012243081,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r2",
+    "jsd": 0.03752416651743891,
+    "param": 0.25,
+    "loglik": -0.3730750399301722,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r3",
+    "jsd": 0.018409433424899806,
+    "param": 0.25,
+    "loglik": -0.03701039824701545,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r4",
+    "jsd": 0.019209559294752127,
+    "param": 0.25,
+    "loglik": -0.038627788340284616,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top3",
+    "jsd": 0.4270106131444411,
+    "param": 0.25,
+    "loglik": -3.57093459505846,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top5",
+    "jsd": 0.4382127581218697,
+    "param": 0.25,
+    "loglik": -3.017830482455324,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_rare",
+    "jsd": 0.024243486339112996,
+    "param": 0.25,
+    "loglik": -0.1790786353394198,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "para1_r1",
+    "jsd": 0.31178856993421805,
+    "param": 0.25,
+    "loglik": -2.20528495213916,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "para2_r1",
+    "jsd": 0.33773522277066753,
+    "param": 0.25,
+    "loglik": -2.4022972761260437,
+    "top_hit": false
+   }
+  ],
+  "D": [
+   {
+    "task": "T1",
+    "cond": "ban_r1",
+    "jsd": 0.09335513698792419,
+    "param": 10.5,
+    "loglik": -1.2918883518009172,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r2",
+    "jsd": 0.06583128878712445,
+    "param": 10.0,
+    "loglik": -0.23418925596468565,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r3",
+    "jsd": 0.046492264697138345,
+    "param": 11.0,
+    "loglik": -1.1919755951683262,
+    "top_hit": null
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r4",
+    "jsd": 0.20189035545298423,
+    "param": 11.25,
+    "loglik": -2.322172130089177,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top3",
+    "jsd": 0.3618297646217896,
+    "param": 10.5,
+    "loglik": -3.172788307073049,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top5",
+    "jsd": 0.41776182130986217,
+    "param": 11.0,
+    "loglik": -3.320480494948865,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_rare",
+    "jsd": 0.1412655839968982,
+    "param": 9.0,
+    "loglik": -1.378197855396405,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "para1_r1",
+    "jsd": 0.08334537936332395,
+    "param": 10.5,
+    "loglik": -1.15648880089766,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "para2_r1",
+    "jsd": 0.13120252543844502,
+    "param": 10.75,
+    "loglik": -1.6084654882200398,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r1",
+    "jsd": 0.24893567671293487,
+    "param": 11.75,
+    "loglik": -1.311571335770657,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r2",
+    "jsd": 0.17840041817049557,
+    "param": 10.75,
+    "loglik": -2.0081413130457126,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r3",
+    "jsd": 0.059071165860073015,
+    "param": 11.5,
+    "loglik": -1.54948734032372,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r4",
+    "jsd": 0.06133739372462092,
+    "param": 11.25,
+    "loglik": -1.4009229748863163,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top3",
+    "jsd": 0.24123658910973014,
+    "param": 10.5,
+    "loglik": -1.3530002345636836,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top5",
+    "jsd": 0.33761716037849054,
+    "param": 10.75,
+    "loglik": -2.52160644080231,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_rare",
+    "jsd": 0.3227479736811,
+    "param": 10.5,
+    "loglik": -1.724695199549478,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "para1_r1",
+    "jsd": 0.1388151746176778,
+    "param": 11.5,
+    "loglik": -1.2367916562804993,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "para2_r1",
+    "jsd": 0.161965529338053,
+    "param": 11.75,
+    "loglik": -1.2083017327534027,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r1",
+    "jsd": 0.24979444688256,
+    "param": 9.0,
+    "loglik": -2.017213774295764,
+    "top_hit": true
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r2",
+    "jsd": 0.0467586351584955,
+    "param": 11.0,
+    "loglik": -0.38945461099253825,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r3",
+    "jsd": 0.007423847964988364,
+    "param": 10.5,
+    "loglik": -0.014878583751363856,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r4",
+    "jsd": 0.011671693819320936,
+    "param": 10.5,
+    "loglik": -0.023419982032645743,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top3",
+    "jsd": 0.42174207447441714,
+    "param": 10.5,
+    "loglik": -3.5549713490916997,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top5",
+    "jsd": 0.43633242927453286,
+    "param": 10.75,
+    "loglik": -3.004588832925718,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_rare",
+    "jsd": 0.042800091871537,
+    "param": 11.25,
+    "loglik": -0.21590903218778137,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "para1_r1",
+    "jsd": 0.22687955420515954,
+    "param": 9.25,
+    "loglik": -1.9459667978451929,
+    "top_hit": true
+   },
+   {
+    "task": "T3",
+    "cond": "para2_r1",
+    "jsd": 0.23920918560918472,
+    "param": 9.0,
+    "loglik": -2.1053438229199593,
+    "top_hit": true
+   }
+  ],
+  "D2": [
+   {
+    "task": "T1",
+    "cond": "ban_r1",
+    "jsd": 0.09094058095349183,
+    "param": 4.75,
+    "loglik": -1.273394820433574,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r2",
+    "jsd": 0.07195288548646936,
+    "param": 4.0,
+    "loglik": -0.24503232869066494,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r3",
+    "jsd": 0.029897353841339857,
+    "param": 5.0,
+    "loglik": -1.1695465167323769,
+    "top_hit": null
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r4",
+    "jsd": 0.1802167475023891,
+    "param": 5.25,
+    "loglik": -2.123887377310095,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top3",
+    "jsd": 0.33410197250387297,
+    "param": 3.5,
+    "loglik": -2.964480230500925,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top5",
+    "jsd": 0.34773799437522357,
+    "param": 2.75,
+    "loglik": -2.971585267808016,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_rare",
+    "jsd": 0.25166908548794464,
+    "param": 5.75,
+    "loglik": -1.7964494345766104,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "para1_r1",
+    "jsd": 0.1021175755183806,
+    "param": 5.25,
+    "loglik": -1.2594278468676798,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "para2_r1",
+    "jsd": 0.09416773341486459,
+    "param": 4.75,
+    "loglik": -1.4695592565493445,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r1",
+    "jsd": 0.242299594141101,
+    "param": 6.25,
+    "loglik": -1.2862638464879113,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r2",
+    "jsd": 0.1739649046425097,
+    "param": 4.5,
+    "loglik": -1.8738417631852264,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r3",
+    "jsd": 0.03595116231126315,
+    "param": 4.75,
+    "loglik": -1.4749375876679125,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r4",
+    "jsd": 0.04269854792897773,
+    "param": 5.25,
+    "loglik": -1.336444382129788,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top3",
+    "jsd": 0.24206757592338807,
+    "param": 4.75,
+    "loglik": -1.3448356373768349,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top5",
+    "jsd": 0.3457959709096485,
+    "param": 4.75,
+    "loglik": -2.5441874441098524,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_rare",
+    "jsd": 0.41333820864259274,
+    "param": 6.75,
+    "loglik": -1.9959712069995186,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "para1_r1",
+    "jsd": 0.14586298179807042,
+    "param": 6.25,
+    "loglik": -1.2504275159509397,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "para2_r1",
+    "jsd": 0.14150861959825037,
+    "param": 5.75,
+    "loglik": -1.1672457625998918,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r1",
+    "jsd": 0.3274919691958341,
+    "param": 4.5,
+    "loglik": -2.2610767096365447,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r2",
+    "jsd": 0.035518720296169745,
+    "param": 5.0,
+    "loglik": -0.3627934523237482,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r3",
+    "jsd": 0.02088839225641289,
+    "param": 5.0,
+    "loglik": -0.042023838833628785,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r4",
+    "jsd": 0.019571920645447813,
+    "param": 5.0,
+    "loglik": -0.039360517839046726,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top3",
+    "jsd": 0.4228500994561049,
+    "param": 5.25,
+    "loglik": -3.5259531294378363,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top5",
+    "jsd": 0.3891175247179013,
+    "param": 4.0,
+    "loglik": -2.8679345247831627,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_rare",
+    "jsd": 0.02551059371771463,
+    "param": 5.0,
+    "loglik": -0.1770542542140039,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "para1_r1",
+    "jsd": 0.2886853405811583,
+    "param": 4.5,
+    "loglik": -2.140175377225268,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "para2_r1",
+    "jsd": 0.3850526533875349,
+    "param": 6.25,
+    "loglik": -2.5860786969064664,
+    "top_hit": false
+   }
+  ],
+  "D3": [
+   {
+    "task": "T1",
+    "cond": "ban_r1",
+    "jsd": 0.052688007578843676,
+    "param": 1.75,
+    "loglik": -1.164534948673475,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r2",
+    "jsd": 0.06276405073267344,
+    "param": 1.75,
+    "loglik": -0.2260114735925786,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r3",
+    "jsd": 0.028305168093169665,
+    "param": 2.0,
+    "loglik": -1.1813125067673793,
+    "top_hit": null
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r4",
+    "jsd": 0.17193499218873112,
+    "param": 2.0,
+    "loglik": -2.0488826438182337,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top3",
+    "jsd": 0.3779149339107749,
+    "param": 2.0,
+    "loglik": -3.3273617668938607,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top5",
+    "jsd": 0.42264462957520704,
+    "param": 2.25,
+    "loglik": -3.335580869363623,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_rare",
+    "jsd": 0.21185970848285576,
+    "param": 2.0,
+    "loglik": -1.6208000725315372,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "para1_r1",
+    "jsd": 0.05394599179342809,
+    "param": 1.75,
+    "loglik": -1.0743332982020397,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "para2_r1",
+    "jsd": 0.08093732769445647,
+    "param": 1.75,
+    "loglik": -1.4290178537768017,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r1",
+    "jsd": 0.26951903687576984,
+    "param": 2.5,
+    "loglik": -1.4291865761126346,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r2",
+    "jsd": 0.17383346940225575,
+    "param": 2.0,
+    "loglik": -1.850259881902599,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r3",
+    "jsd": 0.052055723312561725,
+    "param": 2.25,
+    "loglik": -1.5241408780510244,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r4",
+    "jsd": 0.02220441210197853,
+    "param": 2.0,
+    "loglik": -1.2807649144342101,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top3",
+    "jsd": 0.2492689130337003,
+    "param": 2.0,
+    "loglik": -1.3644473394557592,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top5",
+    "jsd": 0.34351469765195497,
+    "param": 2.0,
+    "loglik": -2.5251127836845306,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_rare",
+    "jsd": 0.317418820835104,
+    "param": 2.0,
+    "loglik": -1.7026269920237578,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "para1_r1",
+    "jsd": 0.13447227110633675,
+    "param": 2.25,
+    "loglik": -1.2520840901086727,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "para2_r1",
+    "jsd": 0.14564692030077,
+    "param": 2.25,
+    "loglik": -1.193084139796336,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r1",
+    "jsd": 0.3199501066174164,
+    "param": 2.0,
+    "loglik": -2.2445960129967606,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r2",
+    "jsd": 0.03299778822396697,
+    "param": 2.0,
+    "loglik": -0.3505833923551849,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r3",
+    "jsd": 0.01348410856287628,
+    "param": 2.0,
+    "loglik": -0.0270705870582415,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r4",
+    "jsd": 0.013200529227197458,
+    "param": 2.0,
+    "loglik": -0.026499146682382128,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top3",
+    "jsd": 0.4234662012106477,
+    "param": 2.0,
+    "loglik": -3.557495333915445,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top5",
+    "jsd": 0.44802916418353744,
+    "param": 2.25,
+    "loglik": -3.0465034309328036,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_rare",
+    "jsd": 0.031179667057357578,
+    "param": 2.0,
+    "loglik": -0.1884589712160993,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "para1_r1",
+    "jsd": 0.2869902465664912,
+    "param": 2.0,
+    "loglik": -2.1334041733554843,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "para2_r1",
+    "jsd": 0.30670923948989637,
+    "param": 2.0,
+    "loglik": -2.3267455205616083,
+    "top_hit": false
+   }
+  ],
+  "E": [
+   {
+    "task": "T1",
+    "cond": "ban_r1",
+    "jsd": 0.10867042915047925,
+    "param": 3.5,
+    "loglik": -1.2980810574402049,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r2",
+    "jsd": 0.11548693886897182,
+    "param": 3.5,
+    "loglik": -0.3372661275946509,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r3",
+    "jsd": 0.03361539623411508,
+    "param": 3.5,
+    "loglik": -1.1718500693590927,
+    "top_hit": null
+   },
+   {
+    "task": "T1",
+    "cond": "ban_r4",
+    "jsd": 0.1740202012155106,
+    "param": 3.5,
+    "loglik": -2.092433163692325,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top3",
+    "jsd": 0.37146777753189414,
+    "param": 3.5,
+    "loglik": -3.267195175148513,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_top5",
+    "jsd": 0.4414736857557464,
+    "param": -11.0,
+    "loglik": -3.7211027753411074,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "ban_rare",
+    "jsd": 0.22154652503873826,
+    "param": 3.75,
+    "loglik": -1.6263446524391747,
+    "top_hit": false
+   },
+   {
+    "task": "T1",
+    "cond": "para1_r1",
+    "jsd": 0.10294384600901374,
+    "param": 3.5,
+    "loglik": -1.1901073599710472,
+    "top_hit": true
+   },
+   {
+    "task": "T1",
+    "cond": "para2_r1",
+    "jsd": 0.12693854210652827,
+    "param": 3.5,
+    "loglik": -1.533867233127852,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r1",
+    "jsd": 0.1952501657498184,
+    "param": 3.5,
+    "loglik": -1.1726956780763365,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r2",
+    "jsd": 0.1912294966890403,
+    "param": 3.5,
+    "loglik": -1.9479907754127586,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r3",
+    "jsd": 0.04194114785895324,
+    "param": 3.5,
+    "loglik": -1.494518109142503,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_r4",
+    "jsd": 0.033671098374709926,
+    "param": 3.5,
+    "loglik": -1.3094134346652746,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top3",
+    "jsd": 0.24724147648835598,
+    "param": 3.5,
+    "loglik": -1.3588015758182086,
+    "top_hit": true
+   },
+   {
+    "task": "T2",
+    "cond": "ban_top5",
+    "jsd": 0.34165247511443225,
+    "param": 3.5,
+    "loglik": -2.525448996295654,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "ban_rare",
+    "jsd": 0.32813147631153317,
+    "param": 3.5,
+    "loglik": -1.7377832459240985,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "para1_r1",
+    "jsd": 0.09745645641819112,
+    "param": 3.5,
+    "loglik": -1.1365124168294767,
+    "top_hit": false
+   },
+   {
+    "task": "T2",
+    "cond": "para2_r1",
+    "jsd": 0.11501226301438072,
+    "param": 3.5,
+    "loglik": -1.0978513952769549,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r1",
+    "jsd": 0.34090375859488614,
+    "param": 3.5,
+    "loglik": -2.303683784330006,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r2",
+    "jsd": 0.036361333877096336,
+    "param": 3.5,
+    "loglik": -0.37510872087343633,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r3",
+    "jsd": 0.017018710794175884,
+    "param": 3.5,
+    "loglik": -0.03420093419677018,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_r4",
+    "jsd": 0.017018710794175884,
+    "param": 3.5,
+    "loglik": -0.03420093419677018,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top3",
+    "jsd": 0.4249993396752648,
+    "param": 3.5,
+    "loglik": -3.559642152683283,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_top5",
+    "jsd": 0.4341355647934825,
+    "param": 3.75,
+    "loglik": -2.99718500026663,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "ban_rare",
+    "jsd": 0.02397086137934664,
+    "param": 3.5,
+    "loglik": -0.17444932920313508,
+    "top_hit": null
+   },
+   {
+    "task": "T3",
+    "cond": "para1_r1",
+    "jsd": 0.3083624863097765,
+    "param": 3.5,
+    "loglik": -2.195936576357002,
+    "top_hit": false
+   },
+   {
+    "task": "T3",
+    "cond": "para2_r1",
+    "jsd": 0.332990630386508,
+    "param": 3.5,
+    "loglik": -2.3907377387793853,
+    "top_hit": false
+   }
+  ]
+ },
+ "chosen_variant": "G_suffix",
+ "params_all": {
+  "A": 0.0,
+  "B": 19.75,
+  "C": 0.25,
+  "D": 10.5,
+  "D2": 5.0,
+  "D3": 2.0,
+  "E": 3.5
+ },
+ "kappa": {
+  "1": 0.04755963774364854,
+  "all": 0.1713556022481021,
+  "2-3": 0.2834329570934029,
+  "5": 0.36503086390900913
+ }
+}

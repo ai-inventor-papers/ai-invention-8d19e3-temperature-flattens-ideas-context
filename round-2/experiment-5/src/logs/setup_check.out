@@ -1,0 +1,7 @@
+02:16:48|INFO   |hashed 145 input files
+02:16:50|INFO   |prompt byte-equality 67/67; distinct 5-token suffixes=1 [['<|im_end|>', '\n', '<|im_start|>', 'assistant', '\n']]
+02:16:56|INFO   |tests/test_classifier.py: 3 passed in 2.06s
+02:16:58|INFO   |tests/test_oracle.py: failures: 0
+02:17:05|INFO   |tests/test_classifier_t4.py: 2 passed in 4.46s
+02:17:07|INFO   |relabel agreement 200/200
+EXIT 0

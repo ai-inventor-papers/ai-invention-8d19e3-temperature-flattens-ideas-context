@@ -1,0 +1,47 @@
+03:25:00|INFO   |VRAM free 23.5/23.7 GB
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 56/434 [00:00<00:00, 505.43it/s]Loading weights:  26%|██▌       | 112/434 [00:00<00:00, 519.63it/s]Loading weights:  38%|███▊      | 164/434 [00:00<00:00, 424.39it/s]Loading weights:  48%|████▊     | 208/434 [00:00<00:00, 413.06it/s]Loading weights:  58%|█████▊    | 251/434 [00:00<00:00, 402.04it/s]Loading weights:  70%|██████▉   | 303/434 [00:00<00:00, 427.34it/s]Loading weights:  80%|███████▉  | 347/434 [00:00<00:00, 385.36it/s]Loading weights:  90%|████████▉ | 389/434 [00:00<00:00, 389.79it/s]Loading weights:  99%|█████████▉| 429/434 [00:01<00:00, 384.29it/s]Loading weights: 100%|██████████| 434/434 [00:01<00:00, 411.90it/s]
+03:27:14|INFO   |T1: prompt states for 6 prompts -> acts/prompt_states_conf_nonban_T1.npz (suffix identity OK)
+03:27:14|INFO   |T2: prompt states for 6 prompts -> acts/prompt_states_conf_nonban_T2.npz (suffix identity OK)
+03:27:14|INFO   |T3: prompt states for 3 prompts -> acts/prompt_states_conf_nonban_T3.npz (suffix identity OK)
+03:27:14|INFO   |T4: prompt states for 12 prompts -> acts/prompt_states_conf_nonban_T4.npz (suffix identity OK)
+03:27:41|INFO   |VRAM free 23.5/23.7 GB
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:  11%|█▏        | 49/434 [00:00<00:00, 436.54it/s]Loading weights:  21%|██▏       | 93/434 [00:00<00:00, 409.47it/s]Loading weights:  31%|███       | 134/434 [00:00<00:00, 401.69it/s]Loading weights:  41%|████      | 179/434 [00:00<00:00, 401.88it/s]Loading weights:  54%|█████▎    | 233/434 [00:00<00:00, 440.28it/s]Loading weights:  64%|██████▍   | 278/434 [00:00<00:00, 439.18it/s]Loading weights:  74%|███████▍  | 322/434 [00:00<00:00, 415.89it/s]Loading weights:  88%|████████▊ | 383/434 [00:00<00:00, 466.50it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 453.95it/s]
+03:29:57|INFO   |T1: prompt states for 11 prompts -> acts/prompt_states_conf_bans_T1.npz (suffix identity OK)
+03:29:58|INFO   |T2: prompt states for 11 prompts -> acts/prompt_states_conf_bans_T2.npz (suffix identity OK)
+03:29:58|INFO   |T3: prompt states for 2 prompts -> acts/prompt_states_conf_bans_T3.npz (suffix identity OK)
+03:30:23|INFO   |VRAM free 23.5/23.7 GB
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:  10%|▉         | 42/434 [00:00<00:00, 404.62it/s]Loading weights:  19%|█▉        | 84/434 [00:00<00:00, 412.61it/s]Loading weights:  31%|███       | 135/434 [00:00<00:00, 451.72it/s]Loading weights:  42%|████▏     | 181/434 [00:00<00:00, 434.55it/s]Loading weights:  55%|█████▍    | 237/434 [00:00<00:00, 446.36it/s]Loading weights:  68%|██████▊   | 295/434 [00:00<00:00, 483.66it/s]Loading weights:  79%|███████▉  | 344/434 [00:00<00:00, 446.04it/s]Loading weights:  90%|████████▉ | 390/434 [00:00<00:00, 445.83it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 451.84it/s]
+03:32:46|INFO   |T1/alt_placebo: n=100 fallback=0.00
+03:32:47|INFO   |T1/mention_A_star: n=100 fallback=0.00
+03:32:48|INFO   |T1/mention_BFS: n=100 fallback=0.00
+03:32:49|INFO   |T1/placebo_b1: n=100 fallback=0.00
+03:32:51|INFO   |T1/placebo_b2: n=100 fallback=0.00
+03:32:52|INFO   |T1/placebo_b3: n=100 fallback=0.00
+03:32:53|INFO   |T2/alt_placebo: n=100 fallback=0.00
+03:32:54|INFO   |T2/mention_Bubble: n=100 fallback=0.00
+03:32:55|INFO   |T2/mention_Merge: n=100 fallback=0.00
+03:32:56|INFO   |T2/placebo_b1: n=100 fallback=0.00
+03:32:58|INFO   |T2/placebo_b2: n=100 fallback=0.00
+03:32:59|INFO   |T2/placebo_b3: n=100 fallback=0.00
+03:33:00|INFO   |T3/placebo_b1: n=100 fallback=0.00
+03:33:02|INFO   |T3/placebo_b2: n=100 fallback=0.00
+03:33:03|INFO   |T3/placebo_b3: n=100 fallback=0.00
+03:33:07|INFO   |T4/baseline: n=300 fallback=0.00
+03:33:08|INFO   |T4/forced_Binary_search_value: n=40 fallback=0.00
+03:33:08|INFO   |T4/forced_Counting_bucket: n=40 fallback=0.00
+03:33:09|INFO   |T4/forced_Heap_select: n=40 fallback=0.00
+03:33:09|INFO   |T4/forced_Median_of_medians: n=40 fallback=0.00
+03:33:10|INFO   |T4/forced_Partial_selection: n=40 fallback=0.00
+03:33:10|INFO   |T4/forced_Quickselect: n=40 fallback=0.00
+03:33:11|INFO   |T4/forced_Sort_index: n=40 fallback=0.00
+03:33:12|INFO   |T4/placebo_b1: n=100 fallback=0.00
+03:33:13|INFO   |T4/placebo_b2: n=100 fallback=0.00
+03:33:15|INFO   |T4/placebo_b3: n=100 fallback=0.00
+FREEZE GUARD OK: frozen_predictors.json sha256=a669710b5153bc425c391fcd9a5f762d1ea11fd51349c39f729c2a138a98ce7a committed_at=1792120045
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:  11%|█         | 47/434 [00:00<00:00, 433.23it/s]Loading weights:  21%|██        | 91/434 [00:00<00:00, 397.91it/s]Loading weights:  32%|███▏      | 139/434 [00:00<00:00, 428.37it/s]Loading weights:  42%|████▏     | 183/434 [00:00<00:00, 384.48it/s]Loading weights:  54%|█████▎    | 233/434 [00:00<00:00, 407.29it/s]Loading weights:  63%|██████▎   | 275/434 [00:00<00:00, 410.11it/s]Loading weights:  73%|███████▎  | 317/434 [00:00<00:00, 407.08it/s]Loading weights:  83%|████████▎ | 360/434 [00:00<00:00, 409.77it/s]Loading weights:  94%|█████████▍| 409/434 [00:00<00:00, 423.21it/s]Loading weights: 100%|██████████| 434/434 [00:01<00:00, 428.76it/s]
+03:36:10|INFO   |hook tests: {'zero_vector_identical': True, 'left_pad_suffix_identical': True, 'edit_other_positions_maxabs': 0.0, 'edit_suffix_maxabs_vs_expected': 0.0, 'delta_reproduces_ban_suffix_rel_err': 0.0, 'left_pad_suffix_state_rel_l2': 0.005910297390073538, 'hook_leak_assert': 'passed (Hooks.__exit__ asserts no residual hooks)'}
+FREEZE GUARD OK: frozen_predictors.json sha256=a669710b5153bc425c391fcd9a5f762d1ea11fd51349c39f729c2a138a98ce7a committed_at=1792120045
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:  11%|█         | 48/434 [00:00<00:00, 477.33it/s]Loading weights:  23%|██▎       | 100/434 [00:00<00:00, 487.59it/s]Loading weights:  34%|███▍      | 149/434 [00:00<00:00, 461.60it/s]Loading weights:  45%|████▌     | 196/434 [00:00<00:00, 450.90it/s]Loading weights:  56%|█████▌    | 242/434 [00:00<00:00, 434.57it/s]Loading weights:  68%|██████▊   | 295/434 [00:00<00:00, 437.59it/s]Loading weights:  80%|███████▉  | 346/434 [00:00<00:00, 458.51it/s]Loading weights:  91%|█████████ | 393/434 [00:00<00:00, 460.97it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 470.66it/s]
+03:39:04|INFO   |64 generations to run (4 cells)
+03:39:34|INFO   |batch 0: 48 rows, 21896 tokens, 29.1s (753 tok/s); progress 48/64
+03:39:53|INFO   |batch 1: 16 rows, 7179 tokens, 19.4s (370 tok/s); progress 64/64

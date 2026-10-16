@@ -1,0 +1,454 @@
+{
+ "model": "openai/gpt-4.1-mini",
+ "n_requested": 60,
+ "n_judged": 60,
+ "agreement": 0.8166666666666667,
+ "cohen_kappa": 0.7855750487329435,
+ "accept": true,
+ "cost_usd": 0.015349600000000008,
+ "aborted": false,
+ "rule_label_counts": {
+  "Binary_search_value": 9,
+  "Counting_bucket": 9,
+  "Heap_select": 9,
+  "Median_of_medians": 9,
+  "Partial_selection": 6,
+  "Quickselect": 9,
+  "Sort_index": 9
+ },
+ "confusion": {
+  "Binary_search_value->Binary_search_value": 9,
+  "Counting_bucket->Sort_index": 2,
+  "Heap_select->Heap_select": 9,
+  "Median_of_medians->Median_of_medians": 7,
+  "Partial_selection->Partial_selection": 6,
+  "Quickselect->Quickselect": 9,
+  "Sort_index->Quickselect": 6,
+  "Sort_index->Binary_search_value": 1,
+  "Counting_bucket->Counting_bucket": 7,
+  "Sort_index->Sort_index": 2,
+  "Median_of_medians->Quickselect": 2
+ },
+ "items": [
+  {
+   "id": "T4|forced_Binary_search_value|1033",
+   "rule": "Binary_search_value",
+   "judge": "Binary_search_value",
+   "confidence": 1.0,
+   "cost": 0.0002004
+  },
+  {
+   "id": "T4|forced_Counting_bucket|1013",
+   "rule": "Counting_bucket",
+   "judge": "Sort_index",
+   "confidence": 0.8,
+   "cost": 0.0002236
+  },
+  {
+   "id": "T4|forced_Heap_select|1011",
+   "rule": "Heap_select",
+   "judge": "Heap_select",
+   "confidence": 1.0,
+   "cost": 0.0002152
+  },
+  {
+   "id": "T4|forced_Median_of_medians|1033",
+   "rule": "Median_of_medians",
+   "judge": "Median_of_medians",
+   "confidence": 1.0,
+   "cost": 0.0002996
+  },
+  {
+   "id": "T4|forced_Partial_selection|1002",
+   "rule": "Partial_selection",
+   "judge": "Partial_selection",
+   "confidence": 0.95,
+   "cost": 0.0002108
+  },
+  {
+   "id": "T4|baseline|1265",
+   "rule": "Quickselect",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0002652
+  },
+  {
+   "id": "T4|baseline|1068",
+   "rule": "Sort_index",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0003052
+  },
+  {
+   "id": "T4|forced_Binary_search_value|1037",
+   "rule": "Binary_search_value",
+   "judge": "Binary_search_value",
+   "confidence": 1.0,
+   "cost": 0.0002228
+  },
+  {
+   "id": "T4|forced_Counting_bucket|1018",
+   "rule": "Counting_bucket",
+   "judge": "Sort_index",
+   "confidence": 0.9,
+   "cost": 0.000214
+  },
+  {
+   "id": "T4|forced_Heap_select|1021",
+   "rule": "Heap_select",
+   "judge": "Heap_select",
+   "confidence": 1.0,
+   "cost": 0.0002224
+  },
+  {
+   "id": "T4|forced_Median_of_medians|1038",
+   "rule": "Median_of_medians",
+   "judge": "Median_of_medians",
+   "confidence": 0.9,
+   "cost": 0.0003144
+  },
+  {
+   "id": "T4|forced_Partial_selection|1020",
+   "rule": "Partial_selection",
+   "judge": "Partial_selection",
+   "confidence": 0.9,
+   "cost": 0.000286
+  },
+  {
+   "id": "T4|baseline|1285",
+   "rule": "Quickselect",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0002336
+  },
+  {
+   "id": "T4|forced_Binary_search_value|1005",
+   "rule": "Sort_index",
+   "judge": "Binary_search_value",
+   "confidence": 0.8,
+   "cost": 0.0002168
+  },
+  {
+   "id": "T4|forced_Binary_search_value|1003",
+   "rule": "Binary_search_value",
+   "judge": "Binary_search_value",
+   "confidence": 0.95,
+   "cost": 0.0002472
+  },
+  {
+   "id": "T4|forced_Counting_bucket|1035",
+   "rule": "Counting_bucket",
+   "judge": "Counting_bucket",
+   "confidence": 0.95,
+   "cost": 0.0002776
+  },
+  {
+   "id": "T4|forced_Heap_select|1019",
+   "rule": "Heap_select",
+   "judge": "Heap_select",
+   "confidence": 1.0,
+   "cost": 0.0001872
+  },
+  {
+   "id": "T4|forced_Median_of_medians|1013",
+   "rule": "Median_of_medians",
+   "judge": "Median_of_medians",
+   "confidence": 0.95,
+   "cost": 0.0003512
+  },
+  {
+   "id": "T4|forced_Partial_selection|1001",
+   "rule": "Partial_selection",
+   "judge": "Partial_selection",
+   "confidence": 0.9,
+   "cost": 0.0002112
+  },
+  {
+   "id": "T4|baseline|1027",
+   "rule": "Quickselect",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0003048
+  },
+  {
+   "id": "T4|forced_Sort_index|1036",
+   "rule": "Sort_index",
+   "judge": "Sort_index",
+   "confidence": 1.0,
+   "cost": 0.0001776
+  },
+  {
+   "id": "T4|forced_Binary_search_value|1007",
+   "rule": "Binary_search_value",
+   "judge": "Binary_search_value",
+   "confidence": 1.0,
+   "cost": 0.0002412
+  },
+  {
+   "id": "T4|forced_Counting_bucket|1026",
+   "rule": "Counting_bucket",
+   "judge": "Counting_bucket",
+   "confidence": 0.95,
+   "cost": 0.0002832
+  },
+  {
+   "id": "T4|forced_Heap_select|1004",
+   "rule": "Heap_select",
+   "judge": "Heap_select",
+   "confidence": 0.9,
+   "cost": 0.0001992
+  },
+  {
+   "id": "T4|baseline|1019",
+   "rule": "Median_of_medians",
+   "judge": "Quickselect",
+   "confidence": 0.9,
+   "cost": 0.0003092
+  },
+  {
+   "id": "T4|forced_Partial_selection|1010",
+   "rule": "Partial_selection",
+   "judge": "Partial_selection",
+   "confidence": 0.9,
+   "cost": 0.0002012
+  },
+  {
+   "id": "T4|baseline|1167",
+   "rule": "Quickselect",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0002804
+  },
+  {
+   "id": "T4|baseline|1254",
+   "rule": "Sort_index",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0002972
+  },
+  {
+   "id": "T4|forced_Binary_search_value|1021",
+   "rule": "Binary_search_value",
+   "judge": "Binary_search_value",
+   "confidence": 1.0,
+   "cost": 0.0002252
+  },
+  {
+   "id": "T4|forced_Counting_bucket|1031",
+   "rule": "Counting_bucket",
+   "judge": "Counting_bucket",
+   "confidence": 0.7,
+   "cost": 0.0002648
+  },
+  {
+   "id": "T4|forced_Heap_select|1014",
+   "rule": "Heap_select",
+   "judge": "Heap_select",
+   "confidence": 0.9,
+   "cost": 0.0002284
+  },
+  {
+   "id": "T4|forced_Median_of_medians|1020",
+   "rule": "Median_of_medians",
+   "judge": "Median_of_medians",
+   "confidence": 1.0,
+   "cost": 0.0002928
+  },
+  {
+   "id": "T4|forced_Partial_selection|1027",
+   "rule": "Partial_selection",
+   "judge": "Partial_selection",
+   "confidence": 0.9,
+   "cost": 0.0002672
+  },
+  {
+   "id": "T4|forced_Partial_selection|1029",
+   "rule": "Quickselect",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0002724
+  },
+  {
+   "id": "T4|forced_Sort_index|1001",
+   "rule": "Sort_index",
+   "judge": "Sort_index",
+   "confidence": 1.0,
+   "cost": 0.0002032
+  },
+  {
+   "id": "T4|forced_Binary_search_value|1020",
+   "rule": "Binary_search_value",
+   "judge": "Binary_search_value",
+   "confidence": 1.0,
+   "cost": 0.0002072
+  },
+  {
+   "id": "T4|forced_Counting_bucket|1024",
+   "rule": "Counting_bucket",
+   "judge": "Counting_bucket",
+   "confidence": 0.9,
+   "cost": 0.0002388
+  },
+  {
+   "id": "T4|forced_Heap_select|1017",
+   "rule": "Heap_select",
+   "judge": "Heap_select",
+   "confidence": 0.95,
+   "cost": 0.000228
+  },
+  {
+   "id": "T4|forced_Median_of_medians|1019",
+   "rule": "Median_of_medians",
+   "judge": "Median_of_medians",
+   "confidence": 0.9,
+   "cost": 0.0003508
+  },
+  {
+   "id": "T4|forced_Partial_selection|1038",
+   "rule": "Partial_selection",
+   "judge": "Partial_selection",
+   "confidence": 1.0,
+   "cost": 0.0002284
+  },
+  {
+   "id": "T4|forced_Partial_selection|1008",
+   "rule": "Quickselect",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.000292
+  },
+  {
+   "id": "T4|baseline|1048",
+   "rule": "Sort_index",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0003468
+  },
+  {
+   "id": "T4|forced_Binary_search_value|1024",
+   "rule": "Binary_search_value",
+   "judge": "Binary_search_value",
+   "confidence": 1.0,
+   "cost": 0.00024
+  },
+  {
+   "id": "T4|forced_Counting_bucket|1014",
+   "rule": "Counting_bucket",
+   "judge": "Counting_bucket",
+   "confidence": 0.9,
+   "cost": 0.0002316
+  },
+  {
+   "id": "T4|forced_Heap_select|1036",
+   "rule": "Heap_select",
+   "judge": "Heap_select",
+   "confidence": 1.0,
+   "cost": 0.0001928
+  },
+  {
+   "id": "T4|forced_Median_of_medians|1035",
+   "rule": "Median_of_medians",
+   "judge": "Quickselect",
+   "confidence": 0.8,
+   "cost": 0.0003284
+  },
+  {
+   "id": "T4|baseline|1276",
+   "rule": "Quickselect",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0002932
+  },
+  {
+   "id": "T4|baseline|1003",
+   "rule": "Sort_index",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0002844
+  },
+  {
+   "id": "T4|forced_Binary_search_value|1036",
+   "rule": "Binary_search_value",
+   "judge": "Binary_search_value",
+   "confidence": 1.0,
+   "cost": 0.0002716
+  },
+  {
+   "id": "T4|forced_Counting_bucket|1001",
+   "rule": "Counting_bucket",
+   "judge": "Counting_bucket",
+   "confidence": 0.9,
+   "cost": 0.0002464
+  },
+  {
+   "id": "T4|forced_Heap_select|1023",
+   "rule": "Heap_select",
+   "judge": "Heap_select",
+   "confidence": 0.9,
+   "cost": 0.0002336
+  },
+  {
+   "id": "T4|forced_Median_of_medians|1001",
+   "rule": "Median_of_medians",
+   "judge": "Median_of_medians",
+   "confidence": 0.95,
+   "cost": 0.0002964
+  },
+  {
+   "id": "T4|baseline|1204",
+   "rule": "Quickselect",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.000276
+  },
+  {
+   "id": "T4|baseline|1181",
+   "rule": "Sort_index",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0002948
+  },
+  {
+   "id": "T4|forced_Binary_search_value|1010",
+   "rule": "Binary_search_value",
+   "judge": "Binary_search_value",
+   "confidence": 1.0,
+   "cost": 0.0002164
+  },
+  {
+   "id": "T4|forced_Counting_bucket|1021",
+   "rule": "Counting_bucket",
+   "judge": "Counting_bucket",
+   "confidence": 0.9,
+   "cost": 0.0002524
+  },
+  {
+   "id": "T4|forced_Heap_select|1031",
+   "rule": "Heap_select",
+   "judge": "Heap_select",
+   "confidence": 1.0,
+   "cost": 0.0002204
+  },
+  {
+   "id": "T4|forced_Median_of_medians|1032",
+   "rule": "Median_of_medians",
+   "judge": "Median_of_medians",
+   "confidence": 1.0,
+   "cost": 0.0002856
+  },
+  {
+   "id": "T4|forced_Partial_selection|1004",
+   "rule": "Quickselect",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0002684
+  },
+  {
+   "id": "T4|baseline|1294",
+   "rule": "Sort_index",
+   "judge": "Quickselect",
+   "confidence": 1.0,
+   "cost": 0.0002728
+  }
+ ]
+}

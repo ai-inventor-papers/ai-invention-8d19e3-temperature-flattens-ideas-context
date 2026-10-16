@@ -1,0 +1,7 @@
+mean JSD A=0.206873 B=0.187813 over 22 T1-T3 bans: MATCH
+C2a: 8 violating cells over 46 (Fisher p recomputed): MATCH
+C2a on shuffled ban/placebo labels (20 reps): violations per rep = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] (real data: 8)
+mean transplant recovery -0.0014 over 6 bans: MATCH
+sign acc A = 0.6538 over 52 cells: MATCH
+sign acc B = 0.8269 over 52 cells: MATCH
+verify_headline: ALL MATCH

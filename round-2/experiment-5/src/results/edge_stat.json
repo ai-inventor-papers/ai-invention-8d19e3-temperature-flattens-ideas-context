@@ -1,0 +1,1547 @@
+{
+ "screen": {
+  "T1/ban_r1": {
+   "banned": [
+    "BFS"
+   ],
+   "internal": {
+    "E": 0.23883583202964276,
+    "ci95": [
+     0.15004095440875473,
+     0.31442785551085684
+    ],
+    "null_mean": 0.0001745624060276798,
+    "p_two_sided": 0.065,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.004882026636005507,
+    "ci95": [
+     0.000401736097435741,
+     0.008679688585492
+    ],
+    "null_mean": 2.4215006711967914e-05,
+    "p_two_sided": 0.828,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T1/ban_r2": {
+   "banned": [
+    "DFS"
+   ],
+   "internal": {
+    "E": 0.13885953273158474,
+    "ci95": [
+     0.11282277716043197,
+     0.15621736977901995
+    ],
+    "null_mean": -0.0010416348935020545,
+    "p_two_sided": 0.192,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.01636814719358832,
+    "ci95": [
+     0.013380830337184268,
+     0.018359691764524337
+    ],
+    "null_mean": 3.671176076131863e-05,
+    "p_two_sided": 0.178,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T1/ban_r3": {
+   "banned": [
+    "A_star"
+   ],
+   "internal": {
+    "E": -0.02706524024911431,
+    "ci95": [
+     -0.060306133221283365,
+     0.006174188738527375
+    ],
+    "null_mean": 0.0008027444516143518,
+    "p_two_sided": 0.311,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": 0.0008890527463402608,
+    "ci95": [
+     -0.0024495902998603763,
+     0.003918450427093821
+    ],
+    "null_mean": 1.3173015813411494e-05,
+    "p_two_sided": 0.765,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T1/ban_r4": {
+   "banned": [
+    "Dijkstra"
+   ],
+   "internal": {
+    "E": 0.23121722976860168,
+    "ci95": [
+     0.16949628224395566,
+     0.2932944297925944
+    ],
+    "null_mean": -0.005824046201744586,
+    "p_two_sided": 0.188,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": -0.017110367634405915,
+    "ci95": [
+     -0.024469126807214196,
+     -0.009646390391643498
+    ],
+    "null_mean": -0.0003347529732877238,
+    "p_two_sided": 0.488,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T1/ban_top3": {
+   "banned": [
+    "BFS",
+    "DFS",
+    "A_star"
+   ],
+   "internal": {
+    "E": 0.15968352414902132,
+    "ci95": [
+     0.10745429026914881,
+     0.20986596719824324
+    ],
+    "null_mean": -0.0015588066793644773,
+    "p_two_sided": 0.242,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": -0.004833186810681198,
+    "ci95": [
+     -0.006127940518271433,
+     -0.0033951849318806107
+    ],
+    "null_mean": 0.000723327540248507,
+    "p_two_sided": 0.793,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T1/ban_top5": {
+   "banned": [
+    "BFS",
+    "DFS",
+    "A_star",
+    "Dijkstra",
+    "SPFA"
+   ],
+   "internal": {
+    "E": -0.035271064288146164,
+    "ci95": [
+     -0.040830643271169545,
+     -0.028721254781046122
+    ],
+    "null_mean": 0.0013468603135461743,
+    "p_two_sided": 0.674,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.013315535980033566,
+    "ci95": [
+     -0.017959063978287716,
+     -0.008179744586571237
+    ],
+    "null_mean": -0.0003714418948107938,
+    "p_two_sided": 0.406,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T1/ban_rare": {
+   "banned": [
+    "SPFA"
+   ],
+   "internal": {
+    "E": 0.28878108752177684,
+    "ci95": [
+     0.22474153799039648,
+     0.35083973173968247
+    ],
+    "null_mean": 0.007827907686613502,
+    "p_two_sided": 0.15,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.036317811766934445,
+    "ci95": [
+     0.030690722173400572,
+     0.041873542472199196
+    ],
+    "null_mean": 9.59951154196242e-05,
+    "p_two_sided": 0.226,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T1/para1_r1": {
+   "banned": [
+    "BFS"
+   ],
+   "internal": {
+    "E": 0.26393869487761284,
+    "ci95": [
+     0.18606745033459515,
+     0.3372908405767287
+    ],
+    "null_mean": 0.0029618425230533035,
+    "p_two_sided": 0.029,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.00795503703451683,
+    "ci95": [
+     0.004395462838397826,
+     0.011034566750251586
+    ],
+    "null_mean": -0.00028071287894034197,
+    "p_two_sided": 0.664,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T1/para2_r1": {
+   "banned": [
+    "BFS"
+   ],
+   "internal": {
+    "E": 0.18220460309022055,
+    "ci95": [
+     0.09726810822213655,
+     0.26052085038326683
+    ],
+    "null_mean": -0.0030351754984122323,
+    "p_two_sided": 0.141,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": -0.0030441348622053514,
+    "ci95": [
+     -0.009290576625800403,
+     0.002999632218695111
+    ],
+    "null_mean": -0.00028408813120441267,
+    "p_two_sided": 0.899,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/ban_r1": {
+   "banned": [
+    "Bubble"
+   ],
+   "internal": {
+    "E": -0.061012550792840035,
+    "ci95": [
+     -0.07031835107949976,
+     -0.050037119168622385
+    ],
+    "null_mean": -0.001809490563278097,
+    "p_two_sided": 0.491,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.006032461743719587,
+    "ci95": [
+     -0.0077976840718145795,
+     -0.005038082921149973
+    ],
+    "null_mean": -0.0003522342814557362,
+    "p_two_sided": 0.753,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/ban_r2": {
+   "banned": [
+    "Quick"
+   ],
+   "internal": {
+    "E": -0.012149614023763718,
+    "ci95": [
+     -0.07839061132706497,
+     0.05165226182175997
+    ],
+    "null_mean": 0.006871260384985303,
+    "p_two_sided": 0.823,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": 0.00026930142049047317,
+    "ci95": [
+     -0.005366532300380974,
+     0.005992224511441627
+    ],
+    "null_mean": 0.00039975419692216406,
+    "p_two_sided": 0.993,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T2/ban_r3": {
+   "banned": [
+    "Merge"
+   ],
+   "internal": {
+    "E": 0.01582651295562912,
+    "ci95": [
+     -0.04584240308111938,
+     0.08298684719542258
+    ],
+    "null_mean": 0.00016474014445146313,
+    "p_two_sided": 0.582,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": -0.000983393892900993,
+    "ci95": [
+     -0.006905427359144741,
+     0.004759893674223856
+    ],
+    "null_mean": -0.00016662793008766149,
+    "p_two_sided": 0.882,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/ban_r4": {
+   "banned": [
+    "Selection"
+   ],
+   "internal": {
+    "E": 0.0014744581989838135,
+    "ci95": [
+     -0.039714072538565945,
+     0.04230570813513423
+    ],
+    "null_mean": 0.0014440256116751541,
+    "p_two_sided": 0.999,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": -0.005681206566541457,
+    "ci95": [
+     -0.011676556775628823,
+     0.00012734646576330206
+    ],
+    "null_mean": -0.0003506534471548712,
+    "p_two_sided": 0.4,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/ban_top3": {
+   "banned": [
+    "Bubble",
+    "Quick",
+    "Merge"
+   ],
+   "internal": {
+    "E": 0.013916204239705651,
+    "ci95": [
+     0.006109851152657572,
+     0.021416964867562865
+    ],
+    "null_mean": 0.0004243018934763563,
+    "p_two_sided": 0.34,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.004888185238248667,
+    "ci95": [
+     0.0015254198646904942,
+     0.007525286575651551
+    ],
+    "null_mean": -5.3346560593150745e-05,
+    "p_two_sided": 0.096,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T2/ban_top5": {
+   "banned": [
+    "Bubble",
+    "Quick",
+    "Merge",
+    "Selection",
+    "Insertion"
+   ],
+   "internal": {
+    "E": 0.005867943133402012,
+    "ci95": [
+     -0.006759341862156278,
+     0.018774046337232835
+    ],
+    "null_mean": 0.0027043176900994332,
+    "p_two_sided": 0.933,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": -0.008750554835160199,
+    "ci95": [
+     -0.014173224151455296,
+     -0.00330675460594397
+    ],
+    "null_mean": -0.00012747782138354953,
+    "p_two_sided": 0.398,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/ban_rare": {
+   "banned": [
+    "Insertion"
+   ],
+   "internal": {
+    "E": -0.15976025699171736,
+    "ci95": [
+     -0.17520193347574212,
+     -0.14195058212865733
+    ],
+    "null_mean": 0.005007734250397327,
+    "p_two_sided": 0.299,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.0006163048620138655,
+    "ci95": [
+     -0.0013842761282946191,
+     -8.143456645973873e-05
+    ],
+    "null_mean": -0.0007621250679099136,
+    "p_two_sided": 0.994,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/para1_r1": {
+   "banned": [
+    "Bubble"
+   ],
+   "internal": {
+    "E": -0.06609206172117346,
+    "ci95": [
+     -0.08089554869495547,
+     -0.04713045239167524
+    ],
+    "null_mean": 0.001355117495891224,
+    "p_two_sided": 0.225,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.0039014115878172927,
+    "ci95": [
+     -0.004862974597829504,
+     -0.0027252667713408276
+    ],
+    "null_mean": -5.986452231567027e-05,
+    "p_two_sided": 0.659,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/para2_r1": {
+   "banned": [
+    "Bubble"
+   ],
+   "internal": {
+    "E": -0.07603260481071708,
+    "ci95": [
+     -0.08762901814315867,
+     -0.05994462124809255
+    ],
+    "null_mean": -0.0005615296696032479,
+    "p_two_sided": 0.175,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.005103574804148246,
+    "ci95": [
+     -0.007278012256386317,
+     -0.0034637360207937654
+    ],
+    "null_mean": -0.00026732271091229167,
+    "p_two_sided": 0.61,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T3/ban_r1": {
+   "banned": [
+    "Dijkstra"
+   ],
+   "internal": {
+    "E": 0.07030077768779588,
+    "ci95": [
+     0.05945910168591537,
+     0.08117597331073799
+    ],
+    "null_mean": 0.0038965915338686464,
+    "p_two_sided": 0.652,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.05534413541409397,
+    "ci95": [
+     0.04657301923555219,
+     0.06377674481514477
+    ],
+    "null_mean": -0.0003107580389676251,
+    "p_two_sided": 0.059,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T3/ban_r2": {
+   "banned": [
+    "A_star"
+   ],
+   "internal": {
+    "E": 0.012978610995166435,
+    "ci95": [
+     -0.003523065426487661,
+     0.03362151148793083
+    ],
+    "null_mean": 0.0001156015155067477,
+    "p_two_sided": 0.409,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.0003899618124283922,
+    "ci95": [
+     -0.0006960297114850652,
+     0.001641646212560928
+    ],
+    "null_mean": 0.00010048814303225479,
+    "p_two_sided": 0.92,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T3/ban_r3": {
+   "banned": [
+    "Bellman_Ford"
+   ],
+   "internal": {
+    "E": -0.006864653909943926,
+    "ci95": [
+     -0.006864653909943926,
+     -0.006864653909943926
+    ],
+    "null_mean": 0.00027909095318821186,
+    "p_two_sided": 0.406,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": 0.00251881448569485,
+    "ci95": [
+     0.00251881448569485,
+     0.00251881448569485
+    ],
+    "null_mean": -7.644866623930469e-05,
+    "p_two_sided": 0.121,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T3/ban_r4": {
+   "banned": [
+    "Floyd_Warshall"
+   ],
+   "internal": {
+    "E": -0.010950603301495436,
+    "ci95": [
+     -0.010950603301495436,
+     -0.010950603301495436
+    ],
+    "null_mean": -7.451590231801067e-05,
+    "p_two_sided": 0.203,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": 0.0013102372312283172,
+    "ci95": [
+     0.0013102372312283172,
+     0.0013102372312283172
+    ],
+    "null_mean": 5.898355076772653e-05,
+    "p_two_sided": 0.466,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T3/ban_top3": {
+   "banned": [
+    "Dijkstra",
+    "A_star",
+    "Bellman_Ford"
+   ],
+   "internal": {
+    "E": -0.07144957236413743,
+    "ci95": [
+     -0.08766543242096579,
+     -0.05178133176556664
+    ],
+    "null_mean": 0.0076763752059766845,
+    "p_two_sided": 0.628,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": 0.020036385817533836,
+    "ci95": [
+     0.011948266476649217,
+     0.027607019590021327
+    ],
+    "null_mean": 0.0019177508500526198,
+    "p_two_sided": 0.378,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T3/ban_top5": {
+   "banned": [
+    "Dijkstra",
+    "A_star",
+    "Bellman_Ford",
+    "Floyd_Warshall",
+    "Bidirectional"
+   ],
+   "internal": {
+    "E": 0.003138510812924612,
+    "ci95": [
+     -0.004690613501927894,
+     0.012106159610126444
+    ],
+    "null_mean": 0.0003184831131506813,
+    "p_two_sided": 0.878,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.014172391978476917,
+    "ci95": [
+     0.008913291892913771,
+     0.018729554191346656
+    ],
+    "null_mean": -0.00042356424479367873,
+    "p_two_sided": 0.402,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T3/ban_rare": {
+   "banned": [
+    "Greedy_best_first"
+   ],
+   "internal": null,
+   "external_bge": {
+    "E": -0.001215737208367658,
+    "ci95": [
+     -0.0014898400169462284,
+     -0.0008567510509043565
+    ],
+    "null_mean": 4.261759479229375e-06,
+    "p_two_sided": 0.317,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T3/para1_r1": {
+   "banned": [
+    "Dijkstra"
+   ],
+   "internal": {
+    "E": 0.06836835459157677,
+    "ci95": [
+     0.05756132293319622,
+     0.07776743596394703
+    ],
+    "null_mean": 0.0026217987209764164,
+    "p_two_sided": 0.628,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.04994934604367257,
+    "ci95": [
+     0.039834455560474304,
+     0.05844133457829829
+    ],
+    "null_mean": 0.0008325028096534573,
+    "p_two_sided": 0.086,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T3/para2_r1": {
+   "banned": [
+    "Dijkstra"
+   ],
+   "internal": {
+    "E": 0.06641858077541105,
+    "ci95": [
+     0.05685781617588623,
+     0.07614073367997633
+    ],
+    "null_mean": 3.183256666167322e-05,
+    "p_two_sided": 0.582,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.05376032556209537,
+    "ci95": [
+     0.045743135662704146,
+     0.0619727778905519
+    ],
+    "null_mean": 0.0002948796868468978,
+    "p_two_sided": 0.036,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  }
+ },
+ "conf": {
+  "T1/ban_Bellman_Ford": {
+   "banned": [
+    "Bellman_Ford"
+   ],
+   "internal": {
+    "E": 0.5412034790028287,
+    "ci95": [
+     0.4261154678663595,
+     0.6448543233204325
+    ],
+    "null_mean": -0.004116432991251944,
+    "p_two_sided": 0.008,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.051765999575099905,
+    "ci95": [
+     0.04336764569465974,
+     0.060201008554558455
+    ],
+    "null_mean": 0.00019123059417661486,
+    "p_two_sided": 0.149,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T1/ban_Bidirectional": {
+   "banned": [
+    "Bidirectional"
+   ],
+   "internal": {
+    "E": 0.005168810226352405,
+    "ci95": [
+     -0.038208310801203994,
+     0.053382495386873424
+    ],
+    "null_mean": 0.0015234122842789457,
+    "p_two_sided": 0.915,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.005936719083598763,
+    "ci95": [
+     0.0026670159623995117,
+     0.009290513425274873
+    ],
+    "null_mean": 0.00011341334819713071,
+    "p_two_sided": 0.203,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T1/ban_Greedy_best_first": {
+   "banned": [
+    "Greedy_best_first"
+   ],
+   "internal": {
+    "E": 0.4810851475836511,
+    "ci95": [
+     0.40157363459377476,
+     0.5608249676412255
+    ],
+    "null_mean": -0.006181350704557511,
+    "p_two_sided": 0.076,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.07741544689712412,
+    "ci95": [
+     0.06344660248332219,
+     0.09142673738350693
+    ],
+    "null_mean": 0.0018955926550418356,
+    "p_two_sided": 0.071,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T1/ban_IDDFS": {
+   "banned": [
+    "IDDFS"
+   ],
+   "internal": {
+    "E": -0.10166906429884143,
+    "ci95": [
+     -0.13103241118845288,
+     -0.07393349212349792
+    ],
+    "null_mean": -0.001993211043585048,
+    "p_two_sided": 0.659,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.008766390452552973,
+    "ci95": [
+     -0.012870832275687086,
+     -0.00485683384338034
+    ],
+    "null_mean": -0.0031395847792084746,
+    "p_two_sided": 0.861,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T1/pair_Bidirectional__Floyd_Warshall": {
+   "banned": [
+    "Bidirectional",
+    "Floyd_Warshall"
+   ],
+   "internal": {
+    "E": 0.13856338625230927,
+    "ci95": [
+     0.07666685809845691,
+     0.20039107790237956
+    ],
+    "null_mean": -0.0013187298130899329,
+    "p_two_sided": 0.062,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.0019335151384636158,
+    "ci95": [
+     -0.0002170654612888175,
+     0.0039011890857172317
+    ],
+    "null_mean": 0.00034807514458750987,
+    "p_two_sided": 0.856,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T1/pair_DFS__Bellman_Ford": {
+   "banned": [
+    "DFS",
+    "Bellman_Ford"
+   ],
+   "internal": {
+    "E": -0.05098966584409105,
+    "ci95": [
+     -0.0723183140801113,
+     -0.03323868092417968
+    ],
+    "null_mean": -0.0011761293881558659,
+    "p_two_sided": 0.3,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.006838843960916788,
+    "ci95": [
+     -0.011118329045571463,
+     -0.002986200095669307
+    ],
+    "null_mean": -0.00030904303482592985,
+    "p_two_sided": 0.381,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T1/pair_Dijkstra__SPFA": {
+   "banned": [
+    "Dijkstra",
+    "SPFA"
+   ],
+   "internal": {
+    "E": 0.1689062408326198,
+    "ci95": [
+     0.11870397462325828,
+     0.22084147034911042
+    ],
+    "null_mean": -0.0050918116370241495,
+    "p_two_sided": 0.068,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.010558766635832731,
+    "ci95": [
+     0.00562895573706784,
+     0.015410464988865426
+    ],
+    "null_mean": -0.0005777958773913261,
+    "p_two_sided": 0.377,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T1/pair_IDDFS__Dijkstra": {
+   "banned": [
+    "IDDFS",
+    "Dijkstra"
+   ],
+   "internal": {
+    "E": 0.0035545422912482555,
+    "ci95": [
+     -0.01808421053486374,
+     0.028201378856429392
+    ],
+    "null_mean": 0.005215540367353352,
+    "p_two_sided": 0.976,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": -0.003992379157487215,
+    "ci95": [
+     -0.006376021374684786,
+     -0.001608400274214544
+    ],
+    "null_mean": -0.000621332263890251,
+    "p_two_sided": 0.713,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T1/pair_IDDFS__Floyd_Warshall": {
+   "banned": [
+    "IDDFS",
+    "Floyd_Warshall"
+   ],
+   "internal": {
+    "E": -0.031202063411981715,
+    "ci95": [
+     -0.042697256790986536,
+     -0.019574603178157297
+    ],
+    "null_mean": 0.0011773165016343442,
+    "p_two_sided": 0.625,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.0030794989488805557,
+    "ci95": [
+     -0.0036861852659847115,
+     -0.0023511039008173628
+    ],
+    "null_mean": 1.2031689119351569e-05,
+    "p_two_sided": 0.715,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T1/pair_SPFA__Floyd_Warshall": {
+   "banned": [
+    "SPFA",
+    "Floyd_Warshall"
+   ],
+   "internal": {
+    "E": 0.22510918962379575,
+    "ci95": [
+     0.150495728970033,
+     0.30753050875759075
+    ],
+    "null_mean": 0.0015234893758174675,
+    "p_two_sided": 0.012,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.02447172276234321,
+    "ci95": [
+     0.019713182063514773,
+     0.02918444296759065
+    ],
+    "null_mean": -2.7195283507349426e-05,
+    "p_two_sided": 0.06,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T2/ban_Counting": {
+   "banned": [
+    "Counting"
+   ],
+   "internal": {
+    "E": 0.049770901356229504,
+    "ci95": [
+     0.029659397183961135,
+     0.07202989827204959
+    ],
+    "null_mean": 0.0019125426818468194,
+    "p_two_sided": 0.529,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": -0.0010647536218731176,
+    "ci95": [
+     -0.004394653744707605,
+     0.002107175253999434
+    ],
+    "null_mean": -0.00042844585341815695,
+    "p_two_sided": 0.968,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/ban_Heap": {
+   "banned": [
+    "Heap"
+   ],
+   "internal": {
+    "E": 0.00437029786806925,
+    "ci95": [
+     -0.032501235094354694,
+     0.043169457247396556
+    ],
+    "null_mean": 0.0007057748572674,
+    "p_two_sided": 0.907,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.0033760895970203655,
+    "ci95": [
+     -0.002278084794961768,
+     0.009289683944122834
+    ],
+    "null_mean": -6.431994675465311e-05,
+    "p_two_sided": 0.551,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T2/ban_Radix": {
+   "banned": [
+    "Radix"
+   ],
+   "internal": {
+    "E": 0.09193084132438184,
+    "ci95": [
+     0.07168019795727289,
+     0.11049477275330556
+    ],
+    "null_mean": 0.0016967044194017083,
+    "p_two_sided": 0.42,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": -0.013061894329099938,
+    "ci95": [
+     -0.01641045645616257,
+     -0.00987401409134826
+    ],
+    "null_mean": 0.0011723893023709324,
+    "p_two_sided": 0.463,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/ban_Shell": {
+   "banned": [
+    "Shell"
+   ],
+   "internal": {
+    "E": 0.03488109628125038,
+    "ci95": [
+     0.017855414049171826,
+     0.053137986708754636
+    ],
+    "null_mean": 0.0019474509057403353,
+    "p_two_sided": 0.657,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": -0.0229188340152341,
+    "ci95": [
+     -0.03016297450230767,
+     -0.016029877663796006
+    ],
+    "null_mean": 0.0003020239894782272,
+    "p_two_sided": 0.182,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/pair_Insertion__Bubble": {
+   "banned": [
+    "Insertion",
+    "Bubble"
+   ],
+   "internal": {
+    "E": -0.10073984128871968,
+    "ci95": [
+     -0.10099927374167142,
+     -0.10033791771169913
+    ],
+    "null_mean": 0.00039944034172104717,
+    "p_two_sided": 0.046,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.0019902215188295014,
+    "ci95": [
+     -0.003028138238083788,
+     -0.0013833036407411737
+    ],
+    "null_mean": -8.370003027089626e-05,
+    "p_two_sided": 0.811,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/pair_Insertion__Shell": {
+   "banned": [
+    "Insertion",
+    "Shell"
+   ],
+   "internal": {
+    "E": -0.037848469627108,
+    "ci95": [
+     -0.04334095808971131,
+     -0.03034513692979382
+    ],
+    "null_mean": 0.0005896827809324741,
+    "p_two_sided": 0.748,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.02422357503405568,
+    "ci95": [
+     -0.025011885072752055,
+     -0.023754992827220985
+    ],
+    "null_mean": -0.0005355768569715173,
+    "p_two_sided": 0.327,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/pair_Merge__Heap": {
+   "banned": [
+    "Merge",
+    "Heap"
+   ],
+   "internal": {
+    "E": -0.0732623165089924,
+    "ci95": [
+     -0.09705203710583114,
+     -0.049408051106126075
+    ],
+    "null_mean": 0.0020138751907428387,
+    "p_two_sided": 0.117,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.0022940611261444517,
+    "ci95": [
+     -0.005688041087438639,
+     0.0013441735510377278
+    ],
+    "null_mean": 0.0002731615157573999,
+    "p_two_sided": 0.789,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/pair_Merge__Selection": {
+   "banned": [
+    "Merge",
+    "Selection"
+   ],
+   "internal": {
+    "E": 0.05376746978352831,
+    "ci95": [
+     0.04223824354800063,
+     0.06608654728245249
+    ],
+    "null_mean": 0.007205720780282119,
+    "p_two_sided": 0.688,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": -0.03040912784802223,
+    "ci95": [
+     -0.03701229609201437,
+     -0.023784030052355794
+    ],
+    "null_mean": -0.0009320853199213505,
+    "p_two_sided": 0.241,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/pair_Quick__Bubble": {
+   "banned": [
+    "Quick",
+    "Bubble"
+   ],
+   "internal": {
+    "E": -0.05221652550688306,
+    "ci95": [
+     -0.07046410556688877,
+     -0.03444216779375846
+    ],
+    "null_mean": -0.0008555304522086341,
+    "p_two_sided": 0.55,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.01559075886032041,
+    "ci95": [
+     -0.019883249515662966,
+     -0.011200824338084682
+    ],
+    "null_mean": -0.0006261814788911999,
+    "p_two_sided": 0.371,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T2/pair_Quick__Shell": {
+   "banned": [
+    "Quick",
+    "Shell"
+   ],
+   "internal": {
+    "E": 0.09673725053859265,
+    "ci95": [
+     0.08089704297895091,
+     0.11477940921124011
+    ],
+    "null_mean": 0.0018180001867771605,
+    "p_two_sided": 0.52,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": -0.013547803755535296,
+    "ci95": [
+     -0.01606825309970631,
+     -0.011480184252323193
+    ],
+    "null_mean": 0.0009413088605454158,
+    "p_two_sided": 0.609,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T3/ban_BFS": {
+   "banned": [
+    "BFS"
+   ],
+   "internal": {
+    "E": -0.005041447390397302,
+    "ci95": [
+     -0.005041447390397302,
+     -0.005041447390397302
+    ],
+    "null_mean": 0.0002863732965522807,
+    "p_two_sided": 0.469,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": 0.0008635253481864189,
+    "ci95": [
+     0.0008635253481864189,
+     0.0008635253481864189
+    ],
+    "null_mean": 4.723444714032288e-05,
+    "p_two_sided": 0.553,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T3/ban_SPFA": {
+   "banned": [
+    "SPFA"
+   ],
+   "internal": {
+    "E": -0.000572260409372728,
+    "ci95": [
+     -0.008938814699860706,
+     0.012300591008644193
+    ],
+    "null_mean": 1.0024325103084763e-05,
+    "p_two_sided": 0.776,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -9.145680902487114e-05,
+    "ci95": [
+     -0.0014446242505851375,
+     0.0010979382254589537
+    ],
+    "null_mean": 1.3132193388326319e-05,
+    "p_two_sided": 0.829,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T4/ban_r1": {
+   "banned": [
+    "Quickselect"
+   ],
+   "internal": {
+    "E": 0.01890356736811308,
+    "ci95": [
+     -0.028607703988201824,
+     0.06161653428200822
+    ],
+    "null_mean": 0.00029933930249702035,
+    "p_two_sided": 0.856,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.0014580024297687468,
+    "ci95": [
+     -0.005807070416086334,
+     0.008731311346261386
+    ],
+    "null_mean": 0.000948268516358771,
+    "p_two_sided": 0.969,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T4/ban_r2": {
+   "banned": [
+    "Sort_index"
+   ],
+   "internal": {
+    "E": -0.019230373247735102,
+    "ci95": [
+     -0.024456538120839425,
+     -0.008237405756032868
+    ],
+    "null_mean": -0.00047002643706405836,
+    "p_two_sided": 0.425,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": 0.0005229577864257132,
+    "ci95": [
+     0.0005108283822501629,
+     0.0005286269644642587
+    ],
+    "null_mean": 7.255094937081936e-05,
+    "p_two_sided": 0.833,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T4/ban_r3": {
+   "banned": [
+    "Heap_select"
+   ],
+   "internal": {
+    "E": 0.04479845127750019,
+    "ci95": [
+     -0.026793014100148182,
+     0.12208653316170444
+    ],
+    "null_mean": -0.000743506277578211,
+    "p_two_sided": 0.156,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.0031933368544979626,
+    "ci95": [
+     -0.002119517061628979,
+     0.008435800424717248
+    ],
+    "null_mean": 1.25723397890512e-05,
+    "p_two_sided": 0.48,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T4/ban_r4": {
+   "banned": [
+    "Median_of_medians"
+   ],
+   "internal": {
+    "E": 0.0018523053106716105,
+    "ci95": [
+     -0.01948078521607763,
+     0.02051875952157721
+    ],
+    "null_mean": 0.0002437923610424615,
+    "p_two_sided": 0.943,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.004320384584540729,
+    "ci95": [
+     -0.0035796668011633084,
+     0.012220435970244681
+    ],
+    "null_mean": 7.066282172648969e-05,
+    "p_two_sided": 0.102,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T4/ban_rare": {
+   "banned": [
+    "Partial_selection"
+   ],
+   "internal": null,
+   "external_bge": {
+    "E": -0.003469450719071872,
+    "ci95": [
+     -0.004421848903919704,
+     -0.0023583195034161345
+    ],
+    "null_mean": -0.00025387943888928124,
+    "p_two_sided": 0.701,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T4/ban_top3": {
+   "banned": [
+    "Quickselect",
+    "Sort_index",
+    "Heap_select"
+   ],
+   "internal": {
+    "E": -0.07343756716013916,
+    "ci95": [
+     -0.08735047937785348,
+     -0.05728232505085457
+    ],
+    "null_mean": 0.013552945546508894,
+    "p_two_sided": 0.525,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": 0.010223579132998237,
+    "ci95": [
+     0.006141823547056751,
+     0.01365679292996869
+    ],
+    "null_mean": 0.0006211522195208556,
+    "p_two_sided": 0.603,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T4/ban_top5": {
+   "banned": [
+    "Quickselect",
+    "Sort_index",
+    "Heap_select",
+    "Median_of_medians",
+    "Counting_bucket"
+   ],
+   "internal": null,
+   "external_bge": {
+    "E": -0.004442001813053709,
+    "ci95": [
+     -0.004442001813053709,
+     -0.004442001813053709
+    ],
+    "null_mean": 0.0003536556424563878,
+    "p_two_sided": 0.673,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T4/pair_Heap_select__Binary_search_value": {
+   "banned": [
+    "Heap_select",
+    "Binary_search_value"
+   ],
+   "internal": {
+    "E": 0.047411892923797785,
+    "ci95": [
+     -0.034979217900572714,
+     0.1298030037481683
+    ],
+    "null_mean": -0.0005207275734223384,
+    "p_two_sided": 0.069,
+    "direction": "edge (attraction to banned neighbours)"
+   },
+   "external_bge": {
+    "E": 0.0027310532697882818,
+    "ci95": [
+     -0.002026838198233437,
+     0.008083681171312735
+    ],
+    "null_mean": 9.814104143764033e-05,
+    "p_two_sided": 0.278,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T4/pair_Median_of_medians__Partial_selection": {
+   "banned": [
+    "Median_of_medians",
+    "Partial_selection"
+   ],
+   "internal": null,
+   "external_bge": {
+    "E": 0.00544785852251556,
+    "ci95": [
+     0.0025383213067805637,
+     0.008357395738250452
+    ],
+    "null_mean": -0.00016198133436344652,
+    "p_two_sided": 0.348,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  },
+  "T4/pair_Sort_index__Binary_search_value": {
+   "banned": [
+    "Sort_index",
+    "Binary_search_value"
+   ],
+   "internal": {
+    "E": -0.02776884134747904,
+    "ci95": [
+     -0.04295320538931067,
+     -0.0012484975032261937
+    ],
+    "null_mean": -0.0012234326473876797,
+    "p_two_sided": 0.247,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": -0.0014876430435578625,
+    "ci95": [
+     -0.001903458880122693,
+     -0.0008079870081443424
+    ],
+    "null_mean": 5.905658206609155e-07,
+    "p_two_sided": 0.504,
+    "direction": "far side / family suppression"
+   }
+  },
+  "T4/pair_Sort_index__Median_of_medians": {
+   "banned": [
+    "Sort_index",
+    "Median_of_medians"
+   ],
+   "internal": {
+    "E": -0.011505840382149416,
+    "ci95": [
+     -0.011505840382149416,
+     -0.011505840382149416
+    ],
+    "null_mean": -5.92732226578514e-05,
+    "p_two_sided": 0.524,
+    "direction": "far side / family suppression"
+   },
+   "external_bge": {
+    "E": 0.002679521302077728,
+    "ci95": [
+     0.002679521302077728,
+     0.002679521302077728
+    ],
+    "null_mean": -7.008912017514651e-05,
+    "p_two_sided": 0.297,
+    "direction": "edge (attraction to banned neighbours)"
+   }
+  }
+ },
+ "top5_summary": {
+  "T1/ban_top5": {
+   "E": -0.035271064288146164,
+   "ci95": [
+    -0.040830643271169545,
+    -0.028721254781046122
+   ],
+   "null_mean": 0.0013468603135461743,
+   "p_two_sided": 0.674,
+   "direction": "far side / family suppression"
+  },
+  "T2/ban_top5": {
+   "E": 0.005867943133402012,
+   "ci95": [
+    -0.006759341862156278,
+    0.018774046337232835
+   ],
+   "null_mean": 0.0027043176900994332,
+   "p_two_sided": 0.933,
+   "direction": "edge (attraction to banned neighbours)"
+  },
+  "T3/ban_top5": {
+   "E": 0.003138510812924612,
+   "ci95": [
+    -0.004690613501927894,
+    0.012106159610126444
+   ],
+   "null_mean": 0.0003184831131506813,
+   "p_two_sided": 0.878,
+   "direction": "edge (attraction to banned neighbours)"
+  }
+ },
+ "overall": {
+  "n": 56,
+  "n_positive": 33,
+  "mean": 0.047458800509411724
+ }
+}

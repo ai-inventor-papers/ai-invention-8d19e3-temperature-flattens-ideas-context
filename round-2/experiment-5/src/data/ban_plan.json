@@ -1,0 +1,110 @@
+{
+ "T1": {
+  "ban_r1": [
+   "BFS"
+  ],
+  "ban_r2": [
+   "DFS"
+  ],
+  "ban_r3": [
+   "A_star"
+  ],
+  "ban_r4": [
+   "Dijkstra"
+  ],
+  "ban_top3": [
+   "BFS",
+   "DFS",
+   "A_star"
+  ],
+  "ban_top5": [
+   "BFS",
+   "DFS",
+   "A_star",
+   "Dijkstra",
+   "SPFA"
+  ],
+  "ban_rare": [
+   "SPFA"
+  ],
+  "placebo": [],
+  "para1_r1": [
+   "BFS"
+  ],
+  "para2_r1": [
+   "BFS"
+  ]
+ },
+ "T2": {
+  "ban_r1": [
+   "Bubble"
+  ],
+  "ban_r2": [
+   "Quick"
+  ],
+  "ban_r3": [
+   "Merge"
+  ],
+  "ban_r4": [
+   "Selection"
+  ],
+  "ban_top3": [
+   "Bubble",
+   "Quick",
+   "Merge"
+  ],
+  "ban_top5": [
+   "Bubble",
+   "Quick",
+   "Merge",
+   "Selection",
+   "Insertion"
+  ],
+  "ban_rare": [
+   "Insertion"
+  ],
+  "placebo": [],
+  "para1_r1": [
+   "Bubble"
+  ],
+  "para2_r1": [
+   "Bubble"
+  ]
+ },
+ "T3": {
+  "ban_r1": [
+   "Dijkstra"
+  ],
+  "ban_r2": [
+   "A_star"
+  ],
+  "ban_r3": [
+   "Bellman_Ford"
+  ],
+  "ban_r4": [
+   "Floyd_Warshall"
+  ],
+  "ban_top3": [
+   "Dijkstra",
+   "A_star",
+   "Bellman_Ford"
+  ],
+  "ban_top5": [
+   "Dijkstra",
+   "A_star",
+   "Bellman_Ford",
+   "Floyd_Warshall",
+   "Bidirectional"
+  ],
+  "ban_rare": [
+   "Greedy_best_first"
+  ],
+  "placebo": [],
+  "para1_r1": [
+   "Dijkstra"
+  ],
+  "para2_r1": [
+   "Dijkstra"
+  ]
+ }
+}

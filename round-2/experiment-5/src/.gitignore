@@ -1,0 +1,7 @@
+.venv/
+acts/
+data/oracle_tmp/
+__pycache__/
+*.pyc
+.aii_claude_session.json
+.repl_agent.ptylog

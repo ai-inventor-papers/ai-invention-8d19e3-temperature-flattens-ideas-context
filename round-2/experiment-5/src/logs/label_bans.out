@@ -1,0 +1,35 @@
+04:12:36|INFO   |T1/ban_Bellman_Ford: n=100 pass=0.68 {'Dijkstra': 56, 'BFS': 40, 'DFS': 2, 'A_star': 2}
+04:12:47|INFO   |T1/ban_Bidirectional: n=100 pass=0.41 {'BFS': 67, 'DFS': 16, 'A_star': 8, 'Other': 6, 'Dijkstra': 2, 'Greedy_best_first': 1}
+04:13:00|INFO   |T1/ban_Greedy_best_first: n=100 pass=0.23 {'A_star': 58, 'BFS': 23, 'Dijkstra': 8, 'DFS': 7, 'Other': 3, 'Greedy_best_first': 1}
+04:13:06|INFO   |T1/ban_IDDFS: n=100 pass=0.22 {'A_star': 49, 'BFS': 41, 'Dijkstra': 4, 'DFS': 2, 'Other': 2, 'Greedy_best_first': 1, 'SPFA': 1}
+04:13:14|INFO   |T1/cross: n=100 pass=0.41 {'BFS': 75, 'DFS': 18, 'Other': 4, 'Dijkstra': 2, 'A_star': 1}
+04:13:19|INFO   |T1/pair_Bidirectional__Floyd_Warshall: n=100 pass=0.56 {'BFS': 55, 'Dijkstra': 26, 'A_star': 8, 'DFS': 6, 'Other': 4, 'SPFA': 1}
+04:13:22|INFO   |T1/pair_DFS__Bellman_Ford: n=100 pass=0.43 {'BFS': 73, 'A_star': 19, 'Dijkstra': 8}
+04:13:26|INFO   |T1/pair_Dijkstra__SPFA: n=100 pass=0.34 {'BFS': 63, 'A_star': 30, 'Bellman_Ford': 3, 'DFS': 2, 'Bidirectional': 1, 'SPFA': 1}
+04:13:35|INFO   |T1/pair_IDDFS__Dijkstra: n=100 pass=0.28 {'BFS': 75, 'A_star': 21, 'Dijkstra': 3, 'DFS': 1}
+04:13:48|INFO   |T1/pair_IDDFS__Floyd_Warshall: n=100 pass=0.32 {'BFS': 83, 'A_star': 12, 'DFS': 2, 'Greedy_best_first': 1, 'SPFA': 1, 'Other': 1}
+04:13:54|INFO   |T1/pair_SPFA__Floyd_Warshall: n=100 pass=0.56 {'BFS': 64, 'Dijkstra': 31, 'DFS': 2, 'A_star': 2, 'SPFA': 1}
+04:13:57|INFO   |T2/ban_Counting: n=100 pass=0.96 {'Quick': 35, 'Merge': 32, 'Bubble': 26, 'Insertion': 5, 'Selection': 2}
+04:14:00|INFO   |T2/ban_Heap: n=100 pass=0.99 {'Bubble': 51, 'Quick': 17, 'Selection': 14, 'Insertion': 12, 'Merge': 6}
+04:14:03|INFO   |T2/ban_Radix: n=100 pass=0.98 {'Merge': 39, 'Quick': 36, 'Bubble': 15, 'Selection': 8, 'Insertion': 2}
+04:14:05|INFO   |T2/ban_Shell: n=100 pass=0.99 {'Merge': 49, 'Bubble': 28, 'Quick': 15, 'Selection': 6, 'Insertion': 2}
+04:14:08|INFO   |T2/cross: n=100 pass=1.00 {'Bubble': 71, 'Quick': 14, 'Merge': 6, 'Selection': 5, 'Insertion': 4}
+04:14:11|INFO   |T2/pair_Insertion__Bubble: n=100 pass=1.00 {'Quick': 58, 'Merge': 41, 'Heap': 1}
+04:14:14|INFO   |T2/pair_Insertion__Shell: n=100 pass=1.00 {'Merge': 63, 'Quick': 35, 'Selection': 1, 'Heap': 1}
+04:14:18|INFO   |T2/pair_Merge__Heap: n=100 pass=1.00 {'Bubble': 65, 'Insertion': 24, 'Selection': 10, 'Quick': 1}
+04:14:21|INFO   |T2/pair_Merge__Selection: n=100 pass=0.97 {'Insertion': 51, 'Heap': 17, 'Quick': 17, 'Bubble': 13, 'Other': 1, 'Radix': 1}
+04:14:24|INFO   |T2/pair_Quick__Bubble: n=100 pass=1.00 {'Insertion': 54, 'Merge': 38, 'Selection': 4, 'Heap': 4}
+04:14:27|INFO   |T2/pair_Quick__Shell: n=100 pass=0.98 {'Insertion': 71, 'Selection': 14, 'Merge': 10, 'Other': 3, 'Heap': 2}
+04:14:30|INFO   |T3/ban_BFS: n=100 pass=0.85 {'Dijkstra': 100}
+04:14:43|INFO   |T3/ban_SPFA: n=100 pass=0.87 {'Dijkstra': 98, 'A_star': 1, 'Bellman_Ford': 1}
+04:14:48|INFO   |T4/ban_r1: n=100 pass=0.76 {'Sort_index': 49, 'Quickselect': 19, 'Heap_select': 15, 'Median_of_medians': 14, 'Counting_bucket': 3}
+04:14:53|INFO   |T4/ban_r2: n=100 pass=0.54 {'Quickselect': 89, 'Sort_index': 10, 'Heap_select': 1}
+04:14:58|INFO   |T4/ban_r3: n=100 pass=0.58 {'Quickselect': 74, 'Sort_index': 25, 'Median_of_medians': 1}
+04:15:02|INFO   |T4/ban_r4: n=100 pass=0.42 {'Quickselect': 81, 'Sort_index': 19}
+04:15:07|INFO   |T4/ban_rare: n=100 pass=0.53 {'Quickselect': 89, 'Sort_index': 11}
+04:15:12|INFO   |T4/ban_top3: n=100 pass=0.44 {'Quickselect': 51, 'Median_of_medians': 32, 'Sort_index': 11, 'Counting_bucket': 3, 'Other': 2, 'Heap_select': 1}
+04:15:19|INFO   |T4/ban_top5: n=100 pass=0.48 {'Quickselect': 75, 'Sort_index': 16, 'Median_of_medians': 4, 'Partial_selection': 2, 'Other': 2, 'Heap_select': 1}
+04:15:24|INFO   |T4/pair_Heap_select__Binary_search_value: n=100 pass=0.59 {'Quickselect': 75, 'Sort_index': 25}
+04:15:29|INFO   |T4/pair_Median_of_medians__Partial_selection: n=100 pass=0.51 {'Quickselect': 90, 'Sort_index': 10}
+04:15:33|INFO   |T4/pair_Sort_index__Binary_search_value: n=100 pass=0.52 {'Quickselect': 83, 'Sort_index': 14, 'Counting_bucket': 1, 'Other': 1, 'Median_of_medians': 1}
+04:15:39|INFO   |T4/pair_Sort_index__Median_of_medians: n=100 pass=0.43 {'Quickselect': 92, 'Sort_index': 8}

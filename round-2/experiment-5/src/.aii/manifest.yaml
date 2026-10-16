@@ -1,0 +1,15 @@
+entries:
+  - path: .venv/
+    delete: redownloadable
+    source: "uv venv .venv --python=3.12 && uv pip install --python .venv/bin/python -r pyproject.toml"
+  - path: acts/
+    delete: regenerable
+    source: "python src/states.py screen && python src/states.py band --layers 32,33,34 && python src/states.py prompts --jobs data/conf/jobs_conf_nonban.json --out acts/prompt_states_conf_nonban && python src/states.py prompts --jobs data/conf/jobs_conf_bans.json --out acts/prompt_states_conf_bans && python src/states.py prompts --jobs data/conf/jobs_t4_bans.json --out acts/prompt_states_conf_t4bans && python src/states.py conf --layers 32,33,34"
+  - path: src/__pycache__/
+    delete: regenerable
+    source: "created automatically by Python on import (python method.py run)"
+  - path: tests/__pycache__/
+    delete: regenerable
+    source: "created automatically by Python when running the tests (python -m pytest tests/)"
+  - path: results/delta_h_T*.pt
+    keep: suffix displacement vectors (all screen conditions, all layers) used by the frozen predictors and transplant

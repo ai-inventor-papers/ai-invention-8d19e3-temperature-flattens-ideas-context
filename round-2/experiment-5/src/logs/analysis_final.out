@@ -1,0 +1,19 @@
+05:25:52|INFO   |labelled T1/ban_r1/KNOCKOUT_BAN: {'BFS': 35, 'A_star': 11, 'DFS': 7, 'Dijkstra': 4, 'Other': 2, 'Greedy_best_first': 1}
+05:25:56|INFO   |labelled T1/ban_r1/KNOCKOUT_PLACEBO_SENT: {'BFS': 42, 'DFS': 11, 'A_star': 3, 'Other': 2, 'Dijkstra': 1, 'SPFA': 1}
+05:26:03|INFO   |labelled T1/ban_r4/KNOCKOUT_BAN: {'BFS': 46, 'DFS': 9, 'Other': 2, 'SPFA': 2, 'A_star': 1}
+05:26:07|INFO   |labelled T1/ban_r4/KNOCKOUT_PLACEBO_SENT: {'BFS': 42, 'DFS': 11, 'A_star': 3, 'Other': 2, 'Dijkstra': 1, 'SPFA': 1}
+05:26:09|INFO   |labelled T2/ban_rare/KNOCKOUT_BAN: {'Bubble': 24, 'Quick': 23, 'Merge': 9, 'Selection': 3, 'Insertion': 1}
+05:26:11|INFO   |labelled T2/ban_rare/KNOCKOUT_PLACEBO_SENT: {'Bubble': 52, 'Quick': 6, 'Selection': 2}
+05:26:13|INFO   |labelled T2/ban_top5/KNOCKOUT_BAN: {'Bubble': 33, 'Insertion': 11, 'Selection': 5, 'Other': 3, 'Quick': 2, 'Heap': 2, 'Radix': 1, 'Tim_hybrid': 1, 'Merge': 1, 'Bucket': 1}
+05:26:15|INFO   |labelled T2/ban_top5/KNOCKOUT_PLACEBO_SENT: {'Bubble': 52, 'Quick': 6, 'Selection': 2}
+05:26:24|INFO   |transplant summary: {'mean_R_transplant': -0.001358469002091467, 'mean_R_random': -0.0064144193582046155, 'transplant_beats_offtarget': '4/6', 'mean_restoration': 0.012944430419383332, 'mean_restoration_knockout_ban_sentence': 0.7190098375215777} pass=False
+/ai-inventor/aii_data/runs/run_wfWEMjpWKygr/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/.venv/lib/python3.12/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/ai-inventor/aii_data/runs/run_wfWEMjpWKygr/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/.venv/lib/python3.12/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/ai-inventor/aii_data/runs/run_wfWEMjpWKygr/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/.venv/lib/python3.12/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/ai-inventor/aii_data/runs/run_wfWEMjpWKygr/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/.venv/lib/python3.12/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+05:27:29|INFO   |figures written
+EXIT 0

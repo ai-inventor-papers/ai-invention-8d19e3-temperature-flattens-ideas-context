@@ -1,0 +1,25 @@
+02:38:23|INFO   |probe T1: n=700 classes=[np.str_('A_star'), np.str_('BFS'), np.str_('Bellman_Ford'), np.str_('Bidirectional'), np.str_('DFS'), np.str_('Dijkstra'), np.str_('Floyd_Warshall'), np.str_('Greedy_best_first'), np.str_('IDDFS'), np.str_('Other'), np.str_('SPFA')]
+02:38:24|INFO   |probe T2: n=737 classes=[np.str_('Bubble'), np.str_('Bucket'), np.str_('Counting'), np.str_('Heap'), np.str_('Insertion'), np.str_('Merge'), np.str_('Quick'), np.str_('Radix'), np.str_('Selection'), np.str_('Shell'), np.str_('Tim_hybrid')]
+02:38:26|INFO   |probe T3: n=268 classes=[np.str_('A_star'), np.str_('BFS'), np.str_('Bellman_Ford'), np.str_('Bidirectional'), np.str_('Dijkstra'), np.str_('Floyd_Warshall'), np.str_('IDDFS'), np.str_('SPFA')]
+03:04:04|INFO   |probe sweep: 630 fits in 1538s
+03:04:04|INFO   |band = [32, 33, 34] (score 0.737, fallback=False)
+03:04:04|INFO   |massive dims: shares={32: 0.6289166234157704, 33: 0.6007131947963326, 34: 0.5683847000753438} triggered=True
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  32%|███▏      | 63/199 [00:00<00:00, 602.04it/s]Loading weights:  62%|██████▏   | 124/199 [00:00<00:00, 601.14it/s]Loading weights:  94%|█████████▍| 188/199 [00:00<00:00, 617.12it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 647.23it/s]
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]Fetching 8 files: 100%|██████████| 8/8 [00:00<00:00, 708.90it/s]
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]Fetching 8 files: 100%|██████████| 8/8 [00:00<00:00, 840.46it/s]
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]Fetching 8 files: 100%|██████████| 8/8 [00:00<00:00, 864.36it/s]
+03:06:20|INFO   |27 screen ban items
+03:06:20|INFO   |eps=5.0
+03:06:21|INFO   |selftest {'beta_recovery_4.0': 4.0, 'beta_recovery_-3.0': -3.0, 'compliance_obs_vs_pred_mean_banned_mass': [0.07925925925925927, 0.07925925925925927], 'iia_zero_banned_identity': True}
+03:06:25|INFO   |LOBO B:G_suffix meanJSD=0.1830
+03:06:30|INFO   |LOBO B:G_umean meanJSD=0.1935
+03:06:34|INFO   |LOBO B:P_suffix meanJSD=0.1953
+03:06:39|INFO   |LOBO B:P_umean meanJSD=0.1869
+03:06:39|INFO   |A: LOBO meanJSD=0.1915 LOTO=0.1960 param(all)=0.0
+03:06:46|INFO   |B: LOBO meanJSD=0.1830 LOTO=0.1927 param(all)=19.75
+03:06:53|INFO   |C: LOBO meanJSD=0.1915 LOTO=0.2243 param(all)=0.25
+03:07:01|INFO   |D: LOBO meanJSD=0.1843 LOTO=0.1976 param(all)=10.5
+03:07:09|INFO   |D2: LOBO meanJSD=0.1926 LOTO=0.2175 param(all)=5.0
+03:07:17|INFO   |D3: LOBO meanJSD=0.1869 LOTO=0.1978 param(all)=2.0
+03:07:24|INFO   |E: LOBO meanJSD=0.1935 LOTO=0.1975 param(all)=3.5
+03:07:25|INFO   |FROZEN predictors sha256=a669710b5153bc425c391fcd9a5f762d1ea11fd51349c39f729c2a138a98ce7a

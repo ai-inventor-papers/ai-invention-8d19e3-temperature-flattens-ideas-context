@@ -1,0 +1,263 @@
+{
+ "band": [
+  32,
+  33,
+  34
+ ],
+ "massive": {
+  "top10_share": {
+   "32": 0.6289166234157704,
+   "33": 0.6007131947963326,
+   "34": 0.5683847000753438
+  },
+  "triggered": true,
+  "zeroed_dims": [
+   45,
+   71,
+   294,
+   318,
+   1495,
+   1619,
+   1819,
+   1874,
+   1899,
+   1979
+  ],
+  "top10_dims": {
+   "32": [
+    318,
+    1874,
+    1819,
+    45,
+    294,
+    71,
+    1979,
+    1899,
+    1619,
+    1495
+   ],
+   "33": [
+    318,
+    1874,
+    1819,
+    45,
+    294,
+    71,
+    1979,
+    1899,
+    1619,
+    1495
+   ],
+   "34": [
+    318,
+    1874,
+    1819,
+    45,
+    294,
+    71,
+    1979,
+    1619,
+    1899,
+    1495
+   ]
+  }
+ },
+ "norms": {
+  "G_suffix": 11.24609661102295,
+  "G_umean": 39.33544921875,
+  "P_suffix": 11.24609661102295,
+  "P_umean": 39.33544921875,
+  "D2": 0.35365352034568787
+ },
+ "T1": {
+  "classes_with_G": [
+   "BFS",
+   "DFS",
+   "IDDFS",
+   "Dijkstra",
+   "A_star",
+   "Greedy_best_first",
+   "Bidirectional",
+   "Bellman_Ford",
+   "SPFA",
+   "Floyd_Warshall",
+   "Other"
+  ],
+  "nG": {
+   "BFS": 226,
+   "DFS": 83,
+   "IDDFS": 34,
+   "Dijkstra": 71,
+   "A_star": 98,
+   "Greedy_best_first": 18,
+   "Bidirectional": 25,
+   "Bellman_Ford": 40,
+   "SPFA": 36,
+   "Floyd_Warshall": 40,
+   "Other": 29
+  },
+  "split_half": {
+   "n_classes": 11,
+   "classes": [
+    "BFS",
+    "DFS",
+    "IDDFS",
+    "Dijkstra",
+    "A_star",
+    "Greedy_best_first",
+    "Bidirectional",
+    "Bellman_Ford",
+    "SPFA",
+    "Floyd_Warshall",
+    "Other"
+   ],
+   "median": 0.9726911976911978,
+   "p5": 0.923257575757576,
+   "p95": 0.9865151515151517
+  },
+  "natural_vs_forced_spearman": 0.35757575757575755,
+  "n_both": 5,
+  "S_G_symmetric": true,
+  "S_G_diag": [
+   0.9999999999999998,
+   0.9999999999999999,
+   1.0000000000000004,
+   1.0000000000000004,
+   0.9999999999999997,
+   1.0000000000000002,
+   1.0000000000000004,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   0.9999999999999998
+  ]
+ },
+ "T2": {
+  "classes_with_G": [
+   "Quick",
+   "Merge",
+   "Heap",
+   "Insertion",
+   "Selection",
+   "Bubble",
+   "Shell",
+   "Counting",
+   "Radix",
+   "Bucket",
+   "Tim_hybrid"
+  ],
+  "nG": {
+   "Quick": 111,
+   "Merge": 73,
+   "Heap": 40,
+   "Insertion": 45,
+   "Selection": 55,
+   "Bubble": 219,
+   "Shell": 37,
+   "Counting": 40,
+   "Radix": 40,
+   "Bucket": 40,
+   "Tim_hybrid": 37,
+   "Builtin": 0,
+   "Other": 3
+  },
+  "split_half": {
+   "n_classes": 11,
+   "classes": [
+    "Quick",
+    "Merge",
+    "Heap",
+    "Insertion",
+    "Selection",
+    "Bubble",
+    "Shell",
+    "Counting",
+    "Radix",
+    "Bucket",
+    "Tim_hybrid"
+   ],
+   "median": 0.9812770562770565,
+   "p5": 0.9644119769119771,
+   "p95": 0.9902597402597405
+  },
+  "natural_vs_forced_spearman": 0.8285714285714287,
+  "n_both": 4,
+  "S_G_symmetric": true,
+  "S_G_diag": [
+   0.9999999999999999,
+   0.9999999999999998,
+   1.0000000000000002,
+   1.0,
+   0.9999999999999997,
+   1.0,
+   1.0000000000000004,
+   1.0000000000000004,
+   1.0000000000000002,
+   0.9999999999999999,
+   0.9999999999999998
+  ]
+ },
+ "T3": {
+  "classes_with_G": [
+   "BFS",
+   "IDDFS",
+   "Dijkstra",
+   "A_star",
+   "Bidirectional",
+   "Bellman_Ford",
+   "SPFA",
+   "Floyd_Warshall"
+  ],
+  "nG": {
+   "BFS": 33,
+   "DFS": 6,
+   "IDDFS": 8,
+   "Dijkstra": 361,
+   "A_star": 40,
+   "Greedy_best_first": 2,
+   "Bidirectional": 34,
+   "Bellman_Ford": 41,
+   "SPFA": 14,
+   "Floyd_Warshall": 37,
+   "Other": 4
+  },
+  "split_half": {
+   "n_classes": 8,
+   "classes": [
+    "BFS",
+    "IDDFS",
+    "Dijkstra",
+    "A_star",
+    "Bidirectional",
+    "Bellman_Ford",
+    "SPFA",
+    "Floyd_Warshall"
+   ],
+   "median": 0.9537493158182814,
+   "p5": 0.9047071702244116,
+   "p95": 0.9786535303776682
+  },
+  "natural_vs_forced_spearman": null,
+  "n_both": 1,
+  "S_G_symmetric": true,
+  "S_G_diag": [
+   1.0000000000000004,
+   1.0000000000000004,
+   1.0,
+   0.9999999999999993,
+   1.0000000000000002,
+   1.0000000000000002,
+   0.9999999999999998,
+   0.9999999999999998
+  ]
+ },
+ "selftest": {
+  "beta_recovery_4.0": 4.0,
+  "beta_recovery_-3.0": -3.0,
+  "compliance_obs_vs_pred_mean_banned_mass": [
+   0.07925925925925927,
+   0.07925925925925927
+  ],
+  "iia_zero_banned_identity": true
+ }
+}

@@ -1,0 +1,1550 @@
+{
+ "T1/ban_r1": {
+  "band": {
+   "top20": [
+    " while",
+    "\u97ea",
+    "\u7617",
+    " \u0441\u043b\u0438\u0448",
+    " realistically",
+    " nouvel",
+    "\u53b3\u3057\u3044",
+    "\u87ee",
+    "\u9603",
+    "\u89c7",
+    "\twhile",
+    "ancock",
+    " although",
+    "\u306a\u304b\u306a\u304b",
+    "while",
+    " sino",
+    " notwithstanding",
+    " rather",
+    " While",
+    " unless"
+   ],
+   "banned_name_rank": {
+    "BFS": 13619
+   }
+  },
+  "L35": {
+   "top20": [
+    " while",
+    "utr",
+    " another",
+    " restrictive",
+    "\u53b3\u3057\u3044",
+    "\u95f4\u63a5",
+    "\u6df1\u523b",
+    "while",
+    "\twhile",
+    "\u5686",
+    " rather",
+    " forb",
+    " otro",
+    " Buccaneers",
+    "\u87ee",
+    "bau",
+    " realistically",
+    " WHILE",
+    " although",
+    " unless"
+   ],
+   "banned_name_rank": {
+    "BFS": 1323
+   }
+  }
+ },
+ "T1/ban_r2": {
+  "band": {
+   "top20": [
+    " sino",
+    "\u6df1\u5c42",
+    "\u7eb5\u6df1",
+    "_altern",
+    " onStop",
+    "\u6df1\u5c42\u6b21",
+    "ulton",
+    " secondo",
+    "\u4e00\u4e2a\u597d\u7684",
+    "intree",
+    " rather",
+    "\u4e00\u4e2a\u91cd\u8981",
+    " one",
+    "\u4e3a\u6b62",
+    " instead",
+    ">[]",
+    " thanks",
+    "\u6709\u5e8f",
+    "chwitz",
+    " Shiite"
+   ],
+   "banned_name_rank": {
+    "DFS": 72
+   }
+  },
+  "L35": {
+   "top20": [
+    " breadth",
+    " Depth",
+    " depth",
+    "\u6df1\u5c42",
+    "depth",
+    "\u7eb5\u6df1",
+    "Depth",
+    "\u6df1\u5c42\u6b21",
+    ".Depth",
+    " Al",
+    "_depth",
+    " DFS",
+    " Depths",
+    " sino",
+    "dfs",
+    "ego",
+    " onStop",
+    "\u6df1\u5ea6",
+    " an",
+    "hide"
+   ],
+   "banned_name_rank": {
+    "DFS": 1
+   }
+  }
+ },
+ "T1/ban_r3": {
+  "band": {
+   "top20": [
+    "\u87ee",
+    "\u89c7",
+    "\u5ee8",
+    " nouvel",
+    "\u829f",
+    " secondo",
+    "\u89cf",
+    " notwithstanding",
+    " onStop",
+    "\u8aee\u8a62",
+    "butt",
+    " \u0441\u043b\u0438\u0448",
+    "\u4fe1\u8cb8",
+    "\ufffd",
+    " procedural",
+    "\u8c1d",
+    " meno",
+    "\u5f31\u52bf",
+    "\u968d",
+    "\u7540"
+   ],
+   "banned_name_rank": {
+    "A_star": 53520
+   }
+  },
+  "L35": {
+   "top20": [
+    "zsche",
+    "\u73b0\u5b9e",
+    "\ufffd\u9664",
+    "\u5686",
+    " while",
+    "ooter",
+    " realistically",
+    " meno",
+    " notwithstanding",
+    " secondo",
+    "\u70df\u82b1\u7206",
+    " sino",
+    "\u5f31\u52bf",
+    "otle",
+    "\u5ee8",
+    "\u8d1f\u503a",
+    " Gaza",
+    " \"',",
+    "\u63a1\u53d6",
+    "otr"
+   ],
+   "banned_name_rank": {
+    "A_star": 2577
+   }
+  }
+ },
+ "T1/ban_r4": {
+  "band": {
+   "top20": [
+    " while",
+    " While",
+    "\twhile",
+    " although",
+    "\u89c7",
+    "while",
+    " \u0441\u043b\u0438\u0448",
+    "\u87ee",
+    "_while",
+    "\u97ea",
+    " notwithstanding",
+    " WHILE",
+    " realistically",
+    " despite",
+    "While",
+    "\u5ee8",
+    "\u867d\u7136",
+    " unless",
+    "\u8d33",
+    " \u043f\u0443\u0442\u0435\u0448"
+   ],
+   "banned_name_rank": {
+    "Dijkstra": 70873
+   }
+  },
+  "L35": {
+   "top20": [
+    " while",
+    "\twhile",
+    "while",
+    " While",
+    " although",
+    " whilst",
+    " other",
+    "\u867d\u7136",
+    "\u5686",
+    " another",
+    " notwithstanding",
+    " despite",
+    "While",
+    " realistically",
+    " \u0441\u043b\u0438\u0448",
+    "_while",
+    " unless",
+    "\u4e0d\u8db3\u4ee5",
+    " alternative",
+    "\u73b0\u5b9e"
+   ],
+   "banned_name_rank": {
+    "Dijkstra": 13858
+   }
+  }
+ },
+ "T1/ban_top3": {
+  "band": {
+   "top20": [
+    " given",
+    " due",
+    " despite",
+    " debido",
+    " unless",
+    " because",
+    "given",
+    " understanding",
+    " realistically",
+    "due",
+    " while",
+    " other",
+    " \u0441\u043b\u0438\u0448",
+    " although",
+    "\u4ee5\u5916",
+    "\u97ea",
+    " instead",
+    "\u53b3\u3057\u3044",
+    " notwithstanding",
+    " Given"
+   ],
+   "banned_name_rank": {
+    "BFS": 31701,
+    "DFS": 15334,
+    "A_star": 40271
+   }
+  },
+  "L35": {
+   "top20": [
+    " given",
+    " due",
+    " another",
+    " other",
+    " because",
+    " debido",
+    "due",
+    " while",
+    " since",
+    "\u4ee5\u5916",
+    "given",
+    " GIVEN",
+    "otle",
+    " despite",
+    "\u5686",
+    "\u53e6\u4e00\u79cd",
+    " unless",
+    " instead",
+    "\u73b0\u5b9e",
+    "\u4e0d\u5229"
+   ],
+   "banned_name_rank": {
+    "BFS": 2468,
+    "DFS": 3116,
+    "A_star": 6094
+   }
+  }
+ },
+ "T1/ban_top5": {
+  "band": {
+   "top20": [
+    " \u0441\u043b\u0438\u0448",
+    "\u97ea",
+    "\u8aee\u8a62",
+    "\u87ee",
+    "\u89c7",
+    "\u8d33",
+    " nouvel",
+    " sincer",
+    "\u521b\u65b0\u53d1\u5c55",
+    "\u5240",
+    "\u8c20",
+    "\u4e0e\u53d1\u5c55",
+    "\u7540",
+    "\u5ee8",
+    " Gespr",
+    "\u9969",
+    " newData",
+    "\u902d",
+    "frei",
+    "\u7617"
+   ],
+   "banned_name_rank": {
+    "BFS": 9930,
+    "DFS": 18072,
+    "A_star": 41781,
+    "Dijkstra": 51983,
+    "SPFA": 44136
+   }
+  },
+  "L35": {
+   "top20": [
+    " \u0441\u043b\u0438\u0448",
+    "\u4e0e\u53d1\u5c55",
+    "\u521b\u65b0\u53d1\u5c55",
+    "\u87ee",
+    "\u8aee\u8a62",
+    " due",
+    " given",
+    " nouvel",
+    " sincer",
+    "\u8d33",
+    "frei",
+    "]+\\",
+    "\u6b0a\u5229",
+    "perimental",
+    "\u97ea",
+    "utr",
+    " notwithstanding",
+    "\u5686",
+    "\u5240",
+    "\u5275\u65b0"
+   ],
+   "banned_name_rank": {
+    "BFS": 6524,
+    "DFS": 5433,
+    "A_star": 18628,
+    "Dijkstra": 19172,
+    "SPFA": 44278
+   }
+  }
+ },
+ "T1/ban_rare": {
+  "band": {
+   "top20": [
+    " \u0441\u043b\u0438\u0448",
+    " ngOn",
+    "\u5686",
+    "\u89c7",
+    "\u87ee",
+    "\u638a",
+    " nouvel",
+    "\u953e",
+    " secondo",
+    "\ufffd",
+    "\u63a1\u53d6",
+    "\u829f",
+    "\u5ee8",
+    "\u6b0a\u76ca",
+    "\u4fe1\u8cb8",
+    " \u043a\u043e\u043d\u043a\u0440",
+    " \u041f\u043e\u0447\u0435\u043c",
+    "utr",
+    "\u8852",
+    "\u8d33"
+   ],
+   "banned_name_rank": {
+    "SPFA": 20269
+   }
+  },
+  "L35": {
+   "top20": [
+    " user",
+    "user",
+    "\u7528\u6237",
+    "/user",
+    "-user",
+    "(user",
+    "\u7528\u6237\u7684",
+    ".user",
+    " User",
+    " userList",
+    "\tuser",
+    " users",
+    "_SP",
+    "_user",
+    " minimum",
+    "users",
+    "\u4f7f\u7528\u8005",
+    "SP",
+    " SP",
+    "User"
+   ],
+   "banned_name_rank": {
+    "SPFA": 17
+   }
+  }
+ },
+ "T1/para1_r1": {
+  "band": {
+   "top20": [
+    " \u0441\u043b\u0438\u0448",
+    "\u87ee",
+    "\u5ee8",
+    " nouvel",
+    "\u8d33",
+    "\u89c7",
+    "\u97ea",
+    "\u7617",
+    "\u7540",
+    " secondo",
+    "\u829f",
+    "\u4e0e\u53d1\u5c55",
+    "\u9603",
+    "\u8d59",
+    "ForKey",
+    "\u638a",
+    "pone",
+    "osten",
+    "\u8aee\u8a62",
+    " avoiding"
+   ],
+   "banned_name_rank": {
+    "BFS": 16354
+   }
+  },
+  "L35": {
+   "top20": [
+    " avoiding",
+    " avoidance",
+    " avoided",
+    " Avoid",
+    "\u907f\u514d",
+    " avoid",
+    "\u4e0e\u53d1\u5c55",
+    " while",
+    " restrictive",
+    "avoid",
+    "utr",
+    " \u0441\u043b\u0438\u0448",
+    " forb",
+    "\u56de\u907f",
+    "\u87ee",
+    "\u89c4\u907f",
+    "\u907f\u3051",
+    " another",
+    "\u91cd\u70b9\u5de5\u4f5c",
+    "\u8d59"
+   ],
+   "banned_name_rank": {
+    "BFS": 1277
+   }
+  }
+ },
+ "T1/para2_r1": {
+  "band": {
+   "top20": [
+    " devis",
+    " understanding",
+    " due",
+    "\u96be\u5ea6",
+    " unless",
+    " challenging",
+    "\u7684\u7406\u89e3",
+    " designing",
+    "\u53b3\u3057\u3044",
+    " difficult",
+    " forb",
+    " constructing",
+    " interpreting",
+    " while",
+    "\u7406\u89e3",
+    " realistically",
+    "due",
+    " understand",
+    "\u56f0\u96be",
+    " developing"
+   ],
+   "banned_name_rank": {
+    "BFS": 29147
+   }
+  },
+  "L35": {
+   "top20": [
+    " due",
+    "structuring",
+    " devis",
+    " understanding",
+    "due",
+    " restricted",
+    " developing",
+    "\u96be\u5ea6",
+    "\u56f0\u96be",
+    "\u53b3\u3057\u3044",
+    " restrict",
+    "\u95f4\u63a5",
+    " forb",
+    " unless",
+    " direct",
+    "\u7684\u7406\u89e3",
+    " designing",
+    "\u4f60\u7684",
+    " though",
+    " debido"
+   ],
+   "banned_name_rank": {
+    "BFS": 2699
+   }
+  }
+ },
+ "T2/ban_r1": {
+  "band": {
+   "top20": [
+    "\u8fd8\u6709\u4e00\u4e9b",
+    "\u8dbf",
+    "\u4e00\u53e3\u6c14",
+    "\u63a9",
+    "\u54bb",
+    "\u86ee",
+    "\u55f5",
+    "\u56af",
+    "\u6027\u80fd",
+    "\u5c0f\u59d0\u59d0",
+    "\u8fd9\u5bb6\u4f19",
+    "\u7ab8",
+    "invoke",
+    ".dispatchEvent",
+    "\u54a3",
+    "\u5478",
+    "lazy",
+    "\u5601",
+    "\u9984",
+    "\u556a"
+   ],
+   "banned_name_rank": {
+    "Bubble": 4925
+   }
+  },
+  "L35": {
+   "top20": [
+    " al",
+    " aluminum",
+    "atal",
+    "\u94dd",
+    " Al",
+    "\u8fd8\u6709\u4e00\u4e9b",
+    "alus",
+    "/al",
+    "\u6c5f\u6e56",
+    "\u51f9",
+    "caff",
+    "Al",
+    " alph",
+    "alic",
+    " heck",
+    "-al",
+    "\u9984",
+    "\u6027\u80fd",
+    "\u54bb",
+    ".dispatchEvent"
+   ],
+   "banned_name_rank": {
+    "Bubble": 16840
+   }
+  }
+ },
+ "T2/ban_r2": {
+  "band": {
+   "top20": [
+    "\u54bb",
+    "\u63a9",
+    "\u55f5",
+    "\u56af",
+    "\u5657",
+    "\u5478",
+    "\u8dbf",
+    "\u549d",
+    "\u562d",
+    "\u556a",
+    "\u5530",
+    "\u4e56\u4e56",
+    "\u54d0",
+    "\u55de",
+    "\u908b",
+    "\u7ab8",
+    "\u5c0f\u59d0\u59d0",
+    "\u5658",
+    "\u54a3",
+    "\u752d"
+   ],
+   "banned_name_rank": {
+    "Quick": 21787
+   }
+  },
+  "L35": {
+   "top20": [
+    "\u55f5",
+    "\u54bb",
+    "\u63a9",
+    "\u4e56\u4e56",
+    "\u56af",
+    "\u8fd8\u6709\u4e00\u4e9b",
+    "\u5478",
+    "\u6c5f\u6e56",
+    "\u5657",
+    "\u57cb",
+    "\u7f8e\u4eba",
+    "\u549d",
+    " cuckold",
+    "\u9f39",
+    "\u9984",
+    " inert",
+    "\u5658",
+    "\u752d",
+    "\u562d",
+    " shading"
+   ],
+   "banned_name_rank": {
+    "Quick": 2829
+   }
+  }
+ },
+ "T2/ban_r3": {
+  "band": {
+   "top20": [
+    "\u8fd8\u6709\u4e00\u4e9b",
+    "\u55f5",
+    "\u54bb",
+    "\u56af",
+    "\u5478",
+    "\u5657",
+    "\u549d",
+    "\u8dbf",
+    "\u63a9",
+    " \u0425\u043e\u0442\u044f",
+    "\u5c0f\u59d0\u59d0",
+    "\u55de",
+    "\u9ab0",
+    "\u0426\u0435\u043d\u0442\u0440",
+    "\u5623",
+    "\u562c",
+    ".Fat",
+    "\u4e5c",
+    "\u556a",
+    "Glyph"
+   ],
+   "banned_name_rank": {
+    "Merge": 83858
+   }
+  },
+  "L35": {
+   "top20": [
+    "\u8fd8\u6709\u4e00\u4e9b",
+    "\u55f5",
+    "\u54bb",
+    "\u5478",
+    "\u63a9",
+    "\u5728\u5e8a\u4e0a",
+    "\u9ab0",
+    "\u51eb",
+    "\u8fd8\u6709\u5f88\u591a",
+    "\u8fd8\u6709\u4e00\u4e2a",
+    " \u0425\u043e\u0442\u044f",
+    "\u5c0f\u59d0\u59d0",
+    "uche",
+    "\u549d",
+    "\u86ee",
+    "\u8378",
+    "\u5c0f\u4f19\u5b50",
+    "\u56af",
+    "fifo",
+    "\uc250"
+   ],
+   "banned_name_rank": {
+    "Merge": 18392
+   }
+  }
+ },
+ "T2/ban_r4": {
+  "band": {
+   "top20": [
+    "\u63a9",
+    "\u5478",
+    "\u55f5",
+    "\u54d0",
+    "\u56af",
+    "\u55de",
+    "\u7ab8",
+    "\u5657",
+    "\u8dbf",
+    "\u54bb",
+    "\u908b",
+    "\u54a3",
+    "\u5658",
+    "\u549d",
+    "\u752d",
+    "\u562d",
+    "\u94e4",
+    "\u55d6",
+    "\u5530",
+    "\u4e00\u5927\u5806"
+   ],
+   "banned_name_rank": {
+    "Selection": 16699
+   }
+  },
+  "L35": {
+   "top20": [
+    "\u63a9",
+    "\u55f5",
+    "\u5478",
+    "\u5658",
+    "\u54bb",
+    "\u8dbf",
+    "\u56af",
+    "\u7ab8",
+    "\u55ec",
+    "\u54a3",
+    "\u549d",
+    "\u54d0",
+    "\u908b",
+    "\u54c7",
+    "\ufffd\ufffd",
+    "\u55de",
+    "\u5657",
+    "\u752d",
+    "\u8fd9\u5bb6\u4f19",
+    "\u94e4"
+   ],
+   "banned_name_rank": {
+    "Selection": 13448
+   }
+  }
+ },
+ "T2/ban_top3": {
+  "band": {
+   "top20": [
+    "\u53e6\u4e00\u79cd",
+    "\u8fd8\u6709\u4e00\u4e2a",
+    "\u8fd8\u6709\u4e00\u4e9b",
+    "alternate",
+    "Alternate",
+    "\u53e6",
+    "\u4e00\u4e2a\u65b0\u7684",
+    "\u53e6\u4e00\u4e2a",
+    " alternate",
+    "\u53e6\u4e00",
+    "\u53e6\u5916\u4e00\u4e2a",
+    "\u6709\u4e00\u79cd",
+    " another",
+    "Alternative",
+    "\twhile",
+    "_altern",
+    "Altern",
+    "another",
+    "\u53e6\u6709",
+    " alternative"
+   ],
+   "banned_name_rank": {
+    "Bubble": 16522,
+    "Quick": 62179,
+    "Merge": 122031
+   }
+  },
+  "L35": {
+   "top20": [
+    "\u53e6\u4e00\u79cd",
+    "\u8fd8\u6709\u4e00\u4e2a",
+    " another",
+    "ainter",
+    "\u53e6\u4e00",
+    "\u8fd8\u6709\u4e00\u4e9b",
+    "\u53e6\u4e00\u4e2a",
+    "ahlen",
+    "\u53e6\u5916\u4e00\u4e2a",
+    "another",
+    "alternate",
+    "\u53e6\u4e00\u4f4d",
+    " alternative",
+    " altern",
+    "\u4e00\u4e2a\u65b0\u7684",
+    " otro",
+    " alternate",
+    " otra",
+    "\u82d5",
+    "\u53e6"
+   ],
+   "banned_name_rank": {
+    "Bubble": 39105,
+    "Quick": 22711,
+    "Merge": 63441
+   }
+  }
+ },
+ "T2/ban_top5": {
+  "band": {
+   "top20": [
+    " another",
+    "\u4e00\u4e2a\u65b0\u7684",
+    "\u56f0\u96be",
+    "\u7617",
+    " nouvel",
+    " algu",
+    "\u97ea",
+    "\u7540",
+    " given",
+    " realistically",
+    "\u4ee5\u5916",
+    "frei",
+    "\u53e6\u4e00\u79cd",
+    " Daly",
+    "\u9969",
+    " exploring",
+    "\u96be\u5ea6",
+    " \u0441\u043b\u0438\u0448",
+    "\u57d2",
+    "\u73b0\u5b9e"
+   ],
+   "banned_name_rank": {
+    "Bubble": 43258,
+    "Quick": 5551,
+    "Merge": 68728,
+    "Selection": 25874,
+    "Insertion": 60841
+   }
+  },
+  "L35": {
+   "top20": [
+    " given",
+    " another",
+    " Daly",
+    "\u56f0\u96be",
+    " Al",
+    "\u73b0\u5b9e",
+    " algu",
+    " sincer",
+    " reality",
+    "perimental",
+    " due",
+    "\u53e6\u4e00\u4f4d",
+    " one",
+    " bre",
+    " /*----------------------------------------------------------------",
+    "\u53e6\u4e00\u79cd",
+    "\u7684\u771f\u5b9e\u6027",
+    "\u4e00\u4e2a\u65b0\u7684",
+    "\u9969",
+    "\u00ebn"
+   ],
+   "banned_name_rank": {
+    "Bubble": 28014,
+    "Quick": 1677,
+    "Merge": 53561,
+    "Selection": 7227,
+    "Insertion": 27212
+   }
+  }
+ },
+ "T2/ban_rare": {
+  "band": {
+   "top20": [
+    "\u8fd8\u6709\u4e00\u4e9b",
+    "\u6027\u80fd",
+    "\u4e00\u5c01",
+    "leans",
+    "\u8fd8\u6709\u4e00\u4e2a",
+    "\u00e9al",
+    "ifax",
+    "anch",
+    "\u6709\u4e00\u79cd",
+    "outers",
+    " inertia",
+    "invoke",
+    "v\u00e9",
+    "\u062a\u064a\u0646",
+    ".BASELINE",
+    "\u7684\u4e00\u4e2a",
+    "ties",
+    "\u6709\u4e00\u4f4d",
+    "ty",
+    "\u4e00\u4e2a\u804c\u4e1a"
+   ],
+   "banned_name_rank": {
+    "Insertion": 12020
+   }
+  },
+  "L35": {
+   "top20": [
+    " al",
+    "anch",
+    " aluminum",
+    "\u94dd",
+    "\u6027\u80fd",
+    " Al",
+    "\u8fd8\u6709\u4e00\u4e9b",
+    "alic",
+    " alo",
+    "/al",
+    "caff",
+    ".BASELINE",
+    "atal",
+    "\u00e9al",
+    " alph",
+    "al",
+    "alus",
+    "ityEngine",
+    "ties",
+    "ALCHEMY"
+   ],
+   "banned_name_rank": {
+    "Insertion": 1664
+   }
+  }
+ },
+ "T2/para1_r1": {
+  "band": {
+   "top20": [
+    "\u63a9",
+    "\u8dbf",
+    "\u54bb",
+    "\u56af",
+    "\u55f5",
+    "\u5657",
+    "\u556a",
+    "\u5728\u73a9\u5bb6",
+    "\u908b",
+    "\u7ab8",
+    "\ufffd\ufffd",
+    "\u5c0f\u59d0\u59d0",
+    "\u4e00\u53e3\u6c14",
+    "\u54a3",
+    "\u562d",
+    "\u86ee",
+    "\u5478",
+    "\u9503",
+    "\u5669",
+    "\u561a"
+   ],
+   "banned_name_rank": {
+    "Bubble": 2563
+   }
+  },
+  "L35": {
+   "top20": [
+    "\u8dbf",
+    "\u54bb",
+    "\u55f5",
+    "\u63a9",
+    " al",
+    "\ufffd\ufffd",
+    "\ufffd\ufffd",
+    "\u5c0f\u59d0\u59d0",
+    "xing",
+    "\u56af",
+    "\u908b",
+    "\ufffd",
+    "\ufffd\ufffd",
+    "\u86ee",
+    "\u556a",
+    "\u9984",
+    " cling",
+    "\u4e00\u53e3\u6c14",
+    "\u562d",
+    "\u5c71"
+   ],
+   "banned_name_rank": {
+    "Bubble": 5242
+   }
+  }
+ },
+ "T2/para2_r1": {
+  "band": {
+   "top20": [
+    "\u63a9",
+    "\u908b",
+    "\u8dbf",
+    "\u5478",
+    "\u54bb",
+    "\ufffd\ufffd",
+    "\u54d0",
+    "\u94e4",
+    "\u56af",
+    "\u9163",
+    "\u55f5",
+    "\u7ab8",
+    "\u5657",
+    "\u55de",
+    "\u54a3",
+    "\u9503",
+    "\u5669",
+    "\u752d",
+    "\u5f97\u5929",
+    "\u4e56\u4e56"
+   ],
+   "banned_name_rank": {
+    "Bubble": 10400
+   }
+  },
+  "L35": {
+   "top20": [
+    "\u55f5",
+    "\u54bb",
+    "\u8dbf",
+    "\u908b",
+    "\u5658",
+    "\ufffd\ufffd",
+    "\u56af",
+    "\u5478",
+    "\u9163",
+    "\u55ec",
+    "\u94e4",
+    "\u63a9",
+    "\u7ab8",
+    "\u54d0",
+    "\u54a3",
+    "\u55de",
+    "\u9503",
+    "\u549d",
+    "\u5472",
+    "\u9f39"
+   ],
+   "banned_name_rank": {
+    "Bubble": 13690
+   }
+  }
+ },
+ "T3/ban_r1": {
+  "band": {
+   "top20": [
+    " although",
+    " while",
+    " realistically",
+    "\u867d\u7136",
+    "while",
+    " though",
+    "While",
+    " unless",
+    " despite",
+    " While",
+    "_while",
+    "\twhile",
+    " albeit",
+    " notwithstanding",
+    "\u89c7",
+    "\u4ee5\u5916",
+    "\u97ea",
+    "although",
+    "\u521b\u65b0\u53d1\u5c55",
+    " whilst"
+   ],
+   "banned_name_rank": {
+    "Dijkstra": 26720
+   }
+  },
+  "L35": {
+   "top20": [
+    " although",
+    " while",
+    "utr",
+    "\u73b0\u5b9e",
+    "\u867d\u7136",
+    "\u4ee5\u5916",
+    " notwithstanding",
+    "\u521b\u65b0\u53d1\u5c55",
+    " realistically",
+    " despite",
+    "while",
+    " though",
+    "\u00ebn",
+    "\u4e4b\u5916",
+    " whilst",
+    " unless",
+    "\twhile",
+    " sinc",
+    " sincer",
+    "frei"
+   ],
+   "banned_name_rank": {
+    "Dijkstra": 790
+   }
+  }
+ },
+ "T3/ban_r2": {
+  "band": {
+   "top20": [
+    "\u89c7",
+    " realistically",
+    "/AFP",
+    "\u7540",
+    " quanto",
+    "th\u00e8que",
+    " prospect",
+    " unanimous",
+    "\u540e\u679c",
+    " m\u00e9th",
+    " nouvel",
+    "\u968d",
+    " sond",
+    " per\u00f2",
+    " M\u00f6glich",
+    " sustaining",
+    "\u8201",
+    "\u2025",
+    "\u72ec\u4e00",
+    " Simmons"
+   ],
+   "banned_name_rank": {
+    "A_star": 71482
+   }
+  },
+  "L35": {
+   "top20": [
+    "utr",
+    "\u540e\u679c",
+    " quanto",
+    "croft",
+    "()(",
+    " prospect",
+    "\u9f81",
+    " Transit",
+    " suffice",
+    "sumer",
+    "NEL",
+    "aday",
+    "\u8d22",
+    "\u00f3st",
+    "oten",
+    "\u5c81\u7684",
+    "\u73b0\u5b9e",
+    "ocache",
+    " disadvantages",
+    " realistically"
+   ],
+   "banned_name_rank": {
+    "A_star": 47816
+   }
+  }
+ },
+ "T3/ban_r3": {
+  "band": {
+   "top20": [
+    " M\u00f6glichkeit",
+    " unless",
+    "\u89c7",
+    "\u9969",
+    "frei",
+    " while",
+    " given",
+    "\u6709\u5e8f",
+    " realistically",
+    "\twhile",
+    "th\u00e8que",
+    " although",
+    "\u97ea",
+    "\u7540",
+    "given",
+    " Gespr",
+    " Buccaneers",
+    "ForKey",
+    " daf\u00fcr",
+    "while"
+   ],
+   "banned_name_rank": {
+    "Bellman_Ford": 20532
+   }
+  },
+  "L35": {
+   "top20": [
+    " given",
+    "frei",
+    "utr",
+    " unless",
+    " if",
+    "given",
+    " while",
+    "Restr",
+    "\u6709\u5e8f",
+    "\u9969",
+    " since",
+    " Buccaneers",
+    "if",
+    " realistically",
+    "peon",
+    "\u4e0d\u786e\u5b9a\u6027",
+    "bau",
+    " Elder",
+    "option",
+    " M\u00f6glichkeit"
+   ],
+   "banned_name_rank": {
+    "Bellman_Ford": 12959
+   }
+  }
+ },
+ "T3/ban_r4": {
+  "band": {
+   "top20": [
+    "\u7540",
+    " Simmons",
+    "\u6709\u5e8f",
+    "\u89c7",
+    "\u9969",
+    "frei",
+    " unanimous",
+    "\u91b5",
+    "\u89cf",
+    " Buccaneers",
+    "\u7617",
+    " Gespr",
+    " daf\u00fcr",
+    " M\u00f6glichkeit",
+    "\u6083",
+    "osten",
+    "\u57d2",
+    "meric",
+    "\u8852",
+    " Lyon"
+   ],
+   "banned_name_rank": {
+    "Floyd_Warshall": 17598
+   }
+  },
+  "L35": {
+   "top20": [
+    "ospel",
+    " Survival",
+    "\u6709\u5e8f",
+    "ISM",
+    "ersions",
+    "\u7684\u9009\u62e9",
+    "utr",
+    "requent",
+    " survival",
+    "\u6b21",
+    "oron",
+    "activated",
+    "\u5c81\u7684",
+    "quent",
+    "Retention",
+    " observers",
+    "endencies",
+    "_salt",
+    " voted",
+    "frei"
+   ],
+   "banned_name_rank": {
+    "Floyd_Warshall": 31542
+   }
+  }
+ },
+ "T3/ban_top3": {
+  "band": {
+   "top20": [
+    "\u97ea",
+    "\u89c7",
+    "\u8d33",
+    "frei",
+    "\u521b\u65b0\u53d1\u5c55",
+    "\u8aee\u8a62",
+    " \u0441\u043b\u0438\u0448",
+    " nouvel",
+    "\u4e0e\u53d1\u5c55",
+    "\u9969",
+    "\u87ee",
+    " sincer",
+    "\u7540",
+    "\u902d",
+    " realistically",
+    " notwithstanding",
+    "\u5275\u65b0",
+    "\u53d1\u5c55\u76ee\u6807",
+    "endors",
+    " Gespr"
+   ],
+   "banned_name_rank": {
+    "Dijkstra": 60937,
+    "A_star": 57255,
+    "Bellman_Ford": 14155
+   }
+  },
+  "L35": {
+   "top20": [
+    "\u521b\u65b0\u53d1\u5c55",
+    " due",
+    " given",
+    "utr",
+    "frei",
+    " notwithstanding",
+    " sincer",
+    "\u9969",
+    "\u89c7",
+    "\u4e0e\u53d1\u5c55",
+    "\u5275\u65b0",
+    "\u7684\u771f\u5b9e\u6027",
+    "\u8d33",
+    "\u4ee5\u5916",
+    "\u0e40\u0e01\u0e32",
+    "\u97ea",
+    " realistically",
+    " Gespr",
+    " because",
+    "\u4e0d\u786e\u5b9a\u6027"
+   ],
+   "banned_name_rank": {
+    "Dijkstra": 17910,
+    "A_star": 33701,
+    "Bellman_Ford": 10365
+   }
+  }
+ },
+ "T3/ban_top5": {
+  "band": {
+   "top20": [
+    "\u89c7",
+    "\u97ea",
+    "\u8d33",
+    " \u0441\u043b\u0438\u0448",
+    " nouvel",
+    "\u8aee\u8a62",
+    "\u87ee",
+    " notwithstanding",
+    "\u53d1\u5c55\u76ee\u6807",
+    "\u9969",
+    "\u7540",
+    "\u521b\u65b0\u53d1\u5c55",
+    "endors",
+    "\u4e0e\u53d1\u5c55",
+    " given",
+    "frei",
+    "\u902d",
+    " M\u00f6glichkeit",
+    " Gespr",
+    " due"
+   ],
+   "banned_name_rank": {
+    "Dijkstra": 65809,
+    "A_star": 53841,
+    "Bellman_Ford": 17591,
+    "Floyd_Warshall": 17591,
+    "Bidirectional": 66767
+   }
+  },
+  "L35": {
+   "top20": [
+    " given",
+    " due",
+    "\u521b\u65b0\u53d1\u5c55",
+    "given",
+    "\u4e0e\u53d1\u5c55",
+    "utr",
+    " notwithstanding",
+    " Due",
+    "\u89c7",
+    " because",
+    "\u53d1\u5c55\u76ee\u6807",
+    "\u9969",
+    " Restr",
+    " \u0441\u043b\u0438\u0448",
+    "\u4ee5\u5916",
+    " since",
+    " Gespr",
+    "\u8d33",
+    " sincer",
+    "\u4e0d\u786e\u5b9a\u6027"
+   ],
+   "banned_name_rank": {
+    "Dijkstra": 22902,
+    "A_star": 26231,
+    "Bellman_Ford": 9775,
+    "Floyd_Warshall": 9775,
+    "Bidirectional": 51292
+   }
+  }
+ },
+ "T3/ban_rare": {
+  "band": {
+   "top20": [
+    "\u89c7",
+    "\u87ee",
+    "\u7540",
+    "\u5240",
+    " nouvel",
+    "\u8aee\u8a62",
+    "/problems",
+    "\u638a",
+    "\u97ea",
+    "\u9603",
+    "th\u00e8que",
+    "\u7617",
+    "\u6083",
+    "\u89cf",
+    "\ud83d\udc41",
+    "frei",
+    " preval",
+    " Buccaneers",
+    " Belmont",
+    "\u53d1\u5c55\u76ee\u6807"
+   ],
+   "banned_name_rank": {
+    "Greedy_best_first": 29086
+   }
+  },
+  "L35": {
+   "top20": [
+    "utr",
+    "/problems",
+    "\u8aee\u8a62",
+    "\u87ee",
+    " quickest",
+    "\u63a1\u53d6",
+    "\u89c7",
+    " Burl",
+    "\u6709\u5e8f",
+    " sustaining",
+    "\u63a2\u7d22",
+    " Buccaneers",
+    " quicker",
+    " prospect",
+    "\ud83d\udc41",
+    "\u89cf",
+    "CHASE",
+    " suffice",
+    " finding",
+    " Belmont"
+   ],
+   "banned_name_rank": {
+    "Greedy_best_first": 696
+   }
+  }
+ },
+ "T3/para1_r1": {
+  "band": {
+   "top20": [
+    "\u97ea",
+    "\u89c7",
+    "frei",
+    " avoiding",
+    " realistically",
+    "\u7540",
+    " notwithstanding",
+    " although",
+    " unless",
+    "\u5ee8",
+    " while",
+    " Avoid",
+    "_while",
+    "\u8d33",
+    "\u521b\u65b0\u53d1\u5c55",
+    " avoided",
+    "\u4e0e\u53d1\u5c55",
+    "\u4ee5\u5916",
+    "\u87ee",
+    " albeit"
+   ],
+   "banned_name_rank": {
+    "Dijkstra": 41539
+   }
+  },
+  "L35": {
+   "top20": [
+    " avoiding",
+    " Avoid",
+    " avoided",
+    "\u907f\u514d",
+    " avoidance",
+    "Avoid",
+    " avoid",
+    "avoid",
+    "utr",
+    "frei",
+    " while",
+    " evitar",
+    "\u521b\u65b0\u53d1\u5c55",
+    " notwithstanding",
+    " although",
+    " unless",
+    " realistically",
+    "\u4ee5\u5916",
+    "\u4e0e\u53d1\u5c55",
+    "\u89c4\u907f"
+   ],
+   "banned_name_rank": {
+    "Dijkstra": 994
+   }
+  }
+ },
+ "T3/para2_r1": {
+  "band": {
+   "top20": [
+    " realistically",
+    " although",
+    " despite",
+    " challenging",
+    " devis",
+    " albeit",
+    " while",
+    " though",
+    "\u56f0\u96be",
+    "\u867d\u7136",
+    " unfortunately",
+    " due",
+    " constructing",
+    " unless",
+    "\u97ea",
+    "while",
+    " designing",
+    " because",
+    "\u306a\u304b\u306a\u304b",
+    "\twhile"
+   ],
+   "banned_name_rank": {
+    "Dijkstra": 26652
+   }
+  },
+  "L35": {
+   "top20": [
+    " realistically",
+    " although",
+    " due",
+    " despite",
+    " though",
+    " direct",
+    "\u76f4\u63a5",
+    " unfortunately",
+    " albeit",
+    " while",
+    "\u867d\u7136",
+    "\u56f0\u96be",
+    "\u73b0\u5b9e",
+    "\u4ee5\u5916",
+    "structuring",
+    "due",
+    " notwithstanding",
+    "\u4e4b\u5916",
+    " because",
+    "\u9650\u989d"
+   ],
+   "banned_name_rank": {
+    "Dijkstra": 2084
+   }
+  }
+ }
+}

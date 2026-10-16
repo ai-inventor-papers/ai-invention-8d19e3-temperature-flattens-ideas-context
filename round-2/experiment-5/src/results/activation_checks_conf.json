@@ -1,0 +1,246 @@
+{
+ "T1/alt_placebo": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/mention_A_star": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/mention_BFS": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/placebo_b1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/placebo_b2": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/placebo_b3": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/alt_placebo": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/mention_Bubble": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/mention_Merge": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/placebo_b1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/placebo_b2": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/placebo_b3": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/placebo_b1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/placebo_b2": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/placebo_b3": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/baseline": {
+  "n": 300,
+  "fallback_rate": 0.0
+ },
+ "T4/forced_Binary_search_value": {
+  "n": 40,
+  "fallback_rate": 0.0
+ },
+ "T4/forced_Counting_bucket": {
+  "n": 40,
+  "fallback_rate": 0.0
+ },
+ "T4/forced_Heap_select": {
+  "n": 40,
+  "fallback_rate": 0.0
+ },
+ "T4/forced_Median_of_medians": {
+  "n": 40,
+  "fallback_rate": 0.0
+ },
+ "T4/forced_Partial_selection": {
+  "n": 40,
+  "fallback_rate": 0.0
+ },
+ "T4/forced_Quickselect": {
+  "n": 40,
+  "fallback_rate": 0.0
+ },
+ "T4/forced_Sort_index": {
+  "n": 40,
+  "fallback_rate": 0.0
+ },
+ "T4/placebo_b1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/placebo_b2": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/placebo_b3": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/ban_Bellman_Ford": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/ban_Bidirectional": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/ban_Greedy_best_first": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/ban_IDDFS": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/cross": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/pair_Bidirectional__Floyd_Warshall": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/pair_DFS__Bellman_Ford": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/pair_Dijkstra__SPFA": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/pair_IDDFS__Dijkstra": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/pair_IDDFS__Floyd_Warshall": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/pair_SPFA__Floyd_Warshall": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/ban_Counting": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/ban_Heap": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/ban_Radix": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/ban_Shell": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/cross": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/pair_Insertion__Bubble": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/pair_Insertion__Shell": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/pair_Merge__Heap": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/pair_Merge__Selection": {
+  "n": 100,
+  "fallback_rate": 0.01
+ },
+ "T2/pair_Quick__Bubble": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/pair_Quick__Shell": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/ban_BFS": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/ban_SPFA": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/ban_r1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/ban_r2": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/ban_r3": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/ban_r4": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/ban_rare": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/ban_top3": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/ban_top5": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/pair_Heap_select__Binary_search_value": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/pair_Median_of_medians__Partial_selection": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/pair_Sort_index__Binary_search_value": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T4/pair_Sort_index__Median_of_medians": {
+  "n": 100,
+  "fallback_rate": 0.0
+ }
+}

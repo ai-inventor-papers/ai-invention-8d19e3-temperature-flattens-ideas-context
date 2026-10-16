@@ -1,0 +1,556 @@
+{
+  "metadata": {
+    "method_name": "Prompt-suffix displacement predictor of idea bans (Qwen2.5-3B-Instruct)",
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "engine_note": "All screen + confirmation generations: vLLM 0.31.0 (bf16, T=0.7, top-p 1, top-k off, max_tokens 768, per-request seed). Transplant cells: HF transformers custom KV-cached loop with common-random-numbe...",
+    "frozen_hashes": {
+      "frozen_predictors": "a669710b5153bc425c391fcd9a5f762d1ea11fd51349c39f729c2a138a98ce7a",
+      "frozen_predictions": "b407d885ada8b3b70b8aa43b52d03d8b39a362406fee61d79655af28f20dc114",
+      "frozen_predictions_T4": "f1d47960b8fc9dda12c29def22a9190a9ca8d88a2244a711e54bfabf97581dac"
+    },
+    "frozen": {
+      "band": [
+        32,
+        33,
+        34
+      ],
+      "variant": "G_suffix",
+      "beta": 19.75,
+      "eps": 5.0,
+      "kappa": {
+        "1": 0.04755963774364854,
+        "2-3": 0.2834329570934029,
+        "5": 0.36503086390900913,
+        "all": 0.1713556022481021
+      },
+      "massive_dims": [
+        45,
+        71,
+        294
+      ]
+    },
+    "verdicts": {
+      "C2a": {
+        "verdict": "PASS",
+        "violating_bans": [
+          "T1/ban_Bellman_Ford",
+          "T1/ban_Greedy_best_first",
+          "T1/ban_IDDFS"
+        ],
+        "n_violating_cells": 8,
+        "n_cells": 46,
+        "false_positive_cells_placebo_checks": 0,
+        "sign_acc_B": 0.8269230769230769,
+        "balanced_sign_acc_B": 0.7892156862745098,
+        "sign_acc_IIA": 0.6538461538461539,
+        "balanced_sign_acc_IIA": 0.5
+      },
+      "C2b": {
+        "verdict": "FAIL",
+        "mean_jsd": {
+          "A": 0.20687269724979707,
+          "B": 0.187812925981689,
+          "C": 0.207385511527555,
+          "D": 0.2207074117268551,
+          "D2": 0.2164812105097638,
+          "D3": 0.2106352244259897,
+          "E": 0.2389012933779879
+        },
+        "B_vs_A_rel_reduction": {
+          "estimate": 0.09213285040264907,
+          "ci95": [
+            -0.006401763502390689,
+            0.1958819651480347
+          ],
+          "n": 22
+        },
+        "top_hit_B": 0.2,
+        "B_minus_D": {
+          "mean_diff": -0.03289448574516606,
+          "ci95": [
+            -0.06274299234655946,
+            -0.008447093921117045
+          ],
+          "tie": false,
+          "n": 22
+        },
+        "B_minus_D2": {
+          "mean_diff": -0.028668284528074794,
+          "ci95": [
+            -0.0619313875064376,
+            -0.003764116858025198
+          ],
+          "tie": false,
+          "n": 22
+        }
+      },
+      "C2c": {
+        "verdict": "FAIL",
+        "summary": {
+          "mean_R_transplant": -0.001358469002091467,
+          "mean_R_random": -0.0064144193582046155,
+          "transplant_beats_offtarget": "4/6",
+          "mean_restoration": 0.012944430419383332,
+          "mean_restoration_knockout_ban_sentence": 0.7190098375215777
+        },
+        "secondary": {
+          "T1/ban_r1": {
+            "SUFFIX_CEILING": {
+              "R": 0.011400134297718023,
+              "ci95": [
+                -0.34959976186577363,
+                0.282688734739927
+              ],
+              "n": 60
+            },
+            "ALLPOS": {
+              "R": 0.08354975558195443,
+              "ci95": [
+                -0.2254652018106264,
+                0.3223419713911841
+              ],
+              "n": 60
+            },
+            "TRANSPLANT_L8": {
+              "R": -0.08408129525845465,
+              "ci95": [
+                -0.43843147599205234,
+                0.18268548595203266
+              ],
+              "n": 60
+            },
+            "TRANSPLANT_L18": {
+              "R": 0.0408474662275744,
+              "ci95": [
+                -0.32476011691888534,
+                0.2988980971905536
+              ],
+              "n": 60
+            },
+            "KNOCKOUT_BAN": {
+              "restoration": 0.7476053946756298,
+              "ci95": [
+                0.5186815914047985,
+                0.8563993868639562
+              ],
+              "jsd_to_ref_placebo": 0.13246223958498146,
+              "jsd_to_ref_ban": 0.45434567947499904,
+              "n": 60
+            },
+            "KNOCKOUT_PLACEBO_SENT": {
+              "restoration": 0.8873366318553972,
+              "ci95": [
+                0.6995382919567456,
+                0.9494651739438653
+              ],
+              "jsd_to_ref_placebo": 0.05912821331677,
+              "jsd_to_ref_ban": 0.5164600345761179,
+              "n": 60
+            }
+          },
+          "T1/ban_r4": {
+            "KNOCKOUT_BAN": {
+              "restoration": 0.5668712503932075,
+              "ci95": [
+                -0.00802124878637812,
+                0.8403908505130218
+              ],
+              "jsd_to_ref_placebo": 0.06767422606074466,
+              "jsd_to_ref_ban": 0.1376942695463596,
+              "n": 60
+            },
+            "KNOCKOUT_PLACEBO_SENT": {
+              "restoration": 0.6215674623690779,
+              "ci95": [
+                0.021799228676856644,
+                0.84394838748557
+              ],
+              "jsd_to_ref_placebo": 0.05912821331677,
+              "jsd_to_ref_ban": 0.07925349603508158,
+              "n": 60
+            }
+          },
+          "T1/ban_top3": {},
+          "T2/ban_rare": {
+            "KNOCKOUT_BAN": {
+              "restoration": 0.8008837366327046,
+              "ci95": [
+                0.6244171824991595,
+                0.8956559615421635
+              ],
+              "jsd_to_ref_placebo": 0.10828527447232808,
+              "jsd_to_ref_ban": 0.27832871378440494,
+              "n": 60
+            },
+            "KNOCKOUT_PLACEBO_SENT": {
+              "restoration": 0.7832112015748167,
+              "ci95": [
+                0.5878984774127559,
+                0.8944876324174242
+              ],
+              "jsd_to_ref_placebo": 0.11789611829293159,
+              "jsd_to_ref_ban": 0.7699571316448233,
+              "n": 60
+            }
+          },
+          "T2/ban_top5": {
+            "SUFFIX_CEILING": {
+              "R": 0.03912393596370278,
+              "ci95": [
+                -0.05510807346629812,
+                0.12284044522471418
+              ],
+              "n": 60
+            },
+            "ALLPOS": {
+              "R": -0.03071514907574513,
+              "ci95": [
+                -0.06816344964110281,
+                0.002088649353746793
+              ],
+              "n": 60
+            },
+            "KNOCKOUT_BAN": {
+              "restoration": 0.7606789683847686,
+              "ci95": [
+                0.5767550127624541,
+                0.8500766622211531
+              ],
+              "jsd_to_ref_placebo": 0.19649501734261016,
+              "jsd_to_ref_ban": 0.7077406169249773,
+              "n": 60
+            },
+            "KNOCKOUT_PLACEBO_SENT": {
+              "restoration": 0.8564084675791049,
+              "ci95": [
+                0.7616146275955403,
+                0.9218008924013616
+              ],
+              "jsd_to_ref_placebo": 0.11789611829293159,
+              "jsd_to_ref_ban": 0.8267582475675914,
+              "n": 60
+            }
+          },
+          "T3/ban_r1": {}
+        },
+        "interpretation": "Suffix-state transplant, restore, suffix ceiling (all 35 layers) and Stolfo-style all-position add all recover ~0; a decode-time attention knockout of the ban sentence (added after pre-registration, e..."
+      }
+    },
+    "screen_vs_confirmation": {
+      "A": {
+        "screen_lobo_mean_jsd": 0.19149818504368785,
+        "screen_lobo_sign_acc": 0.8571428571428571,
+        "conf_mean_jsd": 0.20687269724979707,
+        "conf_T4_mean_jsd": 0.09626981719686527
+      },
+      "B": {
+        "screen_lobo_mean_jsd": 0.18297696600558308,
+        "screen_lobo_sign_acc": 0.9523809523809523,
+        "conf_mean_jsd": 0.187812925981689,
+        "conf_T4_mean_jsd": 0.1203490091283721
+      },
+      "C": {
+        "screen_lobo_mean_jsd": 0.19153255215219703,
+        "screen_lobo_sign_acc": 0.9047619047619048,
+        "conf_mean_jsd": 0.207385511527555,
+        "conf_T4_mean_jsd": 0.09724188784840616
+      },
+      "D": {
+        "screen_lobo_mean_jsd": 0.18428567264847634,
+        "screen_lobo_sign_acc": 0.8809523809523809,
+        "conf_mean_jsd": 0.2207074117268551,
+        "conf_T4_mean_jsd": 0.10685350320042626
+      },
+      "D2": {
+        "screen_lobo_mean_jsd": 0.1926287670086688,
+        "screen_lobo_sign_acc": 0.7857142857142857,
+        "conf_mean_jsd": 0.2164812105097638,
+        "conf_T4_mean_jsd": 0.09502412231374337
+      },
+      "D3": {
+        "screen_lobo_mean_jsd": 0.1869235602151837,
+        "screen_lobo_sign_acc": 0.9047619047619048,
+        "conf_mean_jsd": 0.2106352244259897,
+        "conf_T4_mean_jsd": 0.10006929694046955
+      },
+      "E": {
+        "screen_lobo_mean_jsd": 0.19346336276056023,
+        "screen_lobo_sign_acc": 0.8809523809523809,
+        "conf_mean_jsd": 0.2389012933779879,
+        "conf_T4_mean_jsd": 0.09627740407142003
+      }
+    },
+    "screen_chosen_variant": "G_suffix",
+    "t4_classifier_audit": {
+      "kappa": 0.7855750487329435,
+      "agreement": 0.8166666666666667,
+      "n": 60,
+      "accept": true,
+      "cost_usd": 0.015349600000000008
+    },
+    "edge_stat_overall": {
+      "n": 56,
+      "n_positive": 33,
+      "mean": 0.047458800509411724
+    },
+    "edge_stat_top5": {
+      "T1/ban_top5": {
+        "E": -0.035271064288146164,
+        "ci95": [
+          -0.040830643271169545,
+          -0.028721254781046122
+        ],
+        "null_mean": 0.0013468603135461743,
+        "p_two_sided": 0.674,
+        "direction": "far side / family suppression"
+      },
+      "T2/ban_top5": {
+        "E": 0.005867943133402012,
+        "ci95": [
+          -0.006759341862156278,
+          0.018774046337232835
+        ],
+        "null_mean": 0.0027043176900994332,
+        "p_two_sided": 0.933,
+        "direction": "edge (attraction to banned neighbours)"
+      },
+      "T3/ban_top5": {
+        "E": 0.003138510812924612,
+        "ci95": [
+          -0.004690613501927894,
+          0.012106159610126444
+        ],
+        "null_mean": 0.0003184831131506813,
+        "p_two_sided": 0.878,
+        "direction": "edge (attraction to banned neighbours)"
+      }
+    },
+    "notes": [
+      "Screen fits use the stored iteration-1 v1 labels (relabel check 200/200), which are under a parallel audit.",
+      "Predictors were frozen with sha256 + git commit before any confirmation generation; per-condition predictions were frozen before any confirmation BAN was generated (gen scripts assert all hashes).",
+      "beta for B was selected at 19.75 on a pre-registered grid [-20, 20]: near the grid edge; reported as is."
+    ],
+    "predict_fields": "predict_* = frozen predicted probability of the OBSERVED label under each predictor (iia=A, disp=B, embed=D, lexical=D3, nested=C, comention=E); absent for placebo blocks, T4 baseline/forced/comention..."
+  },
+  "datasets": [
+    {
+      "dataset": "qwen2.5-3b-instruct_T1_confirmation_generations",
+      "examples": [
+        {
+          "input": "Implement a path search algorithm in Python Do not use the Huffman coding algorithm.",
+          "output": "DFS",
+          "predict_iia": "0.192366",
+          "predict_disp": "0.213277",
+          "predict_embed": "0.192366",
+          "predict_lexical": "0.192366",
+          "predict_nested": "0.192366",
+          "predict_comention": "0.192366",
+          "metadata_task": "T1",
+          "metadata_condition": "alt_placebo",
+          "metadata_seed": 1000,
+          "metadata_banned": [],
+          "metadata_engine": "vllm",
+          "metadata_finish_reason": "stop",
+          "metadata_oracle": {
+            "passed": true,
+            "status": null,
+            "pass_0idx": null
+          },
+          "metadata_role": "confirmation"
+        },
+        {
+          "input": "Implement a path search algorithm in Python Do not use the Huffman coding algorithm.",
+          "output": "DFS",
+          "predict_iia": "0.192366",
+          "predict_disp": "0.213277",
+          "predict_embed": "0.192366",
+          "predict_lexical": "0.192366",
+          "predict_nested": "0.192366",
+          "predict_comention": "0.192366",
+          "metadata_task": "T1",
+          "metadata_condition": "alt_placebo",
+          "metadata_seed": 1001,
+          "metadata_banned": [],
+          "metadata_engine": "vllm",
+          "metadata_finish_reason": "stop",
+          "metadata_oracle": {
+            "passed": false,
+            "status": null,
+            "pass_0idx": null
+          },
+          "metadata_role": "confirmation"
+        },
+        {
+          "input": "Implement a path search algorithm in Python Do not use the Huffman coding algorithm.",
+          "output": "Dijkstra",
+          "predict_iia": "0.048103",
+          "predict_disp": "0.048293",
+          "predict_embed": "0.048103",
+          "predict_lexical": "0.048103",
+          "predict_nested": "0.048103",
+          "predict_comention": "0.048103",
+          "metadata_task": "T1",
+          "metadata_condition": "alt_placebo",
+          "metadata_seed": 1002,
+          "metadata_banned": [],
+          "metadata_engine": "vllm",
+          "metadata_finish_reason": "length",
+          "metadata_oracle": {
+            "passed": false,
+            "status": null,
+            "pass_0idx": null
+          },
+          "metadata_role": "confirmation"
+        }
+      ]
+    },
+    {
+      "dataset": "qwen2.5-3b-instruct_T2_confirmation_generations",
+      "examples": [
+        {
+          "input": "Implement a sorting algorithm Do not use the Huffman coding algorithm.",
+          "output": "Bubble",
+          "predict_iia": "0.532823",
+          "predict_disp": "0.598354",
+          "predict_embed": "0.532823",
+          "predict_lexical": "0.532823",
+          "predict_nested": "0.532823",
+          "predict_comention": "0.532823",
+          "metadata_task": "T2",
+          "metadata_condition": "alt_placebo",
+          "metadata_seed": 1000,
+          "metadata_banned": [],
+          "metadata_engine": "vllm",
+          "metadata_finish_reason": "stop",
+          "metadata_oracle": {
+            "passed": true,
+            "status": null,
+            "pass_0idx": null
+          },
+          "metadata_role": "confirmation"
+        },
+        {
+          "input": "Implement a sorting algorithm Do not use the Huffman coding algorithm.",
+          "output": "Bubble",
+          "predict_iia": "0.532823",
+          "predict_disp": "0.598354",
+          "predict_embed": "0.532823",
+          "predict_lexical": "0.532823",
+          "predict_nested": "0.532823",
+          "predict_comention": "0.532823",
+          "metadata_task": "T2",
+          "metadata_condition": "alt_placebo",
+          "metadata_seed": 1001,
+          "metadata_banned": [],
+          "metadata_engine": "vllm",
+          "metadata_finish_reason": "stop",
+          "metadata_oracle": {
+            "passed": true,
+            "status": null,
+            "pass_0idx": null
+          },
+          "metadata_role": "confirmation"
+        },
+        {
+          "input": "Implement a sorting algorithm Do not use the Huffman coding algorithm.",
+          "output": "Bubble",
+          "predict_iia": "0.532823",
+          "predict_disp": "0.598354",
+          "predict_embed": "0.532823",
+          "predict_lexical": "0.532823",
+          "predict_nested": "0.532823",
+          "predict_comention": "0.532823",
+          "metadata_task": "T2",
+          "metadata_condition": "alt_placebo",
+          "metadata_seed": 1002,
+          "metadata_banned": [],
+          "metadata_engine": "vllm",
+          "metadata_finish_reason": "stop",
+          "metadata_oracle": {
+            "passed": true,
+            "status": null,
+            "pass_0idx": null
+          },
+          "metadata_role": "confirmation"
+        }
+      ]
+    },
+    {
+      "dataset": "qwen2.5-3b-instruct_T3_confirmation_generations",
+      "examples": [
+        {
+          "input": "Implement a function that finds a shortest path in a weighted graph Do not use breadth-first search (BFS).",
+          "output": "Dijkstra",
+          "predict_iia": "0.976718",
+          "predict_disp": "0.967113",
+          "predict_embed": "0.984465",
+          "predict_lexical": "0.974788",
+          "predict_nested": "0.975925",
+          "predict_comention": "0.975958",
+          "metadata_task": "T3",
+          "metadata_condition": "ban_BFS",
+          "metadata_seed": 1000,
+          "metadata_banned": [
+            "BFS"
+          ],
+          "metadata_engine": "vllm",
+          "metadata_finish_reason": "stop",
+          "metadata_oracle": {
+            "passed": true,
+            "status": null,
+            "pass_0idx": null
+          },
+          "metadata_role": "confirmation"
+        },
+        {
+          "input": "Implement a function that finds a shortest path in a weighted graph Do not use breadth-first search (BFS).",
+          "output": "Dijkstra",
+          "predict_iia": "0.976718",
+          "predict_disp": "0.967113",
+          "predict_embed": "0.984465",
+          "predict_lexical": "0.974788",
+          "predict_nested": "0.975925",
+          "predict_comention": "0.975958",
+          "metadata_task": "T3",
+          "metadata_condition": "ban_BFS",
+          "metadata_seed": 1001,
+          "metadata_banned": [
+            "BFS"
+          ],
+          "metadata_engine": "vllm",
+          "metadata_finish_reason": "length",
+          "metadata_oracle": {
+            "passed": false,
+            "status": null,
+            "pass_0idx": null
+          },
+          "metadata_role": "confirmation"
+        },
+        {
+          "input": "Implement a function that finds a shortest path in a weighted graph Do not use breadth-first search (BFS).",
+          "output": "Dijkstra",
+          "predict_iia": "0.976718",
+          "predict_disp": "0.967113",
+          "predict_embed": "0.984465",
+          "predict_lexical": "0.974788",
+          "predict_nested": "0.975925",
+          "predict_comention": "0.975958",
+          "metadata_task": "T3",
+          "metadata_condition": "ban_BFS",
+          "metadata_seed": 1002,
+          "metadata_banned": [
+            "BFS"
+          ],
+          "metadata_engine": "vllm",
+          "metadata_finish_reason": "stop",
+          "metadata_oracle": {
+            "passed": true,
+            "status": null,
+            "pass_0idx": null
+          },
+          "metadata_role": "confirmation"
+        }
+      ]
+    }
+  ]
+}

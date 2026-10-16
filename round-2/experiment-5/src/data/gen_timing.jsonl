@@ -1,0 +1,7 @@
+{"phase": "baseline", "n": 900, "tokens": 603958, "seconds": 127.84259128570557}
+{"phase": "comention", "n": 150, "tokens": 11565, "seconds": 4.435744285583496}
+{"phase": "forced", "n": 310, "tokens": 217204, "seconds": 51.32730579376221}
+{"phase": "bans", "n": 3000, "tokens": 1898135, "seconds": 416.9289824962616}
+{"phase": "jobs_forced", "n": 810, "tokens": 558347, "seconds": 165.39542078971863, "gpu": "L4"}
+{"phase": "jobs_conf_nonban", "n": 2430, "tokens": 1534441, "seconds": 465.82734656333923, "gpu": "L4"}
+{"phase": "jobs_all_bans", "n": 3500, "tokens": 2174963, "seconds": 641.6599359512329, "gpu": "L4"}

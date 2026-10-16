@@ -1,0 +1,39 @@
+02:20:48|INFO   |VRAM free 23.5/23.7 GB
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:  11%|█         | 47/434 [00:00<00:00, 426.38it/s]Loading weights:  21%|██        | 91/434 [00:00<00:00, 433.84it/s]Loading weights:  32%|███▏      | 141/434 [00:00<00:00, 440.75it/s]Loading weights:  43%|████▎     | 186/434 [00:00<00:00, 425.22it/s]Loading weights:  53%|█████▎    | 229/434 [00:00<00:00, 405.83it/s]Loading weights:  62%|██████▏   | 270/434 [00:00<00:00, 370.09it/s]Loading weights:  71%|███████   | 308/434 [00:00<00:00, 353.80it/s]Loading weights:  81%|████████▏ | 353/434 [00:00<00:00, 372.53it/s]Loading weights:  93%|█████████▎| 404/434 [00:01<00:00, 411.37it/s]Loading weights: 100%|██████████| 434/434 [00:01<00:00, 409.21it/s]
+02:23:16|INFO   |T1: prompt states for 21 prompts in 3.1s
+02:23:20|INFO   |T1/baseline: {'n': 300, 'fallback_rate': 0.0, 'seconds': 4.0166919231414795, 'align_mean_abs_logprob_diff': 0.014738545971088009, 'align_n': 50}
+02:23:21|INFO   |T1/forced_A_star: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.44104480743408203}
+02:23:22|INFO   |T1/forced_BFS: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.47611045837402344}
+02:23:22|INFO   |T1/forced_Bellman_Ford: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.45114898681640625}
+02:23:23|INFO   |T1/forced_Bidirectional: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.439939022064209}
+02:23:24|INFO   |T1/forced_DFS: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.41594433784484863}
+02:23:24|INFO   |T1/forced_Dijkstra: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.41634654998779297}
+02:23:25|INFO   |T1/forced_Floyd_Warshall: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.5598547458648682}
+02:23:26|INFO   |T1/forced_Greedy_best_first: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.4473600387573242}
+02:23:26|INFO   |T1/forced_IDDFS: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.41315388679504395}
+02:23:27|INFO   |T1/forced_SPFA: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.4643087387084961}
+02:23:28|INFO   |T2: prompt states for 22 prompts in 1.0s
+02:23:32|INFO   |T2/baseline: {'n': 300, 'fallback_rate': 0.0, 'seconds': 3.3970651626586914, 'align_mean_abs_logprob_diff': 0.014903219943288032, 'align_n': 50}
+02:23:33|INFO   |T2/forced_Bubble: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.3939986228942871}
+02:23:33|INFO   |T2/forced_Bucket: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.410020112991333}
+02:23:34|INFO   |T2/forced_Counting: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.3986811637878418}
+02:23:35|INFO   |T2/forced_Heap: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.41068315505981445}
+02:23:35|INFO   |T2/forced_Insertion: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.374056339263916}
+02:23:36|INFO   |T2/forced_Merge: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.38917064666748047}
+02:23:36|INFO   |T2/forced_Quick: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.43474578857421875}
+02:23:37|INFO   |T2/forced_Radix: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.43592190742492676}
+02:23:38|INFO   |T2/forced_Selection: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.38539814949035645}
+02:23:38|INFO   |T2/forced_Shell: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.3897221088409424}
+02:23:39|INFO   |T2/forced_Tim_hybrid: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.4209096431732178}
+02:23:40|INFO   |T3: prompt states for 21 prompts in 0.8s
+02:23:45|INFO   |T3/baseline: {'n': 300, 'fallback_rate': 0.0, 'seconds': 4.168565273284912, 'align_mean_abs_logprob_diff': 0.016386867674357278, 'align_n': 50}
+02:23:45|INFO   |T3/forced_A_star: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.4739208221435547}
+02:23:46|INFO   |T3/forced_BFS: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.6168205738067627}
+02:23:47|INFO   |T3/forced_Bellman_Ford: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.5448868274688721}
+02:23:47|INFO   |T3/forced_Bidirectional: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.4586648941040039}
+02:23:48|INFO   |T3/forced_DFS: {'n': 10, 'fallback_rate': 0.0, 'seconds': 0.14560532569885254}
+02:23:49|INFO   |T3/forced_Dijkstra: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.5048336982727051}
+02:23:49|INFO   |T3/forced_Floyd_Warshall: {'n': 40, 'fallback_rate': 0.0, 'seconds': 0.4878997802734375}
+02:23:50|INFO   |T3/forced_Greedy_best_first: {'n': 10, 'fallback_rate': 0.0, 'seconds': 0.16591501235961914}
+02:23:50|INFO   |T3/forced_IDDFS: {'n': 10, 'fallback_rate': 0.0, 'seconds': 0.15154695510864258}
+02:23:50|INFO   |T3/forced_SPFA: {'n': 10, 'fallback_rate': 0.0, 'seconds': 0.15451455116271973}

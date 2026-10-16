@@ -1,0 +1,96 @@
+FREEZE GUARD OK: frozen_predictors.json sha256=a669710b5153bc425c391fcd9a5f762d1ea11fd51349c39f729c2a138a98ce7a committed_at=1792120045
+(MainProcess pid=4827) INFO 10-16 03:14:42 [api_utils.py:286] non-default args: {'dtype': 'bfloat16', 'max_model_len': 2048, 'enable_prefix_caching': True, 'gpu_memory_utilization': 0.85, 'disable_log_stats': True, 'enforce_eager': True, 'model': 'Qwen/Qwen2.5-3B-Instruct'}
+(MainProcess pid=4827) INFO 10-16 03:14:43 [model.py:699] Resolved architecture: Qwen2ForCausalLM
+(MainProcess pid=4827) INFO 10-16 03:14:43 [model.py:2109] Using max model len 2048
+(MainProcess pid=4827) INFO 10-16 03:14:43 [scheduler.py:308] Chunked prefill is enabled with max_num_batched_tokens=8192.
+Parse safetensors files:   0%|          | 0/2 [00:00<?, ?it/s]Parse safetensors files:  50%|█████     | 1/2 [00:00<00:00,  1.47it/s]Parse safetensors files: 100%|██████████| 2/2 [00:00<00:00,  2.88it/s]Parse safetensors files: 100%|██████████| 2/2 [00:00<00:00,  2.52it/s]
+(MainProcess pid=4827) WARNING 10-16 03:14:44 [vllm.py:1706] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(MainProcess pid=4827) WARNING 10-16 03:14:44 [vllm.py:1750] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(MainProcess pid=4827) INFO 10-16 03:14:44 [kernel.py:408] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=4827) INFO 10-16 03:14:45 [vllm.py:1968] Cudagraph is disabled under eager mode
+(MainProcess pid=4827) INFO 10-16 03:14:45 [compilation.py:331] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=5002) INFO 10-16 03:14:48 [core.py:129] Initializing a V1 LLM engine (v0.31.0) with config: model='Qwen/Qwen2.5-3B-Instruct', speculative_config=None, tokenizer='Qwen/Qwen2.5-3B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=main, tokenizer_revision=main, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=2048, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=Qwen/Qwen2.5-3B-Instruct, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=False, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=5002) INFO 10-16 03:14:59 [parallel_state.py:1825] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_7ae18af248f242c895d52117257612a4 backend=nccl
+(EngineCore pid=5002) INFO 10-16 03:15:00 [parallel_state.py:2269] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=5002) INFO 10-16 03:15:00 [gpu_worker.py:479] Using V2 Model Runner
+(EngineCore pid=5002) INFO 10-16 03:15:01 [model_runner.py:375] Loading model from scratch...
+(EngineCore pid=5002) INFO 10-16 03:15:13 [cuda.py:526] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=5002) INFO 10-16 03:15:13 [flash_attn.py:1167] Using FlashAttention version 2
+(EngineCore pid=5002) INFO 10-16 03:15:15 [weight_utils.py:1063] Filesystem type for checkpoints: FUSE. Checkpoint size: 5.75 GiB. Available RAM: 38.18 GiB.
+(EngineCore pid=5002) INFO 10-16 03:15:15 [weight_utils.py:1086] Auto-prefetch is disabled because the filesystem (FUSE) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:08<00:08,  8.02s/it]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:13<00:00,  6.33s/it]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:13<00:00,  6.59s/it]
+
+(EngineCore pid=5002) INFO 10-16 03:15:28 [default_loader.py:484] Loading weights took 13.30 seconds
+(EngineCore pid=5002) INFO 10-16 03:15:29 [model_runner.py:407] Model loading took 5.79 GiB memory and 28.453289 seconds
+(EngineCore pid=5002) INFO 10-16 03:15:30 [topk_topp_sampler.py:124] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=5002) INFO 10-16 03:15:30 [torch_utils.py:286] Reducing Torch threads from 24 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=5002) INFO 10-16 03:15:30 [utils.py:343] Using LBNHC KV cache layout.
+(EngineCore pid=5002) INFO 10-16 03:15:34 [gpu_worker.py:692] Available KV cache memory: 11.99 GiB
+(EngineCore pid=5002) INFO 10-16 03:15:34 [kv_cache_utils.py:2464] GPU KV cache size: 349,136 tokens, Maximum concurrency for 2,048 tokens per request: 170.48x
+(EngineCore pid=5002) INFO 10-16 03:15:35 [gpu_worker.py:955] Free memory on device (21.85/22.04 GiB) on startup. Desired GPU memory utilization is (0.85, 18.73 GiB). Actual usage is 6.12 GiB for consumed memory (weights + non-torch), 0.63 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=12713304372` (11.84 GiB) to fit into requested memory, or `--kv-cache-memory=16059067904` (14.96 GiB) to fully utilize gpu memory. Current kv cache memory in use is 11.99 GiB.
+(EngineCore pid=5002) INFO 10-16 03:15:36 [core.py:380] init engine (profile, create kv cache, warmup model) took 6.18 s
+(EngineCore pid=5002) INFO 10-16 03:15:36 [kernel.py:408] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=4827) INFO 10-16 03:15:38 [hf.py:646] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+03:15:38|INFO   |[T1/placebo_b1] n=100 prompt: 'Implement a path search algorithm in Python Do not use the Rabin-Karp algorithm.'
+03:15:38|INFO   |[T1/placebo_b2] n=100 prompt: 'Implement a path search algorithm in Python Do not use the Rabin-Karp algorithm.'
+03:15:38|INFO   |[T1/placebo_b3] n=100 prompt: 'Implement a path search algorithm in Python Do not use the Rabin-Karp algorithm.'
+03:15:38|INFO   |[T2/placebo_b1] n=100 prompt: "Implement a sorting algorithm Do not use Kruskal's algorithm."
+03:15:38|INFO   |[T2/placebo_b2] n=100 prompt: "Implement a sorting algorithm Do not use Kruskal's algorithm."
+03:15:38|INFO   |[T2/placebo_b3] n=100 prompt: "Implement a sorting algorithm Do not use Kruskal's algorithm."
+03:15:38|INFO   |[T3/placebo_b1] n=100 prompt: 'Implement a function that finds a shortest path in a weighted graph Do not use the Rabin-Karp algorithm.'
+03:15:38|INFO   |[T3/placebo_b2] n=100 prompt: 'Implement a function that finds a shortest path in a weighted graph Do not use the Rabin-Karp algorithm.'
+03:15:38|INFO   |[T3/placebo_b3] n=100 prompt: 'Implement a function that finds a shortest path in a weighted graph Do not use the Rabin-Karp algorithm.'
+03:15:38|INFO   |[T4/placebo_b1] n=100 prompt: 'Implement a function that finds the k-th smallest element in a list Do not use the Rabin-Karp algorithm.'
+03:15:38|INFO   |[T4/placebo_b2] n=100 prompt: 'Implement a function that finds the k-th smallest element in a list Do not use the Rabin-Karp algorithm.'
+03:15:38|INFO   |[T4/placebo_b3] n=100 prompt: 'Implement a function that finds the k-th smallest element in a list Do not use the Rabin-Karp algorithm.'
+03:15:38|INFO   |[T1/alt_placebo] n=100 prompt: 'Implement a path search algorithm in Python Do not use the Huffman coding algorithm.'
+03:15:38|INFO   |[T1/mention_BFS] n=100 prompt: 'Implement a path search algorithm in Python You may use breadth-first search (BFS).'
+03:15:38|INFO   |[T1/mention_A_star] n=100 prompt: 'Implement a path search algorithm in Python You may use A* search.'
+03:15:38|INFO   |[T2/alt_placebo] n=100 prompt: 'Implement a sorting algorithm Do not use the Huffman coding algorithm.'
+03:15:38|INFO   |[T2/mention_Bubble] n=100 prompt: 'Implement a sorting algorithm You may use bubble sort.'
+03:15:38|INFO   |[T2/mention_Merge] n=100 prompt: 'Implement a sorting algorithm You may use merge sort.'
+03:15:38|INFO   |[T4/baseline] n=300 prompt: 'Implement a function that finds the k-th smallest element in a list'
+03:15:38|INFO   |[T4/comention] n=50 prompt: 'List 10 algorithms that could solve this task: Implement a function that finds the k-th smallest element in a list. Reply with only a numbered list of algorithm names.'
+03:15:38|INFO   |[T4/forced_Quickselect] n=40 prompt: 'Implement a function that finds the k-th smallest element in a list using quickselect.'
+03:15:38|INFO   |[T4/forced_Heap_select] n=40 prompt: 'Implement a function that finds the k-th smallest element in a list using a heap.'
+03:15:38|INFO   |[T4/forced_Sort_index] n=40 prompt: 'Implement a function that finds the k-th smallest element in a list using sorting.'
+03:15:38|INFO   |[T4/forced_Median_of_medians] n=40 prompt: 'Implement a function that finds the k-th smallest element in a list using the median-of-medians algorithm.'
+03:15:38|INFO   |[T4/forced_Partial_selection] n=40 prompt: 'Implement a function that finds the k-th smallest element in a list using repeated minimum selection.'
+03:15:38|INFO   |[T4/forced_Counting_bucket] n=40 prompt: 'Implement a function that finds the k-th smallest element in a list using counting or bucketing.'
+03:15:38|INFO   |[T4/forced_Binary_search_value] n=40 prompt: 'Implement a function that finds the k-th smallest element in a list using binary search on the value range.'
+03:23:24|INFO   |generated 2430 seqs, 1534441 tokens in 465.8s -> 3294 tok/s
+03:23:24|INFO   |wrote data/conf/gen/T1/placebo_b1.jsonl (100, truncated=32)
+03:23:24|INFO   |wrote data/conf/gen/T1/placebo_b2.jsonl (100, truncated=30)
+03:23:25|INFO   |wrote data/conf/gen/T1/placebo_b3.jsonl (100, truncated=30)
+03:23:25|INFO   |wrote data/conf/gen/T2/placebo_b1.jsonl (100, truncated=9)
+03:23:25|INFO   |wrote data/conf/gen/T2/placebo_b2.jsonl (100, truncated=7)
+03:23:25|INFO   |wrote data/conf/gen/T2/placebo_b3.jsonl (100, truncated=2)
+03:23:25|INFO   |wrote data/conf/gen/T3/placebo_b1.jsonl (100, truncated=68)
+03:23:25|INFO   |wrote data/conf/gen/T3/placebo_b2.jsonl (100, truncated=78)
+03:23:25|INFO   |wrote data/conf/gen/T3/placebo_b3.jsonl (100, truncated=79)
+03:23:25|INFO   |wrote data/conf/gen/T4/placebo_b1.jsonl (100, truncated=8)
+03:23:25|INFO   |wrote data/conf/gen/T4/placebo_b2.jsonl (100, truncated=17)
+03:23:25|INFO   |wrote data/conf/gen/T4/placebo_b3.jsonl (100, truncated=10)
+03:23:25|INFO   |wrote data/conf/gen/T1/alt_placebo.jsonl (100, truncated=33)
+03:23:25|INFO   |wrote data/conf/gen/T1/mention_BFS.jsonl (100, truncated=21)
+03:23:25|INFO   |wrote data/conf/gen/T1/mention_A_star.jsonl (100, truncated=99)
+03:23:25|INFO   |wrote data/conf/gen/T2/alt_placebo.jsonl (100, truncated=13)
+03:23:26|INFO   |wrote data/conf/gen/T2/mention_Bubble.jsonl (100, truncated=1)
+03:23:26|INFO   |wrote data/conf/gen/T2/mention_Merge.jsonl (100, truncated=1)
+03:23:26|INFO   |wrote data/conf/gen/T4/baseline.jsonl (300, truncated=41)
+03:23:26|INFO   |wrote data/conf/gen/T4/comention.jsonl (50, truncated=0)
+03:23:26|INFO   |wrote data/conf/gen/T4/forced_Quickselect.jsonl (40, truncated=13)
+03:23:26|INFO   |wrote data/conf/gen/T4/forced_Heap_select.jsonl (40, truncated=3)
+03:23:26|INFO   |wrote data/conf/gen/T4/forced_Sort_index.jsonl (40, truncated=2)
+03:23:26|INFO   |wrote data/conf/gen/T4/forced_Median_of_medians.jsonl (40, truncated=33)
+03:23:26|INFO   |wrote data/conf/gen/T4/forced_Partial_selection.jsonl (40, truncated=13)
+03:23:26|INFO   |wrote data/conf/gen/T4/forced_Counting_bucket.jsonl (40, truncated=6)
+03:23:26|INFO   |wrote data/conf/gen/T4/forced_Binary_search_value.jsonl (40, truncated=2)
+(MainProcess pid=4827) INFO 10-16 03:23:26 [utils.py:638] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=5002) INFO 10-16 03:23:26 [core.py:1409] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=5002) INFO 10-16 03:23:26 [core.py:1558] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=5002) INFO 10-16 03:23:26 [core.py:1589] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=5002) INFO 10-16 03:23:26 [core.py:1422] [shutdown] EngineCore: exiting busy loop

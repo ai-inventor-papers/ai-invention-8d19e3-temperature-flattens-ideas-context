@@ -1,0 +1,27 @@
+03:24:42|INFO   |T1/alt_placebo: n=100 pass=0.28 {'BFS': 62, 'DFS': 19, 'Dijkstra': 13, 'A_star': 4, 'Other': 2}
+03:24:47|INFO   |T1/mention_A_star: n=100 pass=0.04 {'A_star': 95, 'Dijkstra': 5}
+03:24:59|INFO   |T1/mention_BFS: n=100 pass=0.31 {'BFS': 97, 'SPFA': 3}
+03:25:07|INFO   |T1/placebo_b1: n=100 pass=0.37 {'BFS': 60, 'DFS': 19, 'Other': 10, 'Dijkstra': 5, 'SPFA': 3, 'A_star': 3}
+03:25:18|INFO   |T1/placebo_b2: n=100 pass=0.37 {'BFS': 60, 'DFS': 23, 'Other': 6, 'A_star': 4, 'Dijkstra': 4, 'SPFA': 3}
+03:25:24|INFO   |T1/placebo_b3: n=100 pass=0.39 {'BFS': 70, 'DFS': 16, 'Other': 6, 'Dijkstra': 5, 'SPFA': 2, 'A_star': 1}
+03:25:27|INFO   |T2/alt_placebo: n=100 pass=0.98 {'Bubble': 62, 'Merge': 14, 'Quick': 14, 'Selection': 8, 'Insertion': 2}
+03:25:30|INFO   |T2/mention_Bubble: n=100 pass=1.00 {'Bubble': 100}
+03:25:33|INFO   |T2/mention_Merge: n=100 pass=1.00 {'Merge': 100}
+03:25:35|INFO   |T2/placebo_b1: n=100 pass=0.99 {'Bubble': 45, 'Selection': 18, 'Quick': 18, 'Merge': 17, 'Heap': 1, 'Insertion': 1}
+03:25:38|INFO   |T2/placebo_b2: n=100 pass=1.00 {'Bubble': 56, 'Quick': 21, 'Merge': 14, 'Selection': 6, 'Insertion': 3}
+03:25:41|INFO   |T2/placebo_b3: n=100 pass=0.98 {'Bubble': 61, 'Quick': 15, 'Merge': 14, 'Insertion': 5, 'Selection': 4, 'Unparseable': 1}
+03:25:44|INFO   |T3/placebo_b1: n=100 pass=0.88 {'Dijkstra': 100}
+03:25:50|INFO   |T3/placebo_b2: n=100 pass=0.86 {'Dijkstra': 97, 'Bellman_Ford': 3}
+03:25:56|INFO   |T3/placebo_b3: n=100 pass=0.91 {'Dijkstra': 100}
+03:26:10|INFO   |T4/baseline: n=300 pass=0.57 {'Quickselect': 226, 'Sort_index': 59, 'Heap_select': 14, 'Median_of_medians': 1}
+03:26:11|INFO   |T4/comention: n=50 pass=0.00 {'Unparseable': 50}
+03:26:13|INFO   |T4/forced_Binary_search_value: n=40 pass=0.33 {'Quickselect': 16, 'Sort_index': 13, 'Binary_search_value': 11}
+03:26:15|INFO   |T4/forced_Counting_bucket: n=40 pass=0.15 {'Counting_bucket': 39, 'Sort_index': 1}
+03:26:17|INFO   |T4/forced_Heap_select: n=40 pass=0.60 {'Heap_select': 40}
+03:26:23|INFO   |T4/forced_Median_of_medians: n=40 pass=0.07 {'Median_of_medians': 40}
+03:26:25|INFO   |T4/forced_Partial_selection: n=40 pass=0.45 {'Quickselect': 29, 'Partial_selection': 6, 'Heap_select': 3, 'Median_of_medians': 1, 'Sort_index': 1}
+03:26:27|INFO   |T4/forced_Quickselect: n=40 pass=0.42 {'Quickselect': 35, 'Sort_index': 5}
+03:26:29|INFO   |T4/forced_Sort_index: n=40 pass=0.88 {'Sort_index': 34, 'Quickselect': 6}
+03:26:36|INFO   |T4/placebo_b1: n=100 pass=0.62 {'Quickselect': 79, 'Sort_index': 17, 'Heap_select': 3, 'Other': 1}
+03:26:41|INFO   |T4/placebo_b2: n=100 pass=0.60 {'Quickselect': 82, 'Sort_index': 16, 'Heap_select': 2}
+03:26:45|INFO   |T4/placebo_b3: n=100 pass=0.65 {'Quickselect': 69, 'Sort_index': 24, 'Heap_select': 6, 'Other': 1}

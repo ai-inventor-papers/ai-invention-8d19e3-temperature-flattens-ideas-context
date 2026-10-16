@@ -1,0 +1,85 @@
+{
+ "counts": {
+  "Quickselect": 226,
+  "Sort_index": 59,
+  "Heap_select": 14,
+  "Median_of_medians": 1
+ },
+ "comention_doc_freq": {
+  "Other": 49,
+  "Quickselect": 50,
+  "Counting_bucket": 42,
+  "Median_of_medians": 43,
+  "Heap_select": 50,
+  "Sort_index": 50,
+  "Binary_search_value": 3,
+  "Partial_selection": 5
+ },
+ "ranked": [
+  "Quickselect",
+  "Sort_index",
+  "Heap_select",
+  "Median_of_medians",
+  "Counting_bucket",
+  "Partial_selection",
+  "Binary_search_value"
+ ],
+ "top5": [
+  "Quickselect",
+  "Sort_index",
+  "Heap_select",
+  "Median_of_medians",
+  "Counting_bucket"
+ ],
+ "filled_by_comention": [
+  "Counting_bucket"
+ ],
+ "rare": "Partial_selection",
+ "rare_rule": "no nonzero class outside ranks 1-4: most co-mentioned zero-rate class",
+ "n_classes_ge3pct": 3,
+ "conditions": {
+  "ban_r1": [
+   "Quickselect"
+  ],
+  "ban_r2": [
+   "Sort_index"
+  ],
+  "ban_r3": [
+   "Heap_select"
+  ],
+  "ban_r4": [
+   "Median_of_medians"
+  ],
+  "ban_top3": [
+   "Quickselect",
+   "Sort_index",
+   "Heap_select"
+  ],
+  "ban_top5": [
+   "Quickselect",
+   "Sort_index",
+   "Heap_select",
+   "Median_of_medians",
+   "Counting_bucket"
+  ],
+  "ban_rare": [
+   "Partial_selection"
+  ],
+  "pair_Median_of_medians__Partial_selection": [
+   "Median_of_medians",
+   "Partial_selection"
+  ],
+  "pair_Sort_index__Binary_search_value": [
+   "Sort_index",
+   "Binary_search_value"
+  ],
+  "pair_Sort_index__Median_of_medians": [
+   "Sort_index",
+   "Median_of_medians"
+  ],
+  "pair_Heap_select__Binary_search_value": [
+   "Heap_select",
+   "Binary_search_value"
+  ]
+ }
+}

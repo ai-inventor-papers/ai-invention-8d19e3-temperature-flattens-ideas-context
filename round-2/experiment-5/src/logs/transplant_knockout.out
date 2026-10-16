@@ -1,0 +1,8 @@
+FREEZE GUARD OK: frozen_predictors.json sha256=a669710b5153bc425c391fcd9a5f762d1ea11fd51349c39f729c2a138a98ce7a committed_at=1792120045
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   8%|▊         | 36/434 [00:00<00:01, 351.08it/s]Loading weights:  19%|█▉        | 82/434 [00:00<00:01, 351.33it/s]Loading weights:  30%|███       | 132/434 [00:00<00:00, 399.75it/s]Loading weights:  41%|████      | 176/434 [00:00<00:00, 414.26it/s]Loading weights:  50%|█████     | 218/434 [00:00<00:00, 406.63it/s]Loading weights:  61%|██████    | 265/434 [00:00<00:00, 416.03it/s]Loading weights:  74%|███████▍  | 323/434 [00:00<00:00, 459.11it/s]Loading weights:  85%|████████▌ | 370/434 [00:00<00:00, 416.58it/s]Loading weights:  97%|█████████▋| 420/434 [00:01<00:00, 429.96it/s]Loading weights: 100%|██████████| 434/434 [00:01<00:00, 425.14it/s]
+05:13:38|INFO   |=== knockout: 8 cells x n=60
+05:13:39|INFO   |480 generations to run (8 cells)
+05:15:30|INFO   |batch 0: 120 rows, 53024 tokens, 111.4s (476 tok/s); progress 120/480
+05:17:21|INFO   |batch 1: 120 rows, 52867 tokens, 110.1s (480 tok/s); progress 240/480
+05:18:31|INFO   |batch 2: 120 rows, 30175 tokens, 69.7s (433 tok/s); progress 360/480
+05:19:31|INFO   |batch 3: 120 rows, 31212 tokens, 59.7s (523 tok/s); progress 480/480

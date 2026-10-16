@@ -1,0 +1,111 @@
+04:12:51|INFO   |VRAM free 23.5/23.7 GB
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 64/434 [00:00<00:00, 590.14it/s]Loading weights:  29%|██▊       | 124/434 [00:00<00:00, 492.40it/s]Loading weights:  40%|████      | 175/434 [00:00<00:00, 448.32it/s]Loading weights:  53%|█████▎    | 228/434 [00:00<00:00, 472.81it/s]Loading weights:  64%|██████▍   | 279/434 [00:00<00:00, 484.82it/s]Loading weights:  76%|███████▌  | 329/434 [00:00<00:00, 457.65it/s]Loading weights:  88%|████████▊ | 380/434 [00:00<00:00, 470.18it/s]Loading weights:  99%|█████████▊| 428/434 [00:00<00:00, 470.62it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 480.64it/s]
+04:15:06|INFO   |T1/ban_r1: n=100 fallback=0.00
+04:15:07|INFO   |T1/ban_r2: n=100 fallback=0.00
+04:15:09|INFO   |T1/ban_r3: n=100 fallback=0.00
+04:15:10|INFO   |T1/ban_r4: n=100 fallback=0.00
+04:15:11|INFO   |T1/ban_rare: n=100 fallback=0.00
+04:15:13|INFO   |T1/ban_top3: n=100 fallback=0.01
+04:15:14|INFO   |T1/ban_top5: n=100 fallback=0.01
+04:15:16|INFO   |T1/para1_r1: n=100 fallback=0.00
+04:15:17|INFO   |T1/para2_r1: n=100 fallback=0.00
+04:15:18|INFO   |T1/placebo: n=100 fallback=0.00
+04:15:19|INFO   |T2/ban_r1: n=100 fallback=0.00
+04:15:20|INFO   |T2/ban_r2: n=100 fallback=0.00
+04:15:22|INFO   |T2/ban_r3: n=100 fallback=0.00
+04:15:23|INFO   |T2/ban_r4: n=100 fallback=0.00
+04:15:24|INFO   |T2/ban_rare: n=100 fallback=0.00
+04:15:25|INFO   |T2/ban_top3: n=100 fallback=0.00
+04:15:26|INFO   |T2/ban_top5: n=100 fallback=0.04
+04:15:28|INFO   |T2/para1_r1: n=100 fallback=0.00
+04:15:29|INFO   |T2/para2_r1: n=100 fallback=0.00
+04:15:30|INFO   |T2/placebo: n=100 fallback=0.00
+04:15:31|INFO   |T3/ban_r1: n=100 fallback=0.00
+04:15:32|INFO   |T3/ban_r2: n=100 fallback=0.00
+04:15:34|INFO   |T3/ban_r3: n=100 fallback=0.00
+04:15:35|INFO   |T3/ban_r4: n=100 fallback=0.00
+04:15:37|INFO   |T3/ban_rare: n=100 fallback=0.00
+04:15:38|INFO   |T3/ban_top3: n=100 fallback=0.00
+04:15:40|INFO   |T3/ban_top5: n=100 fallback=0.00
+04:15:41|INFO   |T3/para1_r1: n=100 fallback=0.00
+04:15:42|INFO   |T3/para2_r1: n=100 fallback=0.00
+04:15:44|INFO   |T3/placebo: n=100 fallback=0.00
+04:16:11|INFO   |VRAM free 23.5/23.7 GB
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:  10%|█         | 44/434 [00:00<00:00, 390.43it/s]Loading weights:  20%|██        | 87/434 [00:00<00:00, 411.85it/s]Loading weights:  33%|███▎      | 144/434 [00:00<00:00, 465.45it/s]Loading weights:  44%|████▍     | 191/434 [00:00<00:00, 416.04it/s]Loading weights:  56%|█████▌    | 241/434 [00:00<00:00, 434.50it/s]Loading weights:  67%|██████▋   | 289/434 [00:00<00:00, 419.42it/s]Loading weights:  80%|███████▉  | 346/434 [00:00<00:00, 450.54it/s]Loading weights:  90%|█████████ | 392/434 [00:00<00:00, 452.42it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 450.48it/s]
+04:18:32|INFO   |T1/ban_Bellman_Ford: n=100 fallback=0.00
+04:18:33|INFO   |T1/ban_Bidirectional: n=100 fallback=0.00
+04:18:34|INFO   |T1/ban_Greedy_best_first: n=100 fallback=0.00
+04:18:35|INFO   |T1/ban_IDDFS: n=100 fallback=0.00
+04:18:36|INFO   |T1/cross: n=100 fallback=0.00
+04:18:38|INFO   |T1/pair_Bidirectional__Floyd_Warshall: n=100 fallback=0.00
+04:18:39|INFO   |T1/pair_DFS__Bellman_Ford: n=100 fallback=0.00
+04:18:40|INFO   |T1/pair_Dijkstra__SPFA: n=100 fallback=0.00
+04:18:42|INFO   |T1/pair_IDDFS__Dijkstra: n=100 fallback=0.00
+04:18:43|INFO   |T1/pair_IDDFS__Floyd_Warshall: n=100 fallback=0.00
+04:18:44|INFO   |T1/pair_SPFA__Floyd_Warshall: n=100 fallback=0.00
+04:18:45|INFO   |T2/ban_Counting: n=100 fallback=0.00
+04:18:47|INFO   |T2/ban_Heap: n=100 fallback=0.00
+04:18:48|INFO   |T2/ban_Radix: n=100 fallback=0.00
+04:18:49|INFO   |T2/ban_Shell: n=100 fallback=0.00
+04:18:50|INFO   |T2/cross: n=100 fallback=0.00
+04:18:51|INFO   |T2/pair_Insertion__Bubble: n=100 fallback=0.00
+04:18:52|INFO   |T2/pair_Insertion__Shell: n=100 fallback=0.00
+04:18:54|INFO   |T2/pair_Merge__Heap: n=100 fallback=0.00
+04:18:55|INFO   |T2/pair_Merge__Selection: n=100 fallback=0.01
+04:18:56|INFO   |T2/pair_Quick__Bubble: n=100 fallback=0.00
+04:18:57|INFO   |T2/pair_Quick__Shell: n=100 fallback=0.00
+04:18:58|INFO   |T3/ban_BFS: n=100 fallback=0.00
+04:19:00|INFO   |T3/ban_SPFA: n=100 fallback=0.00
+04:19:01|INFO   |T4/ban_r1: n=100 fallback=0.00
+04:19:02|INFO   |T4/ban_r2: n=100 fallback=0.00
+04:19:04|INFO   |T4/ban_r3: n=100 fallback=0.00
+04:19:05|INFO   |T4/ban_r4: n=100 fallback=0.00
+04:19:06|INFO   |T4/ban_rare: n=100 fallback=0.00
+04:19:07|INFO   |T4/ban_top3: n=100 fallback=0.00
+04:19:09|INFO   |T4/ban_top5: n=100 fallback=0.00
+04:19:11|INFO   |T4/pair_Heap_select__Binary_search_value: n=100 fallback=0.00
+04:19:12|INFO   |T4/pair_Median_of_medians__Partial_selection: n=100 fallback=0.00
+04:19:13|INFO   |T4/pair_Sort_index__Binary_search_value: n=100 fallback=0.00
+04:19:15|INFO   |T4/pair_Sort_index__Median_of_medians: n=100 fallback=0.00
+FREEZE GUARD OK: frozen_predictors.json sha256=a669710b5153bc425c391fcd9a5f762d1ea11fd51349c39f729c2a138a98ce7a committed_at=1792120045
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:  10%|▉         | 42/434 [00:00<00:00, 395.57it/s]Loading weights:  19%|█▉        | 84/434 [00:00<00:00, 405.87it/s]Loading weights:  29%|██▉       | 125/434 [00:00<00:00, 389.00it/s]Loading weights:  42%|████▏     | 182/434 [00:00<00:00, 453.40it/s]Loading weights:  53%|█████▎    | 228/434 [00:00<00:00, 446.97it/s]Loading weights:  63%|██████▎   | 273/434 [00:00<00:00, 422.10it/s]Loading weights:  76%|███████▌  | 328/434 [00:00<00:00, 461.07it/s]Loading weights:  86%|████████▋ | 375/434 [00:00<00:00, 421.04it/s]Loading weights:  97%|█████████▋| 420/434 [00:00<00:00, 426.01it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 438.49it/s]
+04:22:06|INFO   |=== primary: 21 cells x n=60
+04:22:06|INFO   |1260 generations to run (21 cells)
+04:24:01|INFO   |batch 0: 120 rows, 57531 tokens, 114.0s (504 tok/s); progress 120/1260
+04:25:54|INFO   |batch 1: 120 rows, 57643 tokens, 112.7s (512 tok/s); progress 240/1260
+04:27:48|INFO   |batch 2: 120 rows, 56280 tokens, 112.7s (499 tok/s); progress 360/1260
+04:29:41|INFO   |batch 3: 120 rows, 56014 tokens, 112.7s (497 tok/s); progress 480/1260
+04:31:34|INFO   |batch 4: 120 rows, 56763 tokens, 112.9s (503 tok/s); progress 600/1260
+04:32:55|INFO   |batch 5: 120 rows, 35651 tokens, 79.8s (447 tok/s); progress 720/1260
+04:34:21|INFO   |batch 6: 120 rows, 37084 tokens, 86.2s (430 tok/s); progress 840/1260
+04:36:00|INFO   |batch 7: 120 rows, 35781 tokens, 98.5s (363 tok/s); progress 960/1260
+04:37:52|INFO   |batch 8: 120 rows, 51115 tokens, 111.3s (459 tok/s); progress 1080/1260
+04:39:44|INFO   |batch 9: 120 rows, 64867 tokens, 111.3s (583 tok/s); progress 1200/1260
+04:40:50|INFO   |batch 10: 60 rows, 33524 tokens, 65.4s (513 tok/s); progress 1260/1260
+04:40:51|INFO   |=== random: 36 cells x n=60
+04:40:51|INFO   |2160 generations to run (36 cells)
+04:41:31|INFO   |batch 0: 120 rows, 49179 tokens, 39.7s (1239 tok/s); progress 120/2160
+04:42:11|INFO   |batch 1: 120 rows, 52575 tokens, 39.6s (1327 tok/s); progress 240/2160
+04:43:07|INFO   |batch 2: 120 rows, 54524 tokens, 54.3s (1004 tok/s); progress 360/2160
+04:43:51|INFO   |batch 3: 120 rows, 52054 tokens, 40.4s (1289 tok/s); progress 480/2160
+04:44:31|INFO   |batch 4: 120 rows, 53203 tokens, 39.7s (1339 tok/s); progress 600/2160
+04:45:13|INFO   |batch 5: 120 rows, 55535 tokens, 41.3s (1344 tok/s); progress 720/2160
+04:45:54|INFO   |batch 6: 120 rows, 47216 tokens, 40.1s (1176 tok/s); progress 840/2160
+04:46:35|INFO   |batch 7: 120 rows, 54124 tokens, 41.0s (1319 tok/s); progress 960/2160
+04:47:18|INFO   |batch 8: 120 rows, 53322 tokens, 42.6s (1251 tok/s); progress 1080/2160
+04:47:43|INFO   |batch 9: 120 rows, 31538 tokens, 23.7s (1329 tok/s); progress 1200/2160
+04:48:16|INFO   |batch 10: 120 rows, 33782 tokens, 32.9s (1028 tok/s); progress 1320/2160
+04:48:46|INFO   |batch 11: 120 rows, 34462 tokens, 29.4s (1171 tok/s); progress 1440/2160
+04:49:08|INFO   |batch 12: 120 rows, 31405 tokens, 22.2s (1414 tok/s); progress 1560/2160
+04:49:38|INFO   |batch 13: 120 rows, 30858 tokens, 29.3s (1054 tok/s); progress 1680/2160
+04:50:06|INFO   |batch 14: 120 rows, 32804 tokens, 27.8s (1181 tok/s); progress 1800/2160
+04:50:47|INFO   |batch 15: 120 rows, 66868 tokens, 39.9s (1678 tok/s); progress 1920/2160
+04:51:27|INFO   |batch 16: 120 rows, 66150 tokens, 39.9s (1660 tok/s); progress 2040/2160
+04:52:07|INFO   |batch 17: 120 rows, 66782 tokens, 39.9s (1674 tok/s); progress 2160/2160
+04:52:08|INFO   |=== secondary: 4 cells x n=60
+04:52:08|INFO   |240 generations to run (4 cells)
+04:52:48|INFO   |batch 0: 120 rows, 53619 tokens, 39.7s (1350 tok/s); progress 120/240
+04:53:15|INFO   |batch 1: 120 rows, 32137 tokens, 26.8s (1200 tok/s); progress 240/240
+04:53:16|INFO   |=== sweep: 2 cells x n=60
+04:53:16|INFO   |120 generations to run (2 cells)
+04:53:56|INFO   |batch 0: 120 rows, 52239 tokens, 39.7s (1315 tok/s); progress 120/120

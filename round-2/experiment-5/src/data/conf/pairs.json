@@ -1,0 +1,54 @@
+{
+ "T1": [
+  [
+   "IDDFS",
+   "Floyd_Warshall"
+  ],
+  [
+   "DFS",
+   "Bellman_Ford"
+  ],
+  [
+   "SPFA",
+   "Floyd_Warshall"
+  ],
+  [
+   "Dijkstra",
+   "SPFA"
+  ],
+  [
+   "IDDFS",
+   "Dijkstra"
+  ],
+  [
+   "Bidirectional",
+   "Floyd_Warshall"
+  ]
+ ],
+ "T2": [
+  [
+   "Quick",
+   "Shell"
+  ],
+  [
+   "Merge",
+   "Heap"
+  ],
+  [
+   "Merge",
+   "Selection"
+  ],
+  [
+   "Quick",
+   "Bubble"
+  ],
+  [
+   "Insertion",
+   "Bubble"
+  ],
+  [
+   "Insertion",
+   "Shell"
+  ]
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "openrouter_calls": [
+  {
+   "step": "t4_judge_audit",
+   "model": "openai/gpt-4.1-mini",
+   "n": 60,
+   "cost_usd": 0.015349600000000008
+  }
+ ],
+ "total_usd": 0.015349600000000008
+}

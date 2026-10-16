@@ -1,0 +1,141 @@
+{
+ "T1": {
+  "counts": {
+   "BFS": 179,
+   "A_star": 39,
+   "DFS": 44,
+   "SPFA": 2,
+   "Dijkstra": 22,
+   "Other": 14
+  },
+  "comention_doc_freq": {
+   "BFS": 50,
+   "Dijkstra": 50,
+   "Greedy_best_first": 48,
+   "IDDFS": 29,
+   "A_star": 50,
+   "DFS": 50,
+   "Other": 44,
+   "Bidirectional": 48,
+   "SPFA": 1
+  },
+  "ranked": [
+   "BFS",
+   "DFS",
+   "A_star",
+   "Dijkstra",
+   "SPFA",
+   "Greedy_best_first",
+   "Bidirectional",
+   "IDDFS",
+   "Bellman_Ford",
+   "Floyd_Warshall"
+  ],
+  "top5": [
+   "BFS",
+   "DFS",
+   "A_star",
+   "Dijkstra",
+   "SPFA"
+  ],
+  "filled_by_comention": [],
+  "rare": "SPFA",
+  "rare_rule": "no class in [1%,5%]: nonzero closest to 3% (excluding ranks 1-4)",
+  "rare_rate": 0.006666666666666667,
+  "n_classes_ge3pct": 4
+ },
+ "T2": {
+  "counts": {
+   "Merge": 31,
+   "Bubble": 179,
+   "Quick": 70,
+   "Selection": 15,
+   "Insertion": 5
+  },
+  "comention_doc_freq": {
+   "Radix": 49,
+   "Bubble": 50,
+   "Bucket": 41,
+   "Heap": 50,
+   "Tim_hybrid": 32,
+   "Selection": 50,
+   "Counting": 50,
+   "Quick": 50,
+   "Insertion": 50,
+   "Merge": 50,
+   "Shell": 14,
+   "Other": 1
+  },
+  "ranked": [
+   "Bubble",
+   "Quick",
+   "Merge",
+   "Selection",
+   "Insertion",
+   "Heap",
+   "Counting",
+   "Radix",
+   "Bucket",
+   "Tim_hybrid",
+   "Shell"
+  ],
+  "top5": [
+   "Bubble",
+   "Quick",
+   "Merge",
+   "Selection",
+   "Insertion"
+  ],
+  "filled_by_comention": [],
+  "rare": "Insertion",
+  "rare_rule": "in [1%,5%], closest to 3%",
+  "rare_rate": 0.016666666666666666,
+  "n_classes_ge3pct": 4
+ },
+ "T3": {
+  "counts": {
+   "Dijkstra": 300
+  },
+  "comention_doc_freq": {
+   "Floyd_Warshall": 50,
+   "Dijkstra": 50,
+   "Greedy_best_first": 22,
+   "Bellman_Ford": 50,
+   "A_star": 50,
+   "Other": 50,
+   "Bidirectional": 38,
+   "BFS": 9,
+   "SPFA": 2,
+   "DFS": 3
+  },
+  "ranked": [
+   "Dijkstra",
+   "A_star",
+   "Bellman_Ford",
+   "Floyd_Warshall",
+   "Bidirectional",
+   "Greedy_best_first",
+   "BFS",
+   "DFS",
+   "SPFA",
+   "IDDFS"
+  ],
+  "top5": [
+   "Dijkstra",
+   "A_star",
+   "Bellman_Ford",
+   "Floyd_Warshall",
+   "Bidirectional"
+  ],
+  "filled_by_comention": [
+   "A_star",
+   "Bellman_Ford",
+   "Floyd_Warshall",
+   "Bidirectional"
+  ],
+  "rare": "Greedy_best_first",
+  "rare_rule": "no nonzero class outside ranks 1-4: most co-mentioned zero-rate class",
+  "rare_rate": 0.0,
+  "n_classes_ge3pct": 1
+ }
+}

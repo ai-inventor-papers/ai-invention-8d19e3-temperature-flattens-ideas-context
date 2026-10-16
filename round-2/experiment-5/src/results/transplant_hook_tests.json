@@ -1,0 +1,9 @@
+{
+ "zero_vector_identical": true,
+ "left_pad_suffix_identical": true,
+ "edit_other_positions_maxabs": 0.0,
+ "edit_suffix_maxabs_vs_expected": 0.0,
+ "delta_reproduces_ban_suffix_rel_err": 0.0,
+ "left_pad_suffix_state_rel_l2": 0.005910297390073538,
+ "hook_leak_assert": "passed (Hooks.__exit__ asserts no residual hooks)"
+}

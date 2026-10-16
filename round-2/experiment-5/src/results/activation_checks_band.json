@@ -1,0 +1,122 @@
+{
+ "T1/ban_r1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/ban_r2": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/ban_r3": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/ban_r4": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/ban_rare": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/ban_top3": {
+  "n": 100,
+  "fallback_rate": 0.01
+ },
+ "T1/ban_top5": {
+  "n": 100,
+  "fallback_rate": 0.01
+ },
+ "T1/para1_r1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/para2_r1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T1/placebo": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/ban_r1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/ban_r2": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/ban_r3": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/ban_r4": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/ban_rare": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/ban_top3": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/ban_top5": {
+  "n": 100,
+  "fallback_rate": 0.04
+ },
+ "T2/para1_r1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/para2_r1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T2/placebo": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/ban_r1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/ban_r2": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/ban_r3": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/ban_r4": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/ban_rare": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/ban_top3": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/ban_top5": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/para1_r1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/para2_r1": {
+  "n": 100,
+  "fallback_rate": 0.0
+ },
+ "T3/placebo": {
+  "n": 100,
+  "fallback_rate": 0.0
+ }
+}
