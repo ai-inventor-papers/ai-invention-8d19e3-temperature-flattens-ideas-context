@@ -1,0 +1,4 @@
+OK  T2 Radix(nonneg-only) None 0.0  None
+OK  T3 BUGGY_DIJKSTRA dijkstra:dictdict:GST 0.72  None
+OK  T2 BUGGY_BUBBLE None 0.0  None
+failures: 0

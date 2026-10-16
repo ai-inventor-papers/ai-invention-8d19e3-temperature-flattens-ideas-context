@@ -1,0 +1,13 @@
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.59s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.12s/it]
+01:39:47|INFO   |acts T1/ba_baseline: {'n': 300, 'fallback_rate': 0.0, 'seconds': 8.539812088012695}
+01:39:53|INFO   |acts T1/hf_baseline: {'n': 300, 'fallback_rate': 0.0, 'seconds': 5.910358905792236}
+01:39:54|INFO   |acts T1/forced_IDDFS: {'n': 55, 'fallback_rate': 0.0, 'seconds': 0.9141814708709717}
+01:39:55|INFO   |acts T1/forced_Bellman_Ford: {'n': 60, 'fallback_rate': 0.0, 'seconds': 1.0447309017181396}
+01:40:01|INFO   |acts T2/ba_baseline: {'n': 300, 'fallback_rate': 0.0, 'seconds': 5.362958669662476}
+01:40:06|INFO   |acts T2/hf_baseline: {'n': 300, 'fallback_rate': 0.0, 'seconds': 5.308683395385742}
+01:40:07|INFO   |acts T2/forced_Counting: {'n': 60, 'fallback_rate': 0.0, 'seconds': 0.9924004077911377}
+01:40:09|INFO   |acts T2/forced_Heap: {'n': 60, 'fallback_rate': 0.0, 'seconds': 0.9339346885681152}
+01:40:09|INFO   |stage acts done in 1.5 min

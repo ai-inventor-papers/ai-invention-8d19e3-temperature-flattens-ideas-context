@@ -1,0 +1,24 @@
+01:14:55|INFO   |T1: gens 111 scored 110; gens-only ['gts_list']; classes {'explore_posthoc': 5, 'heldout': 10, 'main': 64, 'calibration_only': 30, 'generate_then_select': 2}
+01:14:55|INFO   |T3: gens 81 scored 80; gens-only ['gts_list']; classes {'explore_posthoc': 5, 'heldout': 10, 'main': 64, 'generate_then_select': 2}
+01:14:55|INFO   |sanity: {'T1/Hdim_a0.224': {'recomputed': 0.23490657014811087, 'results_json': 0.23490657014811087, 'match_3dp': True}, 'T3/A4_a0.356': {'recomputed': 0.9836364870079685, 'results_json': 0.9836364870079685, 'match_3dp': True}}
+01:14:59|INFO   |A4 T1: rho=0.486 exact p2=0.356 p1=0.178 orig CI [-0.028571428571428574, 0.5428571428571429] corrected CI [-0.4285714285714286, 0.6]
+01:15:02|INFO   |A4 T3: rho=-0.257 exact p2=0.658 p1=0.718 orig CI [-0.48571428571428577, 0.14285714285714288] corrected CI [-1.0, 0.08571428571428573]
+01:15:04|INFO   |T1 Hprobe_a1.06: dH(MM, n-matched, IA labels) = -0.417 CI -0.815..-0.063 -> below
+01:15:06|INFO   |T1 Hprobe_a1.26: dH(MM, n-matched, IA labels) = -0.169 CI -0.715..+0.233 -> undetermined
+01:15:09|INFO   |T1 Hprobe_a1.5: dH(MM, n-matched, IA labels) = -0.237 CI -0.877..+0.306 -> undetermined
+01:15:10|INFO   |T1 Hdim_a0.224: dH(MM, n-matched, IA labels) = -0.890 CI -1.162..-0.623 -> below
+01:15:11|INFO   |T1 Hdim_a0.473: dH(MM, n-matched, IA labels) = -0.477 CI -0.829..-0.141 -> below
+01:15:15|INFO   |T1 Hdim_a1: dH(MM, n-matched, IA labels) = -1.222 CI -2.037..-1.025 -> below
+01:15:17|INFO   |T1 A4_a0.632: dH(MM, n-matched, IA labels) = +0.674 CI +0.262..+1.000 -> beats
+01:15:18|INFO   |T1 A4_a1.12: dH(MM, n-matched, IA labels) = +0.128 CI -0.203..+0.450 -> undetermined
+01:15:20|INFO   |T1 A4_a2: dH(MM, n-matched, IA labels) = -0.283 CI -0.529..+0.110 -> undetermined
+01:15:22|INFO   |T3 Hprobe_a1.06: dH(MM, n-matched, IA labels) = +0.348 CI -0.001..+0.705 -> undetermined
+01:15:25|INFO   |T3 Hprobe_a1.26: dH(MM, n-matched, IA labels) = -0.234 CI -0.649..+0.228 -> undetermined
+01:15:27|INFO   |T3 Hprobe_a1.5: dH(MM, n-matched, IA labels) = -0.510 CI -0.984..-0.067 -> below
+01:15:28|INFO   |T3 Hdim_a0.224: dH(MM, n-matched, IA labels) = +0.413 CI +0.057..+0.709 -> beats
+01:15:30|INFO   |T3 Hdim_a0.473: dH(MM, n-matched, IA labels) = +0.419 CI +0.023..+0.715 -> beats
+01:15:34|INFO   |T3 Hdim_a1: dH(MM, n-matched, IA labels) = +0.349 CI -0.486..+0.841 -> undetermined
+01:15:35|INFO   |T3 A4_a0.632: dH(MM, n-matched, IA labels) = +0.290 CI -0.106..+0.652 -> undetermined
+01:15:37|INFO   |T3 A4_a1.12: dH(MM, n-matched, IA labels) = -0.097 CI -0.626..+0.461 -> undetermined
+01:15:40|INFO   |T3 A4_a2: dH(MM, n-matched, IA labels) = -0.370 CI -0.713..+0.078 -> undetermined
+01:15:40|INFO   |claim3 verdict: partly overturned (a minority of targeted settings beat the draw mean); counts(primary) {'H-probe': {'beats_draw_mean': 0, 'below_draw_mean': 2, 'ci_includes_0': 4, 'n': 6}, 'H-dim': {'beats_draw_mean': 2, 'below_draw_mean': 3, 'ci_includes_0': 1, 'n': 6}, 'A4': {'beats_draw_mean': 1, 'below_draw_mean': 0, 'ci_includes_0': 5, 'n': 6}, 'pooled': {'beats_draw_mean': 3, 'below_draw_mean': 5, 'ci_includes_0': 10, 'n': 18}}

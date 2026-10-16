@@ -1,0 +1,6 @@
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+04:46:39|INFO   |SAE layer 13 (hidden_states[14]) width 16k L0 84
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.80s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:18<00:00,  7.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:18<00:00,  9.36s/it]
+04:48:16|INFO   |SAE D done: FVU 0.613; {"T1": [["ban_r1", 1.003, 0.905], ["ban_r2", -0.325, 0.274], ["ban_r3", -0.196, 0.14], ["ban_r4", 0.398, 0.841], ["ban_r5", 0.4, 0.749], ["ban_r6", 1.135, 0.936], ["ban_r7", 0.234, 0.693], ["ban_r8", 1.05, 0.962]], "T2": [["ban_r1", 0.356, 0.856], ["ban_r2", -0.527, 0.057], ["ban_r3", -0.426, 0.252], ["ban_r4", -0.723, 0.126], ["ban_r5", 0.755, 0.971], ["ban_r6", 0.054, 0.656], ["ban_r7", -0.088, 0.327], ["ban_r8", 0.797, 0.95]]}

@@ -1,0 +1,20 @@
+04:19:20|INFO   |frozen frozen_gemma_bans.json sha256 7be800bb90a9a5e7d35cc8fc0ec2059b6c996b4659ce9894b205f23fb21ccd4c
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+04:20:13|INFO   |[confirm] 700 generations to run over 14 jobs (batch 75)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.00s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.73s/it]
+04:20:27|INFO   |loaded google/gemma-2-2b-it; eos (1, 107); backtick tokens 77
+04:22:24|INFO   |[confirm] 67/700 gens; batch 67 in 117s (34/min); elapsed 2.0 min; ETA 18.5 min
+04:24:20|INFO   |[confirm] 134/700 gens; batch 67 in 116s (35/min); elapsed 3.9 min; ETA 16.4 min
+04:26:13|INFO   |[confirm] 200/700 gens; batch 66 in 114s (35/min); elapsed 5.8 min; ETA 14.4 min
+04:28:03|INFO   |[confirm] 263/700 gens; batch 63 in 110s (34/min); elapsed 7.6 min; ETA 12.6 min
+04:29:53|INFO   |[confirm] 326/700 gens; batch 63 in 110s (34/min); elapsed 9.4 min; ETA 10.8 min
+04:31:43|INFO   |[confirm] 389/700 gens; batch 63 in 109s (35/min); elapsed 11.3 min; ETA 9.0 min
+04:33:30|INFO   |[confirm] 450/700 gens; batch 61 in 107s (34/min); elapsed 13.1 min; ETA 7.3 min
+04:35:03|INFO   |[confirm] 500/700 gens; batch 50 in 93s (32/min); elapsed 14.6 min; ETA 5.8 min
+04:36:37|INFO   |[confirm] 550/700 gens; batch 50 in 94s (32/min); elapsed 16.2 min; ETA 4.4 min
+04:38:11|INFO   |[confirm] 600/700 gens; batch 50 in 94s (32/min); elapsed 17.7 min; ETA 3.0 min
+04:39:45|INFO   |[confirm] 650/700 gens; batch 50 in 94s (32/min); elapsed 19.3 min; ETA 1.5 min
+04:41:20|INFO   |[confirm] 700/700 gens; batch 50 in 95s (32/min); elapsed 20.9 min; ETA 0.0 min
+04:41:23|INFO   |gemma stage confirm done in 22.0 min

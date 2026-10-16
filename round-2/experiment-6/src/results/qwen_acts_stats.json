@@ -1,0 +1,42 @@
+{
+ "T1/ba_baseline": {
+  "n": 300,
+  "fallback_rate": 0.0,
+  "seconds": 8.539812088012695
+ },
+ "T1/hf_baseline": {
+  "n": 300,
+  "fallback_rate": 0.0,
+  "seconds": 5.910358905792236
+ },
+ "T1/forced_IDDFS": {
+  "n": 55,
+  "fallback_rate": 0.0,
+  "seconds": 0.9141814708709717
+ },
+ "T1/forced_Bellman_Ford": {
+  "n": 60,
+  "fallback_rate": 0.0,
+  "seconds": 1.0447309017181396
+ },
+ "T2/ba_baseline": {
+  "n": 300,
+  "fallback_rate": 0.0,
+  "seconds": 5.362958669662476
+ },
+ "T2/hf_baseline": {
+  "n": 300,
+  "fallback_rate": 0.0,
+  "seconds": 5.308683395385742
+ },
+ "T2/forced_Counting": {
+  "n": 60,
+  "fallback_rate": 0.0,
+  "seconds": 0.9924004077911377
+ },
+ "T2/forced_Heap": {
+  "n": 60,
+  "fallback_rate": 0.0,
+  "seconds": 0.9339346885681152
+ }
+}

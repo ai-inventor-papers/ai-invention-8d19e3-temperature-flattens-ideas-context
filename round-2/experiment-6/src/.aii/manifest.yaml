@@ -1,0 +1,14 @@
+entries:
+  - path: .venv/
+    delete: regenerable
+    source: "uv venv .venv --python 3.12 && uv pip install --python .venv/bin/python -r requirements.lock.txt"
+  - path: data/acts/
+    keep: teacher-forced commitment-window activations (Qwen layers 1-35, gemma layers 1-25) that the frozen directions and centroids were built from
+  - path: results/*.pt
+    keep: frozen steering directions, gemma centroids and Delta_h tensors whose SHA256 are recorded in the frozen pre-registration files
+  - path: src/__pycache__/
+    delete: regenerable
+    source: "created automatically by running any script in src/"
+  - path: tests/__pycache__/
+    delete: regenerable
+    source: "created automatically by running the tests"

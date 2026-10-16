@@ -1,0 +1,13 @@
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+01:33:48|INFO   |[base] 440 generations to run over 6 jobs (batch 200)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.06s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.18s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.46s/it]
+01:34:03|INFO   |loaded Qwen/Qwen2.5-3B-Instruct; eos (151643, 151645); backtick tokens 108
+01:35:31|INFO   |[base] 200/440 gens; batch 200 in 88s (136/min); elapsed 1.5 min; ETA 1.8 min
+01:36:30|INFO   |[base] 320/440 gens; batch 120 in 58s (123/min); elapsed 2.4 min; ETA 0.9 min
+01:37:11|INFO   |[base] 380/440 gens; batch 60 in 41s (88/min); elapsed 3.1 min; ETA 0.5 min
+01:37:53|INFO   |[base] 440/440 gens; batch 60 in 42s (85/min); elapsed 3.8 min; ETA 0.0 min
+01:38:03|INFO   |T1 HF baseline n=300 [('BFS', 184), ('DFS', 42), ('Dijkstra', 36), ('A_star', 24), ('Other', 11), ('SPFA', 3)] pass=0.31
+01:38:03|INFO   |T2 HF baseline n=300 [('Bubble', 186), ('Quick', 70), ('Merge', 27), ('Selection', 11), ('Insertion', 5), ('Unparseable', 1)] pass=0.98
+01:38:03|INFO   |stage base done in 5.1 min

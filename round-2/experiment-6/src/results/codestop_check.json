@@ -1,0 +1,12 @@
+{
+ "T1": {
+  "n": 300,
+  "agreement": 0.87
+ },
+ "T2": {
+  "n": 300,
+  "agreement": 0.9666666666666667
+ },
+ "keep_codestop": false,
+ "qwen_ids_identical_with_without_special": true
+}

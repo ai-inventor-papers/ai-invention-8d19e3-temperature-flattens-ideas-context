@@ -1,0 +1,2 @@
+03:05:20|INFO   |FROZEN frozen_selector_qwen_alphas.json sha256 14b0d28a66687fb40395fdf2723d84b6b4da0044650e75acd10b16205dd33a66: {"T1": [0.05, 0.224, {"IDDFS": 0.224, "Bellman_Ford": 0.224}], "T2": [0.05, 0.473, {"Counting": 0.224, "Heap": 0.473}]}
+03:05:20|INFO   |stage freeze2 done in 0.0 min

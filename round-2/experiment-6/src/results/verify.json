@@ -1,0 +1,255 @@
+{
+ "qwen_T1": {
+  "main": {
+   "kl": [
+    0.6227379125236931,
+    0.4261458337305525,
+    0.5114740756768968
+   ],
+   "top_nonmode": "A_star",
+   "share": 0.5666666666666667,
+   "decision": "SELECT",
+   "pipeline_decision": "SELECT",
+   "match": true
+  },
+  "redraw": {
+   "kl": [
+    0.6227379125236931,
+    0.5265945086084437,
+    0.7140381992596974
+   ],
+   "top_nonmode": "A_star",
+   "share": 0.6333333333333333,
+   "decision": "SELECT",
+   "pipeline_decision": "SELECT",
+   "match": true
+  },
+  "entropy_vs_random_s2": {
+   "diff": 0.3109040144484152,
+   "ci": [
+    0.036811824345944544,
+    0.5522724493993633
+   ],
+   "pipeline_diff": 0.31090401444841564,
+   "pipeline_ci": [
+    0.03767187114739611,
+    0.5546906114056949
+   ],
+   "diff_matches": 1.0,
+   "placebo_draw0_vs_rest_ci": [
+    -0.051942137885847735,
+    0.4602378075524044
+   ],
+   "placebo_fails": true,
+   "shuffled_ci": [
+    -0.18847282595795692,
+    0.3385024248552915
+   ],
+   "shuffled_fails": true
+  }
+ },
+ "qwen_T2": {
+  "main": {
+   "kl": [
+    1.3256883915863247,
+    1.1048020073299731,
+    1.7814320596419004
+   ],
+   "top_nonmode": "Quick",
+   "share": 0.6533333333333333,
+   "decision": "SELECT",
+   "pipeline_decision": "SELECT",
+   "match": true
+  },
+  "redraw": {
+   "kl": [
+    1.3256883915863247,
+    0.9827715428793123,
+    1.7950406430156658
+   ],
+   "top_nonmode": "Quick",
+   "share": 0.68,
+   "decision": "SELECT",
+   "pipeline_decision": "SELECT",
+   "match": true
+  },
+  "entropy_vs_random_s2": {
+   "diff": -0.7022875970939799,
+   "ci": [
+    -0.9403722109686476,
+    -0.4427650596897916
+   ],
+   "pipeline_diff": -0.7022875970939797,
+   "pipeline_ci": [
+    -0.9312915251852989,
+    -0.43917280451136703
+   ],
+   "diff_matches": 1.0,
+   "placebo_draw0_vs_rest_ci": [
+    -0.11169706621686966,
+    0.48218533370116456
+   ],
+   "placebo_fails": true,
+   "shuffled_ci": [
+    -0.15456338126321129,
+    0.10621619702761757
+   ],
+   "shuffled_fails": true
+  }
+ },
+ "gemma_confirmation": {
+  "per_ban": [
+   {
+    "task": "T1",
+    "ban": "ban_r5",
+    "jsd_iia": 0.04098420456132575,
+    "jsd_geom": 0.14389318116132688,
+    "gain": -2.510942391135485,
+    "pipeline_gain": -2.1151692787835734
+   },
+   {
+    "task": "T1",
+    "ban": "ban_r6",
+    "jsd_iia": 0.08965712826500018,
+    "jsd_geom": 0.18547955486436432,
+    "gain": -1.0687652889811634,
+    "pipeline_gain": -0.9694528711130375
+   },
+   {
+    "task": "T1",
+    "ban": "ban_r7",
+    "jsd_iia": 0.029041299662382336,
+    "jsd_geom": 0.025364793227153133,
+    "gain": 0.12659579557286282,
+    "pipeline_gain": 0.07922668758560947
+   },
+   {
+    "task": "T1",
+    "ban": "ban_r8",
+    "jsd_iia": 0.115129679132761,
+    "jsd_geom": 0.25415035045429474,
+    "gain": -1.2075137563896363,
+    "pipeline_gain": -1.1510864374709189
+   },
+   {
+    "task": "T1",
+    "ban": "ban_pair0",
+    "jsd_iia": 0.1106161812884293,
+    "jsd_geom": 0.13604123155758485,
+    "gain": -0.22984928581886477,
+    "pipeline_gain": -0.21090578489267275
+   },
+   {
+    "task": "T1",
+    "ban": "ban_pair1",
+    "jsd_iia": 0.07423821067209126,
+    "jsd_geom": 0.14926140747814834,
+    "gain": -1.0105738827331532,
+    "pipeline_gain": -0.979180617918521
+   },
+   {
+    "task": "T1",
+    "ban": "ban_pair2",
+    "jsd_iia": 0.010786275115003215,
+    "jsd_geom": 0.06136064648935237,
+    "gain": -4.6887707605383175,
+    "pipeline_gain": -3.6126367851492818
+   },
+   {
+    "task": "T2",
+    "ban": "ban_r5",
+    "jsd_iia": 0.11582128317766548,
+    "jsd_geom": 0.11430236562504903,
+    "gain": 0.013114321573233556,
+    "pipeline_gain": 0.017225871661011305
+   },
+   {
+    "task": "T2",
+    "ban": "ban_r6",
+    "jsd_iia": 0.013585589139248726,
+    "jsd_geom": 0.03762622921382473,
+    "gain": -1.7695691977849286,
+    "pipeline_gain": -1.0126627770199788
+   },
+   {
+    "task": "T2",
+    "ban": "ban_r7",
+    "jsd_iia": 0.20014787054656377,
+    "jsd_geom": 0.1312083230592958,
+    "gain": 0.34444307250937944,
+    "pipeline_gain": 0.3243029046197764
+   },
+   {
+    "task": "T2",
+    "ban": "ban_r8",
+    "jsd_iia": 0.04539776028688439,
+    "jsd_geom": 0.040113508020537286,
+    "gain": 0.11639896402276362,
+    "pipeline_gain": 0.0889068564201807
+   },
+   {
+    "task": "T2",
+    "ban": "ban_pair0",
+    "jsd_iia": 0.13533170070956782,
+    "jsd_geom": 0.12714670458667496,
+    "gain": 0.060480996543880616,
+    "pipeline_gain": 0.038559788749316204
+   },
+   {
+    "task": "T2",
+    "ban": "ban_pair1",
+    "jsd_iia": 0.041657578909239656,
+    "jsd_geom": 0.049059047036068615,
+    "gain": -0.1776739868381383,
+    "pipeline_gain": -0.17906257163103656
+   },
+   {
+    "task": "T2",
+    "ban": "ban_pair2",
+    "jsd_iia": 0.1201804895513701,
+    "jsd_geom": 0.15757913943018448,
+    "gain": -0.311187365090809,
+    "pipeline_gain": -0.3047714299729407
+   }
+  ],
+  "mean_gain": -0.8795580546491697,
+  "pipeline_mean_gain": -0.7133361746368622,
+  "mean_jsd_iia": 0.08161251792982378,
+  "mean_jsd_geom": 0.1151847487288471,
+  "placebo_mismatched_ban_gain_mean": -0.947100399110865,
+  "placebo_gain_quantile_of_observed": 0.43
+ },
+ "regularity_placebo": {
+  "T1": {
+   "n_placebo_cells": 17,
+   "min_holm_p": 0.7852091660368226,
+   "placebo_violations": 0
+  },
+  "T2": {
+   "n_placebo_cells": 9,
+   "min_holm_p": 0.9268949769614004,
+   "placebo_violations": 0
+  },
+  "pipeline_n_violations": 1,
+  "pipeline_n_cells": 72
+ },
+ "transplant": {
+  "T1": {
+   "recovery_D": 0.4240505469425133,
+   "recovery_R0": 0.166964620735091,
+   "pipeline_recovery_D": 0.42405054694251276,
+   "note": "taxonomy = observed labels only (pipeline uses the full taxonomy with 0.5 pseudo-counts); small differences are expected"
+  },
+  "T2": {
+   "recovery_D": 0.056722162892144046,
+   "recovery_R0": -0.11134254318383974,
+   "pipeline_recovery_D": 0.05672216289214371,
+   "note": "taxonomy = observed labels only (pipeline uses the full taxonomy with 0.5 pseudo-counts); small differences are expected"
+  }
+ },
+ "stepA_first_setting": {
+  "setting": "T1/Hprobe_a1.06",
+  "diff": -0.41686962025049346,
+  "pipeline": -0.41686962025049346
+ }
+}

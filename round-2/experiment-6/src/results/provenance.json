@@ -1,0 +1,42 @@
+{
+ "copied_verbatim": {
+  "protocol.py": {
+   "sha256": "1c4eb7d8708d6dd12de73668c9ab084f7b51d790992d5557f14b4b9b93bd245c",
+   "equals_ban_arm": true
+  },
+  "classify.py": {
+   "sha256": "d0d321215bc2310e55553f48aabea80c113d0181b8f7c2cbe453c0d256046123",
+   "equals_ban_arm": true
+  },
+  "label.py": {
+   "sha256": "1f1fe6f47166b03482d254239bdb36a76da259c030f643d51314b597e1a04a7a",
+   "equals_ban_arm": true
+  },
+  "oracle.py": {
+   "sha256": "e25a19fa702106ef26c0622852addd242b20071045622d6cd13026f61cdd9b24",
+   "equals_ban_arm": true
+  },
+  "oracle_harness.py": {
+   "sha256": "66ca6d359c8be364274942e6f27809cb2d3677533f845670af7f1701cca8a32c",
+   "equals_ban_arm": true
+  },
+  "activations.py": {
+   "sha256": "4d67a70201b42da1b799ca08de9e30ca2acd30a50247d4fce5ebc882a8af38a7",
+   "equals_ban_arm": true
+  }
+ },
+ "classifier_tag": "v1:d0d321215bc2",
+ "classifier_tag_expected": "v1:d0d321215bc2",
+ "adapted_from_influence_arm": {
+  "engine.py": "eos ids param, gemma eager attention, add_special_tokens=False, prompt-patch intervention, full output ids",
+  "acts_io.py": "unchanged copy (unused)"
+ },
+ "tests": {
+  "test_classifier": "ALL PASS\n45 programs, 0 failures",
+  "test_oracle": "failures: 0"
+ },
+ "inputs_present": {
+  "influence_arm": true,
+  "ban_arm": true
+ }
+}

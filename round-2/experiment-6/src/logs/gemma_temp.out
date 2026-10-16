@@ -1,0 +1,13 @@
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+04:43:52|INFO   |[temp] 320 generations to run over 8 jobs (batch 75)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.10it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.09it/s]
+04:43:56|INFO   |loaded google/gemma-2-2b-it; eos (1, 107); backtick tokens 77
+04:45:36|INFO   |[temp] 54/320 gens; batch 54 in 100s (32/min); elapsed 1.7 min; ETA 8.2 min
+04:47:13|INFO   |[temp] 108/320 gens; batch 54 in 97s (33/min); elapsed 3.3 min; ETA 6.5 min
+04:48:50|INFO   |[temp] 160/320 gens; batch 52 in 97s (32/min); elapsed 4.9 min; ETA 4.9 min
+04:50:28|INFO   |[temp] 214/320 gens; batch 54 in 98s (33/min); elapsed 6.5 min; ETA 3.2 min
+04:52:06|INFO   |[temp] 268/320 gens; batch 54 in 98s (33/min); elapsed 8.2 min; ETA 1.6 min
+04:53:43|INFO   |[temp] 320/320 gens; batch 52 in 97s (32/min); elapsed 9.8 min; ETA 0.0 min
+04:53:47|INFO   |gemma stage temp done in 10.5 min

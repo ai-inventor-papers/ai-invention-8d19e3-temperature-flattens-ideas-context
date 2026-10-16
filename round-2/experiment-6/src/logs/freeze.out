@@ -1,0 +1,2 @@
+02:58:19|INFO   |FROZEN frozen_selector_qwen.json sha256 31081956756d67edda2674201e995ac1f47d368495d539af2e07eed0e248e1c8; predictions {'T1': (np.str_('A_star'), 'IDDFS'), 'T2': (np.str_('Quick'), np.str_('Selection'))}
+02:58:19|INFO   |stage freeze done in 0.0 min

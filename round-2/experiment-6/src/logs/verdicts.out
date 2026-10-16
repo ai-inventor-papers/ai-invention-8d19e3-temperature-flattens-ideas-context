@@ -1,0 +1,318 @@
+{
+ "A_claim3": {
+  "verdict": "partly overturned (a minority of targeted settings beat the draw mean)",
+  "counts_primary": {
+   "beats_draw_mean": 3,
+   "below_draw_mean": 5,
+   "ci_includes_0": 10,
+   "n": 18
+  },
+  "primary_spec": "ia|H_mm|nmatched_seeds0_74",
+  "counts_all_specs": {
+   "ia|H_mm|full_n150": {
+    "beats_draw_mean": 5,
+    "below_draw_mean": 5,
+    "ci_includes_0": 8,
+    "n": 18
+   },
+   "ia|H_mm|nmatched_seeds0_74": {
+    "beats_draw_mean": 3,
+    "below_draw_mean": 5,
+    "ci_includes_0": 10,
+    "n": 18
+   },
+   "ia|H|full_n150": {
+    "beats_draw_mean": 5,
+    "below_draw_mean": 6,
+    "ci_includes_0": 7,
+    "n": 18
+   },
+   "ia|H|iter1_pooled_draws": {
+    "beats_draw_mean": 4,
+    "below_draw_mean": 9,
+    "ci_includes_0": 5,
+    "n": 18
+   },
+   "ia|H|iter1_single_d0": {
+    "beats_draw_mean": 7,
+    "below_draw_mean": 4,
+    "ci_includes_0": 7,
+    "n": 18
+   },
+   "ia|H|nmatched_seeds0_74": {
+    "beats_draw_mean": 4,
+    "below_draw_mean": 5,
+    "ci_includes_0": 9,
+    "n": 18
+   },
+   "v1|H_mm|full_n150": {
+    "beats_draw_mean": 5,
+    "below_draw_mean": 6,
+    "ci_includes_0": 7,
+    "n": 18
+   },
+   "v1|H_mm|nmatched_seeds0_74": {
+    "beats_draw_mean": 4,
+    "below_draw_mean": 7,
+    "ci_includes_0": 7,
+    "n": 18
+   },
+   "v1|H|full_n150": {
+    "beats_draw_mean": 6,
+    "below_draw_mean": 5,
+    "ci_includes_0": 7,
+    "n": 18
+   },
+   "v1|H|iter1_pooled_draws": {
+    "beats_draw_mean": 4,
+    "below_draw_mean": 9,
+    "ci_includes_0": 5,
+    "n": 18
+   },
+   "v1|H|iter1_single_d0": {
+    "beats_draw_mean": 5,
+    "below_draw_mean": 6,
+    "ci_includes_0": 7,
+    "n": 18
+   },
+   "v1|H|nmatched_seeds0_74": {
+    "beats_draw_mean": 4,
+    "below_draw_mean": 7,
+    "ci_includes_0": 7,
+    "n": 18
+   }
+  }
+ },
+ "A_a4": {
+  "T1": {
+   "rho": 0.48571428571428577,
+   "exact_p_two_sided": 0.35555555555555557,
+   "exact_p_one_sided": 0.17777777777777778,
+   "original_ci": [
+    -0.028571428571428574,
+    0.5428571428571429
+   ],
+   "ci_corrected": [
+    -0.4285714285714286,
+    0.6
+   ]
+  },
+  "T3": {
+   "rho": -0.2571428571428572,
+   "exact_p_two_sided": 0.6583333333333333,
+   "exact_p_one_sided": 0.7180555555555556,
+   "original_ci": [
+    -0.48571428571428577,
+    0.14285714285714288
+   ],
+   "ci_corrected": [
+    -1.0,
+    0.08571428571428573
+   ]
+  }
+ },
+ "A_file_counts": {
+  "T1": [
+   111,
+   110
+  ],
+  "T3": [
+   81,
+   80
+  ]
+ },
+ "B_selector": {
+  "T1": {
+   "decision": {
+    "main": "SELECT",
+    "redraw": "SELECT",
+    "verdict": "SELECT"
+   },
+   "alphas": {
+    "s1": 0.05,
+    "s2": 0.224,
+    "s2_j": {
+     "IDDFS": 0.224,
+     "Bellman_Ford": 0.224
+    }
+   },
+   "predicted_gainers": [
+    "A_star",
+    "IDDFS"
+   ],
+   "observed_top_nonmode": {
+    "away_s1": [
+     "A_star",
+     0.18
+    ],
+    "away_s2": [
+     "A_star",
+     0.5666666666666667
+    ],
+    "away_s1_redraw": [
+     "A_star",
+     0.17333333333333334
+    ],
+    "away_s2_redraw": [
+     "A_star",
+     0.6333333333333333
+    ],
+    "off_s2": [
+     "A_star",
+     0.26666666666666666
+    ]
+   },
+   "entropy_vs_random_draw_mean": {
+    "main@s1": {
+     "diff": 0.4378372774490782,
+     "ci": [
+      0.1749291964090393,
+      0.69092420085207
+     ],
+     "verdict": "beats"
+    },
+    "redraw@s1": {
+     "diff": 0.34768133958143577,
+     "ci": [
+      0.06443094110043622,
+      0.6129470317343227
+     ],
+     "verdict": "beats"
+    },
+    "both_draws@s1": {
+     "diff": 0.392759308515257,
+     "ci": [
+      0.15605092906804477,
+      0.6229394298900237
+     ],
+     "verdict": "beats"
+    },
+    "main@s2": {
+     "diff": 0.31667479461197146,
+     "ci": [
+      0.038859049341578925,
+      0.5607617493791116
+     ],
+     "verdict": "beats"
+    },
+    "redraw@s2": {
+     "diff": 0.10049837782939464,
+     "ci": [
+      -0.18809261943985844,
+      0.35792576100756573
+     ],
+     "verdict": "undetermined"
+    },
+    "both_draws@s2": {
+     "diff": 0.20858658622068305,
+     "ci": [
+      -0.0631467767122953,
+      0.4537103027398898
+     ],
+     "verdict": "undetermined"
+    },
+    "off_target@s2": {
+     "diff": 0.5807035097684492,
+     "ci": [
+      0.3539237511912658,
+      0.7830961067464328
+     ],
+     "verdict": "beats"
+    }
+   },
+   "nonmode_share_vs_random": {
+    "main@s1": {
+     "diff": 0.134,
+     "ci": [
+      0.03466666666666668,
+      0.22800000000000004
+     ]
+    },
+    "redraw@s1": {
+     "diff": 0.08733333333333337,
+     "ci": [
+      -0.008000000000000007,
+      0.182
+     ]
+    },
+    "both_draws@s1": {
+     "diff": 0.11066666666666669,
+     "ci": [
+      0.026000000000000023,
+      0.1973333333333333
+     ]
+    },
+    "main@s2": {
+     "diff": 0.5386666666666666,
+     "ci": [
+      0.468,
+      0.6053333333333334
+     ]
+    },
+    "redraw@s2": {
+     "diff": 0.5253333333333333,
+     "ci": [
+      0.45199999999999996,
+      0.5960000000000001
+     ]
+    },
+    "both_draws@s2": {
+     "diff": 0.532,
+     "ci": [
+      0.47333333333333333,
+      0.5900000000000001
+     ]
+    },
+    "off_target@s2": {
+     "diff": 0.29200000000000004,
+     "ci": [
+      0.20133333333333336,
+      0.3813333333333333
+     ]
+    }
+   },
+   "pass_vs_random": {
+    "main@s1": {
+     "diff": 0.07933333333333331,
+     "ci": [
+      -0.012666666666666606,
+      0.17133333333333328
+     ]
+    },
+    "redraw@s1": {
+     "diff": 0.05266666666666664,
+     "ci": [
+      -0.03799999999999992,
+      0.14466666666666667
+     ]
+    },
+    "both_draws@s1": {
+     "diff": 0.06599999999999995,
+     "ci": [
+      -0.008666666666666656,
+      0.14399999999999996
+     ]
+    },
+    "main@s2": {
+     "diff": -0.16400000000000003,
+     "ci": [
+      -0.24533333333333335,
+      -0.08399999999999999
+     ]
+    },
+    "redraw@s2": {
+     "diff": -0.17066666666666672,
+     "ci": [
+      -0.24933333333333332,
+      -0.092
+     ]
+    },
+    "both_draws@s2": {
+     "diff": -0.1673333333333334,
+     "ci": [
+      -0.2360166666666667,
+      -0.10266666666666668
+     ]
+    },
+    "off_target@s2": {
+     "diff": -0.1

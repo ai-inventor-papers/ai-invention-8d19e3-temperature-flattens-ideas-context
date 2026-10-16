@@ -1,0 +1,26 @@
+03:45:06|INFO   |screen plan {"T1": ["A_star", "BFS", "Dijkstra", "DFS", "SPFA", "Greedy_best_first", "Bidirectional", "IDDFS"], "T2": ["Bubble", "Merge", "Selection", "Insertion", "Counting", "Quick", "Heap", "Radix"]}
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+03:45:52|INFO   |[screen_b] 920 generations to run over 28 jobs (batch 75)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.10s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.80s/it]
+03:46:04|INFO   |loaded google/gemma-2-2b-it; eos (1, 107); backtick tokens 77
+03:47:43|INFO   |[screen_b] 54/920 gens; batch 54 in 99s (33/min); elapsed 1.7 min; ETA 26.6 min
+03:49:21|INFO   |[screen_b] 108/920 gens; batch 54 in 97s (33/min); elapsed 3.3 min; ETA 24.7 min
+03:50:56|INFO   |[screen_b] 160/920 gens; batch 52 in 95s (33/min); elapsed 4.9 min; ETA 23.1 min
+03:52:53|INFO   |[screen_b] 227/920 gens; batch 67 in 117s (34/min); elapsed 6.8 min; ETA 20.8 min
+03:54:50|INFO   |[screen_b] 294/920 gens; batch 67 in 117s (34/min); elapsed 8.8 min; ETA 18.7 min
+03:56:44|INFO   |[screen_b] 360/920 gens; batch 66 in 114s (35/min); elapsed 10.7 min; ETA 16.6 min
+03:58:04|INFO   |[screen_b] 400/920 gens; batch 40 in 80s (30/min); elapsed 12.0 min; ETA 15.6 min
+03:59:24|INFO   |[screen_b] 440/920 gens; batch 40 in 80s (30/min); elapsed 13.3 min; ETA 14.5 min
+04:00:19|INFO   |[screen_b] 460/920 gens; batch 20 in 55s (22/min); elapsed 14.2 min; ETA 14.2 min
+04:02:19|INFO   |[screen_b] 530/920 gens; batch 70 in 120s (35/min); elapsed 16.3 min; ETA 12.0 min
+04:03:47|INFO   |[screen_b] 575/920 gens; batch 45 in 87s (31/min); elapsed 17.7 min; ETA 10.6 min
+04:05:14|INFO   |[screen_b] 620/920 gens; batch 45 in 87s (31/min); elapsed 19.2 min; ETA 9.3 min
+04:06:47|INFO   |[screen_b] 670/920 gens; batch 50 in 93s (32/min); elapsed 20.7 min; ETA 7.7 min
+04:08:21|INFO   |[screen_b] 720/920 gens; batch 50 in 94s (32/min); elapsed 22.3 min; ETA 6.2 min
+04:09:55|INFO   |[screen_b] 770/920 gens; batch 50 in 94s (32/min); elapsed 23.9 min; ETA 4.6 min
+04:11:30|INFO   |[screen_b] 820/920 gens; batch 50 in 94s (32/min); elapsed 25.4 min; ETA 3.1 min
+04:13:05|INFO   |[screen_b] 870/920 gens; batch 50 in 95s (31/min); elapsed 27.0 min; ETA 1.6 min
+04:14:42|INFO   |[screen_b] 920/920 gens; batch 50 in 97s (31/min); elapsed 28.6 min; ETA 0.0 min
+04:14:53|INFO   |gemma stage screen_b done in 29.8 min

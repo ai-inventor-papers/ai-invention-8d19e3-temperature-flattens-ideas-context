@@ -1,0 +1,329 @@
+{
+ "created": "2026-10-16 04:18:54",
+ "model": "google/gemma-2-2b-it",
+ "engine": "HF transformers, eager attention (softcapping), seeded inverse-CDF sampler, no CodeStop",
+ "band": [
+  13,
+  14,
+  15
+ ],
+ "band_info": {
+  "mean_gain": {
+   "1": 0.5806209099801537,
+   "2": 0.5493185731592912,
+   "3": 0.5468033729561613,
+   "4": 0.585873229365208,
+   "5": 0.5923565896514712,
+   "6": 0.6267765986100593,
+   "7": 0.5426987639867702,
+   "8": 0.6183262960831716,
+   "9": 0.6175928151793316,
+   "10": 0.6029384744715149,
+   "11": 0.5958076992045671,
+   "12": 0.6075725748517957,
+   "13": 0.5956461816131412,
+   "14": 0.6180153865035454,
+   "15": 0.6271643479246611,
+   "16": 0.5786661427656463,
+   "17": 0.5801297303126944,
+   "18": 0.5669709187623626,
+   "19": 0.5986316463224408,
+   "20": 0.6132498747892178,
+   "21": 0.5499288157871046,
+   "22": 0.5733953373819684,
+   "23": 0.610958467225274,
+   "24": 0.5961742960728829,
+   "25": 0.5772237770222873
+  },
+  "band_gain": 0.6136086386804492
+ },
+ "variant": "G",
+ "fits": {
+  "G": {
+   "beta": 0.26309375000000024,
+   "screen_ll": -1032.369770147054,
+   "beta_gamma": [
+    0.23615784873977508,
+    2.1194975925229764
+   ],
+   "screen_ll_gamma": -892.2959275252693,
+   "loo_cv_ll": -1058.4601310439125
+  },
+  "P": {
+   "beta": 0.15081787109375,
+   "screen_ll": -1084.6988421299113,
+   "beta_gamma": [
+    0.27395188118975405,
+    2.265582710982747
+   ],
+   "screen_ll_gamma": -906.4370156929426,
+   "loo_cv_ll": -1092.1337057094715
+  }
+ },
+ "beta": 0.26309375000000024,
+ "beta_gamma": [
+  0.23615784873977508,
+  2.1194975925229764
+ ],
+ "beta_e": 1.666056270368108,
+ "gamma": 3.236210545706815,
+ "ext_screen_ll": -920.7083646423918,
+ "iia_comp_rho": 0.17003367003367004,
+ "iia_comp_screen_ll": -980.1078379547802,
+ "descriptions": {
+  "BFS": "explores a graph level by level with a FIFO queue, giving shortest paths in unweighted graphs",
+  "DFS": "explores a graph by going as deep as possible along each branch using recursion or a stack",
+  "IDDFS": "runs depth-limited depth-first searches with increasing depth limits",
+  "Dijkstra": "finds shortest paths in a weighted graph with non-negative weights using a priority queue",
+  "A_star": "best-first search ordered by path cost plus a heuristic estimate of the remaining distance",
+  "Greedy_best_first": "expands the node that a heuristic estimates is closest to the goal",
+  "Bidirectional": "searches simultaneously forward from the start and backward from the goal until they meet",
+  "Bellman_Ford": "relaxes every edge repeatedly to find shortest paths, allowing negative edge weights",
+  "SPFA": "a queue-based improvement of Bellman-Ford that only relaxes edges of updated vertices",
+  "Floyd_Warshall": "dynamic programming over intermediate vertices giving all-pairs shortest paths",
+  "Quick": "picks a pivot, partitions the array around it and recursively sorts the partitions",
+  "Merge": "recursively splits the array in halves and merges the sorted halves",
+  "Heap": "builds a binary heap and repeatedly extracts the maximum element",
+  "Insertion": "builds the sorted array one element at a time by inserting each into place",
+  "Selection": "repeatedly selects the minimum of the unsorted part and swaps it to the front",
+  "Bubble": "repeatedly swaps adjacent elements that are out of order until no swaps are needed",
+  "Shell": "insertion sort over elements a shrinking gap apart",
+  "Counting": "counts occurrences of each key value and reconstructs the sorted output from the counts",
+  "Radix": "sorts integers digit by digit using a stable sort per digit",
+  "Bucket": "distributes elements into buckets, sorts each bucket and concatenates them",
+  "Tim_hybrid": "a hybrid of merge sort and insertion sort over natural runs",
+  "Builtin": "calls the language's built-in sorted function or list.sort method",
+  "Other": "some other algorithm not in this list"
+ },
+ "pseudo_count": 0.5,
+ "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+ "menus": {
+  "T1": [
+   "BFS",
+   "Dijkstra",
+   "A_star",
+   "DFS",
+   "SPFA"
+  ],
+  "T2": [
+   "Bubble",
+   "Selection",
+   "Merge"
+  ]
+ },
+ "ranks": {
+  "T1": [
+   "A_star",
+   "BFS",
+   "Dijkstra",
+   "DFS",
+   "SPFA",
+   "Greedy_best_first",
+   "Bidirectional",
+   "IDDFS"
+  ],
+  "T2": [
+   "Bubble",
+   "Merge",
+   "Selection",
+   "Insertion",
+   "Counting",
+   "Quick",
+   "Heap",
+   "Radix"
+  ]
+ },
+ "screen_bans": {
+  "T1": {
+   "ban_r1": [
+    "A_star"
+   ],
+   "ban_r2": [
+    "BFS"
+   ],
+   "ban_r3": [
+    "Dijkstra"
+   ],
+   "ban_r4": [
+    "DFS"
+   ],
+   "ban_top3": [
+    "A_star",
+    "BFS",
+    "Dijkstra"
+   ],
+   "ban_top5": [
+    "A_star",
+    "BFS",
+    "Dijkstra",
+    "DFS",
+    "SPFA"
+   ]
+  },
+  "T2": {
+   "ban_r1": [
+    "Bubble"
+   ],
+   "ban_r2": [
+    "Merge"
+   ],
+   "ban_r3": [
+    "Selection"
+   ],
+   "ban_r4": [
+    "Insertion"
+   ],
+   "ban_top3": [
+    "Bubble",
+    "Merge",
+    "Selection"
+   ],
+   "ban_top5": [
+    "Bubble",
+    "Merge",
+    "Selection",
+    "Insertion",
+    "Counting"
+   ]
+  }
+ },
+ "confirmation_bans": {
+  "T1": {
+   "ban_r5": [
+    "SPFA"
+   ],
+   "ban_r6": [
+    "Greedy_best_first"
+   ],
+   "ban_r7": [
+    "Bidirectional"
+   ],
+   "ban_r8": [
+    "IDDFS"
+   ],
+   "ban_pair0": [
+    "Greedy_best_first",
+    "IDDFS"
+   ],
+   "ban_pair1": [
+    "IDDFS",
+    "Floyd_Warshall"
+   ],
+   "ban_pair2": [
+    "Bidirectional",
+    "IDDFS"
+   ]
+  },
+  "T2": {
+   "ban_r5": [
+    "Counting"
+   ],
+   "ban_r6": [
+    "Quick"
+   ],
+   "ban_r7": [
+    "Heap"
+   ],
+   "ban_r8": [
+    "Radix"
+   ],
+   "ban_pair0": [
+    "Heap",
+    "Bucket"
+   ],
+   "ban_pair1": [
+    "Quick",
+    "Tim_hybrid"
+   ],
+   "ban_pair2": [
+    "Quick",
+    "Bucket"
+   ]
+  }
+ },
+ "thresholds": {
+  "sign_cell_min_change_pp": 10,
+  "holm_alpha": 0.01,
+  "jsd_gain_min": 0.2,
+  "top_substitute_min": 0.7
+ },
+ "delta_h_sha256": "9807a9114cdb63012827e68f7dc1bf8a08903b6af57febc82b1d3878beaf0c9b",
+ "centroids_sha256": "31699ca7f109c4184635ac1b8723ccc65897beff804bb5241891311e492504ef",
+ "s_j_rule": "s_j = mean_band <Delta_h, c_j/|c_j|>, Delta_h = mean over 5 suffix positions of h_ban - h_placebo; classes without a centroid get s_j = 0",
+ "screen_jsd": {
+  "T1/ban_r1": {
+   "IIA": 0.16426111269344668,
+   "IIA_comp": 0.08482555187979418,
+   "GEOM": 0.23938611937312876,
+   "EXT": 0.13093421137280442
+  },
+  "T1/ban_r2": {
+   "IIA": 0.31542291849173126,
+   "IIA_comp": 0.20354782171093716,
+   "GEOM": 0.12568289789078577,
+   "EXT": 0.23172273434607882
+  },
+  "T1/ban_r3": {
+   "IIA": 0.17542736544276089,
+   "IIA_comp": 0.1796227985412146,
+   "GEOM": 0.03442451405666317,
+   "EXT": 0.12940420353380502
+  },
+  "T1/ban_r4": {
+   "IIA": 0.1887792847784568,
+   "IIA_comp": 0.21993385655279402,
+   "GEOM": 0.16608178589319894,
+   "EXT": 0.12889727959520647
+  },
+  "T1/ban_top3": {
+   "IIA": 0.6478087556905515,
+   "IIA_comp": 0.4192567926822473,
+   "GEOM": 0.0909763789977914,
+   "EXT": 0.32766193595577436
+  },
+  "T1/ban_top5": {
+   "IIA": 0.8207915320587579,
+   "IIA_comp": 0.5312042213674555,
+   "GEOM": 0.14590528563538108,
+   "EXT": 0.20564144467150514
+  },
+  "T2/ban_r1": {
+   "IIA": 0.07898586776433923,
+   "IIA_comp": 0.16233949396662303,
+   "GEOM": 0.2289422770457265,
+   "EXT": 0.0911335093214693
+  },
+  "T2/ban_r2": {
+   "IIA": 0.09506223853458813,
+   "IIA_comp": 0.177365824018426,
+   "GEOM": 0.2862468973028098,
+   "EXT": 0.1333760608139295
+  },
+  "T2/ban_r3": {
+   "IIA": 0.08870704340713646,
+   "IIA_comp": 0.17213594571477636,
+   "GEOM": 0.1307064563534715,
+   "EXT": 0.13205440974664664
+  },
+  "T2/ban_r4": {
+   "IIA": 0.08231301365582147,
+   "IIA_comp": 0.16701184155403817,
+   "GEOM": 0.118575167033148,
+   "EXT": 0.09379755948906132
+  },
+  "T2/ban_top3": {
+   "IIA": 0.0985980504343607,
+   "IIA_comp": 0.18213404153184726,
+   "GEOM": 0.6629814639706733,
+   "EXT": 0.29107599779629434
+  },
+  "T2/ban_top5": {
+   "IIA": 0.28746418022051584,
+   "IIA_comp": 0.3166078488689208,
+   "GEOM": 0.7625208004851963,
+   "EXT": 0.48444576883180535
+  }
+ },
+ "seeds_confirmation": "1000..1079",
+ "n_confirmation": 80
+}

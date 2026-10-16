@@ -1,0 +1,19 @@
+{
+ "hardware": "NVIDIA RTX 2000 Ada (16 GB, 70 W power cap), 6 CPUs (cgroup 5.1), 28 GB RAM - much slower than iteration 1's RTX PRO 4500 (32 GB)",
+ "vllm_not_used": "vLLM was not installed (timebox + iteration-1 toolchain loss); every gemma generation uses the HF engine with eager attention (softcapping honoured), per the fallback plan",
+ "codestop_disabled": "code-stop check failed (v1 agreement full vs truncated 0.87 on T1, 0.967 on T2 < 0.97): CodeStop disabled for every new generation (max_new 768 Qwen). 400 early Qwen baseline generations made with CodeStop were quarantined in data/discarded_codestop/ and regenerated",
+ "gemma_max_new_768": "gemma max_new_tokens = 768 instead of 1536 (throughput: 36 gens/min at 768); truncation rate reported per cell",
+ "gemma_sizes": "HF-fallback sizes cut further for time: baseline n=150 (plan 300; fallback 200), placebo 3x50 (plan 3x100), forced n=20 for the top-8 (plan 40), screen bans n=50 (plan 100), confirmation n=50 (plan 100), temperature n=40 per T (plan 100), transplant n=30 per condition (plan 60)",
+ "qwen_random_s1_n100": "fallback cut (1) applied up front: the 5 random draws at s1 use n=100 (s2 keeps 5 x 150)",
+ "batching": "batches never mix prompt-token lengths (left padding took SDPA off its fast path: 3.2x slower); rows of different settings with equal prompt length share batches (CRN through per-seed uniforms)",
+ "rlimit": "no RLIMIT_AS for GPU processes (CUDA cuMemAddressReserve fails under the cap); CPU-only stages set RLIMIT_AS",
+ "probe_pca": "per-layer probes use StandardScaler + PCA(128) inside each CV fold before the multinomial logistic regression (speed); C chosen by best CV accuracy and the shuffled control uses the same C grid",
+ "classifier_fixtures": "BA tests/test_classifier.py contains 45 fixture programs (plan said 41); 45/45 pass",
+ "geom_gamma_extra": "an extra predictor GEOM_gamma = GEOM plus a banned-class penalty (same free parameters as EXT) is frozen and reported alongside the planned GEOM; the planned GEOM stays primary",
+ "ba_scoring": "BA screen generations (vLLM) were re-scored with v1 + oracle (their stored labels had no oracle fields)",
+ "step_D": "Step D ran on CPU (direct JumpReLU load of Gemma Scope params.npz, no sae-lens); reconstruction FVU 0.61 > 0.5 -> marked unreliable (descriptive only)",
+ "qwen_T1_s2_pass_shortfall": "T1 s2=0.224 met pass >= 0.8x baseline in the n=30 calibration (0.33 vs 0.31) but not in the n=150 main cells (0.17); the frozen s2 was kept and the shortfall is reported",
+ "transplant": "n=30 per condition at L*=13 (first gemma band layer); T1 pass rates are near zero for every transplant cell (gemma T1 output is 87% truncated at 768 tokens), so the 0.5x degeneration fallback was not triggered; no post-hoc layer run",
+ "gemma_t1_labels": "audit kappa 0.39 on T1 -> gemma T1 behaviour labels flagged label-limited (classifier unchanged per P2)",
+ "oracle_workers": "oracle scoring used 3 worker subprocesses (plan: 6) to leave CPU for the GPU process"
+}

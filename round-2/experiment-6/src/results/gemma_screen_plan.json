@@ -1,0 +1,99 @@
+{
+ "T1": {
+  "ranks": [
+   "A_star",
+   "BFS",
+   "Dijkstra",
+   "DFS",
+   "SPFA",
+   "Greedy_best_first",
+   "Bidirectional",
+   "IDDFS",
+   "Bellman_Ford",
+   "Floyd_Warshall"
+  ],
+  "bans": {
+   "ban_r1": [
+    "A_star"
+   ],
+   "ban_r2": [
+    "BFS"
+   ],
+   "ban_r3": [
+    "Dijkstra"
+   ],
+   "ban_r4": [
+    "DFS"
+   ],
+   "ban_top3": [
+    "A_star",
+    "BFS",
+    "Dijkstra"
+   ],
+   "ban_top5": [
+    "A_star",
+    "BFS",
+    "Dijkstra",
+    "DFS",
+    "SPFA"
+   ]
+  },
+  "baseline_counts": {
+   "BFS": 48,
+   "Dijkstra": 27,
+   "A_star": 49,
+   "DFS": 15,
+   "SPFA": 7,
+   "Greedy_best_first": 3,
+   "Other": 1
+  }
+ },
+ "T2": {
+  "ranks": [
+   "Bubble",
+   "Merge",
+   "Selection",
+   "Insertion",
+   "Counting",
+   "Quick",
+   "Heap",
+   "Radix",
+   "Bucket",
+   "Tim_hybrid",
+   "Shell"
+  ],
+  "bans": {
+   "ban_r1": [
+    "Bubble"
+   ],
+   "ban_r2": [
+    "Merge"
+   ],
+   "ban_r3": [
+    "Selection"
+   ],
+   "ban_r4": [
+    "Insertion"
+   ],
+   "ban_top3": [
+    "Bubble",
+    "Merge",
+    "Selection"
+   ],
+   "ban_top5": [
+    "Bubble",
+    "Merge",
+    "Selection",
+    "Insertion",
+    "Counting"
+   ]
+  },
+  "baseline_counts": {
+   "Bubble": 121,
+   "Selection": 8,
+   "Merge": 17,
+   "Insertion": 3,
+   "Counting": 1
+  }
+ }
+}

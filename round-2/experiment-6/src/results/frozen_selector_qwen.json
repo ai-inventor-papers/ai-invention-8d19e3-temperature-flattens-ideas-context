@@ -1,0 +1,138 @@
+{
+ "created": "2026-10-16 02:58:19",
+ "model": "Qwen/Qwen2.5-3B-Instruct",
+ "band": [
+  32,
+  33,
+  34
+ ],
+ "median_norm": {
+  "32": 233.96127319335938,
+  "33": 274.36016845703125,
+  "34": 330.3095703125
+ },
+ "vectors_sha256": "258e190607db82621aac8fde983655795aad8e41aee215b582d6a6ed26a50797",
+ "scaling": "vec_l = alpha * median_norm[l] / len(band) * unit(v); window = prompt-final + gen 1..64",
+ "off_targets": {
+  "T1": [
+   "IDDFS",
+   "Bellman_Ford"
+  ],
+  "T2": [
+   "Counting",
+   "Heap"
+  ]
+ },
+ "predictions": {
+  "T1": {
+   "mode": "BFS",
+   "g_proj": {
+    "A_star": 0.8426291545232137,
+    "Dijkstra": 0.741768479347229,
+    "Other": 0.6852224667867025,
+    "DFS": 0.6556307474772135,
+    "forced:Bellman_Ford": 0.40089963873227435,
+    "forced:IDDFS": 0.36267314354578656
+   },
+   "nn_cos": {
+    "forced:IDDFS": -0.18205106258392334,
+    "forced:Bellman_Ford": -0.29734625418980914,
+    "DFS": -0.33678598205248517,
+    "Other": -0.4280859927336375,
+    "Dijkstra": -0.5648493766784668,
+    "A_star": -0.7613435983657837
+   },
+   "predicted_top_gainer_proj": "A_star",
+   "predicted_top_gainer_nn": "IDDFS",
+   "ranked_proj": [
+    "A_star",
+    "Dijkstra",
+    "Other",
+    "DFS",
+    "Bellman_Ford",
+    "IDDFS"
+   ],
+   "ranked_nn": [
+    "IDDFS",
+    "Bellman_Ford",
+    "DFS",
+    "Other",
+    "Dijkstra",
+    "A_star"
+   ]
+  },
+  "T2": {
+   "mode": "Bubble",
+   "g_proj": {
+    "Quick": 0.9730874101320902,
+    "Merge": 0.886965791384379,
+    "forced:Heap": 0.5208085974057516,
+    "Selection": 0.4880322217941284,
+    "Insertion": 0.4798901478449504,
+    "forced:Counting": 0.42937059203783673
+   },
+   "nn_cos": {
+    "Selection": -0.027820396547516186,
+    "Insertion": -0.06649309645096461,
+    "forced:Counting": -0.2239656796058019,
+    "forced:Heap": -0.3295646111170451,
+    "Merge": -0.7743930021921793,
+    "Quick": -0.9396343032519022
+   },
+   "predicted_top_gainer_proj": "Quick",
+   "predicted_top_gainer_nn": "Selection",
+   "ranked_proj": [
+    "Quick",
+    "Merge",
+    "Heap",
+    "Selection",
+    "Insertion",
+    "Counting"
+   ],
+   "ranked_nn": [
+    "Selection",
+    "Insertion",
+    "Counting",
+    "Heap",
+    "Merge",
+    "Quick"
+   ]
+  }
+ },
+ "support_rule": "U = P4 menu + {Other} + {any j reaching >= 10% in some B5 cell}; fixed after B5 by this rule",
+ "decision_rule": {
+  "SELECT": "at s2: max non-mode share >= 0.5 AND that idea is a predicted gainer (proj or nn) AND KL_u(s2) > KL_u(s1) (entropy non-monotone across 0, s1, s2)",
+  "FLATTEN": "KL_u(0) > KL_u(s1) > KL_u(s2) AND max non-mode share at s2 < 0.5",
+  "MIXED": "otherwise",
+  "replication": "computed separately on the re-draw (seeds 1000..1149); counts only if both draws agree"
+ },
+ "entropy_vs_random": "targeted entropy minus the DRAW-AVERAGED entropy of 5 matched-norm random draws at the same alpha; hierarchical bootstrap (draws then samples) 95% CI; beats random iff CI lo > 0",
+ "c4_rule": "offmenu_correct = #(pass AND v1 label not in P4 menu)/n (Builtin, Other included); C4 passes iff for some setting S with pass(S) >= 0.8*pass(B1): (k_S+.5)/(n_S+1) >= 3*max_T (k_T+.5)/(n_T+1) over HF T in {0.7,1.0,1.3} AND one-sided Fisher p < 0.05 vs the best temperature cell; sensitivity excluding Builtin; eligible: d_away s1/s2, d_j s2, Qwen screen bans (vLLM, engine mismatch flagged)",
+ "calibration": {
+  "grid_away": [
+   0.05,
+   0.106,
+   0.224,
+   0.473,
+   1.0
+  ],
+  "grid_dj": [
+   0.224,
+   0.473,
+   1.0
+  ],
+  "n": 30,
+  "seeds": "0..29",
+  "s1": "alpha whose mode share is closest to 0.5 x HF-baseline mode share",
+  "s2": "alpha with minimal mode share subject to pass >= 0.8 x HF-baseline pass (if none, the smallest alpha; shortfall logged)",
+  "s2_j": "alpha maximising target share subject to the same pass rule"
+ },
+ "n_random_draws": 5,
+ "random_seeds": [
+  777,
+  778,
+  779,
+  780,
+  781
+ ]
+}

@@ -1,0 +1,9 @@
+./.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.50s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  3.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.55s/it]
+04:16:27|INFO   |gemma T1 window acts n=245 fallback 0.00
+04:16:30|INFO   |gemma T2 window acts n=310 fallback 0.00
+04:18:33|INFO   |gemma band [13, 14, 15] (gain 0.614)
+04:18:54|INFO   |FROZEN frozen_gemma_bans.json 7be800bb90a9a5e7d35cc8fc0ec2059b6c996b4659ce9894b205f23fb21ccd4c: variant G fits {'G': {'beta': 0.26309375000000024, 'screen_ll': -1032.369770147054, 'beta_gamma': [0.23615784873977508, 2.1194975925229764], 'screen_ll_gamma': -892.2959275252693, 'loo_cv_ll': -1058.4601310439125}, 'P': {'beta': 0.15081787109375, 'screen_ll': -1084.6988421299113, 'beta_gamma': [0.27395188118975405, 2.265582710982747], 'screen_ll_gamma': -906.4370156929426, 'loo_cv_ll': -1092.1337057094715}} ext (1.666056270368108, 3.236210545706815) rho 0.170
+04:18:54|INFO   |gemma stage geometry done in 3.6 min

@@ -1,0 +1,758 @@
+{
+ "model": "openai/gpt-4.1-mini",
+ "n_sampled": 100,
+ "n_judged": 100,
+ "cost_usd": 0.019776799999999997,
+ "stopped_on_budget": false,
+ "tasks": {
+  "T1": {
+   "n": 45,
+   "agreement": 0.4666666666666667,
+   "kappa": 0.3901750423489554,
+   "confusion": {
+    "BFS->BFS": 6,
+    "DFS->DFS": 6,
+    "IDDFS->DFS": 4,
+    "SPFA->Other": 4,
+    "A_star->Other": 3,
+    "A_star->A_star": 3,
+    "Dijkstra->Other": 3,
+    "Dijkstra->Dijkstra": 3,
+    "Greedy_best_first->Other": 3,
+    "Other->Greedy_best_first": 2,
+    "Other->Other": 2,
+    "Greedy_best_first->Dijkstra": 1,
+    "Greedy_best_first->A_star": 1,
+    "Greedy_best_first->Greedy_best_first": 1,
+    "IDDFS->Other": 1,
+    "Other->Dijkstra": 1,
+    "SPFA->Dijkstra": 1
+   },
+   "label_limited": true
+  },
+  "T2": {
+   "n": 55,
+   "agreement": 0.9454545454545454,
+   "kappa": 0.9389792899408284,
+   "confusion": {
+    "Bubble->Bubble": 8,
+    "Merge->Merge": 8,
+    "Quick->Quick": 7,
+    "Counting->Counting": 5,
+    "Heap->Heap": 5,
+    "Insertion->Insertion": 5,
+    "Selection->Selection": 5,
+    "Radix->Radix": 4,
+    "Shell->Shell": 4,
+    "Other->Other": 1,
+    "Radix->Other": 1,
+    "Tim_hybrid->Insertion": 1,
+    "Tim_hybrid->Other": 1
+   },
+   "label_limited": false
+  }
+ },
+ "pooled_kappa": 0.7125824994677453,
+ "items": [
+  {
+   "task": "T1",
+   "setting": "baseline",
+   "seed": 41,
+   "label": "A_star",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "baseline",
+   "seed": 30,
+   "label": "A_star",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_r1",
+   "seed": 31,
+   "label": "A_star",
+   "judge": "A_star"
+  },
+  {
+   "task": "T1",
+   "setting": "placebo_b0",
+   "seed": 1047,
+   "label": "A_star",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_Greedy_best_first",
+   "seed": 12,
+   "label": "A_star",
+   "judge": "A_star"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_r4",
+   "seed": 7,
+   "label": "BFS",
+   "judge": "BFS"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_top3",
+   "seed": 0,
+   "label": "BFS",
+   "judge": "BFS"
+  },
+  {
+   "task": "T1",
+   "setting": "placebo_b0",
+   "seed": 1044,
+   "label": "BFS",
+   "judge": "BFS"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_top3",
+   "seed": 5,
+   "label": "BFS",
+   "judge": "BFS"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_top5",
+   "seed": 19,
+   "label": "BFS",
+   "judge": "BFS"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_DFS",
+   "seed": 14,
+   "label": "DFS",
+   "judge": "DFS"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_r2",
+   "seed": 45,
+   "label": "DFS",
+   "judge": "DFS"
+  },
+  {
+   "task": "T1",
+   "setting": "placebo_b0",
+   "seed": 1042,
+   "label": "DFS",
+   "judge": "DFS"
+  },
+  {
+   "task": "T1",
+   "setting": "placebo_b2",
+   "seed": 3010,
+   "label": "DFS",
+   "judge": "DFS"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_r2",
+   "seed": 35,
+   "label": "DFS",
+   "judge": "DFS"
+  },
+  {
+   "task": "T1",
+   "setting": "baseline",
+   "seed": 31,
+   "label": "Dijkstra",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_SPFA",
+   "seed": 8,
+   "label": "Dijkstra",
+   "judge": "Dijkstra"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_Dijkstra",
+   "seed": 19,
+   "label": "Dijkstra",
+   "judge": "Dijkstra"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_Bidirectional",
+   "seed": 3,
+   "label": "Dijkstra",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_SPFA",
+   "seed": 2,
+   "label": "Dijkstra",
+   "judge": "Dijkstra"
+  },
+  {
+   "task": "T1",
+   "setting": "baseline",
+   "seed": 121,
+   "label": "Greedy_best_first",
+   "judge": "Dijkstra"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_Bidirectional",
+   "seed": 1,
+   "label": "Greedy_best_first",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "placebo_b0",
+   "seed": 1026,
+   "label": "Greedy_best_first",
+   "judge": "A_star"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_r3",
+   "seed": 41,
+   "label": "Greedy_best_first",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "placebo_b0",
+   "seed": 1043,
+   "label": "Greedy_best_first",
+   "judge": "Greedy_best_first"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_IDDFS",
+   "seed": 5,
+   "label": "IDDFS",
+   "judge": "DFS"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_IDDFS",
+   "seed": 6,
+   "label": "IDDFS",
+   "judge": "DFS"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_IDDFS",
+   "seed": 14,
+   "label": "IDDFS",
+   "judge": "DFS"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_IDDFS",
+   "seed": 15,
+   "label": "IDDFS",
+   "judge": "DFS"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_IDDFS",
+   "seed": 8,
+   "label": "IDDFS",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "placebo_b1",
+   "seed": 2035,
+   "label": "Other",
+   "judge": "Greedy_best_first"
+  },
+  {
+   "task": "T1",
+   "setting": "placebo_b1",
+   "seed": 2021,
+   "label": "Other",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_top5",
+   "seed": 2,
+   "label": "Other",
+   "judge": "Greedy_best_first"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_r2",
+   "seed": 48,
+   "label": "Other",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_top5",
+   "seed": 18,
+   "label": "Other",
+   "judge": "Dijkstra"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_Dijkstra",
+   "seed": 0,
+   "label": "SPFA",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_r1",
+   "seed": 39,
+   "label": "SPFA",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "placebo_b2",
+   "seed": 3039,
+   "label": "SPFA",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_r3",
+   "seed": 6,
+   "label": "SPFA",
+   "judge": "Dijkstra"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_top5",
+   "seed": 17,
+   "label": "SPFA",
+   "judge": "Other"
+  },
+  {
+   "task": "T2",
+   "setting": "baseline",
+   "seed": 99,
+   "label": "Bubble",
+   "judge": "Bubble"
+  },
+  {
+   "task": "T2",
+   "setting": "baseline",
+   "seed": 39,
+   "label": "Bubble",
+   "judge": "Bubble"
+  },
+  {
+   "task": "T2",
+   "setting": "baseline",
+   "seed": 96,
+   "label": "Bubble",
+   "judge": "Bubble"
+  },
+  {
+   "task": "T2",
+   "setting": "baseline",
+   "seed": 19,
+   "label": "Bubble",
+   "judge": "Bubble"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Bubble",
+   "seed": 0,
+   "label": "Bubble",
+   "judge": "Bubble"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Counting",
+   "seed": 8,
+   "label": "Counting",
+   "judge": "Counting"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top3",
+   "seed": 42,
+   "label": "Counting",
+   "judge": "Counting"
+  },
+  {
+   "task": "T2",
+   "setting": "placebo_b2",
+   "seed": 3019,
+   "label": "Counting",
+   "judge": "Counting"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top3",
+   "seed": 4,
+   "label": "Counting",
+   "judge": "Counting"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top3",
+   "seed": 5,
+   "label": "Counting",
+   "judge": "Counting"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Heap",
+   "seed": 2,
+   "label": "Heap",
+   "judge": "Heap"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top5",
+   "seed": 49,
+   "label": "Heap",
+   "judge": "Heap"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top3",
+   "seed": 47,
+   "label": "Heap",
+   "judge": "Heap"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top5",
+   "seed": 16,
+   "label": "Heap",
+   "judge": "Heap"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Heap",
+   "seed": 14,
+   "label": "Heap",
+   "judge": "Heap"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r2",
+   "seed": 26,
+   "label": "Insertion",
+   "judge": "Insertion"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r2",
+   "seed": 25,
+   "label": "Insertion",
+   "judge": "Insertion"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r1",
+   "seed": 19,
+   "label": "Insertion",
+   "judge": "Insertion"
+  },
+  {
+   "task": "T2",
+   "setting": "baseline",
+   "seed": 43,
+   "label": "Insertion",
+   "judge": "Insertion"
+  },
+  {
+   "task": "T2",
+   "setting": "placebo_b2",
+   "seed": 3033,
+   "label": "Insertion",
+   "judge": "Insertion"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r1",
+   "seed": 20,
+   "label": "Merge",
+   "judge": "Merge"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r3",
+   "seed": 47,
+   "label": "Merge",
+   "judge": "Merge"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r4",
+   "seed": 47,
+   "label": "Merge",
+   "judge": "Merge"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Merge",
+   "seed": 3,
+   "label": "Merge",
+   "judge": "Merge"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r3",
+   "seed": 30,
+   "label": "Merge",
+   "judge": "Merge"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top5",
+   "seed": 37,
+   "label": "Other",
+   "judge": "Other"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r2",
+   "seed": 47,
+   "label": "Quick",
+   "judge": "Quick"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top3",
+   "seed": 32,
+   "label": "Quick",
+   "judge": "Quick"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top5",
+   "seed": 40,
+   "label": "Quick",
+   "judge": "Quick"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top3",
+   "seed": 30,
+   "label": "Quick",
+   "judge": "Quick"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Quick",
+   "seed": 13,
+   "label": "Quick",
+   "judge": "Quick"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Radix",
+   "seed": 15,
+   "label": "Radix",
+   "judge": "Radix"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top3",
+   "seed": 45,
+   "label": "Radix",
+   "judge": "Radix"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Radix",
+   "seed": 13,
+   "label": "Radix",
+   "judge": "Other"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Radix",
+   "seed": 11,
+   "label": "Radix",
+   "judge": "Radix"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Radix",
+   "seed": 2,
+   "label": "Radix",
+   "judge": "Radix"
+  },
+  {
+   "task": "T2",
+   "setting": "baseline",
+   "seed": 106,
+   "label": "Selection",
+   "judge": "Selection"
+  },
+  {
+   "task": "T2",
+   "setting": "baseline",
+   "seed": 15,
+   "label": "Selection",
+   "judge": "Selection"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r2",
+   "seed": 5,
+   "label": "Selection",
+   "judge": "Selection"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Selection",
+   "seed": 19,
+   "label": "Selection",
+   "judge": "Selection"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Selection",
+   "seed": 6,
+   "label": "Selection",
+   "judge": "Selection"
+  },
+  {
+   "task": "T2",
+   "setting": "placebo_b0",
+   "seed": 1045,
+   "label": "Shell",
+   "judge": "Shell"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top5",
+   "seed": 27,
+   "label": "Shell",
+   "judge": "Shell"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top5",
+   "seed": 3,
+   "label": "Shell",
+   "judge": "Shell"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r2",
+   "seed": 45,
+   "label": "Shell",
+   "judge": "Shell"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top3",
+   "seed": 21,
+   "label": "Tim_hybrid",
+   "judge": "Insertion"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_top5",
+   "seed": 36,
+   "label": "Tim_hybrid",
+   "judge": "Other"
+  },
+  {
+   "task": "T2",
+   "setting": "placebo_b0",
+   "seed": 1005,
+   "label": "Merge",
+   "judge": "Merge"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r3",
+   "seed": 29,
+   "label": "Merge",
+   "judge": "Merge"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r4",
+   "seed": 20,
+   "label": "Merge",
+   "judge": "Merge"
+  },
+  {
+   "task": "T2",
+   "setting": "forced_Bubble",
+   "seed": 4,
+   "label": "Bubble",
+   "judge": "Bubble"
+  },
+  {
+   "task": "T1",
+   "setting": "ban_r1",
+   "seed": 17,
+   "label": "Dijkstra",
+   "judge": "Other"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r2",
+   "seed": 27,
+   "label": "Quick",
+   "judge": "Quick"
+  },
+  {
+   "task": "T2",
+   "setting": "placebo_b0",
+   "seed": 1003,
+   "label": "Bubble",
+   "judge": "Bubble"
+  },
+  {
+   "task": "T1",
+   "setting": "forced_Bidirectional",
+   "seed": 10,
+   "label": "DFS",
+   "judge": "DFS"
+  },
+  {
+   "task": "T2",
+   "setting": "placebo_b1",
+   "seed": 2004,
+   "label": "Bubble",
+   "judge": "Bubble"
+  },
+  {
+   "task": "T1",
+   "setting": "placebo_b0",
+   "seed": 1034,
+   "label": "Greedy_best_first",
+   "judge": "Other"
+  },
+  {
+   "task": "T1",
+   "setting": "placebo_b0",
+   "seed": 1018,
+   "label": "A_star",
+   "judge": "A_star"
+  },
+  {
+   "task": "T1",
+   "setting": "placebo_b0",
+   "seed": 1028,
+   "label": "BFS",
+   "judge": "BFS"
+  },
+  {
+   "task": "T2",
+   "setting": "ban_r4",
+   "seed": 9,
+   "label": "Quick",
+   "judge": "Quick"
+  }
+ ]
+}
