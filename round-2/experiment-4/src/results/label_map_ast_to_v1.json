@@ -1,0 +1,17 @@
+{
+ "bfs": "BFS",
+ "dfs": "DFS",
+ "dijkstra": "Dijkstra",
+ "astar": "A_star",
+ "greedy_best_first": "Greedy_best_first",
+ "bidirectional": "Bidirectional",
+ "bellman_ford": "Bellman_Ford",
+ "spfa": "SPFA",
+ "floyd_warshall": "Floyd_Warshall",
+ "iddfs": "IDDFS",
+ "dial_bucket": "Other",
+ "random_walk": "Other",
+ "other": "Other",
+ "no_code": "Unparseable",
+ "syntax_error": "Unparseable"
+}

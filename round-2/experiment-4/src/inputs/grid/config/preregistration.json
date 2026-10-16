@@ -1,0 +1,44 @@
+{
+ "A1_SURVIVES": "(A: delta-AIC > 4 favouring QUAD for >= half of eligible ideas OR B: >=1 significant top-3 reversal at T<=1.6) AND C: path-multiplicity Spearman >= 0.6 (pooled)",
+ "C1": ">=75% of the 90 forked samples have t* <= 47 (TV<=0.125 to final label for all t'>=t*) AND are single-dominant (k_BIC<=1 or largest single segment jump >= 0.6 x total rise y_0->y_47)",
+ "C2": "median Arrhenius R^2 >= 0.85 over eligible ideas (all tasks pooled) AND zero SIGNIFICANT top-3 rank reversals at T<=1.3 (bootstrap 95% CI of share difference excludes 0 in flipped direction, 2000 resamples)",
+ "C3": "slope-gap Spearman >= 0.6 on >= 2 of 3 tasks; tasks with <3 eligible non-mode ideas are 'not evaluable'; if <2 tasks evaluable, pooled Spearman >= 0.6 is used and the substitution reported",
+ "H_SURVIVES": "C1 & C2 & C3",
+ "VERDICT": "'H' if H only, 'A1' if A1 only, 'ambiguous' otherwise; every sub-criterion reported with value/threshold/pass",
+ "definitions": {
+  "A1_C_target": "share_j(T=1.6) - share_j(T=0.7), ideas with share >= 3% at either T, pooled over tasks",
+  "arrhenius": "binary logit of j vs mode over 6 temperatures: LIN log-odds = c - s/T vs QUAD + q/T^2; ML on raw counts; delta-AIC = AIC_lin - AIC_quad; R^2 from WLS on +0.5-smoothed empirical log-odds, weights 1/var",
+  "commitment": "t* = smallest t with TV(o_t', onehot(final)) <= 0.125 for all t' in [t,47]; 8 rollouts, T=0.7, 320 tokens",
+  "eligible": "share >= 3% at T=1.0 (top_k=none), excluding 'other' and the mode",
+  "gap": "median over forked base paths of u_mode - u_j at t*, u_j = max log p(w) over idea-j tokens (T=1 logits); missing -> log p of the 20th token (upper bound on u_j)",
+  "mode": "most frequent idea at T=0.3 (ties broken at T=0.5), top_k=none",
+  "path_multiplicity": "M_j = mean over base paths with final label != j of #{t in 1..47: share_j(o_t) >= 1/8}"
+ },
+ "frozen_at": "2026-10-15T15:42:35.441341+00:00",
+ "primary_sample": "n=100 per cell (sample_idx 0..99, seed = sample_idx), top_k = none (-1) for Arrhenius/reversals",
+ "reserved_never_touch": [
+  "google/gemma-2-2b-it",
+  "selection / k-th smallest tasks"
+ ],
+ "secondary_not_in_verdict": [
+  "beta of slope ~ gap regression (H predicts ~1)",
+  "steepness ratio d log alpha_1/dT / d log beta_1/dT >= 3",
+  "top-k=10 ceiling violations = 0",
+  "seed |pred-obs| <= 0.10; seeds <5% flips where gap/sigma > 3",
+  "n=300 replication of C2/C3 (if run)",
+  "probe-vs-control margin"
+ ],
+ "study": "Temperature arm: does temperature change ideas or just wording? (Qwen2.5-3B-Instruct)",
+ "temperatures": [
+  0.3,
+  0.5,
+  0.7,
+  1.0,
+  1.3,
+  1.6
+ ],
+ "topk": [
+  10,
+  -1
+ ]
+}

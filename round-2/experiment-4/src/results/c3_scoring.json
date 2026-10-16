@@ -1,0 +1,7609 @@
+{
+ "frozen_sha256": "1cffcec3412b33a7e06258f1532cf138e4e7436a245b392982e8e1f1580983a7",
+ "tasks": {
+  "T1": {
+   "unseeded_greedy_label": "BFS",
+   "unseeded_greedy_repeats": [
+    "BFS",
+    "BFS",
+    "BFS",
+    "BFS",
+    "BFS"
+   ],
+   "n_strings": 120,
+   "observed_flips": 30,
+   "observed_flip_rate": 0.25,
+   "observed_flip_ci": [
+    0.1810971138452223,
+    0.33441302168274245
+   ],
+   "primary_predictor": "behavioural",
+   "predicted_flip_rate": 0.28073,
+   "abs_error": 0.03072999999999998,
+   "predicted_readout": 0.95,
+   "predicted_behavioural": 0.28073,
+   "abs_error_readout": 0.7,
+   "abs_error_behavioural": 0.03072999999999998,
+   "baseline_seeds_inert_pred": 0.0,
+   "abs_error_baseline_inert": 0.25,
+   "readout_idea_accuracy": 0.225,
+   "auroc_readout_shift": 0.7203703703703703,
+   "greedy_counts": {
+    "BFS": 90,
+    "DFS": 23,
+    "Other": 6,
+    "SPFA": 1
+   },
+   "by_kind": {
+    "char": {
+     "n": 60,
+     "flip_rate": 0.08333333333333333
+    },
+    "word": {
+     "n": 60,
+     "flip_rate": 0.4166666666666667
+    }
+   },
+   "t07": {
+    "mode_unseeded": "BFS",
+    "nonmode_unseeded": 0.3566666666666667,
+    "n_unseeded": 300,
+    "nonmode_seeded": 0.26166666666666666,
+    "predicted_nonmode_readout": 0.6462938746923134,
+    "predicted_nonmode_behavioural": 0.49034817051319635,
+    "chi2_seeded_vs_unseeded": {
+     "chi2": 52.11323892095987,
+     "dof": 5,
+     "p": 5.113848775395786e-10
+    }
+   },
+   "heterogeneity": {
+    "chi2": 610.0302272311302,
+    "dof": 595,
+    "perm_p": 0.2855428914217157,
+    "icc_mode": -0.020708774266398243,
+    "mode": "BFS",
+    "n_strings": 120,
+    "n_per_string": 5.0
+   },
+   "diversify": {
+    "all": {
+     "n_seeded": 600,
+     "n_unseeded": 300,
+     "H_seeded": 1.2829900062958581,
+     "H_unseeded": 1.6198832463889017,
+     "diff": -0.33689324009304356,
+     "diff_ci": [
+      -0.5289239374366649,
+      -0.13150325717148567
+     ],
+     "ES10_seeded": 2.7636346151606537,
+     "ES10_unseeded": 3.3110496255966066,
+     "counts_seeded": {
+      "BFS": 443,
+      "DFS": 88,
+      "Other": 37,
+      "A_star": 14,
+      "Dijkstra": 12,
+      "SPFA": 6
+     },
+     "counts_unseeded": {
+      "BFS": 193,
+      "DFS": 45,
+      "Dijkstra": 27,
+      "A_star": 26,
+      "Other": 5,
+      "SPFA": 4
+     }
+    },
+    "char": {
+     "n_seeded": 300,
+     "n_unseeded": 300,
+     "H_seeded": 1.2222072180151555,
+     "H_unseeded": 1.6198832463889017,
+     "diff": -0.39767602837374616,
+     "diff_ci": [
+      -0.63431674541616,
+      -0.15817440724339346
+     ],
+     "ES10_seeded": 2.708112111450697,
+     "ES10_unseeded": 3.3110496255966066,
+     "counts_seeded": {
+      "BFS": 226,
+      "DFS": 39,
+      "Other": 20,
+      "Dijkstra": 11,
+      "SPFA": 2,
+      "A_star": 2
+     },
+     "counts_unseeded": {
+      "BFS": 193,
+      "DFS": 45,
+      "Dijkstra": 27,
+      "A_star": 26,
+      "Other": 5,
+      "SPFA": 4
+     }
+    },
+    "word": {
+     "n_seeded": 300,
+     "n_unseeded": 300,
+     "H_seeded": 1.2958726301225245,
+     "H_unseeded": 1.6198832463889017,
+     "diff": -0.32401061626637717,
+     "diff_ci": [
+      -0.5378787549547004,
+      -0.11684281213035923
+     ],
+     "ES10_seeded": 2.784127685023021,
+     "ES10_unseeded": 3.3110496255966066,
+     "counts_seeded": {
+      "BFS": 217,
+      "DFS": 49,
+      "Other": 17,
+      "A_star": 12,
+      "SPFA": 4,
+      "Dijkstra": 1
+     },
+     "counts_unseeded": {
+      "BFS": 193,
+      "DFS": 45,
+      "Dijkstra": 27,
+      "A_star": 26,
+      "Other": 5,
+      "SPFA": 4
+     }
+    }
+   },
+   "per_string": [
+    {
+     "seed_string": "seed=i9609s2lg7o",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.7941209994833838,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "Other",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6482981313197198
+    },
+    {
+     "seed_string": "seed=7rdkda4w0xz",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.8975517941567575,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "BFS",
+      "Other",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6550187969011594
+    },
+    {
+     "seed_string": "seed=3h10wd6ob4o",
+     "seed_kind": "char",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.174432182514763,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6581610899045636
+    },
+    {
+     "seed_string": "seed=96ujiq78jfz",
+     "seed_kind": "char",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.007151747783319,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "SPFA",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6534908875377556
+    },
+    {
+     "seed_string": "seed=24esihktvh3",
+     "seed_kind": "char",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.1850542815744551,
+     "t07_labels": [
+      "BFS",
+      "Other",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6549847327337519
+    },
+    {
+     "seed_string": "seed=wdeufwe9eye",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.7199252701371142,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "DFS",
+      "Other",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6300699665257412
+    },
+    {
+     "seed_string": "seed=i06hltpuu2e",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.6291715780125757,
+     "t07_labels": [
+      "BFS",
+      "Dijkstra",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6116841069285477
+    },
+    {
+     "seed_string": "seed=i62vn4b25ez",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.6285218665533443,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.611197510248786
+    },
+    {
+     "seed_string": "seed=1ct0f4zz87u",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.03170434775088,
+     "t07_labels": [
+      "Other",
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6529342920913082
+    },
+    {
+     "seed_string": "seed=mbpnxwab0dn",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.9226476705819222,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6602592159757948
+    },
+    {
+     "seed_string": "seed=7pco9l1tm4f",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.046688921776791,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6703088002966963
+    },
+    {
+     "seed_string": "seed=mgaql972ebi",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.8016583553502665,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6141345007235096
+    },
+    {
+     "seed_string": "seed=vxn8g19mzgk",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.41847829447344753,
+     "t07_labels": [
+      "BFS",
+      "Dijkstra",
+      "BFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6216099641278358
+    },
+    {
+     "seed_string": "seed=daillqzx9x2",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.0691528374785881,
+     "t07_labels": [
+      "BFS",
+      "Other",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6469465264007226
+    },
+    {
+     "seed_string": "seed=v8pt47qyi0j",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.6503465596942433,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6160807877679548
+    },
+    {
+     "seed_string": "seed=by8w5q3gx65",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.6674836740961623,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6181977378226762
+    },
+    {
+     "seed_string": "seed=1ht5gckygac",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.047719349229433,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6563040077747826
+    },
+    {
+     "seed_string": "seed=eblsw63hog0",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.4148583611636809,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "SPFA",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6070302253938091
+    },
+    {
+     "seed_string": "seed=qmwuwzzarxf",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.4481654190416329,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6011356807917949
+    },
+    {
+     "seed_string": "seed=8zzcgzd15md",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.9790666208915131,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6579164750185884
+    },
+    {
+     "seed_string": "seed=yb1xe00kr4j",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.34701277884937043,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6078393371618931
+    },
+    {
+     "seed_string": "seed=tirely1qrln",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.8220172840446143,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6247786487087699
+    },
+    {
+     "seed_string": "seed=6v77j79pzbe",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.9090049559952131,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "BFS",
+      "Other",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6434921838210368
+    },
+    {
+     "seed_string": "seed=lyyk7s94wty",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.6292773787047288,
+     "t07_labels": [
+      "Other",
+      "BFS",
+      "A_star",
+      "BFS",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6229248966968703
+    },
+    {
+     "seed_string": "seed=viexkdtuwf1",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.017751605946999,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6506720712633542
+    },
+    {
+     "seed_string": "seed=3jd78ldb1ih",
+     "seed_kind": "char",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.2847235067023277,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.66285372932679
+    },
+    {
+     "seed_string": "seed=y4hbrt8ktrl",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.36558709715456406,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6106820809731646
+    },
+    {
+     "seed_string": "seed=nwp4x3pa21c",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.7649341853077929,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6450926720864615
+    },
+    {
+     "seed_string": "seed=0i98w52tkd0",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.2534062734970488,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "Other",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6421028457027846
+    },
+    {
+     "seed_string": "seed=u2snpzpnqs3",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.747660776075453,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6295920376849737
+    },
+    {
+     "seed_string": "seed=kay0p7sddkr",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.4269038922010506,
+     "t07_labels": [
+      "DFS",
+      "Other",
+      "Other",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6174630184516291
+    },
+    {
+     "seed_string": "seed=yqcn0419qox",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.3677365005154942,
+     "t07_labels": [
+      "Dijkstra",
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6137969072058904
+    },
+    {
+     "seed_string": "seed=iw3gvpdo6hg",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.4668545159902904,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6039969833952659
+    },
+    {
+     "seed_string": "seed=qhm386zrmwe",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.3760142020492865,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6097311585067333
+    },
+    {
+     "seed_string": "seed=k7d09abwfno",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.43944226029806277,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6113228670958984
+    },
+    {
+     "seed_string": "seed=e9kt1htnpqu",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.38024833631067434,
+     "t07_labels": [
+      "BFS",
+      "A_star",
+      "BFS",
+      "DFS",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6056323198321814
+    },
+    {
+     "seed_string": "seed=ixrtuxshwlc",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.9694058463620425,
+     "t07_labels": [
+      "BFS",
+      "Other",
+      "BFS",
+      "DFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6272313884011673
+    },
+    {
+     "seed_string": "seed=e1ntlip7hbo",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.35628099153896287,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.610960273906301
+    },
+    {
+     "seed_string": "seed=1r12glj5cus",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.134435830627783,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "Dijkstra",
+      "BFS",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.652120067836808
+    },
+    {
+     "seed_string": "seed=m007bt4axex",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.3539995367960278,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6011054551882865
+    },
+    {
+     "seed_string": "seed=g578fp8djel",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.6326852523639759,
+     "t07_labels": [
+      "Other",
+      "BFS",
+      "BFS",
+      "Dijkstra",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6345703714478438
+    },
+    {
+     "seed_string": "seed=tfju8a5iql6",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.1636414399099986,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "BFS",
+      "Other",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6396437309141647
+    },
+    {
+     "seed_string": "seed=81opqsd496z",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.0901086922112946,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "DFS",
+      "Dijkstra",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6621874241897419
+    },
+    {
+     "seed_string": "seed=q8j42tv912r",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.5508441973461637,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6137593499995349
+    },
+    {
+     "seed_string": "seed=jgcq3165gwt",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.5341624803823184,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6144311712320364
+    },
+    {
+     "seed_string": "seed=wup9wzr1q6y",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.6761824045494091,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "DFS",
+      "Dijkstra",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6370791540906869
+    },
+    {
+     "seed_string": "seed=0bxksgjp4ew",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.0959168569838842,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "DFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6563045114655255
+    },
+    {
+     "seed_string": "seed=23j89q8wop9",
+     "seed_kind": "char",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.074491858503064,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6496085354663895
+    },
+    {
+     "seed_string": "seed=cn9thgnx051",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.6435324092983425,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6342215938966254
+    },
+    {
+     "seed_string": "seed=t7daijctc6z",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.5709909694502466,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6363331100966598
+    },
+    {
+     "seed_string": "seed=rojf7docthl",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.6658829066956551,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6254880011353081
+    },
+    {
+     "seed_string": "seed=nm7b0wn0n89",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.6964961872690223,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6135441104626851
+    },
+    {
+     "seed_string": "seed=csgfc3nblk7",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.38382505675073486,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6184885022981381
+    },
+    {
+     "seed_string": "seed=dskcma539o0",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.5934667554831339,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6242624591207109
+    },
+    {
+     "seed_string": "seed=2cg0yc134de",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.0588974799815345,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6592396486184198
+    },
+    {
+     "seed_string": "seed=3rvjtrhsb3f",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.0332665693097827,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6561965616013271
+    },
+    {
+     "seed_string": "seed=ktixdp6ybhb",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.9334447187997947,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.661855766277439
+    },
+    {
+     "seed_string": "seed=qg7sus7s42q",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.4114024280336681,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6134471056210642
+    },
+    {
+     "seed_string": "seed=s2ulnn5kkrt",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.45063696938444897,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6031459418990108
+    },
+    {
+     "seed_string": "seed=89572z3jipt",
+     "seed_kind": "char",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.0104824643762222,
+     "t07_labels": [
+      "Dijkstra",
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.676381553883288
+    },
+    {
+     "seed_string": "seed=(mask bed square finger)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.0788290883286062,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.639887296194376
+    },
+    {
+     "seed_string": "seed=(cloud train worm cliff)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.5949733623839664,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.7127441806386066
+    },
+    {
+     "seed_string": "seed=(wood orchard lagoon parrot)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.4218963436207777,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "SPFA",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6698347540727685
+    },
+    {
+     "seed_string": "seed=(fan towel whistle saw)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.540694116995381,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6237454526064561
+    },
+    {
+     "seed_string": "seed=(glacier satchel cannon feather)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -2.3267751368368383,
+     "t07_labels": [
+      "BFS",
+      "SPFA",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.7252311847050666
+    },
+    {
+     "seed_string": "seed=(fire duck jewel orange)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.9203079719369163,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6428991491892786
+    },
+    {
+     "seed_string": "seed=(street thimble corn arrow)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.6643004205775043,
+     "t07_labels": [
+      "A_star",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6757903245709085
+    },
+    {
+     "seed_string": "seed=(paper feather balloon orchard)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.3715418297332713,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.7054054467772309
+    },
+    {
+     "seed_string": "seed=(candle pot palm robot)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "BFS",
+     "p_flip": 0.0,
+     "shift_ref": -0.933744877442418,
+     "t07_labels": [
+      "Dijkstra",
+      "BFS",
+      "BFS",
+      "DFS",
+      "A_star"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6133183526184107
+    },
+    {
+     "seed_string": "seed=(whale piano umbrella road)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.507908281235461,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.688202883852721
+    },
+    {
+     "seed_string": "seed=(eagle house nut palm)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.968501057299515,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6362634544813552
+    },
+    {
+     "seed_string": "seed=(plane school paint snow)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.8346148163318017,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "Other",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6707468381861308
+    },
+    {
+     "seed_string": "seed=(net puzzle bus couch)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "BFS",
+     "p_flip": 0.0,
+     "shift_ref": -0.7977414578624316,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "Other",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.577842094978642
+    },
+    {
+     "seed_string": "seed=(walnut envelope trumpet plane)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.2213753146411779,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "BFS",
+      "A_star",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6784639659605123
+    },
+    {
+     "seed_string": "seed=(shovel river bench moon)",
+     "seed_kind": "word",
+     "observed_greedy": "Other",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.1395858622006,
+     "t07_labels": [
+      "Other",
+      "DFS",
+      "BFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6577910479454006
+    },
+    {
+     "seed_string": "seed=(mug nut dragon notebook)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.7422503226405082,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6297682656302077
+    },
+    {
+     "seed_string": "seed=(snake tea camel dog)",
+     "seed_kind": "word",
+     "observed_greedy": "Other",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.059700506491158,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "BFS",
+      "DFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6329940802012008
+    },
+    {
+     "seed_string": "seed=(sink arrow mountain tulip)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.381045913277357,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "DFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6955905839074341
+    },
+    {
+     "seed_string": "seed=(tulip plane comb cap)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.7421487646743672,
+     "t07_labels": [
+      "SPFA",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6327161624899902
+    },
+    {
+     "seed_string": "seed=(coat rock fan penguin)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.3497599551714565,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6846918945066267
+    },
+    {
+     "seed_string": "seed=(carpet tree diamond box)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.2369706620619654,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS",
+      "A_star"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6507615490150603
+    },
+    {
+     "seed_string": "seed=(fox valley dog bone)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.918111390614943,
+     "t07_labels": [
+      "DFS",
+      "DFS",
+      "DFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6332617378594061
+    },
+    {
+     "seed_string": "seed=(ring butter glacier button)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.807100428800746,
+     "t07_labels": [
+      "BFS",
+      "Other",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6427955096798439
+    },
+    {
+     "seed_string": "seed=(feather sugar saw wheel)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.2779990549113447,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6567252943380475
+    },
+    {
+     "seed_string": "seed=(cabin chicken hand nail)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.1284944904418968,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "Other",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6528829553832058
+    },
+    {
+     "seed_string": "seed=(violin desert bed axe)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.5191223203714646,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "DFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.7166907363333956
+    },
+    {
+     "seed_string": "seed=(chalk goat cat ball)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.7200120128729965,
+     "t07_labels": [
+      "BFS",
+      "A_star",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6101739179339654
+    },
+    {
+     "seed_string": "seed=(cloud watch stone table)",
+     "seed_kind": "word",
+     "observed_greedy": "Other",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.073568602539159,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6589330630532185
+    },
+    {
+     "seed_string": "seed=(ocean hill wheel pin)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.6831744140671943,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "A_star"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6966498450097971
+    },
+    {
+     "seed_string": "seed=(valley puzzle sand bat)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.9944206966820326,
+     "t07_labels": [
+      "A_star",
+      "BFS",
+      "Other",
+      "BFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6387865442000495
+    },
+    {
+     "seed_string": "seed=(square tooth rabbit ship)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "BFS",
+     "p_flip": 0.0,
+     "shift_ref": -2.071881455309434,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6775242286934451
+    },
+    {
+     "seed_string": "seed=(nest church banana pebble)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.9511542377769482,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6507421510032236
+    },
+    {
+     "seed_string": "seed=(turtle hat cup crab)",
+     "seed_kind": "word",
+     "observed_greedy": "SPFA",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.0349679278842636,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6366886583601034
+    },
+    {
+     "seed_string": "seed=(orchard gate sugar monkey)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.835803294407305,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6381345522116837
+    },
+    {
+     "seed_string": "seed=(basket book bicycle cradle)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.2926642974624145,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "BFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.667189627741523
+    },
+    {
+     "seed_string": "seed=(square bean mouse sugar)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "BFS",
+     "p_flip": 0.0,
+     "shift_ref": -1.0276738580392746,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "A_star",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6140609407682767
+    },
+    {
+     "seed_string": "seed=(school beach crab bread)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.1999795708480578,
+     "t07_labels": [
+      "BFS",
+      "SPFA",
+      "DFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6655026694872901
+    },
+    {
+     "seed_string": "seed=(robot saddle pond torch)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "BFS",
+     "p_flip": 0.0,
+     "shift_ref": -1.2533209988680787,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "A_star"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6408601617283496
+    },
+    {
+     "seed_string": "seed=(honey fox torch wood)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.7792154108094287,
+     "t07_labels": [
+      "BFS",
+      "Other",
+      "BFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6515849872179778
+    },
+    {
+     "seed_string": "seed=(cherry plate wolf potato)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.0655721021086473,
+     "t07_labels": [
+      "BFS",
+      "Other",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6539975897646157
+    },
+    {
+     "seed_string": "seed=(sink table snake pumpkin)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.5560804768571805,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "Other",
+      "DFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6328749959110987
+    },
+    {
+     "seed_string": "seed=(tower train tiger comb)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.7100557077635437,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6479372070894217
+    },
+    {
+     "seed_string": "seed=(watch plane yacht saddle)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -2.3068666338128496,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.7205160820820092
+    },
+    {
+     "seed_string": "seed=(street wolf bag stove)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.9804677105335544,
+     "t07_labels": [
+      "Other",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6480928470997891
+    },
+    {
+     "seed_string": "seed=(whistle monkey cannon bat)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.9675578644259062,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "A_star",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.694154335696026
+    },
+    {
+     "seed_string": "seed=(wolf umbrella plate moon)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.250701092818523,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "DFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6800799801481223
+    },
+    {
+     "seed_string": "seed=(pond puzzle stair worm)",
+     "seed_kind": "word",
+     "observed_greedy": "Other",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.9524950864324644,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.673143430536105
+    },
+    {
+     "seed_string": "seed=(rose volcano river tractor)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.8343586345307916,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6979219663857823
+    },
+    {
+     "seed_string": "seed=(radio clock corn flute)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "BFS",
+     "p_flip": 0.0,
+     "shift_ref": -1.9891714890206207,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "A_star",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6674391437726096
+    },
+    {
+     "seed_string": "seed=(notebook wheel chicken clock)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.3980564336711576,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.620747889713408
+    },
+    {
+     "seed_string": "seed=(whistle soap skirt piano)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.396218741990783,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6605176047088802
+    },
+    {
+     "seed_string": "seed=(flag sword ladder butter)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.45007058457935,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "A_star",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6398835303941935
+    },
+    {
+     "seed_string": "seed=(tail meadow pebble teapot)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.272211855838617,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6729797247046759
+    },
+    {
+     "seed_string": "seed=(sled salt scarf towel)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.219524014827709,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.6523986343664836
+    },
+    {
+     "seed_string": "seed=(letter spoon eye skirt)",
+     "seed_kind": "word",
+     "observed_greedy": "Other",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.0654638228202522,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "BFS",
+      "DFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6735690516972378
+    },
+    {
+     "seed_string": "seed=(heart coat pear jar)",
+     "seed_kind": "word",
+     "observed_greedy": "Other",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.1355885778256147,
+     "t07_labels": [
+      "BFS",
+      "DFS",
+      "BFS",
+      "Other",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.672269680843739
+    },
+    {
+     "seed_string": "seed=(cradle swan rocket hat)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.5849374734771746,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6689769564853574
+    },
+    {
+     "seed_string": "seed=(hill ship nose envelope)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.976872161376077,
+     "t07_labels": [
+      "BFS",
+      "BFS",
+      "BFS",
+      "BFS",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.691564305509779
+    },
+    {
+     "seed_string": "seed=(seed shoe scarf island)",
+     "seed_kind": "word",
+     "observed_greedy": "BFS",
+     "observed_flip": false,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -1.726511513314297,
+     "t07_labels": [
+      "DFS",
+      "BFS",
+      "DFS",
+      "BFS",
+      "DFS"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6924150971273538
+    },
+    {
+     "seed_string": "seed=(spoon rake lantern palm)",
+     "seed_kind": "word",
+     "observed_greedy": "DFS",
+     "observed_flip": true,
+     "pred_greedy_idea": "DFS",
+     "p_flip": 1.0,
+     "shift_ref": -0.9250478469957883,
+     "t07_labels": [
+      "Other",
+      "BFS",
+      "DFS",
+      "BFS",
+      "BFS"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6305653822613719
+    }
+   ]
+  },
+  "T2": {
+   "unseeded_greedy_label": "Bubble",
+   "unseeded_greedy_repeats": [
+    "Bubble",
+    "Bubble",
+    "Bubble",
+    "Bubble",
+    "Bubble"
+   ],
+   "n_strings": 120,
+   "observed_flips": 2,
+   "observed_flip_rate": 0.016666666666666666,
+   "observed_flip_ci": [
+    0.004582468541151394,
+    0.058737126812913806
+   ],
+   "primary_predictor": "behavioural",
+   "predicted_flip_rate": 0.39446,
+   "abs_error": 0.3777933333333333,
+   "predicted_readout": 0.10833333333333334,
+   "predicted_behavioural": 0.39446,
+   "abs_error_readout": 0.09166666666666667,
+   "abs_error_behavioural": 0.3777933333333333,
+   "baseline_seeds_inert_pred": 0.0,
+   "abs_error_baseline_inert": 0.016666666666666666,
+   "readout_idea_accuracy": 0.9,
+   "auroc_readout_shift": 0.9576271186440678,
+   "greedy_counts": {
+    "Bubble": 118,
+    "Quick": 1,
+    "Other": 1
+   },
+   "by_kind": {
+    "char": {
+     "n": 60,
+     "flip_rate": 0.03333333333333333
+    },
+    "word": {
+     "n": 60,
+     "flip_rate": 0.0
+    }
+   },
+   "t07": {
+    "mode_unseeded": "Bubble",
+    "nonmode_unseeded": 0.36,
+    "n_unseeded": 300,
+    "nonmode_seeded": 0.135,
+    "predicted_nonmode_readout": 0.30606165052141565,
+    "predicted_nonmode_behavioural": 0.4731994610741215,
+    "chi2_seeded_vs_unseeded": {
+     "chi2": 102.76421489352695,
+     "dof": 8,
+     "p": 1.161214705006666e-18
+    }
+   },
+   "heterogeneity": {
+    "chi2": 1067.857768435803,
+    "dof": 952,
+    "perm_p": 0.004399120175964807,
+    "icc_mode": 0.16022773485156605,
+    "mode": "Bubble",
+    "n_strings": 120,
+    "n_per_string": 5.0
+   },
+   "diversify": {
+    "all": {
+     "n_seeded": 600,
+     "n_unseeded": 300,
+     "H_seeded": 0.8570102446049874,
+     "H_unseeded": 1.5336712712214087,
+     "diff": -0.6766610266164212,
+     "diff_ci": [
+      -0.9174636157066967,
+      -0.46651380734223286
+     ],
+     "ES10_seeded": 2.1229265485861033,
+     "ES10_unseeded": 3.1393078128481444,
+     "counts_seeded": {
+      "Bubble": 519,
+      "Quick": 44,
+      "Selection": 11,
+      "Builtin": 9,
+      "Other": 6,
+      "Insertion": 5,
+      "Merge": 4,
+      "Tim_hybrid": 1,
+      "Bucket": 1
+     },
+     "counts_unseeded": {
+      "Bubble": 192,
+      "Quick": 56,
+      "Merge": 32,
+      "Selection": 12,
+      "Insertion": 8
+     }
+    },
+    "char": {
+     "n_seeded": 300,
+     "n_unseeded": 300,
+     "H_seeded": 1.1177927084651063,
+     "H_unseeded": 1.5336712712214087,
+     "diff": -0.4158785627563024,
+     "diff_ci": [
+      -0.697938231538961,
+      -0.15719519694283973
+     ],
+     "ES10_seeded": 2.4700126149935206,
+     "ES10_unseeded": 3.1393078128481444,
+     "counts_seeded": {
+      "Bubble": 237,
+      "Quick": 41,
+      "Selection": 7,
+      "Other": 5,
+      "Merge": 4,
+      "Insertion": 3,
+      "Tim_hybrid": 1,
+      "Bucket": 1,
+      "Builtin": 1
+     },
+     "counts_unseeded": {
+      "Bubble": 192,
+      "Quick": 56,
+      "Merge": 32,
+      "Selection": 12,
+      "Insertion": 8
+     }
+    },
+    "word": {
+     "n_seeded": 300,
+     "n_unseeded": 300,
+     "H_seeded": 0.44845746090047006,
+     "H_unseeded": 1.5336712712214087,
+     "diff": -1.0852138103209386,
+     "diff_ci": [
+      -1.3126057058070406,
+      -0.8725444468988326
+     ],
+     "ES10_seeded": 1.563471611255609,
+     "ES10_unseeded": 3.1393078128481444,
+     "counts_seeded": {
+      "Bubble": 282,
+      "Builtin": 8,
+      "Selection": 4,
+      "Quick": 3,
+      "Insertion": 2,
+      "Other": 1
+     },
+     "counts_unseeded": {
+      "Bubble": 192,
+      "Quick": 56,
+      "Merge": 32,
+      "Selection": 12,
+      "Insertion": 8
+     }
+    }
+   },
+   "per_string": [
+    {
+     "seed_string": "seed=i9609s2lg7o",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.3812104551556406,
+     "t07_labels": [
+      "Bubble",
+      "Quick",
+      "Quick",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.41892982192273276
+    },
+    {
+     "seed_string": "seed=7rdkda4w0xz",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -3.0379465691086875,
+     "t07_labels": [
+      "Quick",
+      "Bubble",
+      "Bubble",
+      "Quick",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.5919018655693883
+    },
+    {
+     "seed_string": "seed=3h10wd6ob4o",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -3.306931028703208,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.527199418093288
+    },
+    {
+     "seed_string": "seed=96ujiq78jfz",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.7754357866085475,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.4643890432874397
+    },
+    {
+     "seed_string": "seed=24esihktvh3",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -3.042113253910497,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.6015099311452676
+    },
+    {
+     "seed_string": "seed=wdeufwe9eye",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.540969966985782,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.3696630928383906
+    },
+    {
+     "seed_string": "seed=i06hltpuu2e",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.4860390008596163,
+     "t07_labels": [
+      "Insertion",
+      "Quick",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.38611795602182486
+    },
+    {
+     "seed_string": "seed=i62vn4b25ez",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.5306418837152571,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.4471708442360558
+    },
+    {
+     "seed_string": "seed=1ct0f4zz87u",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -2.8920951833039923,
+     "t07_labels": [
+      "Selection",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.5861175505902154
+    },
+    {
+     "seed_string": "seed=mbpnxwab0dn",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.6376948455756395,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.5019117456790023
+    },
+    {
+     "seed_string": "seed=7pco9l1tm4f",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -2.503322507407977,
+     "t07_labels": [
+      "Bubble",
+      "Quick",
+      "Bubble",
+      "Bubble",
+      "Quick"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.5721647422553326
+    },
+    {
+     "seed_string": "seed=mgaql972ebi",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.871403405152043,
+     "t07_labels": [
+      "Bubble",
+      "Quick",
+      "Selection",
+      "Selection",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.5099294145992286
+    },
+    {
+     "seed_string": "seed=vxn8g19mzgk",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.3016770412261272,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.3712708798302736
+    },
+    {
+     "seed_string": "seed=daillqzx9x2",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.8999190240048827,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.4793543689768244
+    },
+    {
+     "seed_string": "seed=v8pt47qyi0j",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.922011488785733,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Insertion",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.4473455036556072
+    },
+    {
+     "seed_string": "seed=by8w5q3gx65",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.4125896559841835,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Quick",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.462632219914324
+    },
+    {
+     "seed_string": "seed=1ht5gckygac",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -2.923478627902268,
+     "t07_labels": [
+      "Quick",
+      "Bubble",
+      "Bubble",
+      "Quick",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.5931895136162342
+    },
+    {
+     "seed_string": "seed=eblsw63hog0",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.3076645813327885,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.41425345268033265
+    },
+    {
+     "seed_string": "seed=qmwuwzzarxf",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.5548370016908382,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.392144078589159
+    },
+    {
+     "seed_string": "seed=8zzcgzd15md",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -2.6821260831289915,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Other",
+      "Quick"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.5721039807845043
+    },
+    {
+     "seed_string": "seed=yb1xe00kr4j",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.80558718171444,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Quick",
+      "Bubble",
+      "Selection"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.4331307588724932
+    },
+    {
+     "seed_string": "seed=tirely1qrln",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.9343754325830624,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.3872337040253113
+    },
+    {
+     "seed_string": "seed=6v77j79pzbe",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.74992447169332,
+     "t07_labels": [
+      "Quick",
+      "Bubble",
+      "Quick",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.4774403432546317
+    },
+    {
+     "seed_string": "seed=lyyk7s94wty",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.229233377554037,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.44810549458320315
+    },
+    {
+     "seed_string": "seed=viexkdtuwf1",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.3292269163348167,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Selection"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.43685888506455317
+    },
+    {
+     "seed_string": "seed=3jd78ldb1ih",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.4552705519052274,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.5462692766355288
+    },
+    {
+     "seed_string": "seed=y4hbrt8ktrl",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.3766719892993244,
+     "t07_labels": [
+      "Bubble",
+      "Quick",
+      "Bubble",
+      "Bubble",
+      "Merge"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.4336535061979656
+    },
+    {
+     "seed_string": "seed=nwp4x3pa21c",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.6807763615600491,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Quick",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.37157111785273456
+    },
+    {
+     "seed_string": "seed=0i98w52tkd0",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.482574576645592,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Merge",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.5119414309494927
+    },
+    {
+     "seed_string": "seed=u2snpzpnqs3",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.2433082304211307,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.19162539023576497
+    },
+    {
+     "seed_string": "seed=kay0p7sddkr",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.9399354394945194,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.458713619352937
+    },
+    {
+     "seed_string": "seed=yqcn0419qox",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -1.9728169619559848,
+     "t07_labels": [
+      "Bubble",
+      "Selection",
+      "Quick",
+      "Quick",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.546976056783743
+    },
+    {
+     "seed_string": "seed=iw3gvpdo6hg",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.031518109115459,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.33356631263703196
+    },
+    {
+     "seed_string": "seed=qhm386zrmwe",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.246165844827972,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.417086841293437
+    },
+    {
+     "seed_string": "seed=k7d09abwfno",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.951807054132132,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.46585467483918874
+    },
+    {
+     "seed_string": "seed=e9kt1htnpqu",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.149900931429093,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.35073912359522097
+    },
+    {
+     "seed_string": "seed=ixrtuxshwlc",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -3.5695058861286775,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Quick"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.5248260821441133
+    },
+    {
+     "seed_string": "seed=e1ntlip7hbo",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.8603891595705332,
+     "t07_labels": [
+      "Quick",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.345434419876123
+    },
+    {
+     "seed_string": "seed=1r12glj5cus",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -3.0466292993375537,
+     "t07_labels": [
+      "Bubble",
+      "Quick",
+      "Bubble",
+      "Bubble",
+      "Quick"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.6024844382261166
+    },
+    {
+     "seed_string": "seed=m007bt4axex",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.0756443652867596,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Quick",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.3845434012597876
+    },
+    {
+     "seed_string": "seed=g578fp8djel",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.3470644776243492,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Quick",
+      "Quick",
+      "Quick"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.4381004231178772
+    },
+    {
+     "seed_string": "seed=tfju8a5iql6",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -3.9937191529266496,
+     "t07_labels": [
+      "Bubble",
+      "Quick",
+      "Bubble",
+      "Bubble",
+      "Tim_hybrid"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.36564242121557644
+    },
+    {
+     "seed_string": "seed=81opqsd496z",
+     "seed_kind": "char",
+     "observed_greedy": "Quick",
+     "observed_flip": true,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -3.166761417256388,
+     "t07_labels": [
+      "Quick",
+      "Bucket",
+      "Bubble",
+      "Bubble",
+      "Other"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6252059790034228
+    },
+    {
+     "seed_string": "seed=q8j42tv912r",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.4599982747707705,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.4399175336635184
+    },
+    {
+     "seed_string": "seed=jgcq3165gwt",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.209719506568886,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.45569977174034215
+    },
+    {
+     "seed_string": "seed=wup9wzr1q6y",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.4962145459977203,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.40380870454097273
+    },
+    {
+     "seed_string": "seed=0bxksgjp4ew",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -4.320179703487802,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.5224868071634162
+    },
+    {
+     "seed_string": "seed=23j89q8wop9",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -3.0209030846506435,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Other",
+      "Quick",
+      "Quick"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6022666547007285
+    },
+    {
+     "seed_string": "seed=cn9thgnx051",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.386492000376418,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.4556042274135693
+    },
+    {
+     "seed_string": "seed=t7daijctc6z",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -4.326787452060775,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.4217978242464604
+    },
+    {
+     "seed_string": "seed=rojf7docthl",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.293744831687309,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Quick",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.4372398002237109
+    },
+    {
+     "seed_string": "seed=nm7b0wn0n89",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.097055826076445,
+     "t07_labels": [
+      "Bubble",
+      "Merge",
+      "Bubble",
+      "Quick",
+      "Quick"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.46042302240807553
+    },
+    {
+     "seed_string": "seed=csgfc3nblk7",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.33713242409625,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Selection",
+      "Builtin",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.2927346061973993
+    },
+    {
+     "seed_string": "seed=dskcma539o0",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.62825630637054,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.429525006703811
+    },
+    {
+     "seed_string": "seed=2cg0yc134de",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -3.407958848175699,
+     "t07_labels": [
+      "Bubble",
+      "Quick",
+      "Bubble",
+      "Bubble",
+      "Insertion"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.5989484590447653
+    },
+    {
+     "seed_string": "seed=3rvjtrhsb3f",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -3.2471359233515336,
+     "t07_labels": [
+      "Quick",
+      "Bubble",
+      "Quick",
+      "Bubble",
+      "Quick"
+     ],
+     "t07_nonmode_obs": 0.6,
+     "pred_t07_nonmode": 0.6177765219343695
+    },
+    {
+     "seed_string": "seed=ktixdp6ybhb",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.5202373743277875,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.4068426348042853
+    },
+    {
+     "seed_string": "seed=qg7sus7s42q",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.2726287269235717,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.39480065186708013
+    },
+    {
+     "seed_string": "seed=s2ulnn5kkrt",
+     "seed_kind": "char",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.4486132375218774,
+     "t07_labels": [
+      "Bubble",
+      "Quick",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.3477048714504515
+    },
+    {
+     "seed_string": "seed=89572z3jipt",
+     "seed_kind": "char",
+     "observed_greedy": "Other",
+     "observed_flip": true,
+     "pred_greedy_idea": "Quick",
+     "p_flip": 1.0,
+     "shift_ref": -3.6463353871531465,
+     "t07_labels": [
+      "Quick",
+      "Other",
+      "Quick",
+      "Merge",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.8,
+     "pred_t07_nonmode": 0.717410724313053
+    },
+    {
+     "seed_string": "seed=(mask bed square finger)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.743970098521731,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.2078057462922709
+    },
+    {
+     "seed_string": "seed=(cloud train worm cliff)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.7020225080005261,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.1708821502897081
+    },
+    {
+     "seed_string": "seed=(wood orchard lagoon parrot)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.18305373589284257,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.13581012354601163
+    },
+    {
+     "seed_string": "seed=(fan towel whistle saw)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.18250749771857938,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.11755799264248701
+    },
+    {
+     "seed_string": "seed=(glacier satchel cannon feather)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.6482398971988661,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.16760567439323237
+    },
+    {
+     "seed_string": "seed=(fire duck jewel orange)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.25575466496113014,
+     "t07_labels": [
+      "Selection",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.12787452251809595
+    },
+    {
+     "seed_string": "seed=(street thimble corn arrow)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.4210267166247186,
+     "t07_labels": [
+      "Builtin",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.19322575175473378
+    },
+    {
+     "seed_string": "seed=(paper feather balloon orchard)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.5604432198955652,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.15775598625890186
+    },
+    {
+     "seed_string": "seed=(candle pot palm robot)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.5038027599440631,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.14450414179110604
+    },
+    {
+     "seed_string": "seed=(whale piano umbrella road)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.6029059396443798,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.14241525153340717
+    },
+    {
+     "seed_string": "seed=(eagle house nut palm)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.699682298515578,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.16234459198099083
+    },
+    {
+     "seed_string": "seed=(plane school paint snow)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.5883813957627461,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.1716168312788734
+    },
+    {
+     "seed_string": "seed=(net puzzle bus couch)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.29876997254366194,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.17830397013561727
+    },
+    {
+     "seed_string": "seed=(walnut envelope trumpet plane)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.7033811671067487,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.1485168484344106
+    },
+    {
+     "seed_string": "seed=(shovel river bench moon)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.5607695433049109,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.14588818076818244
+    },
+    {
+     "seed_string": "seed=(mug nut dragon notebook)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.5521846549538905,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.14315679743772747
+    },
+    {
+     "seed_string": "seed=(snake tea camel dog)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.31576142908861216,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.13606852999562868
+    },
+    {
+     "seed_string": "seed=(sink arrow mountain tulip)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.8354894549975812,
+     "t07_labels": [
+      "Bubble",
+      "Selection",
+      "Bubble",
+      "Builtin",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.1642072104873762
+    },
+    {
+     "seed_string": "seed=(tulip plane comb cap)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.6828890989103228,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.12771423235369828
+    },
+    {
+     "seed_string": "seed=(coat rock fan penguin)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.0945555066318906,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.10720355636778311
+    },
+    {
+     "seed_string": "seed=(carpet tree diamond box)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.1052096991207962,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.11427540112951406
+    },
+    {
+     "seed_string": "seed=(fox valley dog bone)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.03549056561849617,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.1528533540696615
+    },
+    {
+     "seed_string": "seed=(ring butter glacier button)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.2781903941812985,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.15212716933970782
+    },
+    {
+     "seed_string": "seed=(feather sugar saw wheel)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.7107520151307265,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.15820719908348235
+    },
+    {
+     "seed_string": "seed=(cabin chicken hand nail)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.6521971298885795,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.16522719994040946
+    },
+    {
+     "seed_string": "seed=(violin desert bed axe)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.0736183175610892,
+     "t07_labels": [
+      "Builtin",
+      "Bubble",
+      "Builtin",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.16492251908778655
+    },
+    {
+     "seed_string": "seed=(chalk goat cat ball)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": 0.03855117414956122,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.13106143856553654
+    },
+    {
+     "seed_string": "seed=(cloud watch stone table)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.9281191195522498,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.17344377571473513
+    },
+    {
+     "seed_string": "seed=(ocean hill wheel pin)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": 0.012337618352787016,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.1507744923147547
+    },
+    {
+     "seed_string": "seed=(valley puzzle sand bat)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.0604154839692987,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.18033423155183825
+    },
+    {
+     "seed_string": "seed=(square tooth rabbit ship)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.5835875520598196,
+     "t07_labels": [
+      "Bubble",
+      "Builtin",
+      "Bubble",
+      "Bubble",
+      "Builtin"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.13368870116896336
+    },
+    {
+     "seed_string": "seed=(nest church banana pebble)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.7456962043666031,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.1293393250433964
+    },
+    {
+     "seed_string": "seed=(turtle hat cup crab)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.4840062262541917,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.11722490475732505
+    },
+    {
+     "seed_string": "seed=(orchard gate sugar monkey)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.7476820591036276,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.1564288848097769
+    },
+    {
+     "seed_string": "seed=(basket book bicycle cradle)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.26014705473832656,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.11699760758171107
+    },
+    {
+     "seed_string": "seed=(square bean mouse sugar)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.7349940275005863,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.11426319763684922
+    },
+    {
+     "seed_string": "seed=(school beach crab bread)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.5823710037662675,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.14528914425967998
+    },
+    {
+     "seed_string": "seed=(robot saddle pond torch)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.19043155699719905,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.14622345677483728
+    },
+    {
+     "seed_string": "seed=(honey fox torch wood)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.04863103034950095,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Builtin",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.11828448480864573
+    },
+    {
+     "seed_string": "seed=(cherry plate wolf potato)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.3195851352480734,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Selection",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.13013634654074746
+    },
+    {
+     "seed_string": "seed=(sink table snake pumpkin)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.9330110598714632,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Quick",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.16250386167092234
+    },
+    {
+     "seed_string": "seed=(tower train tiger comb)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.37176200983734087,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.1573046538411057
+    },
+    {
+     "seed_string": "seed=(watch plane yacht saddle)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.7492806319012171,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Builtin",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.1798014788477813
+    },
+    {
+     "seed_string": "seed=(street wolf bag stove)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.6286157305792689,
+     "t07_labels": [
+      "Bubble",
+      "Quick",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.14008723342118978
+    },
+    {
+     "seed_string": "seed=(whistle monkey cannon bat)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.3032162415583908,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.16352203710111202
+    },
+    {
+     "seed_string": "seed=(wolf umbrella plate moon)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.449351229315189,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.14719069381375816
+    },
+    {
+     "seed_string": "seed=(pond puzzle stair worm)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.4981749410293985,
+     "t07_labels": [
+      "Bubble",
+      "Insertion",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.17875779784900137
+    },
+    {
+     "seed_string": "seed=(rose volcano river tractor)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.09180406072348574,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.13818017617943346
+    },
+    {
+     "seed_string": "seed=(radio clock corn flute)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -2.008536453905628,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.15205675934759655
+    },
+    {
+     "seed_string": "seed=(notebook wheel chicken clock)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.3012161113495288,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.1624776565860353
+    },
+    {
+     "seed_string": "seed=(whistle soap skirt piano)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.5437130408838785,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.1172928617742961
+    },
+    {
+     "seed_string": "seed=(flag sword ladder butter)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.0949956238926615,
+     "t07_labels": [
+      "Bubble",
+      "Other",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.16145235932479007
+    },
+    {
+     "seed_string": "seed=(tail meadow pebble teapot)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.6411670206125955,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.1382046154308607
+    },
+    {
+     "seed_string": "seed=(sled salt scarf towel)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.805940340230405,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.13292649686558444
+    },
+    {
+     "seed_string": "seed=(letter spoon eye skirt)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.1984414506267114,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Quick"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.1146681403478097
+    },
+    {
+     "seed_string": "seed=(heart coat pear jar)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.8547978248465015,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.14131483583510085
+    },
+    {
+     "seed_string": "seed=(cradle swan rocket hat)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.5885612376202253,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.13769941760556936
+    },
+    {
+     "seed_string": "seed=(hill ship nose envelope)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.9673736569904408,
+     "t07_labels": [
+      "Bubble",
+      "Selection",
+      "Insertion",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.4,
+     "pred_t07_nonmode": 0.18498533260218208
+    },
+    {
+     "seed_string": "seed=(seed shoe scarf island)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -1.0398063252893597,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.15766264587459522
+    },
+    {
+     "seed_string": "seed=(spoon rake lantern palm)",
+     "seed_kind": "word",
+     "observed_greedy": "Bubble",
+     "observed_flip": false,
+     "pred_greedy_idea": "Bubble",
+     "p_flip": 0.0,
+     "shift_ref": -0.9916177615110066,
+     "t07_labels": [
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble",
+      "Bubble"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.14645713609385724
+    }
+   ]
+  },
+  "T3": {
+   "unseeded_greedy_label": "Dijkstra",
+   "unseeded_greedy_repeats": [
+    "Dijkstra",
+    "Dijkstra",
+    "Dijkstra",
+    "Dijkstra",
+    "Dijkstra"
+   ],
+   "n_strings": 120,
+   "observed_flips": 0,
+   "observed_flip_rate": 0.0,
+   "observed_flip_ci": [
+    0.0,
+    0.031020271055929513
+   ],
+   "primary_predictor": "readout",
+   "predicted_flip_rate": 0.0,
+   "abs_error": 0.0,
+   "predicted_readout": 0.0,
+   "predicted_behavioural": 4e-05,
+   "abs_error_readout": 0.0,
+   "abs_error_behavioural": 4e-05,
+   "baseline_seeds_inert_pred": 0.0,
+   "abs_error_baseline_inert": 0.0,
+   "readout_idea_accuracy": 1.0,
+   "auroc_readout_shift": null,
+   "greedy_counts": {
+    "Dijkstra": 120
+   },
+   "by_kind": {
+    "char": {
+     "n": 60,
+     "flip_rate": 0.0
+    },
+    "word": {
+     "n": 60,
+     "flip_rate": 0.0
+    }
+   },
+   "t07": {
+    "mode_unseeded": "Dijkstra",
+    "nonmode_unseeded": 0.0033333333333333335,
+    "n_unseeded": 300,
+    "nonmode_seeded": 0.005,
+    "predicted_nonmode_readout": 0.0,
+    "predicted_nonmode_behavioural": 0.010340949501827845,
+    "chi2_seeded_vs_unseeded": {
+     "chi2": 0.5005580357142857,
+     "dof": 2,
+     "p": 0.7785835140581479
+    }
+   },
+   "heterogeneity": {
+    "chi2": 237.5879396984925,
+    "dof": 238,
+    "perm_p": 1.0,
+    "icc_mode": -0.0033726812816188673,
+    "mode": "Dijkstra",
+    "n_strings": 120,
+    "n_per_string": 5.0
+   },
+   "diversify": {
+    "all": {
+     "n_seeded": 600,
+     "n_unseeded": 300,
+     "H_seeded": 0.05000617150406656,
+     "H_unseeded": 0.032230355211769486,
+     "diff": 0.017775816292297075,
+     "diff_ci": [
+      -0.05777796017013378,
+      0.08997609423645608
+     ],
+     "ES10_seeded": 1.049749582637302,
+     "ES10_unseeded": 1.0333333333334997,
+     "counts_seeded": {
+      "Dijkstra": 597,
+      "A_star": 2,
+      "BFS": 1
+     },
+     "counts_unseeded": {
+      "Dijkstra": 299,
+      "A_star": 1
+     }
+    },
+    "char": {
+     "n_seeded": 300,
+     "n_unseeded": 300,
+     "H_seeded": 0.032230355211769486,
+     "H_unseeded": 0.032230355211769486,
+     "diff": 0.0,
+     "diff_ci": [
+      -0.08079313589591118,
+      0.08079313589591118
+     ],
+     "ES10_seeded": 1.0333333333334997,
+     "ES10_unseeded": 1.0333333333334997,
+     "counts_seeded": {
+      "Dijkstra": 299,
+      "BFS": 1
+     },
+     "counts_unseeded": {
+      "Dijkstra": 299,
+      "A_star": 1
+     }
+    },
+    "word": {
+     "n_seeded": 300,
+     "n_unseeded": 300,
+     "H_seeded": 0.05777796017013378,
+     "H_unseeded": 0.032230355211769486,
+     "diff": 0.025547604958364292,
+     "diff_ci": [
+      -0.05777796017013378,
+      0.10215803640865039
+     ],
+     "ES10_seeded": 1.0656633221852965,
+     "ES10_unseeded": 1.0333333333334997,
+     "counts_seeded": {
+      "Dijkstra": 298,
+      "A_star": 2
+     },
+     "counts_unseeded": {
+      "Dijkstra": 299,
+      "A_star": 1
+     }
+    }
+   },
+   "per_string": [
+    {
+     "seed_string": "seed=i9609s2lg7o",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.0341550931273726,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "BFS",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=7rdkda4w0xz",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.5073021517628236,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=3h10wd6ob4o",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.6752924389230748,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=96ujiq78jfz",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.4144842861176412,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=24esihktvh3",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.5266261312198137,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=wdeufwe9eye",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.2012670631632387,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=i06hltpuu2e",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.830620045753908,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=i62vn4b25ez",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.8900867206351296,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=1ct0f4zz87u",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.2874919632751367,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=mbpnxwab0dn",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.7894442980034164,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=7pco9l1tm4f",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.3264806400317712,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=mgaql972ebi",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.9266610403529261,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=vxn8g19mzgk",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.987954568398107,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=daillqzx9x2",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.2573157385319451,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=v8pt47qyi0j",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.012905080940905,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=by8w5q3gx65",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.1118409803056684,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=1ht5gckygac",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.4613032301757891,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=eblsw63hog0",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.6983117786625049,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=qmwuwzzarxf",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.5759795656796196,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=8zzcgzd15md",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.565177198505185,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=yb1xe00kr4j",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.0928748950581852,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=tirely1qrln",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.9057195065233494,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=6v77j79pzbe",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.3276927007864148,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=lyyk7s94wty",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.3150429694254178,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=viexkdtuwf1",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.074125672180219,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=3jd78ldb1ih",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.8596019834890738,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=y4hbrt8ktrl",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.9179492505181919,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=nwp4x3pa21c",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.9539754142033942,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=0i98w52tkd0",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.7122905244584317,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=u2snpzpnqs3",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.8684356656396474,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=kay0p7sddkr",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.0168235468140303,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=yqcn0419qox",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.8883436383659318,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=iw3gvpdo6hg",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.2688359879531481,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=qhm386zrmwe",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.8003703756062402,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=k7d09abwfno",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.7656830673588825,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=e9kt1htnpqu",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.0824962327607615,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=ixrtuxshwlc",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.4483958456346866,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=e1ntlip7hbo",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.794475176392924,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=1r12glj5cus",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.3591404680742636,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=m007bt4axex",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.9370893132839248,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=g578fp8djel",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.097425451927611,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=tfju8a5iql6",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.3100008573490174,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=81opqsd496z",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.434315433434464,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=q8j42tv912r",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.9082463268346188,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=jgcq3165gwt",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.9451228631294473,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=wup9wzr1q6y",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.9874784927488116,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=0bxksgjp4ew",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.1305803825339127,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=23j89q8wop9",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.7903311760641796,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=cn9thgnx051",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.3014848246547346,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=t7daijctc6z",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.1195257119367221,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=rojf7docthl",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.990363480243257,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=nm7b0wn0n89",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.139471821810677,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=csgfc3nblk7",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.0660928042997841,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=dskcma539o0",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.8327742983947746,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=2cg0yc134de",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.6351665746763473,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=3rvjtrhsb3f",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.4368316855320091,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=ktixdp6ybhb",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.9441120714485345,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=qg7sus7s42q",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.0926277096215273,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=s2ulnn5kkrt",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -0.7667712064433408,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=89572z3jipt",
+     "seed_kind": "char",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.3904614820015169,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(mask bed square finger)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.7650209274467668,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(cloud train worm cliff)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.3617596696274938,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(wood orchard lagoon parrot)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.1386188844820255,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(fan towel whistle saw)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.3934677191457652,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(glacier satchel cannon feather)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.6333582478865547,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(fire duck jewel orange)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.208301919430498,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(street thimble corn arrow)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.8303941445393215,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(paper feather balloon orchard)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.8067459954493326,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(candle pot palm robot)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.7511739768760457,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(whale piano umbrella road)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.8326740375532018,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(eagle house nut palm)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.2292203733934506,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(plane school paint snow)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.52588430052925,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(net puzzle bus couch)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.3561575129703556,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(walnut envelope trumpet plane)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.6658045769307868,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(shovel river bench moon)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.128515337569842,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(mug nut dragon notebook)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.6679767865138473,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(snake tea camel dog)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.224182638847366,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(sink arrow mountain tulip)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.450574464128248,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(tulip plane comb cap)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.6952965188139613,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(coat rock fan penguin)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.8276488164063363,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(carpet tree diamond box)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.7338632498982318,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(fox valley dog bone)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.0807467380214018,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(ring butter glacier button)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.2420838895165893,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(feather sugar saw wheel)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.6541173649517762,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(cabin chicken hand nail)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.7655843474532902,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(violin desert bed axe)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.1316463282332774,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(chalk goat cat ball)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.9428230538578737,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(cloud watch stone table)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.5358216809467413,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "A_star",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(ocean hill wheel pin)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.6262942714838988,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(valley puzzle sand bat)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.7728712514841003,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(square tooth rabbit ship)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.0960082216456475,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(nest church banana pebble)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.7462373521874195,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(turtle hat cup crab)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.1671522661995866,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(orchard gate sugar monkey)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.8857396508430486,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(basket book bicycle cradle)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.984765193630754,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(square bean mouse sugar)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.9701173509460452,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(school beach crab bread)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.8951645822291763,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(robot saddle pond torch)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.8868645229651817,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(honey fox torch wood)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.8370462609542706,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(cherry plate wolf potato)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.6561064836291426,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(sink table snake pumpkin)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.8597423117056808,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(tower train tiger comb)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.7319963981840032,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(watch plane yacht saddle)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.6005818530811784,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(street wolf bag stove)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.9705197832854544,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(whistle monkey cannon bat)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.124416181580165,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(wolf umbrella plate moon)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.0547837542533056,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(pond puzzle stair worm)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.089703610076032,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(rose volcano river tractor)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.7187096433341496,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(radio clock corn flute)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.3582404215251374,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(notebook wheel chicken clock)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.4711988401237994,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(whistle soap skirt piano)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.7064393573191292,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(flag sword ladder butter)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -2.239465020904478,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(tail meadow pebble teapot)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.791590874376995,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(sled salt scarf towel)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.5187197924284126,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(letter spoon eye skirt)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.819978008930487,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(heart coat pear jar)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.8458275979904115,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(cradle swan rocket hat)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.9621262054342028,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(hill ship nose envelope)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.5701838833319626,
+     "t07_labels": [
+      "Dijkstra",
+      "A_star",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.2,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(seed shoe scarf island)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.6527911129475816,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    },
+    {
+     "seed_string": "seed=(spoon rake lantern palm)",
+     "seed_kind": "word",
+     "observed_greedy": "Dijkstra",
+     "observed_flip": false,
+     "pred_greedy_idea": "Dijkstra",
+     "p_flip": 0.0,
+     "shift_ref": -1.9930652063181087,
+     "t07_labels": [
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra",
+      "Dijkstra"
+     ],
+     "t07_nonmode_obs": 0.0,
+     "pred_t07_nonmode": 0.0
+    }
+   ]
+  }
+ },
+ "screen_in_sample": {
+  "T1": {
+   "unseeded_greedy": "BFS",
+   "flip_rate": 0.18333333333333332,
+   "ci": [
+    0.1055768903713613,
+    0.29919993226466285
+   ],
+   "greedy_counts": {
+    "BFS": 49,
+    "Other": 4,
+    "DFS": 6,
+    "SPFA": 1
+   },
+   "pred_behavioural_fit": {
+    "classes": [
+     "A_star",
+     "BFS",
+     "DFS",
+     "Dijkstra",
+     "Other",
+     "SPFA"
+    ],
+    "u0": [
+     -2.619825967687371,
+     -0.35114242636900667,
+     -2.2833537310661582,
+     -2.619825967687371,
+     -3.1306515914533617,
+     -5.327876168789581
+    ],
+    "unseeded_greedy_grid": "BFS",
+    "s_hat": 1.0,
+    "loglik": -105.27306232014435,
+    "grid": [
+     0.0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     1.0,
+     1.1,
+     1.2,
+     1.3,
+     1.4,
+     1.5,
+     1.6,
+     1.7,
+     1.8,
+     1.9,
+     2.0,
+     2.1,
+     2.2,
+     2.3,
+     2.4,
+     2.5,
+     2.6,
+     2.7,
+     2.8,
+     2.9,
+     3.0,
+     3.1,
+     3.2,
+     3.3,
+     3.4,
+     3.5,
+     3.6,
+     3.7,
+     3.8,
+     3.9,
+     4.0,
+     4.1,
+     4.2,
+     4.3,
+     4.4,
+     4.5,
+     4.6,
+     4.7,
+     4.8,
+     4.9,
+     5.0,
+     5.1,
+     5.2,
+     5.3,
+     5.4,
+     5.5,
+     5.6,
+     5.7,
+     5.8,
+     5.9,
+     6.0
+    ],
+    "loglik_curve": [
+     -152.9796582219694,
+     -153.00360367844098,
+     -153.07793820666484,
+     -153.207720210797,
+     -142.19832813647764,
+     -131.02634905092407,
+     -119.59186097579376,
+     -112.38578356100739,
+     -107.93173291750861,
+     -105.77505504784341,
+     -105.27306232014435,
+     -105.31454717940817,
+     -106.4200222581742,
+     -107.59498267872203,
+     -108.85731468142347,
+     -110.30747441487124,
+     -112.31831768154584,
+     -113.968151971912,
+     -115.9657275755149,
+     -118.0061213781579,
+     -120.03290047889718,
+     -121.86514755912852,
+     -123.67660080245344,
+     -125.5944158679557,
+     -127.39207285853699,
+     -129.19853678773222,
+     -131.06659726033888,
+     -132.75327166471084,
+     -134.28965829609533,
+     -135.89792037733247,
+     -137.51142050201636,
+     -139.12325366640033,
+     -140.5347289944422,
+     -141.91410806197962,
+     -143.3985388926086,
+     -144.77982535887065,
+     -146.15370255473294,
+     -147.40382466079058,
+     -148.74463437797317,
+     -149.8810429321857,
+     -150.99392360675617,
+     -152.0157865162658,
+     -153.00386268858367,
+     -154.02569300124037,
+     -155.05449877101222,
+     -155.96296583389233,
+     -156.8189570809118,
+     -157.75482294238856,
+     -158.65608527913,
+     -159.48054498779246,
+     -160.32277090056263,
+     -161.13015024218515,
+     -161.96296343772258,
+     -162.74061819949182,
+     -163.48576857956647,
+     -164.23444360290847,
+     -164.95334532192234,
+     -165.64271812544257,
+     -166.21727829132737,
+     -166.9097752679892,
+     -167.4901615414099
+    ],
+    "observed_greedy_flip": 0.18333333333333332,
+    "observed_t07_nonmode": 0.23333333333333334
+   },
+   "pred_readout_pop": 4e-05
+  },
+  "T2": {
+   "unseeded_greedy": "Quick",
+   "flip_rate": 0.8833333333333333,
+   "ci": [
+    0.7782097940014187,
+    0.9423235259654995
+   ],
+   "greedy_counts": {
+    "Bubble": 53,
+    "Quick": 7
+   },
+   "pred_behavioural_fit": {
+    "classes": [
+     "Bubble",
+     "Builtin",
+     "Merge",
+     "Other",
+     "Quick"
+    ],
+    "u0": [
+     -1.0889034745411488,
+     -5.3230099791384085,
+     -2.1875157632092583,
+     -5.3230099791384085,
+     -0.613479777826074
+    ],
+    "unseeded_greedy_grid": "Quick",
+    "s_hat": 1.4,
+    "loglik": -131.1147568744397,
+    "grid": [
+     0.0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     1.0,
+     1.1,
+     1.2,
+     1.3,
+     1.4,
+     1.5,
+     1.6,
+     1.7,
+     1.8,
+     1.9,
+     2.0,
+     2.1,
+     2.2,
+     2.3,
+     2.4,
+     2.5,
+     2.6,
+     2.7,
+     2.8,
+     2.9,
+     3.0,
+     3.1,
+     3.2,
+     3.3,
+     3.4,
+     3.5,
+     3.6,
+     3.7,
+     3.8,
+     3.9,
+     4.0,
+     4.1,
+     4.2,
+     4.3,
+     4.4,
+     4.5,
+     4.6,
+     4.7,
+     4.8,
+     4.9,
+     5.0,
+     5.1,
+     5.2,
+     5.3,
+     5.4,
+     5.5,
+     5.6,
+     5.7,
+     5.8,
+     5.9,
+     6.0
+    ],
+    "loglik_curve": [
+     -563.4790896696564,
+     -478.1383647444179,
+     -238.2809116313647,
+     -183.9628536973919,
+     -162.00966369154628,
+     -150.39531033832156,
+     -143.47638744568184,
+     -139.42027483964105,
+     -136.68297297876651,
+     -134.80435780336046,
+     -133.50655184465603,
+     -132.44815634595378,
+     -131.84202931507144,
+     -131.40944370659184,
+     -131.1147568744397,
+     -131.1331433036744,
+     -131.12352325723003,
+     -131.20031354411898,
+     -131.35842457377885,
+     -131.6120736089821,
+     -131.96467336030318,
+     -132.28098763648268,
+     -132.65281315614035,
+     -133.2182499527941,
+     -133.61657305927395,
+     -134.3169212610514,
+     -134.7935877470655,
+     -135.2287562364114,
+     -135.98294948848303,
+     -136.48649485148894,
+     -137.22786193706014,
+     -137.80430500463598,
+     -138.52182422870794,
+     -139.1362648174179,
+     -139.9038497644828,
+     -140.6095691445077,
+     -141.30251708026105,
+     -141.99820805442647,
+     -142.6103531009162,
+     -143.10688578598425,
+     -143.72902783787626,
+     -144.31736810323417,
+     -145.0079825514448,
+     -145.6759084761997,
+     -146.20523054577347,
+     -146.81343345944208,
+     -147.42287814398915,
+     -148.03066587138784,
+     -148.5919286008378,
+     -149.2684804698435,
+     -149.77938284255896,
+     -150.3723913187404,
+     -150.9008998099347,
+     -151.3754019179749,
+     -151.81564345652316,
+     -152.30719560158246,
+     -152.7922414556914,
+     -153.15978017344617,
+     -153.5518273389519,
+     -154.01491095434025,
+     -154.46388588274843
+    ],
+    "observed_greedy_flip": 0.8833333333333333,
+    "observed_t07_nonmode": 0.8666666666666667
+   },
+   "pred_readout_pop": 0.02485
+  },
+  "T3": {
+   "unseeded_greedy": "Dijkstra",
+   "flip_rate": 0.0,
+   "ci": [
+    0.0,
+    0.06017393047793289
+   ],
+   "greedy_counts": {
+    "Dijkstra": 60
+   },
+   "pred_behavioural_fit": {
+    "classes": [
+     "BFS",
+     "Dijkstra",
+     "Other"
+    ],
+    "u0": [
+     -5.313205979041787,
+     -0.00990107098271157,
+     -5.313205979041787
+    ],
+    "unseeded_greedy_grid": "Dijkstra",
+    "s_hat": 1.1,
+    "loglik": -10.206272771780531,
+    "grid": [
+     0.0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     1.0,
+     1.1,
+     1.2,
+     1.3,
+     1.4,
+     1.5,
+     1.6,
+     1.7,
+     1.8,
+     1.9,
+     2.0,
+     2.1,
+     2.2,
+     2.3,
+     2.4,
+     2.5,
+     2.6,
+     2.7,
+     2.8,
+     2.9,
+     3.0,
+     3.1,
+     3.2,
+     3.3,
+     3.4,
+     3.5,
+     3.6,
+     3.7,
+     3.8,
+     3.9,
+     4.0,
+     4.1,
+     4.2,
+     4.3,
+     4.4,
+     4.5,
+     4.6,
+     4.7,
+     4.8,
+     4.9,
+     5.0,
+     5.1,
+     5.2,
+     5.3,
+     5.4,
+     5.5,
+     5.6,
+     5.7,
+     5.8,
+     5.9,
+     6.0
+    ],
+    "loglik_curve": [
+     -11.194673910486593,
+     -11.180712831260713,
+     -11.139370969404256,
+     -11.071885866695935,
+     -10.980454585076343,
+     -10.86845482300289,
+     -10.740758430738168,
+     -10.604091841187236,
+     -10.467292185606155,
+     -10.347204376102031,
+     -10.24404046336423,
+     -10.206272771780531,
+     -10.242343464814416,
+     -10.39158611272874,
+     -10.68465982678764,
+     -11.119259630916371,
+     -11.726902686750876,
+     -12.550210379359935,
+     -13.455065601705815,
+     -14.505637002026292,
+     -15.59389677693376,
+     -16.78715498389788,
+     -18.02306203862707,
+     -19.441242668570045,
+     -20.845453674825176,
+     -22.215746652300457,
+     -23.63501542206013,
+     -25.18453322006944,
+     -26.713962387375883,
+     -28.251295399116458,
+     -29.720959617760755,
+     -31.169351881632593,
+     -32.604780693923416,
+     -34.063000955733926,
+     -35.49350522776757,
+     -36.92135411022994,
+     -38.357433193490955,
+     -39.70518906134026,
+     -41.04997972326465,
+     -42.45302186409324,
+     -43.68743669190188,
+     -44.90701827015546,
+     -46.1878076136955,
+     -47.33847288275091,
+     -48.55476134996675,
+     -49.74679952792708,
+     -50.89625878327822,
+     -52.024492021612815,
+     -53.122081601502984,
+     -54.14726067473245,
+     -55.14911842740143,
+     -56.15065123503386,
+     -57.2462114553358,
+     -58.22530871122028,
+     -59.19041524078597,
+     -60.12221913810432,
+     -60.99105704068888,
+     -61.83992828134721,
+     -62.77736170879234,
+     -63.59174018470502,
+     -64.47617340235757
+    ],
+    "observed_greedy_flip": 0.0,
+    "observed_t07_nonmode": 0.03333333333333333
+   },
+   "pred_readout_pop": 0.0
+  }
+ },
+ "verdict": {
+  "C3a_T1": true,
+  "C3a_T2": false,
+  "C3b_T3": true,
+  "C3_PASS": false
+ },
+ "summary": {
+  "T1": {
+   "unseeded_greedy_label": "BFS",
+   "unseeded_greedy_repeats": [
+    "BFS",
+    "BFS",
+    "BFS",
+    "BFS",
+    "BFS"
+   ],
+   "n_strings": 120,
+   "observed_flips": 30,
+   "observed_flip_rate": 0.25,
+   "observed_flip_ci": [
+    0.1810971138452223,
+    0.33441302168274245
+   ],
+   "primary_predictor": "behavioural",
+   "predicted_flip_rate": 0.28073,
+   "abs_error": 0.03072999999999998,
+   "predicted_readout": 0.95,
+   "predicted_behavioural": 0.28073,
+   "abs_error_readout": 0.7,
+   "abs_error_behavioural": 0.03072999999999998,
+   "baseline_seeds_inert_pred": 0.0,
+   "abs_error_baseline_inert": 0.25,
+   "readout_idea_accuracy": 0.225,
+   "auroc_readout_shift": 0.7203703703703703,
+   "greedy_counts": {
+    "BFS": 90,
+    "DFS": 23,
+    "Other": 6,
+    "SPFA": 1
+   },
+   "by_kind": {
+    "char": {
+     "n": 60,
+     "flip_rate": 0.08333333333333333
+    },
+    "word": {
+     "n": 60,
+     "flip_rate": 0.4166666666666667
+    }
+   },
+   "t07": {
+    "mode_unseeded": "BFS",
+    "nonmode_unseeded": 0.3566666666666667,
+    "n_unseeded": 300,
+    "nonmode_seeded": 0.26166666666666666,
+    "predicted_nonmode_readout": 0.6462938746923134,
+    "predicted_nonmode_behavioural": 0.49034817051319635,
+    "chi2_seeded_vs_unseeded": {
+     "chi2": 52.11323892095987,
+     "dof": 5,
+     "p": 5.113848775395786e-10
+    }
+   },
+   "heterogeneity_p": 0.2855428914217157,
+   "icc": -0.020708774266398243,
+   "entropy_diff": -0.33689324009304356,
+   "entropy_diff_ci": [
+    -0.5289239374366649,
+    -0.13150325717148567
+   ]
+  },
+  "T2": {
+   "unseeded_greedy_label": "Bubble",
+   "unseeded_greedy_repeats": [
+    "Bubble",
+    "Bubble",
+    "Bubble",
+    "Bubble",
+    "Bubble"
+   ],
+   "n_strings": 120,
+   "observed_flips": 2,
+   "observed_flip_rate": 0.016666666666666666,
+   "observed_flip_ci": [
+    0.004582468541151394,
+    0.058737126812913806
+   ],
+   "primary_predictor": "behavioural",
+   "predicted_flip_rate": 0.39446,
+   "abs_error": 0.3777933333333333,
+   "predicted_readout": 0.10833333333333334,
+   "predicted_behavioural": 0.39446,
+   "abs_error_readout": 0.09166666666666667,
+   "abs_error_behavioural": 0.3777933333333333,
+   "baseline_seeds_inert_pred": 0.0,
+   "abs_error_baseline_inert": 0.016666666666666666,
+   "readout_idea_accuracy": 0.9,
+   "auroc_readout_shift": 0.9576271186440678,
+   "greedy_counts": {
+    "Bubble": 118,
+    "Quick": 1,
+    "Other": 1
+   },
+   "by_kind": {
+    "char": {
+     "n": 60,
+     "flip_rate": 0.03333333333333333
+    },
+    "word": {
+     "n": 60,
+     "flip_rate": 0.0
+    }
+   },
+   "t07": {
+    "mode_unseeded": "Bubble",
+    "nonmode_unseeded": 0.36,
+    "n_unseeded": 300,
+    "nonmode_seeded": 0.135,
+    "predicted_nonmode_readout": 0.30606165052141565,
+    "predicted_nonmode_behavioural": 0.4731994610741215,
+    "chi2_seeded_vs_unseeded": {
+     "chi2": 102.76421489352695,
+     "dof": 8,
+     "p": 1.161214705006666e-18
+    }
+   },
+   "heterogeneity_p": 0.004399120175964807,
+   "icc": 0.16022773485156605,
+   "entropy_diff": -0.6766610266164212,
+   "entropy_diff_ci": [
+    -0.9174636157066967,
+    -0.46651380734223286
+   ]
+  },
+  "T3": {
+   "unseeded_greedy_label": "Dijkstra",
+   "unseeded_greedy_repeats": [
+    "Dijkstra",
+    "Dijkstra",
+    "Dijkstra",
+    "Dijkstra",
+    "Dijkstra"
+   ],
+   "n_strings": 120,
+   "observed_flips": 0,
+   "observed_flip_rate": 0.0,
+   "observed_flip_ci": [
+    0.0,
+    0.031020271055929513
+   ],
+   "primary_predictor": "readout",
+   "predicted_flip_rate": 0.0,
+   "abs_error": 0.0,
+   "predicted_readout": 0.0,
+   "predicted_behavioural": 4e-05,
+   "abs_error_readout": 0.0,
+   "abs_error_behavioural": 4e-05,
+   "baseline_seeds_inert_pred": 0.0,
+   "abs_error_baseline_inert": 0.0,
+   "readout_idea_accuracy": 1.0,
+   "auroc_readout_shift": null,
+   "greedy_counts": {
+    "Dijkstra": 120
+   },
+   "by_kind": {
+    "char": {
+     "n": 60,
+     "flip_rate": 0.0
+    },
+    "word": {
+     "n": 60,
+     "flip_rate": 0.0
+    }
+   },
+   "t07": {
+    "mode_unseeded": "Dijkstra",
+    "nonmode_unseeded": 0.0033333333333333335,
+    "n_unseeded": 300,
+    "nonmode_seeded": 0.005,
+    "predicted_nonmode_readout": 0.0,
+    "predicted_nonmode_behavioural": 0.010340949501827845,
+    "chi2_seeded_vs_unseeded": {
+     "chi2": 0.5005580357142857,
+     "dof": 2,
+     "p": 0.7785835140581479
+    }
+   },
+   "heterogeneity_p": 1.0,
+   "icc": -0.0033726812816188673,
+   "entropy_diff": 0.017775816292297075,
+   "entropy_diff_ci": [
+    -0.05777796017013378,
+    0.08997609423645608
+   ]
+  }
+ }
+}

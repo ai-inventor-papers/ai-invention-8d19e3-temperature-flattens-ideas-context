@@ -1,0 +1,43 @@
+{
+ "classifier": "v1:d0d321215bc2",
+ "n_compared": 4210,
+ "n_diffs": 0,
+ "counts": {
+  "T1/baseline": {
+   "expected": {
+    "BFS": 179,
+    "DFS": 44,
+    "A_star": 39,
+    "Dijkstra": 22,
+    "Other": 14,
+    "SPFA": 2
+   },
+   "got": {
+    "BFS": 179,
+    "A_star": 39,
+    "DFS": 44,
+    "SPFA": 2,
+    "Dijkstra": 22,
+    "Other": 14
+   },
+   "match": true
+  },
+  "T2/placebo": {
+   "expected": {
+    "Bubble": 43,
+    "Merge": 26,
+    "Quick": 18,
+    "Selection": 8,
+    "Insertion": 5
+   },
+   "got": {
+    "Merge": 26,
+    "Bubble": 43,
+    "Selection": 8,
+    "Quick": 18,
+    "Insertion": 5
+   },
+   "match": true
+  }
+ }
+}

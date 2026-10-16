@@ -1,0 +1,77 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "max_new_tokens": 768,
+  "tasks": {
+    "T1": {
+      "task": "Implement a path search algorithm in Python.",
+      "contract": "Write a function find_path(graph, start, goal) where graph is a dict mapping each node to a list of neighbouring nodes (directed edges). Return a list of nodes from start to goal (inclusive) that follows existing edges, or None if goal is unreachable. Put the complete code in a single ```python code block.",
+      "func": "find_path"
+    },
+    "T3": {
+      "task": "Implement a function that finds a shortest path in a weighted graph.",
+      "contract": "Write a function shortest_path(graph, source, target) in Python where graph is a dict mapping each node to a list of (neighbour, weight) pairs with non-negative weights. Return a tuple (distance, path) with path a list of nodes from source to target, or (float(\"inf\"), None) if unreachable. Put the complete code in a single ```python code block.",
+      "func": "shortest_path"
+    }
+  },
+  "T2_TASK": "Implement a sorting algorithm in Python.",
+  "cond_text": {
+    "plain": "",
+    "new": "Make a new algorithm.",
+    "novel2000": "Make a fully novel algorithm never seen before. Explain the idea in detail (about 2000 words) and implement it.",
+    "ban3": "Do not use any of the following algorithms: {A}, {B}, {C}."
+  },
+  "gts_stage1_suffix": " List 10 distinct approaches you could use, one per line, numbered 1-10, each a name plus one sentence. Do not write code.",
+  "gts_stage2_template": "{task} Use this approach: {item}\n\n{contract}",
+  "taxonomy": [
+    "floyd_warshall",
+    "bellman_ford",
+    "spfa",
+    "bidirectional",
+    "astar",
+    "greedy_best_first",
+    "dijkstra",
+    "dial_bucket",
+    "iddfs",
+    "bfs",
+    "dfs",
+    "random_walk",
+    "other"
+  ],
+  "display_name": {
+    "floyd_warshall": "Floyd-Warshall",
+    "bellman_ford": "Bellman-Ford",
+    "spfa": "SPFA (queue-based Bellman-Ford)",
+    "bidirectional": "bidirectional search",
+    "astar": "A* search",
+    "greedy_best_first": "greedy best-first search",
+    "dijkstra": "Dijkstra's algorithm",
+    "dial_bucket": "Dial's bucket algorithm",
+    "iddfs": "iterative deepening DFS",
+    "bfs": "breadth-first search (BFS)",
+    "dfs": "depth-first search (DFS)",
+    "random_walk": "random walk search",
+    "other": "other"
+  },
+  "novel_hint_a4": "Make a fully novel algorithm never seen before.",
+  "prompt_rule": "TASK + (' ' + COND_TEXT if any) + '\\n\\n' + CONTRACT; chat template with default system prompt",
+  "ban3_text": {
+    "T1": "Do not use any of the following algorithms: breadth-first search (BFS), depth-first search (DFS), Dijkstra's algorithm.",
+    "T3": "Do not use any of the following algorithms: Dijkstra's algorithm, breadth-first search (BFS), SPFA (queue-based Bellman-Ford)."
+  },
+  "menus": {
+    "T1": {
+      "classes": [
+        "bfs",
+        "dfs"
+      ],
+      "rule": ">=3%"
+    },
+    "T3": {
+      "classes": [
+        "dijkstra",
+        "bfs"
+      ],
+      "rule": ">=3%"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   5%|▌         | 23/434 [00:00<00:02, 195.85it/s]Loading weights:  18%|█▊        | 77/434 [00:00<00:00, 379.55it/s]Loading weights:  27%|██▋       | 117/434 [00:00<00:01, 311.41it/s]Loading weights:  38%|███▊      | 163/434 [00:00<00:00, 355.12it/s]Loading weights:  48%|████▊     | 209/434 [00:00<00:00, 384.95it/s]Loading weights:  58%|█████▊    | 251/434 [00:00<00:00, 393.32it/s]Loading weights:  70%|██████▉   | 302/434 [00:00<00:00, 421.67it/s]Loading weights:  79%|███████▉  | 345/434 [00:00<00:00, 411.66it/s]Loading weights:  89%|████████▉ | 387/434 [00:01<00:00, 381.46it/s]Loading weights:  98%|█████████▊| 426/434 [00:01<00:00, 345.79it/s]Loading weights: 100%|██████████| 434/434 [00:01<00:00, 370.36it/s]
+02:48:22|INFO   |T4 seeded grid prompt rendering identical: True
+02:48:22|INFO   |T1: prefix coverage grid=0.17 P1=0.10
+02:51:04|INFO   |T1: T7 forced argmax correct 0.70; P1 base argmax DFS
+02:51:04|INFO   |T2: prefix coverage grid=0.37 P1=0.23
+02:53:29|INFO   |T2: T7 forced argmax correct 1.00; P1 base argmax Bubble
+02:53:29|INFO   |T3: prefix coverage grid=0.57 P1=0.35
+[W1016 02:53:29.733592958 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 1310720000 bytes (free: 1280442368, total: 23661248512).
+[W1016 02:53:39.970661035 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 1549795328 bytes (free: 1020395520, total: 23661248512).
+02:56:42|INFO   |T3: T7 forced argmax correct 0.80; P1 base argmax Dijkstra
+02:56:49|INFO   |wrote results/seed_readout.json, results/seed_displacement.json

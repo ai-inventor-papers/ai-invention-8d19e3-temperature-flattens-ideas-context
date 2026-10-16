@@ -1,0 +1,230 @@
+{
+ "n_items": 200,
+ "parse_rate": {
+  "openai/gpt-4.1-mini": 1.0,
+  "google/gemini-2.5-flash-lite": 1.0
+ },
+ "judge1_vs_judge2": {
+  "n": 200,
+  "agreement": 0.925,
+  "kappa": 0.9186308280669397,
+  "kappa_ci": [
+   0.8748597270500142,
+   0.9560004584077755
+  ]
+ },
+ "v1_vs_judge1": {
+  "n": 200,
+  "agreement": 0.855,
+  "kappa": 0.8420909338415464,
+  "kappa_ci": [
+   0.7826927548463469,
+   0.891736812190435
+  ],
+  "confusion_v1_rows_judge_cols": {
+   "BFS": {
+    "Other": 1,
+    "BFS": 18
+   },
+   "Greedy_best_first": {
+    "Other": 3,
+    "Greedy_best_first": 1,
+    "A_star": 1
+   },
+   "Other": {
+    "DFS": 10,
+    "Other": 28,
+    "BFS": 1,
+    "Dijkstra": 1
+   },
+   "Tim_hybrid": {
+    "Tim_hybrid": 4,
+    "Other": 1
+   },
+   "Bubble": {
+    "Bubble": 16
+   },
+   "Quick": {
+    "Quick": 12
+   },
+   "A_star": {
+    "A_star": 6,
+    "Greedy_best_first": 2
+   },
+   "Bellman_Ford": {
+    "Bellman_Ford": 5
+   },
+   "Heap": {
+    "Heap": 5
+   },
+   "Counting": {
+    "Counting": 5
+   },
+   "Dijkstra": {
+    "Dijkstra": 19,
+    "A_star": 1
+   },
+   "Radix": {
+    "Radix": 5
+   },
+   "Insertion": {
+    "Insertion": 5
+   },
+   "Merge": {
+    "Merge": 11
+   },
+   "Shell": {
+    "Other": 1,
+    "Shell": 4
+   },
+   "IDDFS": {
+    "Other": 2,
+    "IDDFS": 3
+   },
+   "Bidirectional": {
+    "Bidirectional": 5
+   },
+   "Selection": {
+    "Selection": 4
+   },
+   "DFS": {
+    "DFS": 4,
+    "Other": 1
+   },
+   "Bucket": {
+    "Counting": 1,
+    "Bucket": 4
+   },
+   "Floyd_Warshall": {
+    "Floyd_Warshall": 5
+   },
+   "SPFA": {
+    "BFS": 2,
+    "Other": 1,
+    "SPFA": 2
+   }
+  }
+ },
+ "v1_vs_judge2": {
+  "n": 200,
+  "agreement": 0.84,
+  "kappa": 0.8269287974255659,
+  "kappa_ci": [
+   0.7701791529630881,
+   0.8805471740414766
+  ]
+ },
+ "v1_acc_on_judge_agreement": {
+  "n": 185,
+  "acc": 0.8864864864864865
+ },
+ "ast_vs_judge1": {
+  "n": 120,
+  "agreement": 0.575,
+  "kappa": 0.5270844602426397,
+  "kappa_ci": [
+   0.43475329283224334,
+   0.6213862792813842
+  ]
+ },
+ "ast_acc_on_judge_agreement": {
+  "n": 106,
+  "acc": 0.6320754716981132
+ },
+ "per_task_v1_vs_judge1": {
+  "T1": {
+   "n": 82,
+   "agreement": 0.7317073170731707,
+   "kappa": 0.6706226036151177,
+   "kappa_ci": [
+    0.5497872070503542,
+    0.7831815387142671
+   ]
+  },
+  "T2": {
+   "n": 80,
+   "agreement": 0.9625,
+   "kappa": 0.9578207381370826,
+   "kappa_ci": [
+    0.9019071164670237,
+    1.0
+   ]
+  },
+  "T3": {
+   "n": 38,
+   "agreement": 0.8947368421052632,
+   "kappa": 0.8490566037735849,
+   "kappa_ci": [
+    0.7068274399697384,
+    0.9628915301067074
+   ]
+  }
+ },
+ "strata": {
+  "by_label": {
+   "BFS": 19,
+   "Greedy_best_first": 5,
+   "Other": 40,
+   "Tim_hybrid": 5,
+   "Bubble": 16,
+   "Quick": 12,
+   "A_star": 8,
+   "Bellman_Ford": 5,
+   "Heap": 5,
+   "Counting": 5,
+   "Dijkstra": 20,
+   "Radix": 5,
+   "Insertion": 5,
+   "Merge": 11,
+   "Shell": 5,
+   "IDDFS": 5,
+   "Bidirectional": 5,
+   "Selection": 4,
+   "DFS": 5,
+   "Bucket": 5,
+   "Floyd_Warshall": 5,
+   "SPFA": 5
+  },
+  "by_T": {
+   "0.7": 120,
+   "1.6": 29,
+   "0.3": 7,
+   "1.3": 16,
+   "1.0": 13,
+   "0.5": 10,
+   "0.0": 5
+  },
+  "by_source": {
+   "ban": 97,
+   "redraw": 60,
+   "grid": 35,
+   "seeds": 8
+  }
+ },
+ "spend_usd": 0.0420663,
+ "sample_seed": 7,
+ "summary": {
+  "n": 200,
+  "spend_usd": 0.0420663,
+  "parse_rate": {
+   "openai/gpt-4.1-mini": 1.0,
+   "google/gemini-2.5-flash-lite": 1.0
+  },
+  "kappa_judge_judge": 0.9186308280669397,
+  "kappa_v1_judge1": 0.8420909338415464,
+  "kappa_v1_judge1_ci": [
+   0.7826927548463469,
+   0.891736812190435
+  ],
+  "kappa_v1_judge2": 0.8269287974255659,
+  "kappa_ast_judge1": 0.5270844602426397,
+  "v1_acc_on_judge_agreement": {
+   "n": 185,
+   "acc": 0.8864864864864865
+  },
+  "ast_acc_on_judge_agreement": {
+   "n": 106,
+   "acc": 0.6320754716981132
+  }
+ }
+}
