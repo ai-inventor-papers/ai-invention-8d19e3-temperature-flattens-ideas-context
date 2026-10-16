@@ -1,0 +1,740 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steering a 3B Code Model Selects One Known Algorithm Rather Than Diversifying</title>
+<meta name="description" content="A preregistered test on Qwen2.5-3B-Instruct: steering away from the default algorithm hands its share to one predicted alternative instead of spreading it, and no control produced correct code outside textbook algorithms.">
+<style>
+:root {
+  --bg: #fbfbf8;
+  --ink: #1b1b1a;
+  --ink-2: #4a4a46;
+  --rule: #dddbd3;
+  --rule-soft: #ebe9e2;
+  --accent: #1b5a87;
+  --accent-soft: #e6eef5;
+  --panel: #f3f2ed;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.62;
+  overflow-wrap: break-word;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+sub, sup { line-height: 0; }
+.skip {
+  position: absolute; left: 16px; top: -100px; z-index: 50;
+  background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 4px; text-decoration: none;
+}
+.skip:focus { top: 12px; }
+
+/* layout */
+.layout {
+  display: grid;
+  grid-template-columns: 168px minmax(0, 1fr);
+  gap: 56px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.side { padding-top: 64px; }
+.side nav { position: sticky; top: 32px; }
+.side .navlabel {
+  font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2);
+  margin: 0 0 12px; font-weight: 600;
+}
+.side ul { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--rule); position: relative; }
+.side li a {
+  display: block; padding: 6px 0 6px 16px; margin-left: -1px;
+  border-left: 2px solid transparent;
+  color: var(--ink-2); text-decoration: none; font-size: 15px; line-height: 1.4;
+}
+.side li a:hover { color: var(--ink); }
+.side li a.active { color: var(--accent); border-left-color: var(--accent); font-weight: 600; }
+main { min-width: 0; padding: 64px 0 32px; }
+.prose { max-width: 68ch; }
+.prose p { margin: 0 0 1.1em; }
+
+/* type scale */
+h1 {
+  font-size: clamp(30px, 4.6vw, 46px); line-height: 1.12; letter-spacing: -0.02em;
+  font-weight: 700; margin: 0 0 24px; max-width: 22ch;
+}
+h2 {
+  font-size: clamp(26px, 3vw, 32px); line-height: 1.2; letter-spacing: -0.01em;
+  margin: 0 0 20px; font-weight: 700;
+}
+h3 { font-size: 21px; line-height: 1.3; margin: 0 0 10px; font-weight: 650; }
+.kicker {
+  font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2);
+  font-weight: 600; margin: 0 0 10px;
+}
+section { padding-top: 72px; margin-top: 72px; border-top: 1px solid var(--rule); scroll-margin-top: 16px; }
+.lede { font-size: 20px; line-height: 1.6; color: var(--ink); }
+.muted { color: var(--ink-2); }
+.small { font-size: 15px; line-height: 1.55; }
+
+/* hero */
+.hero .meta { color: var(--ink-2); font-size: 16px; margin: 0 0 28px; }
+.tldr { max-width: 68ch; }
+.tldr p { font-size: 20px; line-height: 1.6; margin: 0; }
+.headline {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px 40px;
+  margin: 36px 0 36px; padding: 24px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+}
+.headline .num { font-size: clamp(36px, 5vw, 48px); font-weight: 700; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.headline .what { margin: 10px 0 0; font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+.links { display: flex; flex-wrap: wrap; gap: 10px 12px; margin: 0; padding: 0; list-style: none; }
+.links a {
+  display: inline-block; padding: 9px 16px; border: 1px solid var(--rule); border-radius: 6px;
+  text-decoration: none; font-size: 16px; font-weight: 550; color: var(--ink); background: #fff;
+}
+.links a.primary { background: var(--ink); color: #fff; border-color: var(--ink); }
+.links a:hover { border-color: var(--ink); }
+.rounds { margin: 14px 0 0; font-size: 15.5px; color: var(--ink-2); }
+
+/* contributions */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 0 40px; }
+.card { padding: 22px 0 8px; border-top: 1px solid var(--ink); }
+.card .idx { font-size: 14px; color: var(--ink-2); font-variant-numeric: tabular-nums; margin: 0 0 6px; }
+.card h3 { font-size: 19px; }
+.card p { margin: 0 0 14px; font-size: 16.5px; line-height: 1.55; }
+
+/* figures */
+figure { margin: 36px 0; }
+.fig-open {
+  display: block; width: 100%; padding: 0; border: 1px solid var(--rule-soft); background: #fff;
+  cursor: zoom-in; border-radius: 4px; overflow: hidden;
+}
+@media (prefers-reduced-motion: no-preference) { .fig-open { transition: border-color 0.15s ease; } }
+.fig-open:hover { border-color: var(--ink-2); }
+figcaption { margin-top: 12px; font-size: 15px; line-height: 1.55; color: var(--ink-2); max-width: 78ch; }
+figcaption strong { color: var(--ink); }
+.wide { max-width: 940px; }
+
+/* method */
+.steps { list-style: none; margin: 32px 0 0; padding: 0; counter-reset: step; max-width: 74ch; }
+.steps > li { position: relative; padding: 0 0 28px 52px; counter-increment: step; }
+.steps > li::before {
+  content: counter(step); position: absolute; left: 0; top: 0;
+  width: 32px; height: 32px; border: 1.5px solid var(--ink); border-radius: 50%;
+  display: grid; place-items: center; font-size: 15px; font-weight: 700;
+}
+.steps h3 { font-size: 19px; margin-top: 3px; }
+.steps p { margin: 0 0 10px; }
+.io { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: 16px; margin: 8px 0 0; }
+.io dt { font-weight: 600; color: var(--ink-2); font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; padding-top: 3px; }
+.io dd { margin: 0; }
+.eq {
+  font-family: var(--mono); font-size: 15px; background: var(--panel); padding: 14px 16px;
+  border-radius: 4px; overflow-x: auto; white-space: nowrap; margin: 10px 0 12px;
+}
+.rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px 32px; margin: 12px 0 8px; }
+.rules div { border-left: 2px solid var(--rule); padding-left: 14px; font-size: 16px; }
+.rules strong { display: block; letter-spacing: 0.05em; }
+.why { background: var(--panel); padding: 22px 24px; border-radius: 6px; max-width: 74ch; margin-top: 8px; }
+.why h3 { font-size: 18px; }
+.why p { margin: 0 0 10px; font-size: 16.5px; }
+.why p:last-child { margin-bottom: 0; }
+
+/* results */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); max-width: 940px; gap: 0 40px; margin: 28px 0 8px; }
+.stat { padding: 20px 0 22px; border-top: 1px solid var(--rule); }
+.stat .num { font-size: 36px; font-weight: 700; line-height: 1.05; letter-spacing: -0.015em; font-variant-numeric: tabular-nums; }
+.stat .on { margin: 10px 0 4px; font-size: 16px; font-weight: 600; line-height: 1.45; }
+.stat .vs { margin: 0; font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+.sub { margin-top: 56px; }
+.tablewrap { overflow-x: auto; margin: 24px 0 8px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); width: fit-content; max-width: 100%; }
+.scrollhint { display: none; font-size: 14px; color: var(--ink-2); margin: 16px 0 -16px; }
+@media (max-width: 760px) { .scrollhint { display: block; } }
+table { border-collapse: collapse; width: max-content; min-width: 100%; font-size: 15px; font-variant-numeric: tabular-nums; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.tcap { font-size: 14.5px; color: var(--ink-2); line-height: 1.5; margin: 10px 0 24px; max-width: 78ch; }
+th, td { padding: 7px 12px 7px 0; text-align: right; border-bottom: 1px solid var(--rule-soft); white-space: nowrap; vertical-align: top; }
+th:first-child, td:first-child { text-align: left; }
+td.l, th.l { text-align: left; }
+thead th { font-weight: 600; border-bottom: 1px solid var(--rule); font-size: 14px; }
+tr.group th { text-align: left; font-weight: 600; font-style: italic; padding-top: 14px; background: none; }
+tr.hl td { font-weight: 650; }
+.note { font-size: 15.5px; color: var(--ink-2); }
+.implication { border-left: 3px solid var(--accent); padding: 4px 0 4px 20px; max-width: 70ch; margin-top: 28px; }
+.implication p { margin: 0 0 10px; }
+
+/* gallery */
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr)); gap: 48px 40px; margin-top: 28px; }
+.gallery figure { margin: 0; }
+.gallery h3 { font-size: 17px; margin: 14px 0 6px; }
+.gallery figcaption { margin-top: 0; font-size: 14.5px; }
+
+/* limitations */
+.limits { list-style: none; padding: 0; margin: 0; max-width: 70ch; }
+.limits li { padding: 16px 0; border-top: 1px solid var(--rule-soft); }
+.limits li:first-child { border-top: 0; padding-top: 0; }
+
+/* footer */
+footer { border-top: 1px solid var(--rule); margin-top: 80px; padding: 48px 0 64px; }
+footer h2 { font-size: 20px; margin-bottom: 14px; }
+.codelist { list-style: none; padding: 0; margin: 0 0 32px; max-width: 72ch; }
+.codelist li { padding: 6px 0; font-size: 16px; }
+footer .small { max-width: 72ch; }
+
+/* lightbox */
+dialog.lb {
+  border: 0; padding: 0; background: transparent; max-width: 100vw; max-height: 100vh;
+  width: 100vw; height: 100vh; margin: 0;
+}
+dialog.lb::backdrop { background: rgba(20, 20, 18, 0.82); }
+.lb-inner {
+  position: relative; margin: 3vh auto; width: min(1240px, calc(100vw - 32px)); max-height: 94vh;
+  background: #fff; border-radius: 6px; padding: 52px 24px 20px; overflow: auto; color: var(--ink);
+}
+@media (prefers-reduced-motion: no-preference) {
+  dialog.lb[open] .lb-inner { animation: lbIn 0.16s ease-out; }
+  @keyframes lbIn { from { opacity: 0; transform: scale(0.985); } to { opacity: 1; transform: none; } }
+}
+.lb-close {
+  position: absolute; top: 10px; right: 12px; font: inherit; font-size: 15px; font-weight: 600;
+  background: #fff; color: var(--ink); border: 1px solid var(--ink-2); border-radius: 4px; padding: 6px 12px; cursor: pointer;
+}
+.lb-close:hover { background: var(--panel); }
+.lb-title { font-weight: 700; font-size: 18px; margin: 14px 0 6px; }
+.lb-cap { font-size: 15px; line-height: 1.55; color: var(--ink-2); margin: 0; max-width: 90ch; }
+.lb-inner img { margin: 0 auto; max-height: 72vh; width: auto; }
+
+@media (max-width: 900px) {
+  body { font-size: 17px; }
+  .layout { display: block; padding: 0 16px; }
+  .side { padding-top: 0; position: sticky; top: 0; z-index: 20; background: var(--bg); border-bottom: 1px solid var(--rule); margin: 0 -16px; }
+  .side nav { position: static; }
+  .side .navlabel { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .side ul { display: flex; overflow-x: auto; border-left: 0; padding: 0 8px; scrollbar-width: none; }
+  .side li a { white-space: nowrap; padding: 12px 10px; border-left: 0; border-bottom: 2px solid transparent; margin: 0; font-size: 15px; }
+  .side li a.active { border-bottom-color: var(--accent); }
+  main { padding-top: 36px; }
+  section { padding-top: 48px; margin-top: 48px; scroll-margin-top: 52px; }
+  .tldr p, .lede { font-size: 18px; }
+  .steps > li { padding-left: 44px; }
+  .lb-inner { padding: 52px 12px 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="layout">
+  <aside class="side">
+    <nav data-scrollspy aria-label="Sections">
+      <p class="navlabel">On this page</p>
+      <ul>
+        <li><a href="#contributions">Contributions</a></li>
+        <li><a href="#method">Method</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#figures">Figures</a></li>
+        <li><a href="#limitations">Limitations</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main id="main" tabindex="-1">
+    <header class="hero">
+      <p class="kicker">Research paper</p>
+      <h1>Steering a 3B Code Model Selects One Known Algorithm Rather Than Diversifying</h1>
+      <p class="meta">Preregistered experiments on Qwen2.5-3B-Instruct, with open prompts for path search and sorting.</p>
+      <div class="tldr">
+        <p>Raising the temperature, rewording the prompt and steering a model's activations are all used to get less obvious solutions. This paper asks whether they change the solution <em>idea</em> or only its wording. It labels the algorithm in every program Qwen2.5-3B-Instruct writes for <em>Implement a sorting algorithm</em> and <em>Implement a path search algorithm</em>, and runs each program against a test suite. Steering the model away from its default algorithm does not spread its choices over the algorithms it knows. It hands the default's share to one predicted alternative: on sorting, under rules frozen before the data existed, bubble sort fell from 62% of programs to 0% and quicksort rose to 68%. Every passing program outside the labelled families that a blind judge checked was a known algorithm.</p>
+      </div>
+      <div class="headline">
+        <div>
+          <div class="num">&minus;0.73 bits</div>
+          <p class="what">Entropy over algorithm families under steering, below the mean of five random directions of matched norm (sorting, redraw with fresh seeds; 95% CI [&minus;0.95, &minus;0.45]). Lower entropy means selection, not flattening.</p>
+        </div>
+        <div>
+          <div class="num">62% &rarr; 0%</div>
+          <p class="what">Bubble sort's share of programs, unsteered baseline against steering on the fresh-seed redraw, where quicksort, the frozen top prediction, rose to 68%.</p>
+        </div>
+      </div>
+      <ul class="links" aria-label="Paper and documents">
+        <li><a class="primary" href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context@main/paper.pdf">Read the paper (PDF)</a></li>
+        <li><a href="interactive.html">Explore the interactive demo</a></li>
+        <li><a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context@main/report.pdf">Read the full research report</a></li>
+        <li><a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context@main/exec_summary.pdf">Read the executive summary</a></li>
+        <li><a href="https://github.com/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context">Code repository</a></li>
+      </ul>
+      <p class="rounds">Round reports: <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context@main/round-1/report.pdf">Round 1</a> &middot; <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context@main/round-2/report.pdf">Round 2</a></p>
+    </header>
+
+    <section id="contributions" aria-labelledby="h-contrib">
+      <h2 id="h-contrib">Contributions</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="idx">01</p>
+          <h3>A preregistered test of selecting against flattening</h3>
+          <p>Frozen predictions of which family gains, and a baseline of random directions averaged over draws, decide whether a steering direction spreads probability over known families or hands it to one.</p>
+        </article>
+        <article class="card">
+          <p class="idx">02</p>
+          <h3>Steering selects, replicated across draws and tasks</h3>
+          <p>On a redraw with fresh seeds, the direction away from the mode gives quicksort 68% and A* 63% of programs, against 24% and 6% under random directions of matched norm.</p>
+        </article>
+        <article class="card">
+          <p class="idx">03</p>
+          <h3>A prompting ceiling for novelty</h3>
+          <p>Steering toward families absent from the baseline produces them in 0% to 1.3% of programs for three of four targets. Naming them in the prompt produces them in 92% to 100%.</p>
+        </article>
+        <article class="card">
+          <p class="idx">04</p>
+          <h3>Behavioural context for the same conclusion</h3>
+          <p>Temperature adds families slowly while correctness falls, random seed strings concentrate the choice, and negative instructions against never-written families reshuffle the ones the model does write.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="method" aria-labelledby="h-method">
+      <h2 id="h-method">Method</h2>
+      <div class="prose">
+        <p class="lede">The unit of measurement is the <em>idea</em>: the algorithm family a program implements, checked by running it. A control that adds novelty should move programs onto families the model rarely writes, and those programs should still pass.</p>
+      </div>
+      <figure class="wide">
+        <button type="button" class="fig-open" data-fig="2" aria-label="Enlarge Figure 2, the method schematic">
+          <img src="figures/fig2_v0.jpg" width="3087" height="1335" loading="lazy" alt="Three-panel schematic. Left: programs from the sorting prompt split into the mode, bubble sort, and non-modal families, each executed on 50 tests; mean activations at layers 32 to 34 are subtracted to give the away-from-mode direction v. Middle: alpha times v is added to three highlighted transformer layers over the final prompt token and first 64 generated tokens, beside a list of comparators and a padlock marking the frozen strengths, rules and predicted gainer. Right: two sketched bar charts, FLATTEN with even bars and SELECT with one tall predicted-gainer bar.">
+        </button>
+        <figcaption><strong>Figure 2.</strong> Building and testing the away-from-mode direction. Click to enlarge; full caption in the <a href="#fig-2">figure gallery</a>.</figcaption>
+      </figure>
+
+      <ol class="steps">
+        <li>
+          <h3>Sample, label and execute</h3>
+          <p>The prompts are bare user turns: <em>Implement a path search algorithm in Python</em> and <em>Implement a sorting algorithm</em>. The baseline holds 300 programs per task at temperature 0.7, no top-<i>k</i>, a 768-token cap.</p>
+          <dl class="io">
+            <dt>Label</dt><dd>A deterministic labeller assigns a known family (BFS, DFS, Dijkstra, A*, IDDFS, Bellman-Ford and others; bubble, quick, merge, selection, heap sort and others), plus <em>other</em> and <em>unparseable</em>. Against a blind LLM judge, Cohen's kappa is 0.84 [0.78, 0.89].</dd>
+            <dt>Run</dt><dd>A sandboxed oracle runs path search programs on 50 random directed graphs and 25 grids, and sorting programs on 50 lists. A program passes only if every test case is correct.</dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Read the direction away from the mode</h3>
+          <p>For each program, the residual-stream activation is averaged over a <em>commitment window</em>: the 17 generated tokens starting at the first token that names or implements the idea, or the first 32 generated tokens when no such token exists. The direction is the difference in means between programs that do not and do implement the default family <i>m</i>, normalised to unit length.</p>
+          <div class="eq" role="math" aria-label="v sub l equals the mean of h sub l of x over programs whose idea is not m, minus the mean of h sub l of x over programs whose idea is m">v<sub>&#8467;</sub> = mean<sub>x : idea(x) &ne; m</sub> h<sub>&#8467;</sub>(x) &minus; mean<sub>x : idea(x) = m</sub> h<sub>&#8467;</sub>(x)</div>
+        </li>
+        <li>
+          <h3>Steer during generation</h3>
+          <p>The edit &alpha; &middot; (r&#772;<sub>&#8467;</sub>/3) &middot; v<sub>&#8467;</sub> is added at layers 32 to 34 of 36, where r&#772;<sub>&#8467;</sub> is the median residual norm, at the final prompt token and the first 64 generated tokens. A linear probe chose the band, but its accuracy was nearly flat across layers, so the band choice carries little information.</p>
+        </li>
+        <li>
+          <h3>Freeze the predictions, then generate</h3>
+          <p>Before any steered generation, two rankings of predicted gainers and two strengths were written to files whose SHA-256 hashes were recorded. The projection ranking put A* first on path search and quicksort first on sorting; a competing nearest neighbour ranking put IDDFS and selection sort first. Strength <i>s</i><sub>1</sub> is the &alpha; whose mode share is closest to half the baseline mode share; <i>s</i><sub>2</sub> is the &alpha; with the lowest mode share whose pass rate stays at least 0.8 times the baseline's, both calibrated on separate runs of 30 programs.</p>
+          <div class="rules">
+            <div><strong>SELECT</strong>At <i>s</i><sub>2</sub> one non-default idea takes at least half the programs, it is a predicted gainer, and the distance from uniform rises again from <i>s</i><sub>1</sub> to <i>s</i><sub>2</sub>.</div>
+            <div><strong>FLATTEN</strong>The distance from uniform falls from baseline to <i>s</i><sub>1</sub> to <i>s</i><sub>2</sub>, and no non-default idea reaches half the programs.</div>
+          </div>
+        </li>
+        <li>
+          <h3>Compare against what else could explain the shift</h3>
+          <p>Each targeted setting is compared with the <em>mean</em> of five random directions of matched norm at the same strength, with a hierarchical bootstrap over draws and programs. Further comparators: the other task's direction, temperatures 1.0 and 1.3, directions toward families outside the menu, and a prompt that simply names the family.</p>
+        </li>
+      </ol>
+
+      <div class="why">
+        <h3>Why the design looks like this</h3>
+        <p>A steering vector of the right norm changes outputs whatever its direction, and the effect of one random direction varies widely from draw to draw. A targeted direction that raises diversity once is therefore weak evidence, which is why the baseline averages five draws.</p>
+        <p>Flattening and selecting predict opposite things for entropy relative to random directions of the same norm, and only selection predicts which family will gain. That makes the two outcomes separable with frozen rules.</p>
+        <p>Every steering condition shares one seeded sampler, so the same sample index sees the same random numbers in every condition. The HuggingFace baseline agrees with a vLLM baseline from the negative-instruction experiments (Jensen&ndash;Shannon divergence 0.009 on path search and 0.001 on sorting; <a href="https://github.com/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context/tree/main/round-2/experiment-6">code: Does steering pick ideas or spread them?</a>).</p>
+      </div>
+    </section>
+
+    <section id="results" aria-labelledby="h-results">
+      <h2 id="h-results">Results</h2>
+      <div class="prose">
+        <p class="lede">The frozen rule returns SELECT on both tasks and both draws. The sorting labels are the cleaner measurement (kappa 0.94 against a judge on steered outputs, against 0.39 on path search), so the headline comes from sorting.</p>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="num">&minus;0.73 bits</div>
+          <p class="on">Idea entropy, sorting redraw at <i>s</i><sub>2</sub> (fresh seeds 1000 to 1149)</p>
+          <p class="vs">vs. mean of five random directions of matched norm: 1.022 against 1.749 bits (Miller&ndash;Madow), 95% CI [&minus;0.95, &minus;0.45].</p>
+        </div>
+        <div class="stat">
+          <div class="num">65.3% / 68.0%</div>
+          <p class="on">Quicksort share at <i>s</i><sub>2</sub>, main draw / redraw</p>
+          <p class="vs">vs. 23.3% at baseline. Bubble sort fell from 62.0% to 0.7% and 0%; pass rate 0.92 and 0.91.</p>
+        </div>
+        <div class="stat">
+          <div class="num">56.7% / 63.3%</div>
+          <p class="on">A* share on path search at <i>s</i><sub>2</sub>, main draw / redraw</p>
+          <p class="vs">vs. 8.0% at baseline. BFS fell from 61.3% to 12.7% and 14.0%; random directions left BFS at 61% to 72%.</p>
+        </div>
+        <div class="stat">
+          <div class="num">0.17</div>
+          <p class="on">Path search pass rate under steering at <i>s</i><sub>2</sub>, both draws</p>
+          <p class="vs">vs. 0.34 for the random direction mean, and below the frozen bar of 0.25 that calibration predicted <i>s</i><sub>2</sub> would meet.</p>
+        </div>
+      </div>
+
+      <div class="sub">
+        <h3>The direction away from the mode selects one predicted idea</h3>
+        <figure class="wide">
+          <button type="button" class="fig-open" data-fig="1" aria-label="Enlarge Figure 1, idea shares under steering">
+            <img src="figures/fig1_v0.png" width="1300" height="732" loading="lazy" alt="Two panels of 100 percent stacked bars, path search and sorting, for four conditions: baseline, random mean of five, and the away-from-mode direction on the main draw and on a seed re-draw. Under the away-from-mode direction the grey default segment (BFS, bubble sort) shrinks and the amber predicted family grows to 57 and 63 percent A-star on path search and 65 and 68 percent quicksort on sorting; random directions leave the grey default large. Pass rates above bars fall to 0.17 on path search but stay above 0.9 on sorting.">
+          </button>
+          <figcaption><strong>Figure 1.</strong> Steering hands the default's share to one algorithm. Click to enlarge; full caption in the <a href="#fig-1">figure gallery</a>.</figcaption>
+        </figure>
+        <div class="prose">
+          <p>On sorting at <i>s</i><sub>2</sub> (&alpha; = 0.473), quicksort, the top prediction of the projection ranking, rises from 23.3% to 65.3% and 68.0%, and merge sort takes nearly all of the rest. On path search at <i>s</i><sub>2</sub> (&alpha; = 0.224), A*, again the top predicted gainer, rises from 8.0% to 56.7% and 63.3%. None of the five random directions makes A* the top gainer.</p>
+          <p>Selection on path search costs correctness: the pass rate falls to 0.17 on both draws, and 77% to 78% of outputs reach the token cap.</p>
+        </div>
+
+        <p class="scrollhint" aria-hidden="true">Table scrolls sideways.</p>
+        <div class="tablewrap" role="region" aria-label="Table 1, scrollable" tabindex="0">
+          <table>
+            <caption class="vh">Table 1</caption>
+            <thead>
+              <tr><th scope="col">Condition</th><th scope="col"><i>n</i></th><th scope="col">Mode</th><th scope="col">Gainer</th><th scope="col" class="l">Other ideas</th><th scope="col">Entropy</th><th scope="col">Pass</th></tr>
+            </thead>
+            <tbody>
+              <tr class="group"><th colspan="7" scope="colgroup">Path search (mode: BFS; predicted gainer: A*)</th></tr>
+              <tr><td>Baseline</td><td>300</td><td>61.3</td><td>8.0</td><td class="l">DFS 14.0, Dijkstra 12.0</td><td>1.73</td><td>0.31</td></tr>
+              <tr><td>Random directions, <i>s</i><sub>2</sub>, mean</td><td>750</td><td>66.5</td><td>6.1</td><td class="l">DFS 11.6, Dijkstra 11.3</td><td>1.43&ndash;1.73</td><td>0.34</td></tr>
+              <tr><td>Away from mode, <i>s</i><sub>1</sub></td><td>150</td><td>52.0</td><td>18.0</td><td class="l">Dijkstra 16.0, DFS 7.3</td><td>1.94</td><td>0.35</td></tr>
+              <tr class="hl"><td>Away from mode, <i>s</i><sub>2</sub></td><td>150</td><td>12.7</td><td>56.7</td><td class="l">DFS 14.7, Dijkstra 11.3</td><td>1.86</td><td>0.17</td></tr>
+              <tr class="hl"><td>Away from mode, <i>s</i><sub>2</sub>, redraw</td><td>150</td><td>14.0</td><td>63.3</td><td class="l">DFS 12.7, Dijkstra 7.3</td><td>1.65</td><td>0.17</td></tr>
+              <tr><td>Other task's direction, <i>s</i><sub>2</sub></td><td>150</td><td>37.3</td><td>26.7</td><td class="l">DFS 21.3, Dijkstra 8.0</td><td>2.13</td><td>0.21</td></tr>
+              <tr><td>Temperature 1.0</td><td>150</td><td>60.7</td><td>5.3</td><td class="l">DFS 18.7, Dijkstra 9.3</td><td>1.71</td><td>0.23</td></tr>
+              <tr><td>Temperature 1.3</td><td>150</td><td>42.0</td><td>3.3</td><td class="l">other 24.0, DFS 16.0</td><td>2.12</td><td>0.05</td></tr>
+              <tr class="group"><th colspan="7" scope="colgroup">Sorting (mode: bubble sort; predicted gainer: quicksort)</th></tr>
+              <tr><td>Baseline</td><td>300</td><td>62.0</td><td>23.3</td><td class="l">merge 9.0, selection 3.7</td><td>1.50</td><td>0.98</td></tr>
+              <tr><td>Random directions, <i>s</i><sub>2</sub>, mean</td><td>750</td><td>41.2</td><td>24.0</td><td class="l">merge 17.6, selection 14.5</td><td>1.39&ndash;1.94</td><td>0.98</td></tr>
+              <tr><td>Away from mode, <i>s</i><sub>1</sub></td><td>150</td><td>28.7</td><td>50.7</td><td class="l">merge 14.0, selection 6.0</td><td>1.70</td><td>0.99</td></tr>
+              <tr class="hl"><td>Away from mode, <i>s</i><sub>2</sub></td><td>150</td><td>0.7</td><td>65.3</td><td class="l">merge 33.3</td><td>1.03</td><td>0.92</td></tr>
+              <tr class="hl"><td>Away from mode, <i>s</i><sub>2</sub>, redraw</td><td>150</td><td>0.0</td><td>68.0</td><td class="l">merge 30.0</td><td>1.01</td><td>0.91</td></tr>
+              <tr><td>Other task's direction, <i>s</i><sub>2</sub></td><td>150</td><td>23.3</td><td>34.7</td><td class="l">merge 33.3</td><td>1.88</td><td>0.98</td></tr>
+              <tr><td>Temperature 1.0</td><td>150</td><td>43.3</td><td>31.3</td><td class="l">selection 11.3, merge 10.7</td><td>1.94</td><td>1.00</td></tr>
+              <tr><td>Temperature 1.3</td><td>150</td><td>47.3</td><td>25.3</td><td class="l">merge 10.0, selection 10.0</td><td>2.01</td><td>0.81</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="tcap">Table 1. Idea distribution (% of programs), idea entropy (bits, uncorrected estimate) and pass rate under the direction away from the mode and its comparators. The random row pools five random directions of matched norm at <i>s</i><sub>2</sub> (750 programs); its entropy column gives the range over the five draws. <i>s</i><sub>1</sub> = 0.05 on both tasks, <i>s</i><sub>2</sub> = 0.224 (path search) and 0.473 (sorting). Temperature 0.7 except in the temperature rows, 768-token cap.</p>
+
+        <figure class="wide">
+          <button type="button" class="fig-open" data-fig="3" aria-label="Enlarge Figure 3, targeted minus random contrasts">
+            <img src="figures/fig3_v0.png" width="1300" height="732" loading="lazy" alt="Forest plot with two panels. Rows are path search and sorting settings at strengths s1 and s2, main draw and re-draw, plus an off-target direction. Left panel, entropy difference from the random mean: both sorting s2 rows sit near minus 0.7 bits with intervals entirely below zero, inside a shaded band; path search rows sit at or above zero. Right panel, non-mode share difference: path search s2 rows near plus 0.53, sorting rows near plus 0.3 to 0.4.">
+          </button>
+          <figcaption><strong>Figure 3.</strong> Targeted minus random: entropy and non-mode share. Click to enlarge; full caption in the <a href="#fig-3">figure gallery</a>.</figcaption>
+        </figure>
+        <div class="prose">
+          <p>On sorting, entropy at <i>s</i><sub>2</sub> lies 0.71 bits below the random mean on the main draw ([&minus;0.94, &minus;0.44]) and 0.73 bits below on the redraw ([&minus;0.95, &minus;0.45]). A flattening direction would raise entropy above random perturbations of the same norm. This one concentrates the distribution on two families.</p>
+          <p>Path search shows the same selection with a different entropy signature. The non-mode share lies 0.54 above the random mean on the main draw ([0.47, 0.61]) and 0.53 above on the redraw ([0.45, 0.60]). Entropy is above the random mean on the main draw (+0.32 bits, [0.04, 0.56]) and undetermined on the redraw (+0.10, [&minus;0.19, 0.36]): moving the majority to A* while three other families keep 7% to 15% each raises entropy even though one family takes over. Entropy alone would have called this a diversity gain.</p>
+          <p><strong>Three checks bound the result.</strong> The nearest neighbour ranking was wrong on both tasks, so the direction lands on the family along its own projection, not on the one closest to the mode. The other task's direction also makes A* (26.7%) and quicksort (34.7%) the most common non-default families, though neither reaches half; part of the effect is a generic push away from the default. And random directions are not inert: on sorting, one random draw at <i>s</i><sub>2</sub> gives selection sort 48% and another gives quicksort 50%, and the random mode share ranges from 0.19 to 0.69. A comparison with any single random cell would have misled in either direction.</p>
+        </div>
+      </div>
+
+      <div class="sub prose">
+        <h3>The same selection under a different prompt and layer band</h3>
+        <p>A second experiment on the same model fixed the function signature and output format, which narrowed path search to two families (BFS 98 and DFS 44 of 150 programs, pass rate 0.673). Its direction, taken over the first 32 generated tokens at layers 29 to 31, had been registered as a flattening control. At &alpha; = 0.224 it produced DFS in 145 of 150 programs at an unchanged pass rate (0.680), and idea entropy fell from 1.175 to 0.235 bits. Three random directions of matched norm at the same strength left the split near baseline (BFS 44 to 50, DFS 21 to 31 of 75; <a href="https://github.com/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context/tree/main/round-1/experiment-3">code: Can internal knobs beat temperature for novel code?</a>). This is exploratory evidence: the selection was observed after the flattening test it was designed for had failed.</p>
+      </div>
+
+      <div class="sub">
+        <div class="prose">
+          <h3>Selection does not reach new ideas</h3>
+          <p>If steering only selects among families the model already writes, it should fail to produce families it never writes. Directions toward the centroids of families outside the menu, built from programs the model wrote when asked for them, were compared with simply asking.</p>
+        </div>
+        <p class="scrollhint" aria-hidden="true">Table scrolls sideways.</p>
+        <div class="tablewrap" role="region" aria-label="Table 2, scrollable" tabindex="0">
+          <table>
+            <caption class="vh">Table 2</caption>
+            <thead>
+              <tr><th scope="col">Task</th><th scope="col" class="l">Target family</th><th scope="col">Steered share</th><th scope="col">Steered pass</th><th scope="col">Prompted share</th><th scope="col">Prompted pass</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Path search</td><td class="l">IDDFS</td><td>0.0%</td><td>0.30</td><td>91.7%</td><td>0.03</td></tr>
+              <tr><td>Path search</td><td class="l">Bellman-Ford</td><td>0.0%</td><td>0.55</td><td>100%</td><td>0.75</td></tr>
+              <tr><td>Sorting</td><td class="l">Counting sort</td><td>1.3%</td><td>0.98</td><td>100%</td><td>0.33</td></tr>
+              <tr><td>Sorting</td><td class="l">Heap sort</td><td>91.3%</td><td>0.95</td><td>100%</td><td>1.00</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="tcap">Table 2. Steering toward a family outside the menu against naming it in the prompt. Steered cells <i>n</i> = 150 at the frozen strengths (&alpha; = 0.224, or 0.473 for heap sort); prompted cells <i>n</i> = 60.</p>
+        <div class="prose">
+          <p>Three of four directions fail. The IDDFS direction moves mass from BFS to DFS (35.3%) and the Bellman-Ford direction moves it to Dijkstra (34.7%), the nearest families the model already writes. Heap sort is the exception. Naming the family works for all four.</p>
+          <p>The broader notion of novelty fares no better. In the two-family experiment, a blind judge labelled every passing program in the labeller's residual class, and all 70 were known algorithms. Asking for novelty in that experiment's prompt did no better: a request for a new algorithm left 136 of 150 path search programs on BFS or DFS, and a request for a fully novel algorithm of 2,000 words cut the pass rate from 0.67 to 0.11. Concept erasure with LEACE cut the balanced accuracy of a linear idea probe from 0.888 to 0.334 (chance 0.333) without moving the outputs off the known families. On textbook tasks this metric is near its floor by construction, so the zero bounds novelty in this setting rather than in general.</p>
+        </div>
+      </div>
+
+      <div class="sub">
+        <div class="prose">
+          <h3>Temperature adds ideas slowly and breaks code quickly</h3>
+          <p>The temperature and seed experiments used vLLM with 100 programs per cell, sampling temperatures <i>T</i> from 0.3 to 1.6, top-<i>k</i> 10 or none, and a 1,536-token cap on the redraw (<a href="https://github.com/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context/tree/main/round-2/experiment-4">code: Does temperature or a seed phrase change the algorithm an LLM picks?</a>).</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="num">3.48 &rarr; 3.91</div>
+            <p class="on">Expected families among ten path search programs, <i>T</i> = 0.3 to 1.0</p>
+            <p class="vs">while the pass rate falls from 0.49 to 0.19.</p>
+          </div>
+          <div class="stat">
+            <div class="num">2.06 &rarr; 3.82</div>
+            <p class="on">Expected families among ten sorting programs, <i>T</i> = 0.3 to 1.0</p>
+            <p class="vs">at a pass rate of 0.99; the new mass goes to the same five comparison sorts.</p>
+          </div>
+        </div>
+        <figure class="wide">
+          <button type="button" class="fig-open" data-fig="4" aria-label="Enlarge Figure 4, temperature sweep">
+            <img src="figures/fig4_v0.png" width="1300" height="732" loading="lazy" alt="Two line charts against sampling temperature from 0.3 to 1.6. Blue solid line with circles is the expected number of distinct families among ten programs; amber dashed line with squares is the pass rate. Path search: the family count stays near 3.3 to 3.9 while the pass rate falls from about 0.49 to near zero. Sorting: the family count rises from about 2 to 4 while the pass rate holds near 1 until it collapses at 1.6. A grey band at T equals 1.6 marks mostly truncated, unparseable output.">
+          </button>
+          <figcaption><strong>Figure 4.</strong> Temperature adds ideas slowly and breaks code. Click to enlarge; full caption in the <a href="#fig-4">figure gallery</a>.</figcaption>
+        </figure>
+        <div class="prose">
+          <p>The model's default is a mode, not an average. Even at <i>T</i> = 0.3 with top-<i>k</i> 10, ten path search programs contain about 3.5 ideas written in about 9 distinct phrasings. Ten ideas with one phrasing each never occurs in any cell; the largest expected count among ten is 4.9. On the weighted shortest path prompt the model writes Dijkstra's algorithm in 98 to 100 of 100 programs up to <i>T</i> = 1.0.</p>
+        </div>
+      </div>
+
+      <div class="sub">
+        <div class="prose">
+          <h3>Prompt context also selects rather than diversifies</h3>
+          <p>Prepending a random seed string in the format of <code>seed=d32qxk4nt43</code> (60 strings of random characters such as <code>seed=i9609s2lg7o</code> and 60 lists of four random words such as <code>seed=(mask bed square finger)</code>; the two literal example strings were not among them) lowers idea entropy at <i>T</i> = 0.7 by 0.34 bits on path search ([&minus;0.53, &minus;0.13]) and 0.68 bits on sorting ([&minus;0.92, &minus;0.47]), over 120 strings with 5 samples each against 300 unseeded programs. On sorting, random words send 282 of 300 programs to bubble sort. This narrowing is exploratory: the preregistered prediction of seed effects failed.</p>
+          <p>Negative instructions (<em>Do not use X.</em>) act as instructions to choose something else, not as removal of an option. Removing an option should never lower the share of one that remains. In a preregistered test on 5,930 confirmation programs, negative instructions lowered the share of a family they did not name in 8 of 46 tested cells, spread over 6 negative instructions. Placebo blocks compared with each other gave 0 such cells out of 45 (<a href="https://github.com/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context/tree/main/round-2/experiment-5">code: Do idea bans steer an LLM's internal state?</a>).</p>
+        </div>
+        <figure class="wide">
+          <button type="button" class="fig-open" data-fig="5" aria-label="Enlarge Figure 5, negative instructions">
+            <img src="figures/fig5_v0.png" width="1300" height="732" loading="lazy" alt="Two panels of 100 percent stacked bars. Path search: a placebo bar with BFS at 63.3 percent, then bans of greedy best-first, IDDFS and Bellman-Ford, families the model never writes; BFS drops to 23, 41 and 40 percent while A-star rises to 58 and 49 percent or Dijkstra to 56 percent. Sorting: placebo with bubble sort at 54 percent, then bans of counting, radix and shell sort; bubble sort drops to 26, 15 and 28 percent while quicksort and merge sort grow.">
+          </button>
+          <figcaption><strong>Figure 5.</strong> Banning a never-written algorithm reshuffles the rest. Click to enlarge; full caption in the <a href="#fig-5">figure gallery</a>.</figcaption>
+        </figure>
+        <p class="scrollhint" aria-hidden="true">Table scrolls sideways.</p>
+        <div class="tablewrap" role="region" aria-label="Table 3, scrollable" tabindex="0">
+          <table>
+            <caption class="vh">Table 3</caption>
+            <thead>
+              <tr><th scope="col">Task</th><th scope="col" class="l">Banned family (placebo share)</th><th scope="col">Mode, placebo &rarr; banned</th><th scope="col">Largest gainer, placebo &rarr; banned</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Path search</td><td class="l">greedy best first (0%)</td><td>BFS 63.3 &rarr; 23.0</td><td>A* 2.7 &rarr; 58.0</td></tr>
+              <tr><td>Path search</td><td class="l">IDDFS (0%)</td><td>BFS 63.3 &rarr; 41.0</td><td>A* 2.7 &rarr; 49.0</td></tr>
+              <tr><td>Path search</td><td class="l">Bellman-Ford (0%)</td><td>BFS 63.3 &rarr; 40.0</td><td>Dijkstra 4.7 &rarr; 56.0</td></tr>
+              <tr><td>Sorting</td><td class="l">radix sort (0%)</td><td>bubble 54.0 &rarr; 15.0</td><td>merge 15.0 &rarr; 39.0</td></tr>
+              <tr><td>Sorting</td><td class="l">counting sort (0%)</td><td>bubble 54.0 &rarr; 26.0</td><td>quick 18.0 &rarr; 35.0</td></tr>
+              <tr><td>Sorting</td><td class="l">shell sort (0%)</td><td>bubble 54.0 &rarr; 28.0</td><td>merge 15.0 &rarr; 49.0</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="tcap">Table 3. A negative instruction against a family the model almost never writes moves the families it does write (<i>n</i> = 100 per negative instruction, placebo <i>n</i> = 300; % of programs).</p>
+        <div class="prose">
+          <p>The internal account of negative instructions is partial. Adding a negative instruction's displacement to a placebo run recovers none of the effect (mean recovery &minus;0.001, against &minus;0.006 for random displacements). The logit lens of the displacement shows tokens such as <em>while</em>, <em>another</em> and <em>rather</em>, and ranks the banned name about 17,600th, so the final prompt state reads as an instruction to do something else. On gemma-2-2b-it, regularity violations were rare (1 of 72 cells).</p>
+        </div>
+      </div>
+
+      <div class="implication">
+        <h3>What this means for evaluating diversity</h3>
+        <p>On path search, an evaluation that scored diversity by entropy against a single random direction would have reported a diversity gain; the family-level view shows a switch of default with the pass rate halved. The paper draws two practices for steering studies that claim diversity or creativity gains: report what fraction of the gain goes to one family, and compare with the mean of several random directions of matched norm rather than one.</p>
+      </div>
+    </section>
+
+    <section id="figures" aria-labelledby="h-figures">
+      <h2 id="h-figures">Figure gallery</h2>
+      <p class="muted small">Select a figure to enlarge it. Press Escape, click outside, or use the Close button to return.</p>
+      <div class="gallery">
+        <figure id="fig-1">
+          <button type="button" class="fig-open" data-fig="1" aria-label="Enlarge Figure 1, idea shares under steering">
+            <img src="figures/fig1_v0.png" width="1300" height="732" loading="lazy" alt="Stacked bars of algorithm family shares for path search and sorting under baseline, random directions and the away-from-mode direction; the predicted family in amber takes most of the default's grey share under steering.">
+          </button>
+          <h3 id="t-fig1">Figure 1. Steering hands the default's share to one algorithm</h3>
+          <figcaption id="cap-fig1">Share of programs implementing each algorithm family for Qwen2.5-3B-Instruct at temperature 0.7, on the bare path-search prompt (a) and the bare sorting prompt (b). Each 100%-stacked bar is one condition: the unsteered baseline (<i>n</i> = 300); the pooled mean of five matched-norm random directions at the frozen strength <i>s</i><sub>2</sub> (<i>n</i> = 750); and the away-from-mode direction at <i>s</i><sub>2</sub> on the main draw and on a fresh-seed re-draw (<i>n</i> = 150 each). The default family (BFS, bubble sort) is grey and the family predicted by the frozen projection ranking (A*, quicksort) is amber. Other named families are in muted colours; the hatched white segment pools all remaining labels. Numbers inside segments are shares in percent, shown for segments of at least 5%. The number above each bar is the oracle pass rate. The away-from-mode direction moves most of the default's share to the predicted family on both tasks and both seed draws: A* rises from 8% to 57% and 63%, and quicksort from 23% to 65% and 68%, while bubble sort falls to 1% and 0%. Random directions of the same norm leave BFS in place on path search (61% vs. 67%). On sorting they reduce bubble sort to 41%, spreading the freed share over merge and selection sort, and leave quicksort at 24%. On path search, selection comes with a lower pass rate (0.31 to 0.17); on sorting the pass rate stays above 0.9.</figcaption>
+        </figure>
+        <figure id="fig-2">
+          <button type="button" class="fig-open" data-fig="2" aria-label="Enlarge Figure 2, the method schematic">
+            <img src="figures/fig2_v0.jpg" width="3087" height="1335" loading="lazy" alt="Schematic in three steps: label programs and read mean activations to form the away-from-mode direction, steer by adding it at layers 32 to 34 with frozen strengths and comparators, and the two possible outcomes, flatten or select.">
+          </button>
+          <h3 id="t-fig2">Figure 2. Building and testing the away-from-mode direction</h3>
+          <figcaption id="cap-fig2">Schematic illustration of the method (no data). Left (<em>Label and read</em>): programs sampled from the bare prompt <em>Implement a sorting algorithm</em> are labelled by algorithm family and executed on 50 tests. Mean residual-stream activations over each program's commitment window at layers 32&ndash;34 are taken for the modal programs (bubble sort, grey) and the non-modal programs (quick, merge, &hellip;). Their difference gives the away-from-mode direction <i>v</i> (orange). Middle (<em>Steer</em>): &alpha;<i>v</i> is added to layers 32&ndash;34 (orange blocks) at the final prompt token and the first 64 generated tokens (orange cells), at strengths frozen in advance together with the decision rules and the predicted gainer (padlock, frozen by hash). The comparators are five matched-norm random directions, an off-target direction, temperature 1.0 and 1.3, steering toward an off-menu centroid, and naming the family in the prompt. Right (<em>Select or flatten?</em>): the two pre-registered outcomes, drawn without values. In FLATTEN, the default's share spreads evenly over many families; in SELECT, it goes to one predicted family (orange bar).</figcaption>
+        </figure>
+        <figure id="fig-3">
+          <button type="button" class="fig-open" data-fig="3" aria-label="Enlarge Figure 3, targeted minus random contrasts">
+            <img src="figures/fig3_v0.png" width="1300" height="732" loading="lazy" alt="Forest plot of targeted minus random-mean differences in idea entropy and non-mode share; sorting at s2 has entropy intervals entirely below zero, path search at s2 has non-mode share gains above 0.5.">
+          </button>
+          <h3 id="t-fig3">Figure 3. Targeted minus random: entropy and non-mode share</h3>
+          <figcaption id="cap-fig3">Pre-registered comparisons of each targeted steering setting with the mean of five matched-norm random directions at the same strength (Qwen2.5-3B-Instruct; <i>n</i> = 150 targeted generations per setting, 149 for sorting off-target; difference and 95% hierarchical bootstrap CI as horizontal bars). Rows: the away-from-mode direction at the lower (<i>s</i><sub>1</sub>) and higher (<i>s</i><sub>2</sub>) strength, on the main draw and on a fresh-seed re-draw, plus an off-target real direction at <i>s</i><sub>2</sub>, for path search (blue) and sorting (orange). Filled circles are away-from-mode settings, and hollow grey diamonds are the off-target direction. Dashed lines mark zero. Left: Miller&ndash;Madow idea entropy, targeted minus random mean (bits). Right: non-mode share (fraction of programs not implementing the baseline default), targeted minus random mean. Shaded band: on sorting at <i>s</i><sub>2</sub>, the away-from-mode direction lowers entropy below the random mean on both draws, with the CI entirely below zero (selection), while raising the non-mode share. On path search at <i>s</i><sub>2</sub>, the non-mode share rises by more than 0.5 on both draws, while entropy rises less (main draw) or not detectably (re-draw), because one family takes over. The off-target direction raises entropy on path search; on sorting, both of its intervals include zero.</figcaption>
+        </figure>
+        <figure id="fig-4">
+          <button type="button" class="fig-open" data-fig="4" aria-label="Enlarge Figure 4, temperature sweep">
+            <img src="figures/fig4_v0.png" width="1300" height="732" loading="lazy" alt="Family count and pass rate against sampling temperature for path search and sorting; the family count changes little while the pass rate falls, collapsing at temperature 1.6.">
+          </button>
+          <h3 id="t-fig4">Figure 4. Temperature adds ideas slowly and breaks code</h3>
+          <figcaption id="cap-fig4">Expected number of distinct algorithm families among ten programs (blue solid line, circles, left axis; error bars are 95% multinomial-bootstrap intervals over the label counts) and oracle pass rate (amber dashed line, squares, right axis; shaded band is the Wilson 95% interval) against sampling temperature <i>T</i>, without top-<i>k</i>, for Qwen2.5-3B-Instruct on the bare path-search (a) and sorting (b) prompts; <i>n</i> = 100 programs per temperature, fresh seeds, 1,536-token cap. On path search the family count stays between 3.27 and 3.91 up to <i>T</i> = 1.3 while the pass rate falls from 0.49 at <i>T</i> = 0.3 to 0.07. On sorting, heat raises the family count from 2.06 to 4.05 by <i>T</i> = 1.3, as Bubble sort's share drops from 88% to 41% in favour of Quick, Merge and Insertion sort, at a pass rate still of 0.86. Code then collapses at <i>T</i> = 1.6, where the pass rate is 0.11. In the grey <i>T</i> = 1.6 column, 95% (a) and 93% (b) of outputs hit the token cap and 59% and 51% are labelled unparseable. The family count there (hollow circle) counts the <em>Unparseable</em> and <em>Other</em> labels as families and is not real algorithmic variety. Idea count changes little relative to the collapse in correctness.</figcaption>
+        </figure>
+        <figure id="fig-5">
+          <button type="button" class="fig-open" data-fig="5" aria-label="Enlarge Figure 5, negative instructions">
+            <img src="figures/fig5_v0.png" width="1300" height="732" loading="lazy" alt="Stacked bars of family shares under a placebo prompt and under bans of families the model never writes; each ban cuts the default family and sends its share to one or two other known families.">
+          </button>
+          <h3 id="t-fig5">Figure 5. Banning a never-written algorithm reshuffles the rest</h3>
+          <figcaption id="cap-fig5">Share of programs per algorithm family written by Qwen2.5-3B-Instruct, on (a) path search and (b) sorting. In each panel, the first bar is a placebo prompt, a negative instruction against an irrelevant algorithm (pooled over three placebo cells, <i>n</i> = 300). The other three bars are negative instructions against a family the model writes in 0% of placebo programs (<i>n</i> = 100 each; bracket: <em>banned family (0% in placebo)</em>). All programs were generated after the predictors were frozen. Each bar is a 100%-stacked composition. The y-axis gives the share of programs (%) and segment labels give that share for segments of 5% or more. Grey is the default family (BFS; bubble sort), blue is A* and merge sort, amber is DFS and quicksort, green is Dijkstra and selection sort, pink is insertion sort, and hatched light grey is all other labels (including SPFA, heap sort, unparseable programs and the 1% of programs that still use the banned family). Banning greedy best-first search sends A* from 2.7% to 58% and BFS from 63.3% to 23%. Banning Bellman-Ford sends Dijkstra from 4.7% to 56%. Banning radix sort cuts bubble sort from 54% to 15% while merge sort rises from 15% to 39%. Bars show single cells without error bars. Of the 46 family-by-ban drops tested with Holm-corrected Fisher tests, 8 are significant, against 0 of 45 in placebo-vs-placebo comparisons. Restricting the choice set alone cannot lower the share of a family that remains available, so these drops mean the negative instruction reweights the remaining families rather than only removing an option.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="limitations" aria-labelledby="h-limits">
+      <h2 id="h-limits">Limitations</h2>
+      <ul class="limits">
+        <li><strong>One model, two prompts.</strong> The selection result is measured on Qwen2.5-3B-Instruct and two prompts, each with one wording. The steering test was not run on gemma-2-2b-it, and the negative-instruction results there did not reproduce the Qwen pattern, so the claim does not extend to other families or scales without new evidence.</li>
+        <li><strong>A loosened rule and a missed bar.</strong> The SELECT rule accepted the top prediction of either of two frozen rankings, which loosens it. On path search the <i>s</i><sub>2</sub> operating point missed the frozen pass-rate bar (0.17 against 0.25).</li>
+        <li><strong>Layer band and window.</strong> The band was chosen by a probe whose accuracy was flat across layers, and the window covers the first 64 generated tokens. Other bands or windows may flatten where this one selects.</li>
+        <li><strong>Path search labels are noisy.</strong> The labeller agrees with a blind judge at kappa 0.39 on steered path search outputs, so the exact A* share is uncertain, even though its rise from 8% to 57% and 63% far exceeds that error. The sorting result, at kappa 0.94, is the cleaner of the two.</li>
+        <li><strong>Correctness cost and truncation.</strong> Steering on path search halved the pass rate and pushed 77% to 78% of outputs to the token cap, a cost the frozen calibration did not predict. Continuing 150 truncated programs flipped 10.7% of labels in the temperature experiments, and batch composition alone flips 11% to 17% of labels in repeated runs.</li>
+        <li><strong>Novelty near zero by construction.</strong> Novelty was measured as correct code outside known algorithm families, which is near zero on textbook tasks. Only the two-family experiment had a judge check the passing programs in the labeller's residual class; 11 such programs from the later experiments were not judged. The result says these controls did not create new algorithms for path search and sorting, not that steering cannot raise novelty on open problems.</li>
+        <li><strong>Exploratory pieces.</strong> The two-family experiment is exploratory evidence for selection, and the seed narrowing, the attention knockout and the edge statistic are exploratory too.</li>
+        <li><strong>The commitment point is not located.</strong> Probes on the first eight generated tokens were at chance, and neither forking-path resampling nor other token-level attribution by resampling was run. A sparse autoencoder analysis on gemma-2-2b-it reconstructed activations poorly (fraction of variance unexplained 0.61) and supports no claim.</li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <div class="layout">
+    <div aria-hidden="true"></div>
+    <div>
+      <h2>Paper, reports and code</h2>
+      <ul class="links" aria-label="Paper and documents (footer)">
+        <li><a class="primary" href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context@main/paper.pdf">Read the paper (PDF)</a></li>
+        <li><a href="interactive.html">Explore the interactive demo</a></li>
+        <li><a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context@main/report.pdf">Read the full research report</a></li>
+        <li><a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context@main/exec_summary.pdf">Read the executive summary</a></li>
+        <li><a href="https://github.com/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context">Code repository</a></li>
+      </ul>
+      <p class="rounds" style="margin-bottom:32px">Round reports: <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context@main/round-1/report.pdf">Round 1</a> &middot; <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context@main/round-2/report.pdf">Round 2</a></p>
+      <h2>Code by experiment</h2>
+      <ul class="codelist">
+        <li><a href="https://github.com/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context/tree/main/round-2/experiment-6">Code: Does steering pick ideas or spread them?</a> <span class="muted small">(preregistered steering test)</span></li>
+        <li><a href="https://github.com/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context/tree/main/round-1/experiment-3">Code: Can internal knobs beat temperature for novel code?</a> <span class="muted small">(two-family experiment)</span></li>
+        <li><a href="https://github.com/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context/tree/main/round-2/experiment-4">Code: Does temperature or a seed phrase change the algorithm an LLM picks?</a> <span class="muted small">(temperature and seed strings)</span></li>
+        <li><a href="https://github.com/ai-inventor-papers/ai-invention-8d19e3-temperature-flattens-ideas-context/tree/main/round-2/experiment-5">Code: Do idea bans steer an LLM's internal state?</a> <span class="muted small">(negative instructions)</span></li>
+      </ul>
+      <p class="small muted">All code, generations and analysis outputs behind the reported numbers are public in the code repository.</p>
+    </div>
+  </div>
+</footer>
+
+<dialog class="lb" id="lightbox" aria-labelledby="lb-title" aria-describedby="lb-cap">
+  <div class="lb-inner">
+    <button type="button" class="lb-close" id="lb-close">Close<span class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"> figure</span></button>
+    <img id="lb-img" src="figures/fig1_v0.png" alt="Enlarged view of the selected figure">
+    <p class="lb-title" id="lb-title"></p>
+    <p class="lb-cap" id="lb-cap"></p>
+  </div>
+</dialog>
+
+<script>
+(function () {
+  var dlg = document.getElementById('lightbox');
+  var img = document.getElementById('lb-img');
+  var title = document.getElementById('lb-title');
+  var cap = document.getElementById('lb-cap');
+  var closeBtn = document.getElementById('lb-close');
+  var opener = null;
+
+  function open(btn) {
+    var n = btn.getAttribute('data-fig');
+    var src = btn.querySelector('img');
+    opener = btn;
+    img.src = src.getAttribute('src');
+    img.alt = src.getAttribute('alt');
+    title.textContent = document.getElementById('t-fig' + n).textContent;
+    cap.innerHTML = document.getElementById('cap-fig' + n).innerHTML;
+    if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+  function close() {
+    if (dlg.open && typeof dlg.close === 'function') dlg.close(); else { dlg.removeAttribute('open'); onClosed(); }
+  }
+  function onClosed() {
+    document.body.style.overflow = '';
+    if (opener) { opener.focus(); opener = null; }
+  }
+  document.querySelectorAll('.fig-open').forEach(function (b) {
+    b.addEventListener('click', function () { open(b); });
+  });
+  closeBtn.addEventListener('click', close);
+  dlg.addEventListener('close', onClosed);
+  dlg.addEventListener('click', function (e) {
+    if (!e.target.closest('.lb-inner') || e.target === dlg) close();
+  });
+  dlg.addEventListener('cancel', function (e) { e.preventDefault(); close(); });
+  dlg.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { e.preventDefault(); close(); return; }
+    if (e.key === 'Tab') {
+      var f = Array.prototype.filter.call(
+        dlg.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])'),
+        function (el) { return el.offsetParent !== null; });
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+})();
+
+/* keep the active nav link visible in the horizontal phone nav */
+(function () {
+  var ul = document.querySelector('[data-scrollspy] ul');
+  if (!ul || !window.MutationObserver) return;
+  new MutationObserver(function () {
+    var a = ul.querySelector('a.active');
+    if (!a || ul.scrollWidth <= ul.clientWidth) return;
+    var li = a.parentNode;
+    var target = li.offsetLeft - (ul.clientWidth - li.offsetWidth) / 2;
+    ul.scrollLeft = Math.max(0, target);
+  }).observe(ul, { subtree: true, attributes: true, attributeFilter: ['class'] });
+})();
+
+/* aii-scroll-spy v1: paste verbatim */
+(function () {
+  var links = [], targets = [];
+  document.querySelectorAll('[data-scrollspy] a[href^="#"]').forEach(function (a) {
+    var el = document.getElementById(a.getAttribute('href').slice(1));
+    if (el) { links.push(a); targets.push(el); }
+  });
+  if (!links.length) return;
+  var queued = false;
+  function current() {
+    var view = window.innerHeight;
+    var doc = document.documentElement;
+    var atEnd = window.scrollY > 0 && view + window.scrollY >= doc.scrollHeight - 2;
+    var line = atEnd ? view - 1 : Math.min(view * 0.3, 200);
+    var best = null, bestTop = -Infinity;
+    targets.forEach(function (el) {
+      var top = el.getBoundingClientRect().top;
+      if (top <= line && top > bestTop) { best = el; bestTop = top; }
+    });
+    return best;
+  }
+  function update() {
+    queued = false;
+    var el = current();
+    links.forEach(function (a, i) {
+      var on = targets[i] === el;
+      a.classList.toggle('active', on);
+      if (on) a.setAttribute('aria-current', 'location');
+      else a.removeAttribute('aria-current');
+    });
+  }
+  function schedule() {
+    if (!queued) { queued = true; window.requestAnimationFrame(update); }
+  }
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', schedule);
+  window.addEventListener('load', schedule);
+  if (window.ResizeObserver) new ResizeObserver(schedule).observe(document.body);
+  update();
+})();
+</script>
+</body>
+</html>
