@@ -1,0 +1,522 @@
+[
+ {
+  "term": "residual stream",
+  "gloss": "the running sum of layer outputs in a transformer, read and written by every block",
+  "source_title": "Refusal in Language Models Is Mediated by a Single Direction"
+ },
+ {
+  "term": "residual stream activations",
+  "gloss": "hidden-state vectors at a given layer and token position",
+  "source_title": "Refusal in Language Models Is Mediated by a Single Direction"
+ },
+ {
+  "term": "difference-in-means",
+  "gloss": "direction computed as the mean activation of one class minus the mean of another",
+  "source_title": "Refusal in Language Models Is Mediated by a Single Direction"
+ },
+ {
+  "term": "directional ablation",
+  "gloss": "projecting a direction out of activations so the model cannot represent it",
+  "source_title": "Refusal in Language Models Is Mediated by a Single Direction"
+ },
+ {
+  "term": "activation addition",
+  "gloss": "adding a fixed vector to activations during the forward pass",
+  "source_title": "Refusal in Language Models Is Mediated by a Single Direction"
+ },
+ {
+  "term": "steering vector",
+  "gloss": "vector added to activations to push generation toward a behaviour",
+  "source_title": "Steering Llama 2 via Contrastive Activation Addition"
+ },
+ {
+  "term": "Contrastive Activation Addition",
+  "gloss": "steering with the mean activation difference between positive and negative examples",
+  "source_title": "Steering Llama 2 via Contrastive Activation Addition"
+ },
+ {
+  "term": "steering coefficient",
+  "gloss": "scalar multiplier on a steering vector that sets intervention strength",
+  "source_title": "Steering Llama 2 via Contrastive Activation Addition"
+ },
+ {
+  "term": "intervention strength",
+  "gloss": "magnitude of an activation intervention, swept as a hyperparameter",
+  "source_title": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model"
+ },
+ {
+  "term": "activation steering",
+  "gloss": "controlling model behaviour by editing activations at inference time",
+  "source_title": "Refusal in Language Models Is Mediated by a Single Direction"
+ },
+ {
+  "term": "activation engineering",
+  "gloss": "umbrella term for inference-time edits of activations to change behaviour",
+  "source_title": "Steering Language Models With Activation Engineering"
+ },
+ {
+  "term": "inference-time intervention",
+  "gloss": "shifting activations along learned directions while the model generates",
+  "source_title": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model"
+ },
+ {
+  "term": "linear probe",
+  "gloss": "logistic or linear classifier trained on hidden states to decode a property",
+  "source_title": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model"
+ },
+ {
+  "term": "probe accuracy",
+  "gloss": "held-out classification accuracy of a probe",
+  "source_title": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model"
+ },
+ {
+  "term": "probing",
+  "gloss": "training classifiers on representations to test what information they contain",
+  "source_title": "Designing and Interpreting Probes with Control Tasks"
+ },
+ {
+  "term": "control task",
+  "gloss": "task with randomly assigned labels used to measure probe expressivity",
+  "source_title": "Designing and Interpreting Probes with Control Tasks"
+ },
+ {
+  "term": "selectivity",
+  "gloss": "gap between probe accuracy on the real task and on its control task",
+  "source_title": "Designing and Interpreting Probes with Control Tasks"
+ },
+ {
+  "term": "shuffled-label control",
+  "gloss": "probe trained on permuted labels as a chance baseline",
+  "source_title": "Designing and Interpreting Probes with Control Tasks"
+ },
+ {
+  "term": "balanced accuracy",
+  "gloss": "mean per-class recall, robust to class imbalance",
+  "source_title": "LEACE: Perfect linear concept erasure in closed form"
+ },
+ {
+  "term": "concept erasure",
+  "gloss": "removing a concept's linear information from embeddings",
+  "source_title": "LEACE: Perfect linear concept erasure in closed form"
+ },
+ {
+  "term": "linear concept erasure",
+  "gloss": "erasure that prevents every linear classifier from recovering the concept",
+  "source_title": "LEACE: Perfect linear concept erasure in closed form"
+ },
+ {
+  "term": "LEACE",
+  "gloss": "least-squares concept erasure: the minimal-change closed-form linear eraser",
+  "source_title": "LEACE: Perfect linear concept erasure in closed form"
+ },
+ {
+  "term": "linear guardedness",
+  "gloss": "property that no linear classifier beats the trivial loss on the concept",
+  "source_title": "LEACE: Perfect linear concept erasure in closed form"
+ },
+ {
+  "term": "class centroids",
+  "gloss": "per-class mean embeddings; equal centroids imply linear guardedness",
+  "source_title": "LEACE: Perfect linear concept erasure in closed form"
+ },
+ {
+  "term": "orthogonal projection",
+  "gloss": "linear map that removes a subspace while keeping its complement",
+  "source_title": "LEACE: Perfect linear concept erasure in closed form"
+ },
+ {
+  "term": "oblique projection",
+  "gloss": "non-orthogonal projection, the least-squares optimal eraser form",
+  "source_title": "LEACE: Perfect linear concept erasure in closed form"
+ },
+ {
+  "term": "concept scrubbing",
+  "gloss": "applying erasure at every layer of a network",
+  "source_title": "LEACE: Perfect linear concept erasure in closed form"
+ },
+ {
+  "term": "amnesic probing",
+  "gloss": "measuring behavioural change after erasing a property from representations",
+  "source_title": "LEACE: Perfect linear concept erasure in closed form"
+ },
+ {
+  "term": "random direction baseline",
+  "gloss": "intervention along a random vector of matched norm, used as a control",
+  "source_title": "Steering Llama 2 via Contrastive Activation Addition"
+ },
+ {
+  "term": "matched-norm control",
+  "gloss": "control intervention with the same magnitude as the targeted one",
+  "source_title": "Steering Llama 2 via Contrastive Activation Addition"
+ },
+ {
+  "term": "system prompt",
+  "gloss": "instruction prepended to the conversation to condition the model",
+  "source_title": "Steering Llama 2 via Contrastive Activation Addition"
+ },
+ {
+  "term": "prompting baseline",
+  "gloss": "behaviour change achieved by instructions alone, compared against steering",
+  "source_title": "Steering Llama 2 via Contrastive Activation Addition"
+ },
+ {
+  "term": "open-ended generation",
+  "gloss": "free-form sampled generation rather than multiple-choice scoring",
+  "source_title": "Steering Llama 2 via Contrastive Activation Addition"
+ },
+ {
+  "term": "chat model",
+  "gloss": "instruction-tuned conversational model with a chat template",
+  "source_title": "Refusal in Language Models Is Mediated by a Single Direction"
+ },
+ {
+  "term": "instruction-tuned model",
+  "gloss": "model fine-tuned to follow natural-language instructions",
+  "source_title": "Qwen2.5 Technical Report"
+ },
+ {
+  "term": "chat template",
+  "gloss": "fixed token format wrapping system, user and assistant turns",
+  "source_title": "Refusal in Language Models Is Mediated by a Single Direction"
+ },
+ {
+  "term": "temperature",
+  "gloss": "scalar dividing logits before the softmax; higher values flatten the distribution",
+  "source_title": "Is Temperature the Creativity Parameter of Large Language Models?"
+ },
+ {
+  "term": "temperature sampling",
+  "gloss": "drawing tokens from the temperature-scaled softmax",
+  "source_title": "Is Temperature the Creativity Parameter of Large Language Models?"
+ },
+ {
+  "term": "top-k sampling",
+  "gloss": "sampling restricted to the k most probable tokens",
+  "source_title": "Is Temperature the Creativity Parameter of Large Language Models?"
+ },
+ {
+  "term": "decoding strategy",
+  "gloss": "rule that turns next-token distributions into a generated sequence",
+  "source_title": "Is Temperature the Creativity Parameter of Large Language Models?"
+ },
+ {
+  "term": "novelty",
+  "gloss": "degree to which an output departs from typical or prior outputs",
+  "source_title": "Is Temperature the Creativity Parameter of Large Language Models?"
+ },
+ {
+  "term": "typicality",
+  "gloss": "degree to which an output resembles the prototypical output",
+  "source_title": "Is Temperature the Creativity Parameter of Large Language Models?"
+ },
+ {
+  "term": "coherence",
+  "gloss": "logical consistency of a generated output",
+  "source_title": "Is Temperature the Creativity Parameter of Large Language Models?"
+ },
+ {
+  "term": "incoherence",
+  "gloss": "breakdown of logical consistency, rising with temperature",
+  "source_title": "Is Temperature the Creativity Parameter of Large Language Models?"
+ },
+ {
+  "term": "normalised edit distance",
+  "gloss": "Levenshtein distance divided by the longer string length",
+  "source_title": "Is Temperature the Creativity Parameter of Large Language Models?"
+ },
+ {
+  "term": "exemplar",
+  "gloss": "a prototypical reference output against which diversity is measured",
+  "source_title": "Is Temperature the Creativity Parameter of Large Language Models?"
+ },
+ {
+  "term": "forking path",
+  "gloss": "a token position where resampling changes the eventual outcome",
+  "source_title": "Forking Paths in Neural Text Generation"
+ },
+ {
+  "term": "forking token",
+  "gloss": "the specific token at which the outcome distribution shifts",
+  "source_title": "Forking Paths in Neural Text Generation"
+ },
+ {
+  "term": "outcome distribution",
+  "gloss": "distribution over final answers obtained by resampling continuations",
+  "source_title": "Forking Paths in Neural Text Generation"
+ },
+ {
+  "term": "change point",
+  "gloss": "position where a time series of outcome distributions shifts",
+  "source_title": "Forking Paths in Neural Text Generation"
+ },
+ {
+  "term": "negative constraint",
+  "gloss": "instruction telling the model what not to produce",
+  "source_title": "Semantic Gravity Wells: Why Negative Constraints Backfire"
+ },
+ {
+  "term": "constraint violation",
+  "gloss": "generation that produces the forbidden item despite the instruction",
+  "source_title": "Semantic Gravity Wells: Why Negative Constraints Backfire"
+ },
+ {
+  "term": "priming",
+  "gloss": "raising the probability of a concept by mentioning it in context",
+  "source_title": "Semantic Gravity Wells: Why Negative Constraints Backfire"
+ },
+ {
+  "term": "logit lens",
+  "gloss": "decoding intermediate hidden states with the unembedding matrix",
+  "source_title": "Semantic Gravity Wells: Why Negative Constraints Backfire"
+ },
+ {
+  "term": "activation patching",
+  "gloss": "replacing activations from one run with those of another to test causal role",
+  "source_title": "Semantic Gravity Wells: Why Negative Constraints Backfire"
+ },
+ {
+  "term": "algorithm choice",
+  "gloss": "which algorithm family a code model implements for an under-specified task",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "algorithm family",
+  "gloss": "class of implementations sharing the same core algorithm",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "incidental cue",
+  "gloss": "task-irrelevant prompt content that shifts model behaviour",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "AST classifier",
+  "gloss": "rule-based labeller operating on the program's abstract syntax tree",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "LLM judge",
+  "gloss": "language model used to label or grade outputs",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "Cohen's kappa",
+  "gloss": "chance-corrected agreement between two raters",
+  "source_title": "A Coefficient of Agreement for Nominal Scales"
+ },
+ {
+  "term": "inter-rater agreement",
+  "gloss": "fraction of items two raters label identically",
+  "source_title": "A Coefficient of Agreement for Nominal Scales"
+ },
+ {
+  "term": "Hill numbers",
+  "gloss": "effective number of types at diversity order q",
+  "source_title": "Diversity and Evenness: A Unifying Notation and Its Consequences"
+ },
+ {
+  "term": "effective number of species",
+  "gloss": "Hill number: number of equally common types giving the same diversity",
+  "source_title": "Diversity and Evenness: A Unifying Notation and Its Consequences"
+ },
+ {
+  "term": "Shannon entropy",
+  "gloss": "expected surprisal of a categorical distribution, here in bits",
+  "source_title": "Diversity and Evenness: A Unifying Notation and Its Consequences"
+ },
+ {
+  "term": "Simpson index",
+  "gloss": "sum of squared type shares; its inverse is the order-2 Hill number",
+  "source_title": "Diversity and Evenness: A Unifying Notation and Its Consequences"
+ },
+ {
+  "term": "evenness",
+  "gloss": "how uniformly mass is spread across types",
+  "source_title": "Diversity and Evenness: A Unifying Notation and Its Consequences"
+ },
+ {
+  "term": "richness",
+  "gloss": "number of distinct types present; the order-0 Hill number",
+  "source_title": "Diversity and Evenness: A Unifying Notation and Its Consequences"
+ },
+ {
+  "term": "bootstrap confidence interval",
+  "gloss": "interval from the percentiles of resampled statistics",
+  "source_title": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model"
+ },
+ {
+  "term": "held-out set",
+  "gloss": "data not used for selection, reserved for unbiased evaluation",
+  "source_title": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model"
+ },
+ {
+  "term": "cross-validation",
+  "gloss": "rotating train and test splits to estimate generalisation",
+  "source_title": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model"
+ },
+ {
+  "term": "hyperparameter sweep",
+  "gloss": "evaluating a method over a grid of settings",
+  "source_title": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model"
+ },
+ {
+  "term": "truthfulness-helpfulness trade-off",
+  "gloss": "stronger intervention improves the target metric while degrading general quality",
+  "source_title": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model"
+ },
+ {
+  "term": "attention head",
+  "gloss": "one of the parallel attention sub-modules in a transformer layer",
+  "source_title": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model"
+ },
+ {
+  "term": "model coherence",
+  "gloss": "whether general capabilities survive an intervention",
+  "source_title": "Refusal in Language Models Is Mediated by a Single Direction"
+ },
+ {
+  "term": "capability degradation",
+  "gloss": "loss of general performance caused by an intervention",
+  "source_title": "Steering Llama 2 via Contrastive Activation Addition"
+ },
+ {
+  "term": "weight orthogonalization",
+  "gloss": "folding a directional ablation into the model weights",
+  "source_title": "Refusal in Language Models Is Mediated by a Single Direction"
+ },
+ {
+  "term": "white-box",
+  "gloss": "setting where model weights and activations are accessible",
+  "source_title": "Refusal in Language Models Is Mediated by a Single Direction"
+ },
+ {
+  "term": "open-weight model",
+  "gloss": "model whose weights are publicly released",
+  "source_title": "Qwen2.5 Technical Report"
+ },
+ {
+  "term": "Qwen2.5",
+  "gloss": "open-weight model family used here at 3B parameters",
+  "source_title": "Qwen2.5 Technical Report"
+ },
+ {
+  "term": "bfloat16",
+  "gloss": "16-bit floating point format used for inference",
+  "source_title": "Qwen2.5 Technical Report"
+ },
+ {
+  "term": "pass rate",
+  "gloss": "fraction of programs passing every test case",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "execution oracle",
+  "gloss": "reference implementation used to check program outputs",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "test cases",
+  "gloss": "inputs on which a generated program is executed and checked",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "functional correctness",
+  "gloss": "program correctness established by execution rather than inspection",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "mode collapse",
+  "gloss": "sampling concentrated on a single dominant output",
+  "source_title": "Is Temperature the Creativity Parameter of Large Language Models?"
+ },
+ {
+  "term": "output diversity",
+  "gloss": "spread of distinct outputs across samples",
+  "source_title": "Is Temperature the Creativity Parameter of Large Language Models?"
+ },
+ {
+  "term": "Pareto front",
+  "gloss": "set of settings not dominated on two objectives simultaneously",
+  "source_title": "Steering Llama 2 via Contrastive Activation Addition"
+ },
+ {
+  "term": "dose-response",
+  "gloss": "monotone relation between intervention strength and effect size",
+  "source_title": "Steering Llama 2 via Contrastive Activation Addition"
+ },
+ {
+  "term": "manipulation check",
+  "gloss": "measurement confirming an intervention changed the intended internal quantity",
+  "source_title": "Steering Llama 2 via Contrastive Activation Addition"
+ },
+ {
+  "term": "common random numbers",
+  "gloss": "reusing the same random draws across conditions to pair comparisons",
+  "source_title": "Forking Paths in Neural Text Generation"
+ },
+ {
+  "term": "winner's curse",
+  "gloss": "upward bias of the best-of-many selected setting, removed by a fresh draw",
+  "source_title": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model"
+ },
+ {
+  "term": "pre-registration",
+  "gloss": "fixing hypotheses and decision rules before the data are analysed",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "breadth-first search",
+  "gloss": "graph search expanding nodes in order of hop distance with a FIFO queue",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "depth-first search",
+  "gloss": "graph search following one branch to its end via a stack or recursion",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "Dijkstra's algorithm",
+  "gloss": "priority-queue shortest-path search for non-negative edge weights",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "A* search",
+  "gloss": "best-first search ordered by path cost plus a heuristic",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "Bellman-Ford",
+  "gloss": "shortest-path algorithm by repeated edge relaxation",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "SPFA",
+  "gloss": "queue-based variant of Bellman-Ford relaxation",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "Floyd-Warshall",
+  "gloss": "all-pairs shortest paths by dynamic programming",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "bidirectional search",
+  "gloss": "search expanding frontiers from both start and goal",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "iterative deepening",
+  "gloss": "depth-limited DFS repeated with growing depth bound",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "greedy best-first search",
+  "gloss": "search ordered by heuristic estimate alone",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ },
+ {
+  "term": "generate-then-select",
+  "gloss": "list candidate approaches first, then pick one and implement it",
+  "source_title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation"
+ }
+]

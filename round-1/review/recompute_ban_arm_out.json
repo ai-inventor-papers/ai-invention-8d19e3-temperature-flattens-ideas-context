@@ -1,0 +1,814 @@
+{
+ "T1/ban_r1": {
+  "n": 100,
+  "entropy": 1.491,
+  "still_banned": 1,
+  "banned": [
+   "BFS"
+  ],
+  "labels": {
+   "DFS": 66,
+   "Other": 15,
+   "A_star": 11,
+   "Dijkstra": 7,
+   "BFS": 1
+  }
+ },
+ "T1/ban_r2": {
+  "n": 100,
+  "entropy": 0.141,
+  "still_banned": 0,
+  "banned": [
+   "DFS"
+  ],
+  "labels": {
+   "BFS": 98,
+   "A_star": 2
+  }
+ },
+ "T1/ban_r3": {
+  "n": 100,
+  "entropy": 1.394,
+  "still_banned": 0,
+  "banned": [
+   "A_star"
+  ],
+  "labels": {
+   "BFS": 69,
+   "DFS": 17,
+   "Dijkstra": 8,
+   "SPFA": 4,
+   "Other": 2
+  }
+ },
+ "T1/ban_r4": {
+  "n": 100,
+  "entropy": 1.804,
+  "still_banned": 1,
+  "banned": [
+   "Dijkstra"
+  ],
+  "labels": {
+   "BFS": 44,
+   "A_star": 34,
+   "DFS": 16,
+   "Other": 3,
+   "SPFA": 2,
+   "Dijkstra": 1
+  }
+ },
+ "T1/ban_rare": {
+  "n": 100,
+  "entropy": 1.402,
+  "still_banned": 0,
+  "banned": [
+   "SPFA"
+  ],
+  "labels": {
+   "Dijkstra": 50,
+   "BFS": 42,
+   "A_star": 6,
+   "Bellman_Ford": 1,
+   "DFS": 1
+  }
+ },
+ "T1/ban_top3": {
+  "n": 100,
+  "entropy": 2.446,
+  "still_banned": 29,
+  "banned": [
+   "BFS",
+   "DFS",
+   "A_star"
+  ],
+  "labels": {
+   "IDDFS": 42,
+   "DFS": 18,
+   "Dijkstra": 16,
+   "A_star": 8,
+   "Other": 6,
+   "Bidirectional": 4,
+   "BFS": 3,
+   "Greedy_best_first": 2,
+   "Bellman_Ford": 1
+  }
+ },
+ "T1/ban_top5": {
+  "n": 100,
+  "entropy": 2.537,
+  "still_banned": 38,
+  "banned": [
+   "BFS",
+   "DFS",
+   "A_star",
+   "Dijkstra",
+   "SPFA"
+  ],
+  "labels": {
+   "IDDFS": 42,
+   "A_star": 16,
+   "DFS": 12,
+   "Greedy_best_first": 8,
+   "Other": 8,
+   "Dijkstra": 7,
+   "BFS": 3,
+   "Bidirectional": 3,
+   "Bellman_Ford": 1
+  }
+ },
+ "T1/baseline": {
+  "n": 300,
+  "entropy": 1.764,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "BFS": 179,
+   "DFS": 44,
+   "A_star": 39,
+   "Dijkstra": 22,
+   "Other": 14,
+   "SPFA": 2
+  }
+ },
+ "T1/forced_A_star": {
+  "n": 10,
+  "entropy": 0.469,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "A_star": 9,
+   "Other": 1
+  }
+ },
+ "T1/forced_BFS": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "BFS": 10
+  }
+ },
+ "T1/forced_Bellman_Ford": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Bellman_Ford": 10
+  }
+ },
+ "T1/forced_Bidirectional": {
+  "n": 10,
+  "entropy": 1.157,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Bidirectional": 7,
+   "A_star": 2,
+   "BFS": 1
+  }
+ },
+ "T1/forced_DFS": {
+  "n": 10,
+  "entropy": 0.469,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "DFS": 9,
+   "Other": 1
+  }
+ },
+ "T1/forced_Dijkstra": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Dijkstra": 10
+  }
+ },
+ "T1/forced_Floyd_Warshall": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Floyd_Warshall": 10
+  }
+ },
+ "T1/forced_Greedy_best_first": {
+  "n": 10,
+  "entropy": 1.361,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Greedy_best_first": 5,
+   "A_star": 4,
+   "BFS": 1
+  }
+ },
+ "T1/forced_IDDFS": {
+  "n": 10,
+  "entropy": 0.469,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "IDDFS": 9,
+   "BFS": 1
+  }
+ },
+ "T1/forced_SPFA": {
+  "n": 10,
+  "entropy": 0.722,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "SPFA": 8,
+   "Dijkstra": 2
+  }
+ },
+ "T1/para1_r1": {
+  "n": 100,
+  "entropy": 1.369,
+  "still_banned": 0,
+  "banned": [
+   "BFS"
+  ],
+  "labels": {
+   "DFS": 68,
+   "Other": 17,
+   "Dijkstra": 9,
+   "A_star": 6
+  }
+ },
+ "T1/para2_r1": {
+  "n": 100,
+  "entropy": 1.744,
+  "still_banned": 0,
+  "banned": [
+   "BFS"
+  ],
+  "labels": {
+   "DFS": 59,
+   "A_star": 16,
+   "Other": 15,
+   "Dijkstra": 6,
+   "IDDFS": 3,
+   "Greedy_best_first": 1
+  }
+ },
+ "T1/placebo": {
+  "n": 100,
+  "entropy": 1.424,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "BFS": 67,
+   "DFS": 17,
+   "Dijkstra": 11,
+   "Other": 4,
+   "A_star": 1
+  }
+ },
+ "T2/ban_r1": {
+  "n": 100,
+  "entropy": 0.994,
+  "still_banned": 0,
+  "banned": [
+   "Bubble"
+  ],
+  "labels": {
+   "Quick": 71,
+   "Merge": 27,
+   "Heap": 1,
+   "Insertion": 1
+  }
+ },
+ "T2/ban_r2": {
+  "n": 100,
+  "entropy": 1.908,
+  "still_banned": 0,
+  "banned": [
+   "Quick"
+  ],
+  "labels": {
+   "Insertion": 41,
+   "Merge": 30,
+   "Bubble": 15,
+   "Selection": 13,
+   "Heap": 1
+  }
+ },
+ "T2/ban_r3": {
+  "n": 100,
+  "entropy": 1.986,
+  "still_banned": 0,
+  "banned": [
+   "Merge"
+  ],
+  "labels": {
+   "Bubble": 45,
+   "Quick": 23,
+   "Insertion": 14,
+   "Selection": 14,
+   "Heap": 4
+  }
+ },
+ "T2/ban_r4": {
+  "n": 100,
+  "entropy": 1.768,
+  "still_banned": 0,
+  "banned": [
+   "Selection"
+  ],
+  "labels": {
+   "Bubble": 41,
+   "Merge": 39,
+   "Quick": 10,
+   "Insertion": 9,
+   "Heap": 1
+  }
+ },
+ "T2/ban_rare": {
+  "n": 100,
+  "entropy": 1.271,
+  "still_banned": 0,
+  "banned": [
+   "Insertion"
+  ],
+  "labels": {
+   "Quick": 66,
+   "Merge": 27,
+   "Heap": 4,
+   "Selection": 2,
+   "Bubble": 1
+  }
+ },
+ "T2/ban_top3": {
+  "n": 100,
+  "entropy": 1.179,
+  "still_banned": 0,
+  "banned": [
+   "Bubble",
+   "Quick",
+   "Merge"
+  ],
+  "labels": {
+   "Selection": 55,
+   "Insertion": 42,
+   "Counting": 2,
+   "Heap": 1
+  }
+ },
+ "T2/ban_top5": {
+  "n": 100,
+  "entropy": 2.248,
+  "still_banned": 7,
+  "banned": [
+   "Bubble",
+   "Quick",
+   "Merge",
+   "Selection",
+   "Insertion"
+  ],
+  "labels": {
+   "Counting": 45,
+   "Heap": 26,
+   "Shell": 7,
+   "Other": 6,
+   "Bubble": 6,
+   "Bucket": 5,
+   "Radix": 4,
+   "Merge": 1
+  }
+ },
+ "T2/baseline": {
+  "n": 300,
+  "entropy": 1.587,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Bubble": 179,
+   "Quick": 70,
+   "Merge": 31,
+   "Selection": 15,
+   "Insertion": 5
+  }
+ },
+ "T2/forced_Bubble": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Bubble": 10
+  }
+ },
+ "T2/forced_Bucket": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Bucket": 10
+  }
+ },
+ "T2/forced_Counting": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Counting": 10
+  }
+ },
+ "T2/forced_Heap": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Heap": 10
+  }
+ },
+ "T2/forced_Insertion": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Insertion": 10
+  }
+ },
+ "T2/forced_Merge": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Merge": 10
+  }
+ },
+ "T2/forced_Quick": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Quick": 10
+  }
+ },
+ "T2/forced_Radix": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Radix": 10
+  }
+ },
+ "T2/forced_Selection": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Selection": 10
+  }
+ },
+ "T2/forced_Shell": {
+  "n": 10,
+  "entropy": 0.469,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Shell": 9,
+   "Other": 1
+  }
+ },
+ "T2/forced_Tim_hybrid": {
+  "n": 10,
+  "entropy": 0.922,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Tim_hybrid": 8,
+   "Quick": 1,
+   "Merge": 1
+  }
+ },
+ "T2/para1_r1": {
+  "n": 100,
+  "entropy": 1.312,
+  "still_banned": 0,
+  "banned": [
+   "Bubble"
+  ],
+  "labels": {
+   "Quick": 49,
+   "Merge": 46,
+   "Insertion": 2,
+   "Selection": 2,
+   "Tim_hybrid": 1
+  }
+ },
+ "T2/para2_r1": {
+  "n": 100,
+  "entropy": 1.211,
+  "still_banned": 0,
+  "banned": [
+   "Bubble"
+  ],
+  "labels": {
+   "Merge": 50,
+   "Quick": 47,
+   "Heap": 1,
+   "Selection": 1,
+   "Insertion": 1
+  }
+ },
+ "T2/placebo": {
+  "n": 100,
+  "entropy": 1.982,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Bubble": 43,
+   "Merge": 26,
+   "Quick": 18,
+   "Selection": 8,
+   "Insertion": 5
+  }
+ },
+ "T3/ban_r1": {
+  "n": 100,
+  "entropy": 1.967,
+  "still_banned": 12,
+  "banned": [
+   "Dijkstra"
+  ],
+  "labels": {
+   "Bellman_Ford": 55,
+   "BFS": 19,
+   "Dijkstra": 12,
+   "A_star": 8,
+   "Bidirectional": 2,
+   "Greedy_best_first": 1,
+   "Floyd_Warshall": 1,
+   "Other": 1,
+   "SPFA": 1
+  }
+ },
+ "T3/ban_r2": {
+  "n": 100,
+  "entropy": 0.322,
+  "still_banned": 0,
+  "banned": [
+   "A_star"
+  ],
+  "labels": {
+   "Dijkstra": 95,
+   "BFS": 4,
+   "SPFA": 1
+  }
+ },
+ "T3/ban_r3": {
+  "n": 100,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [
+   "Bellman_Ford"
+  ],
+  "labels": {
+   "Dijkstra": 100
+  }
+ },
+ "T3/ban_r4": {
+  "n": 100,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [
+   "Floyd_Warshall"
+  ],
+  "labels": {
+   "Dijkstra": 100
+  }
+ },
+ "T3/ban_rare": {
+  "n": 100,
+  "entropy": 0.161,
+  "still_banned": 0,
+  "banned": [
+   "Greedy_best_first"
+  ],
+  "labels": {
+   "Dijkstra": 98,
+   "DFS": 1,
+   "BFS": 1
+  }
+ },
+ "T3/ban_top3": {
+  "n": 100,
+  "entropy": 2.497,
+  "still_banned": 46,
+  "banned": [
+   "Dijkstra",
+   "A_star",
+   "Bellman_Ford"
+  ],
+  "labels": {
+   "BFS": 32,
+   "Dijkstra": 25,
+   "Bellman_Ford": 21,
+   "SPFA": 7,
+   "Floyd_Warshall": 5,
+   "Other": 3,
+   "DFS": 3,
+   "Greedy_best_first": 1,
+   "IDDFS": 1,
+   "Unparseable": 1,
+   "Bidirectional": 1
+  }
+ },
+ "T3/ban_top5": {
+  "n": 100,
+  "entropy": 2.233,
+  "still_banned": 61,
+  "banned": [
+   "Dijkstra",
+   "A_star",
+   "Bellman_Ford",
+   "Floyd_Warshall",
+   "Bidirectional"
+  ],
+  "labels": {
+   "Dijkstra": 41,
+   "BFS": 26,
+   "Bellman_Ford": 16,
+   "SPFA": 10,
+   "Bidirectional": 2,
+   "A_star": 1,
+   "Greedy_best_first": 1,
+   "Other": 1,
+   "Floyd_Warshall": 1,
+   "DFS": 1
+  }
+ },
+ "T3/baseline": {
+  "n": 300,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Dijkstra": 300
+  }
+ },
+ "T3/forced_A_star": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "A_star": 10
+  }
+ },
+ "T3/forced_BFS": {
+  "n": 10,
+  "entropy": 1.485,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "BFS": 5,
+   "SPFA": 3,
+   "Dijkstra": 2
+  }
+ },
+ "T3/forced_Bellman_Ford": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Bellman_Ford": 10
+  }
+ },
+ "T3/forced_Bidirectional": {
+  "n": 10,
+  "entropy": 0.722,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Bidirectional": 8,
+   "BFS": 2
+  }
+ },
+ "T3/forced_DFS": {
+  "n": 10,
+  "entropy": 1.771,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "DFS": 6,
+   "Other": 1,
+   "BFS": 1,
+   "Bellman_Ford": 1,
+   "Dijkstra": 1
+  }
+ },
+ "T3/forced_Dijkstra": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Dijkstra": 10
+  }
+ },
+ "T3/forced_Floyd_Warshall": {
+  "n": 10,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Floyd_Warshall": 10
+  }
+ },
+ "T3/forced_Greedy_best_first": {
+  "n": 10,
+  "entropy": 1.371,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Dijkstra": 6,
+   "A_star": 2,
+   "Greedy_best_first": 2
+  }
+ },
+ "T3/forced_IDDFS": {
+  "n": 10,
+  "entropy": 0.722,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "IDDFS": 8,
+   "BFS": 2
+  }
+ },
+ "T3/forced_SPFA": {
+  "n": 10,
+  "entropy": 0.469,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "SPFA": 9,
+   "BFS": 1
+  }
+ },
+ "T3/para1_r1": {
+  "n": 100,
+  "entropy": 2.005,
+  "still_banned": 9,
+  "banned": [
+   "Dijkstra"
+  ],
+  "labels": {
+   "Bellman_Ford": 54,
+   "A_star": 16,
+   "BFS": 15,
+   "Dijkstra": 9,
+   "Other": 2,
+   "Floyd_Warshall": 1,
+   "Bidirectional": 1,
+   "DFS": 1,
+   "SPFA": 1
+  }
+ },
+ "T3/para2_r1": {
+  "n": 100,
+  "entropy": 2.166,
+  "still_banned": 10,
+  "banned": [
+   "Dijkstra"
+  ],
+  "labels": {
+   "Bellman_Ford": 52,
+   "BFS": 13,
+   "A_star": 11,
+   "Dijkstra": 10,
+   "SPFA": 8,
+   "Floyd_Warshall": 4,
+   "DFS": 1,
+   "Bidirectional": 1
+  }
+ },
+ "T3/placebo": {
+  "n": 100,
+  "entropy": -0.0,
+  "still_banned": 0,
+  "banned": [],
+  "labels": {
+   "Dijkstra": 100
+  }
+ }
+}

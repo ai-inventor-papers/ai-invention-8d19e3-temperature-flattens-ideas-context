@@ -1,0 +1,125 @@
+{
+  "Yang2024": {
+    "source": "semantic_scholar",
+    "title": "Qwen2.5 Technical Report",
+    "first_author": "Yang",
+    "year": 2024,
+    "s2_paper_id": "88aa6b1f37d1fd8e0a40499ce9bb87873f03aaa8",
+    "doi": "10.48550/arXiv.2412.15115",
+    "arxiv": "2412.15115"
+  },
+  "Belrose2023": {
+    "source": "semantic_scholar",
+    "title": "LEACE: Perfect linear concept erasure in closed form",
+    "first_author": "Belrose",
+    "year": 2023,
+    "s2_paper_id": "22ae20f20d0b4e6451ae41cc76e58a9221e90df9",
+    "doi": "10.48550/arXiv.2306.03819",
+    "arxiv": "2306.03819"
+  },
+  "Peeperkorn2024": {
+    "source": "semantic_scholar",
+    "title": "Is Temperature the Creativity Parameter of Large Language Models?",
+    "first_author": "Peeperkorn",
+    "year": 2024,
+    "s2_paper_id": "8e25c812a564e98058a90e30519b7644f7f46d57",
+    "doi": "10.48550/arXiv.2405.00492",
+    "arxiv": "2405.00492"
+  },
+  "Hill1973": {
+    "source": "semantic_scholar",
+    "title": "Diversity and Evenness: A Unifying Notation and Its Consequences",
+    "first_author": "Hill",
+    "year": 1973,
+    "s2_paper_id": "edca9dd1d7c9ec81348f996132102b55b304087b",
+    "doi": "10.2307/1934352"
+  },
+  "Cohen1960": {
+    "source": "semantic_scholar",
+    "title": "A Coefficient of Agreement for Nominal Scales",
+    "first_author": "Cohen",
+    "year": 1960,
+    "s2_paper_id": "9e463eefadbcd336c69270a299666e4104d50159",
+    "doi": "10.1177/001316446002000104"
+  },
+  "Hewitt2019": {
+    "source": "semantic_scholar",
+    "title": "Designing and Interpreting Probes with Control Tasks",
+    "first_author": "Hewitt",
+    "year": 2019,
+    "s2_paper_id": "199ff73d2f728e997f860b62a2322823d3e3d9e8",
+    "doi": "10.18653/v1/D19-1275",
+    "arxiv": "1909.03368"
+  },
+  "Rimsky2023": {
+    "source": "semantic_scholar",
+    "title": "Steering Llama 2 via Contrastive Activation Addition",
+    "first_author": "Rimsky",
+    "year": 2023,
+    "s2_paper_id": "edd1dc1e8d7989f36c0e54f69f4aeb5e597edc8b",
+    "doi": "10.48550/arXiv.2312.06681",
+    "arxiv": "2312.06681"
+  },
+  "Turner2023": {
+    "source": "semantic_scholar",
+    "title": "Steering Language Models With Activation Engineering",
+    "first_author": "Turner",
+    "year": 2023,
+    "s2_paper_id": "fe303bbaae47b1b08d0641b41d3288fcd74a3a80",
+    "arxiv": "2308.10248"
+  },
+  "Bigelow2024": {
+    "source": "semantic_scholar",
+    "title": "Forking Paths in Neural Text Generation",
+    "first_author": "Bigelow",
+    "year": 2024,
+    "s2_paper_id": "925c140cb677a0f8178a8e625dadf6fb37864f20",
+    "doi": "10.48550/arXiv.2412.07961",
+    "arxiv": "2412.07961"
+  },
+  "Rana2026": {
+    "source": "semantic_scholar",
+    "title": "Semantic Gravity Wells: Why Negative Constraints Backfire",
+    "first_author": "Rana",
+    "year": 2026,
+    "s2_paper_id": "8987360664d7f57e12ceb77498a306eaa429df43",
+    "doi": "10.48550/arXiv.2601.08070",
+    "arxiv": "2601.08070"
+  },
+  "Narula2026": {
+    "source": "semantic_scholar",
+    "title": "The Invisible Lottery: How Subtle Cues Steer Algorithm Choice in LLM Code Generation",
+    "first_author": "Narula",
+    "year": 2026,
+    "s2_paper_id": "c74730a0ab0d5a83d303ff0bab1cb2bcec69ee8e",
+    "doi": "10.48550/arXiv.2606.04057",
+    "arxiv": "2606.04057"
+  },
+  "Arditi2024": {
+    "source": "semantic_scholar",
+    "title": "Refusal in Language Models Is Mediated by a Single Direction",
+    "first_author": "Arditi",
+    "year": 2024,
+    "s2_paper_id": "88f9af8b0a28e14c42d4f70ce2d911b51a06cd16",
+    "doi": "10.48550/arXiv.2406.11717",
+    "arxiv": "2406.11717"
+  },
+  "Li2023": {
+    "source": "semantic_scholar",
+    "title": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model",
+    "first_author": "Li",
+    "year": 2023,
+    "s2_paper_id": "405f8f5f1c6df1b3343c812832479aad5180b65f",
+    "doi": "10.52202/075280-1797",
+    "arxiv": "2306.03341"
+  },
+  "Shai2024": {
+    "source": "semantic_scholar",
+    "title": "Transformers represent belief state geometry in their residual stream",
+    "first_author": "Shai",
+    "year": 2024,
+    "s2_paper_id": "f481cf18598b8e4c069e6aced38b71b654db5dc3",
+    "doi": "10.48550/arXiv.2405.15943",
+    "arxiv": "2405.15943"
+  }
+}
